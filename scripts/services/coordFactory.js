@@ -21,9 +21,7 @@ angular.module('upl-site').
         };
 
         service.populate = function() {
-            $http.get({
-                url: 'content/coords/coords.json'
-            }).then(function(response) {
+            $http.get('content/coords/coords.json').then(function(response) {
                 // Success
                 coords = response.data;
             }, function(response) {
