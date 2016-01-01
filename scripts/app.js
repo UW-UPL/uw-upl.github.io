@@ -10,9 +10,9 @@ var TemplatePrefix = 'views/';
 // Declare ngRoute as a dependency. http://docs.angularjs.org/api/ngRoute
 // Then configure the $routeProvider by defining the routes.
 
-angular.module('upl-site', ['ngRoute'])
+angular.module('upl-site', ['ngRoute']).
 
-    .config(function ($routeProvider) {
+    config(function ($routeProvider) {
         // register the routes and the templates
         // http://docs.angularjs.org/api/ngRoute.$routeProvider
 
@@ -43,5 +43,8 @@ angular.module('upl-site', ['ngRoute'])
             otherwise({
                 redirectTo: '/'
             });
-    })
-;
+    }).
+    
+    run(['CoordFactory', function(coords) {
+        coords.populate();
+    }]);

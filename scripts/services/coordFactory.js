@@ -1,3 +1,5 @@
+"use strict";
+
 angular.module('upl-site').
     factory('CoordFactory', ['$http', function($http) {
         var coords = [];
