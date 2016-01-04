@@ -1,10 +1,10 @@
 "use strict";
 
 angular.module('upl-site').
-    controller('CoordsController', ['$scope', 'CoordFactory', function($scope, coords) {
+    controller('CoordsController', ['$scope', 'CoordFactory', function($scope, Coords) {
         $scope.coords = [];
-        
-        coords.list().then(function(data) {
+
+        Coords.list().then(function(data) {
             $scope.coords = data;
         }, function(data) {
             alert(data);

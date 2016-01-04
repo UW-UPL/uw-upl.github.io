@@ -45,7 +45,8 @@ angular.module('upl-site', ['ngRoute']).
             });
     }).
     
-    run(['CoordFactory', 'EventsFactory', function(coords, events) {
-        coords.populate();
-        events.populate();
+    run(['CoordFactory', 'EventsFactory', 'HoursFactory', function(Coords, Events, Hours) {
+        Coords.populate();
+        Events.populate();
+        Hours.populate();
     }]);

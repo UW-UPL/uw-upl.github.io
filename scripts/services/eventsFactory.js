@@ -9,6 +9,7 @@ angular.module('upl-site').
             return deferred.promise;
         };
 
+
         service.populate = function() {
             $http.get('content/events/events.json').then(function(response) {
                 // Success
