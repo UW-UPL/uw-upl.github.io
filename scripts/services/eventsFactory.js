@@ -1,25 +1,25 @@
 "use strict";
 
 angular.module('upl-site').
-    factory('EventsFactory', ['$http', function($http) {
-        var events = [];
-
+    factory('EventsFactory', ['$http', '$q', function($http, $q) {
+        var deferred = $q.defer();
         var service = {};
 
         service.list = function() {
-            return events;
+            return deferred.promise;
         };
 
         service.populate = function() {
             $http.get('content/events/events.json').then(function(response) {
                 // Success
-                events = response.data;
+                var events = response.data;
                 events.forEach(function(event) {
                     event.timestamp = new Date(event.date);
                 });
+                deferred.resolve(events);
             }, function(response) {
                 // Error
-                events = [];
+                deferred.reject("Error loading events");
             });
         };
 
