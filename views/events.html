@@ -1,0 +1,9 @@
+<ul>
+    <li ng-repeat="event in events | orderBy: '-timestamp'">
+        <p><strong>Title:</strong> {{event.title}}</p>
+        <p><strong>Date:</strong> {{event.date}}</p>
+        <p><strong>Location:</strong> {{event.location}}</p>
+        <p><strong>Description:</strong> {{event.description}}</p>
+        <p><strong>Image:</strong> {{event.image}}</p>
+    </li>
+</ul>

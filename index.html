@@ -15,6 +15,7 @@
             <ul ng-controller='NavigationController'>
                 <li ng-class="{active: (locationPath == '/')}">
                     <a ng-href="/">Home</a>
+                    <a ng-href="/#/events">Events</a>
                     <a ng-href="/#/coords">Coords</a>
                 </li>
             </ul>
@@ -47,10 +48,12 @@
         <script src="scripts/app.js"></script>
         <!-- app services -->
         <script src="scripts/services/coordFactory.js"></script>
+        <script src="scripts/services/eventsFactory.js"></script>
         <!-- app controllers -->
         <script src="scripts/controllers/homeController.js"></script>
         <script src="scripts/controllers/coordsController.js"></script>
         <script src="scripts/controllers/navigationController.js"></script>
+        <script src="scripts/controllers/eventsController.js"></script>
 
 </body>
 </html>
