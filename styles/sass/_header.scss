@@ -1,11 +1,11 @@
 .header {
     border-top: solid $badgerRed 6px;
-    padding: 6px 0;
+    padding: 24px 0 0 0;
     margin-bottom: 24px;
 
     .wrapper {
         display: flex;
-        align-items: flex-end;
+        align-items:  center;
         justify-content: space-between;
     }
 
@@ -45,5 +45,12 @@
                 }
             }
         }
+    }
+}
+
+@include breakpoint("760px") {
+    .header .logo img {
+        width: 120px;
+        min-width: none;
     }
 }
