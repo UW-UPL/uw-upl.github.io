@@ -2,5 +2,11 @@
 
 angular.module('upl-site').
     controller('CoordsController', ['$scope', 'CoordFactory', function($scope, coords) {
-        $scope.coords = coords.list();
+        $scope.coords = [];
+        
+        coords.list().then(function(data) {
+            $scope.coords = data;
+        }, function(data) {
+            alert(data);
+        });
     }]);
