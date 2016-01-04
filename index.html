@@ -12,26 +12,31 @@
         <!-- header -->
         <!-- uses NavigationLinks as a controller -->
         <div class="header">
-            <ul ng-controller='NavigationController'>
-                <li ng-class="{active: (locationPath == '/')}">
-                    <a ng-href="/">Home</a>
-                </li>
-                <li ng-class="{active: (locationPath == '/events')}">
-                    <a ng-href="/#/events">Events</a>
-                </li>
-                <li ng-class="{active: (locationPath == '/projects')}">
-                    <a ng-href="/#/projects">Projects</a>
-                </li>
-                <li ng-class="{active: (locationPath == '/coords')}">
-                    <a ng-href="/#/coords">Coords</a>
-                </li>
-                <li ng-class="{active: (locationPath == '/hours')}">
-                    <a ng-href="/#/hours">Hours</a>
-                </li>
-                <li ng-class="{active: (locationPath == '/about')}">
-                    <a ng-href="/#/about">About</a>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <div class="logo">
+                    <img ng-src="images/upl_logo.png" />
+                </div>
+                <ul ng-controller='NavigationController' class="nav">
+                    <li ng-class="{active: (locationPath == '/')}">
+                        <a ng-href="/">Home</a>
+                    </li>
+                    <li ng-class="{active: (locationPath == '/events')}">
+                        <a ng-href="/#/events">Events</a>
+                    </li>
+                    <li ng-class="{active: (locationPath == '/projects')}">
+                        <a ng-href="/#/projects">Projects</a>
+                    </li>
+                    <li ng-class="{active: (locationPath == '/coords')}">
+                        <a ng-href="/#/coords">Coords</a>
+                    </li>
+                    <li ng-class="{active: (locationPath == '/hours')}">
+                        <a ng-href="/#/hours">Hours</a>
+                    </li>
+                    <li ng-class="{active: (locationPath == '/about')}">
+                        <a ng-href="/#/about">About</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- Your site or application content will appear here -->

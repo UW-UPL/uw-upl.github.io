@@ -383,6 +383,40 @@ a {
 @media (min-width: 1060px) {
   .wrapper {
     width: 1020px; } }
+.header {
+  border-top: solid #b70101 6px;
+  padding: 6px 0;
+  margin-bottom: 24px; }
+  .header .wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+  .header .logo img {
+    width: 100px;
+    min-width: 100px; }
+  .header .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .header .nav li {
+      padding: 3px 0;
+      text-align: center;
+      vertical-align: center;
+      margin: 5px;
+      display: inline-block;
+      border-bottom: solid 3px transparent; }
+      .header .nav li:hover, .header .nav li.active {
+        border-bottom-color: #b70101; }
+      .header .nav li a {
+        text-decoration: none;
+        color: #000; }
+        .header .nav li a:hover {
+          color: #000; }
+
 .footer {
   background: #b70101;
   color: #fff;
