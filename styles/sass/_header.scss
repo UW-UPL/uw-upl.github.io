@@ -5,8 +5,10 @@
 
     .wrapper {
         display: flex;
-        align-items:  center;
+        align-items:  flex-end;
         justify-content: space-between;
+        padding-bottom: 12px;
+        border-bottom: solid 1px $divider;
     }
 
     .logo {

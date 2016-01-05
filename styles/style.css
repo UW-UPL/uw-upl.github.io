@@ -365,6 +365,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+body {
+  color: #212121; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -389,8 +392,10 @@ a {
   margin-bottom: 24px; }
   .header .wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: solid 1px #B6B6B6; }
   .header .logo img {
     width: 100px;
     min-width: 100px; }
@@ -422,6 +427,32 @@ a {
   .header .logo img {
     width: 120px;
     min-width: none; } }
+.coords-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .coords-list li {
+    padding: 0 0 12px 0;
+    margin: 0 0 12px 0;
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #B6B6B6; }
+    .coords-list li:last-child {
+      border-bottom: none; }
+  .coords-list .coord-mug {
+    margin-bottom: 6px; }
+    .coords-list .coord-mug img {
+      min-width: 150px;
+      width: 150px;
+      border-radius: 50%; }
+
+@media (min-width: 560px) {
+  .coords-list {
+    display: flex;
+    justify-content: center; }
+    .coords-list li {
+      border-bottom: none;
+      width: 200px; } }
 .footer {
   background: #b70101;
   color: #fff;
