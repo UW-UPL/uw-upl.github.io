@@ -429,11 +429,11 @@ a {
     min-width: none; } }
 .coords-list {
   list-style-type: none;
-  margin: 0;
+  margin: 24px 0 0 0;
   padding: 0; }
   .coords-list li {
-    padding: 0 0 12px 0;
-    margin: 0 0 12px 0;
+    padding: 0 0 24px 0;
+    margin: 0 0 24px 0;
     display: block;
     text-align: center;
     border-bottom: solid 1px #B6B6B6; }
@@ -445,14 +445,17 @@ a {
       min-width: 150px;
       width: 150px;
       border-radius: 50%; }
+  .coords-list .coord-info p {
+    margin: 0; }
 
 @media (min-width: 560px) {
   .coords-list {
     display: flex;
-    justify-content: center; }
+    justify-content: space-around; }
     .coords-list li {
       border-bottom: none;
-      width: 200px; } }
+      width: 240px;
+      margin: 0 10px 24px 10px; } }
 .footer {
   background: #b70101;
   color: #fff;
