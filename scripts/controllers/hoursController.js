@@ -1,6 +1,6 @@
 "use strict";
 
-angular.modue('upl-site').
+angular.module('upl-site').
     controller('HoursController', ['$scope', 'HoursFactory', 'CoordFactory', function($scope, Hours, Coords) {
         $scope.coords = [];
         $scope.hours = null;
