@@ -7,7 +7,7 @@ angular.module('upl-site').
 
         service.list = function() {
             return deferred.promise;
-        }
+        };
 
         service.populate = function() {
             $http.get('content/projects/projects.json').then(function(response) {
@@ -15,7 +15,7 @@ angular.module('upl-site').
             }, function(response) {
                 deferred.reject("Error loading projects");
             });
-        }
+        };
 
         return service;
     }])

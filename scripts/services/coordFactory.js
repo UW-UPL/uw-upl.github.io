@@ -18,7 +18,7 @@ angular.module('upl-site').
                 }
             }
             return null;
-        }
+        };
 
         service.populate = function() {
             $http.get('content/coords/coords.json').then(function(response) {
