@@ -447,6 +447,8 @@ a {
       border-radius: 50%; }
   .coords-list .coord-info p {
     margin: 0; }
+  .coords-list h4 {
+    margin: 6px 0; }
 
 @media (min-width: 560px) {
   .coords-list {
