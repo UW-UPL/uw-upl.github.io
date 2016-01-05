@@ -1,8 +1,21 @@
-<ul>
-    <li ng-repeat="coord in coords track by coord.id">
-        <p><strong>Id:</strong> {{coord.id}}</p>
-        <p><strong>Year:</strong> {{coord.year}}</p>
-        <p><strong>Major:</strong> {{coord.major}}</p>
-        <p><strong>Photo:</strong> {{coord.photo}}</p>
-    </li>
-</ul>
+<div class="wrapper">
+    <h2>Faculty Advisor</h2>
+    <p>Professor Bart Miller - <a href="mailto:bart@cs.wisc.edu" title="Faculty Advisor">bart@cs.wisc.edu</a></p>
+    <h2>Coordinators</h2>
+    <p>These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at <a href="mailto:upl-coords@cs.wisc.edu" title="UPL Coordinators">upl-coords@cs.wisc.edu</a>.</p>
+    <ul class="coords-list">
+        <li ng-repeat="coord in coords track by coord.id">
+            <div class="coord-mug"><img title="{{coord.name}}" ng-src="content/coords/{{coord.photo ? coord.photo : 'default.png'}}" /></div>
+            <h4>{{coord.name}}</h4>
+            <div class="coord-info">
+                <p>
+                    <strong>Year: </strong>{{coord.year}}
+                    <br />
+                    <strong>Major: </strong>{{coord.major}}
+                    <br />
+                    <a ng-if="coord.github" title="{{coord.name}}: Github" ng-href="{{coord.github}}">Github</a> <a title="Email {{coord.name" ng-href="mailto:{{coord.id}}@cs.wisc.edu">Email</a>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,8 +1,16 @@
 [
     {
         "id": "mneil",
+        "name": "Matt Neil",
         "year": "Senior",
         "major": "Computer Science and Mathematics",
+        "github": "https://github.com/mjneil",
         "photo": "mneil.jpg"
+    },
+    {
+        "id": "cook",
+        "name": "Michael Cook",
+        "year": "Junior",
+        "major": "Computer Science"
     }
 ]

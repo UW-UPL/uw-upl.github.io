@@ -410,12 +410,13 @@ a {
       display: inline-block;
       border-bottom: solid 3px transparent; }
       .header .nav li:hover, .header .nav li.active {
-        border-bottom-color: #b70101; }
+        border-bottom-color: #b70101;
+        cursor: pointer; }
       .header .nav li a {
         text-decoration: none;
-        color: #000; }
+        color: #212121; }
         .header .nav li a:hover {
-          color: #000; }
+          color: #212121; }
 
 @media (min-width: 760px) {
   .header .logo img {

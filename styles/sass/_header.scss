@@ -35,13 +35,14 @@
 
             &:hover, &.active {
                 border-bottom-color: $badgerRed;
+                cursor: pointer;
             }
 
             a {
                 text-decoration: none;
-                color: $black;
+                color: $textDark;
                 &:hover {
-                    color: $black;
+                    color: $textDark;
                 }
             }
         }
