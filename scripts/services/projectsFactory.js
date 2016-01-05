@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module('upl-site').
-    factory("ProjectsFactory", ['$htp', '$q', function($http, $q) {
+    factory("ProjectsFactory", ['$http', '$q', function($http, $q) {
         var deferred = $q.defer();
         var service = {};
 
