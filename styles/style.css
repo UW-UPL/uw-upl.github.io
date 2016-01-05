@@ -399,11 +399,15 @@ a {
   .header .logo img {
     width: 100px;
     min-width: 100px; }
+  .header .social {
+    text-align: right;
+    font-size: 14px; }
+    .header .social p {
+      margin: 0; }
   .header .nav {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    margin-left: 20px;
+    margin: 24px 0 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end; }

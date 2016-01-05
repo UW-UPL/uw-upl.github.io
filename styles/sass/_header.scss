@@ -18,11 +18,18 @@
         }
     }
 
+    .social {
+        text-align: right;
+        font-size: 14px;
+        p {
+            margin: 0;
+        }
+    }
+
     .nav {
         list-style-type: none;
         padding: 0;
-        margin: 0;
-        margin-left: 20px;
+        margin: 24px 0 0 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
