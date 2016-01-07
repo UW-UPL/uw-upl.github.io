@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <p>The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours. These office hours are in 50-minute increments.</p>
+    <table data-stackColumns>
+        <tbody>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr ng-repeat="time in times">
+                <td>{{time}}</td>
+                <td>{{hours.Monday[time]}}</td>
+                <td>{{hours.Tuesday[time]}}</td>
+                <td>{{hours.Wednesday[time]}}</td>
+                <td>{{hours.Thursday[time]}}</td>
+                <td>{{hours.Friday[time]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
