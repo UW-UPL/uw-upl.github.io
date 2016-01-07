@@ -26,7 +26,7 @@ angular.module('upl-site').
         return {
             restrict: 'A',
             link: function(scope, element, attr) {
-                $(element).stackColumns();
+                $(element).stackcolumns();
             }
         }
     });
