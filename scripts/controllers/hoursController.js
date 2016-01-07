@@ -16,17 +16,4 @@ angular.module('upl-site').
         }, function(data) {
             alert(data);
         });
-
-        $scope.times = ["8:50AM", "9:55AM", "11:00AM", "12:05PM", "1:20PM", "2:25PM", "3:30PM", "4:35PM", "5:40PM"];
-
-
-
-    }]).
-    directive('stackColumns', function() {
-        return {
-            restrict: 'A',
-            link: function(scope, element, attr) {
-                $(element).stackcolumns();
-            }
-        }
-    });
+    }]);
