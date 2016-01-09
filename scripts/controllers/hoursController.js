@@ -4,6 +4,7 @@ angular.module('upl-site').
     controller('HoursController', ['$scope', 'HoursFactory', 'CoordFactory', function($scope, Hours, Coords) {
         $scope.coords = [];
         $scope.hours = null;
+        $scope.times = ["8:50AM", "9:55AM", "11:00AM", "12:05PM", "1:20PM", "2:25PM", "3:30PM", "4:35PM", "5:40PM"];
 
         Coords.list().then(function(data) {
             $scope.coords = data;
