@@ -3,7 +3,7 @@
         "id": "mneil",
         "name": "Matt Neil",
         "year": "Senior",
-        "major": "Computer Science and Mathematics",
+        "major": "Computer Sciences and Mathematics",
         "github": "https://github.com/mjneil",
         "photo": "mneil.jpg"
     },
@@ -11,6 +11,13 @@
         "id": "cook",
         "name": "Michael Cook",
         "year": "Junior",
-        "major": "Computer Science"
+        "major": "Computer Sciences"
+    },
+    {
+        "id": "riccardo",
+        "name": "Riccardo Mutschlechner",
+        "year": "1y Graduate Student",
+        "major": "Computer Sciences",
+        "github": "https://github.com/ricky54326",
     }
 ]
