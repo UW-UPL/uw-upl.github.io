@@ -1,8 +1,8 @@
 <div class="wrapper">
     <h2>Faculty Advisor</h2>
-    <p>Professor Bart Miller - <a href="mailto:bart@cs.wisc.edu" title="Faculty Advisor">bart@cs.wisc.edu</a></p>
+    <p>Professor Bart Miller - bart [at] cs.wisc.edu"</p>
     <h2>Coordinators</h2>
-    <p>These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at <a href="mailto:upl-coords@cs.wisc.edu" title="UPL Coordinators">upl-coords@cs.wisc.edu</a>.</p>
+    <p>These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at upl-coords [at] cs [dot] wisc [dot] edu</p>
     <ul class="coords-list">
         <li ng-repeat="coord in coords track by coord.id">
             <div class="coord-mug"><img title="{{coord.name}}" ng-src="content/coords/{{coord.photo ? coord.photo : 'default.png'}}" /></div>
@@ -11,7 +11,7 @@
                 <p>
                     {{coord.year}} majoring in {{coord.major}}
                     <br />
-                    <a ng-if="coord.github" title="{{coord.name}}: GitHub" ng-href="{{coord.github}}">GitHub</a> <a title="Email {{coord.name}}" ng-href="mailto:{{coord.id}}@cs.wisc.edu">Email</a>
+                    <a ng-if="coord.github" title="{{coord.name}}: GitHub" ng-href="{{coord.github}}">GitHub</a>
                 </p>
             </div>
         </li>
