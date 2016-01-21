@@ -510,7 +510,8 @@ a {
 @media (min-width: 560px) {
   .coords-list {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .coords-list li {
       border-bottom: none;
       width: 240px;
