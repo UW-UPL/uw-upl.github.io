@@ -1,1 +1,1 @@
-TODO: add README
+To test locally, make sure you have Python installed and run `python -m SimpleHTTPServer 8080` in the terminal while your local directory that store the site. You'l then be able to access the site at `http://localhost:8080/`
