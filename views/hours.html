@@ -1,16 +1,16 @@
 <div class="wrapper">
     <p>The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours. These office hours are in 50-minute increments.</p>
-    <table class="stacktable large-only">
-        <tbody>
-            <tr>
-                <th>Time</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
+    <table class="hours stacktable large-only">
+        <tr class="t-head">
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
 
+        <tbody>
             <tr ng-repeat="time in times">
                 <td>{{time}}</td>
                 <td>{{hours.Monday[time]}}</td>
@@ -18,53 +18,61 @@
                 <td>{{hours.Wednesday[time]}}</td>
                 <td>{{hours.Thursday[time]}}</td>
                 <td>{{hours.Friday[time]}}</td>
-            </tr>
-            
+            </tr>            
         </tbody>
+
     </table>
 
-    <table class="stacktable small-only">
+    <table class="hours stacktable small-only">
+        <tr class="t-head">
+            <th class="st-key">Time</th>
+            <th class="st-val">Monday</th>
+        </tr>
         <tbody>
-            <tr class="st-head-row st-head-row-main">
-                <th class="st-key">Time</th>
-                <th class="st-val">Monday</th>
-            </tr>
             <tr ng-repeat="time in times">
                 <td class="st-key">{{time}}</td>
                 <td class="st-val">{{hours.Monday[time]}}</td>
             </tr>
+        </tbody>
 
-            <tr class="st-head-row st-head-row-main">
-                <th class="st-key">Time</th>
-                <th class="st-val">Tuesday</th>
-            </tr>
+        <tr class="st-head-row st-head-row-main">
+            <th class="st-key">Time</th>
+            <th class="st-val">Tuesday</th>
+        </tr>
+        <tbody>
             <tr ng-repeat="time in times">
                 <td class="st-key">{{time}}</td>
                 <td class="st-val">{{hours.Tuesday[time]}}</td>
             </tr>
+        </tbody>
 
-            <tr class="st-head-row st-head-row-main">
-                <th class="st-key">Time</th>
-                <th class="st-val">Wednesday</th>
-            </tr>
+        <tr class="st-head-row st-head-row-main">
+            <th class="st-key">Time</th>
+            <th class="st-val">Wednesday</th>
+        </tr>
+        <tbody>
             <tr ng-repeat="time in times">
                 <td class="st-key">{{time}}</td>
                 <td class="st-val">{{hours.Wednesday[time]}}</td>
             </tr>
+        </tbody>
 
-            <tr class="st-head-row st-head-row-main">
-                <th class="st-key">Time</th>
-                <th class="st-val">Thursday</th>
-            </tr>
+        <tr class="st-head-row st-head-row-main">
+            <th class="st-key">Time</th>
+            <th class="st-val">Thursday</th>
+        </tr>
+        <tbody>
             <tr ng-repeat="time in times">
                 <td class="st-key">{{time}}</td>
                 <td class="st-val">{{hours.Thursday[time]}}</td>
             </tr>
+        </tbody>
 
-            <tr class="st-head-row st-head-row-main">
-                <th class="st-key">Time</th>
-                <th class="st-val">Friday</th>
-            </tr>
+        <tr class="st-head-row st-head-row-main">
+            <th class="st-key">Time</th>
+            <th class="st-val">Friday</th>
+        </tr>
+        <tbody>
             <tr ng-repeat="time in times">
                 <td class="st-key">{{time}}</td>
                 <td class="st-val">{{hours.Friday[time]}}</td>

@@ -7,6 +7,38 @@
 .stacktable.large-only { display: none; }
 .stacktable.small-only { display: table; }
 
+table.hours {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    empty-cells: show;
+    border: 1px solid $divider;
+
+    tr.t-head {
+        background-color: #e0e0e0;
+        color: $black;
+        text-align: left;
+        vertical-align: bottom;
+    }
+
+    th, td {
+        border-left: 1px solid #cbcbcb;
+        border-width: 0 0 0 1px;
+        margin: 0;
+        overflow: visible;
+        padding: 0.5em 1em;
+    }
+
+    th:first-child, td:first-child {
+        border-left-width: 0;
+    }
+
+    tbody tr:nth-child(2n-1) td {
+        background-color: #f2f2f2;
+    }
+
+}
+
 @include breakpoint("560px") {
     .stacktable.large-only { display: table; }
     .stacktable.small-only { display: none; } 
