@@ -42,11 +42,11 @@ table.hours {
 
     &.small-only {
         display: table;
-        tbody td:last-child {
+        tbody tr:last-child td{
             border-bottom: 1px solid $divider;
         }
-        
-        tbody:last-child td:last-child {
+
+        tbody:last-child tr:last-child td{
             border-bottom: none;
         }
     }

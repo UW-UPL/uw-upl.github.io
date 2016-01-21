@@ -558,9 +558,9 @@ table.hours {
     display: none; }
   table.hours.small-only {
     display: table; }
-    table.hours.small-only tbody td:last-child {
+    table.hours.small-only tbody tr:last-child td {
       border-bottom: 1px solid #B6B6B6; }
-    table.hours.small-only tbody:last-child td:last-child {
+    table.hours.small-only tbody:last-child tr:last-child td {
       border-bottom: none; }
 
 @media (min-width: 560px) {
