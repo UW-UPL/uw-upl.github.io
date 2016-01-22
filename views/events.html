@@ -2,7 +2,7 @@
   <section ng-repeat="(key, events_part) in events" ng-if="events_part.length">
     <heading>{{key}} events:</heading>
     <ul>
-      <li ng-repeat="event in events_part | orderBy:'timestamp' track by $index">
+      <li ng-repeat="event in events_part | orderBy:'-timestamp' track by $index">
         <div class="event">
           <div class="event-thumb">
             <img ng-if="event.image" ng-src="content/events/{{event.image}}" title="{{event.title}}" />
