@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module('upl-site').
-    factory('EventsFactory', ['$http', '$q', function($http, $q) {
+    factory('EventsFactory', ['$http', '$q', '$sce', function($http, $q, $sce) {
         var deferred = $q.defer();
         var service = {};
 
@@ -36,6 +36,9 @@ angular.module('upl-site').
                     }
 
                     event.timeOfDay = hours + ':' + mins + ' ' + ampm;
+
+                    // allow html in descriptions
+                    event.description = $sce.trustAsHtml(event.description);
                 });
                 
                 deferred.resolve(events);
