@@ -16,7 +16,28 @@ angular.module('upl-site').
                 var events = response.data;
                 events.forEach(function(event) {
                     event.timestamp = new Date(event.date);
+                    var hours, mins, ampm;
+                    hours = event.timestamp.getHours();
+                    mins = event.timestamp.getMinutes();
+
+                    if (hours < 12) {
+                        ampm = "AM";
+                    } else {
+                        ampm = "PM";
+                    }
+
+                    hours = hours % 12;
+                    if (hours === 0) {
+                        hours = 12;
+                    }
+
+                    if (mins < 10) {
+                        mins = '0' + mins;
+                    }
+
+                    event.timeOfDay = hours + ':' + mins + ' ' + ampm;
                 });
+                
                 deferred.resolve(events);
             }, function(response) {
                 // Error
