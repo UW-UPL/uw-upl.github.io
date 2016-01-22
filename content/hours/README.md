@@ -4,7 +4,7 @@
 
 ## Hours Object Specification:
 
-```json
+```
 {
   "<day of the week>": {
     "<start of hour (e.g. '8:50AM')>": "<coord name>"

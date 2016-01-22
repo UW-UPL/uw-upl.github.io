@@ -4,7 +4,7 @@
 
 ## Projects Object Specification:
 
-```json
+```
 {
   "title": name of project [Required] (String),
   "authors": name(s) of author(s) [Required] (Array of Strings),

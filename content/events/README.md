@@ -4,7 +4,7 @@
 
 ## Event Object Specification:
 
-```json
+```
 {
     "title": event title [Required] (String),
     "date": event date and time [Required] (Format String: "mm/dd/yyyy H:MM p;

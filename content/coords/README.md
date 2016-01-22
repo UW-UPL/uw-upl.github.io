@@ -4,7 +4,7 @@
 
 ## Coordinator Object Specification:
 
-```json
+```
 {
     "id": csl username [Required] (String),
     "name": FirstName LastName [Required] (String),
