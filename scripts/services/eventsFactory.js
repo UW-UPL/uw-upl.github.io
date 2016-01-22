@@ -7,7 +7,8 @@ angular.module('upl-site').
 
         var months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        var re = /(\d{1,2})\/(\d{1,2})\/(\d{2,4}) (\d{1,2}):(\d{2}) ([AP]M)/;
+
+        var now = Date.now();
         
         service.list = function() {
             return deferred.promise;
@@ -19,16 +20,27 @@ angular.module('upl-site').
                 // Success
                 var events = {'Upcoming': [], 'Previous': []};
                 response.data.forEach(function(event) {
-                    var matches = event.date.match(re);
-                    var month = matches[1];
-                    var day = matches[2];
-                    var year = matches[3];
-                    var hours = matches[4];
-                    var mins = matches[5];
-                    var ampm = matches[6];
-                    event.timestamp = new Date(year, month-1, day, hours, mins);
+                    event.timestamp = new Date(event.date);
+                    event.dateString = "";
+                    var day = event.timestamp.getDate();
+                    var month = event.timestamp.getMonth() + 1;
+                    var year = event.timestamp.getFullYear();
+                    var hours = event.timestamp.getHours();
+                    var ampm;
+                    if (hours > 12) {
+                        hours -= 12;
+                        ampm = "PM";
+                    } else if (hours === 0) {
+                        hours = 12;
+                        ampm =  "AM";
+                    } else {
+                        ampm = "AM";
+                    }
+                    var mins = event.timestamp.getMinutes();
+                    if (mins < 10) {
+                        mins = "0" + mins;
+                    }
                     event.dateString = days[event.timestamp.getDay()] + ', ' + months[month] + ' ' + day + ', ' + year + ' at ' + hours + ':' + mins + ' ' + ampm;
-                    var now = Date.now();
                     if (event.timestamp >= now) {
                         events['Upcoming'].push(event);
                     } else {
