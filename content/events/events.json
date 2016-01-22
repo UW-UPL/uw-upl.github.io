@@ -1,23 +1,14 @@
 [
     {
-        "title": "UPL Games",
-        "date": "02/18/2016 7:00 PM",
-        "location": "CS 1220",
-        "description": "Phasellus ullamcorper ipsum rutrum nunc. Sed cursus turpis vitae tortor. Quisque id odio. Ut a nisl id ante tempus hendrerit.",
-        "image": "vapor.png"
+        "title": "Intro to Functional Programming with Haskell",
+        "date": "10/29/2015 7:00 PM",
+        "location": "CS 1240",
+        "description": "The UPL Video Lecture Series will be giving a talk on functional programming and Haskell this Thursday (10/29) at 7pm in CS 1240. Functional programming, and its related concepts, are becoming more prevalent in computation as machines become more powerful, concurrent, and complex. In this talk, we'll briefly go over the paradigm and then dig in with some Haskell, one of the most (in)famous functional programming languages. Attendees should be at the intermediate level (i.e. have completed CS 367), and should come with laptops with the Haskell platform installed."
     },
     {
-        "title": "UPL Games",
-        "date": "02/18/2012 7:00 PM",
-        "location": "CS 1220",
-        "description": "Phasellus ullamcorper ipsum rutrum nunc. Sed cursus turpis vitae tortor. Quisque id odio. Ut a nisl id ante tempus hendrerit.",
-        "image": "vapor.png"
-    },
-    {
-        "title": "UPL Games",
-        "date": "02/18/2018 7:00 PM",
-        "location": "CS 1220",
-        "description": "Phasellus ullamcorper ipsum rutrum nunc. Sed cursus turpis vitae tortor. Quisque id odio. Ut a nisl id ante tempus hendrerit.",
-        "image": "vapor.png"
+        "title": "Intro to Programming with Ruby",
+        "date": "9/22/2015 7:00 PM",
+        "location": "CS 1240",
+        "description": "Ruby is the only programming language designed for programmer happiness. Made in the 90s, with inspiration from languages such as Perl, Python, Lisp, and Smalltalk, Ruby is a great language to learn for beginners and pros alike. It is not only useful for small scripting jobs, but it also works well for abstracting large systems and powers the ubiquitous Ruby on Rails web framework.\n\nIn this tutorial, you will learn how to get up and running with Ruby and on your way to programming more happily and productively. The intended audience for this talk is beginners, but anyone is welcome to be there.\n\nWe will use a free, online interpreter (repl.it), but you can use ruby, irb, or your Ruby tool of choice, as well."
     }
 ]
