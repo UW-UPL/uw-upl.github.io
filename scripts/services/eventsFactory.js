@@ -44,7 +44,15 @@ angular.module('upl-site').
                         events['Previous'].push(event);
                     }
                 });
-                
+
+                // Sort upcoming events in chronological order and
+                // previous events in reverse-chronological order
+                events['Upcoming'].sort(function(a, b) {
+                    return a.timestamp - b.timestamp;
+                });
+                events['Previous'].sort(function(a, b) {
+                    return b.timestamp - a.timestamp;
+                });
                 deferred.resolve(events);
             }, function(response) {
                 // Error
