@@ -5,7 +5,7 @@ angular.module('upl-site').
         var deferred = $q.defer();
         var service = {};
 
-        var months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         var now = Date.now();
@@ -23,7 +23,7 @@ angular.module('upl-site').
                     event.timestamp = new Date(event.date);
                     event.dateString = "";
                     var day = event.timestamp.getDate();
-                    var month = event.timestamp.getMonth() + 1;
+                    var month = event.timestamp.getMonth();
                     var year = event.timestamp.getFullYear();
                     var hours = event.timestamp.getHours();
                     var ampm;
