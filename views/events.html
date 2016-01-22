@@ -9,7 +9,7 @@
           </div>
           <div class="event-desc">
             <h2 class="event-title">{{event.title}}</h2>
-            <h3 class="event-date">{{days[event.timestamp.getDay()]}}, {{months[event.timestamp.getMonth()]}} {{event.timestamp.getDay() + 1}}, {{event.timestamp.getFullYear()}} at {{event.timeOfDay}}</h3>
+            <h3 class="event-date">{{event.dateString}}</h3>
             <p>{{event.description}}</p>
           </div>
         </div>
