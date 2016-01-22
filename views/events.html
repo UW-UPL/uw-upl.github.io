@@ -1,20 +1,25 @@
 <div class="wrapper">
   <ul>
-    <li ng-repeat="event in events | orderBy:'timestamp' track by $index">
-        <div class="event">
+    <section ng-repeat="(key, events_part) in events">
+      <heading>{{key}} events:</heading>
+      <ul>
+        <li ng-repeat="event in events_part | orderBy:'timestamp' track by $index">
+          <div class="event">
             <div class="event-thumb">
-                <img ng-if="event.image" ng-src="content/events/{{event.image}}" title="{{event.title}}" />
-                <div ng-if="!event.image" class="cal-card">
-                    <div class="cal-month">{{months[event.timestamp.getMonth()]}}</div>
-                    <div class="cal-day">{{event.timestamp.getDay() + 1}}</div>
-                </div>
+              <img ng-if="event.image" ng-src="content/events/{{event.image}}" title="{{event.title}}" />
+              <div ng-if="!event.image" class="cal-card">
+                <div class="cal-month">{{months[event.timestamp.getMonth()]}}</div>
+                <div class="cal-day">{{event.timestamp.getDay() + 1}}</div>
+              </div>
             </div>
             <div class="event-desc">
-                <h2 class="event-title">{{event.title}}</h2>
-                <h3 class="event-date">{{days[event.timestamp.getDay()]}}, {{months[event.timestamp.getMonth()]}} {{event.timestamp.getDay() + 1}} at {{event.timeOfDay}}</h3>
-                <p>{{event.description}}</p>
+              <h2 class="event-title">{{event.title}}</h2>
+              <h3 class="event-date">{{days[event.timestamp.getDay()]}}, {{months[event.timestamp.getMonth()]}} {{event.timestamp.getDay() + 1}}, {{event.timestamp.getFullYear()}} at {{event.timeOfDay}}</h3>
+              <p>{{event.description}}</p>
             </div>
-        </div>
-    </li>
+          </div>
+        </li>
+      </ul>
+    </section>
   </ul>
 </div>

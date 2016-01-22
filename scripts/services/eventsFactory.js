@@ -13,8 +13,8 @@ angular.module('upl-site').
         service.populate = function() {
             $http.get('content/events/events.json').then(function(response) {
                 // Success
-                var events = response.data;
-                events.forEach(function(event) {
+                var events = {'Upcoming': [], 'Previous': []};
+                response.data.forEach(function(event) {
                     event.timestamp = new Date(event.date);
                     var hours, mins, ampm;
                     hours = event.timestamp.getHours();
@@ -36,6 +36,13 @@ angular.module('upl-site').
                     }
 
                     event.timeOfDay = hours + ':' + mins + ' ' + ampm;
+
+                    var now = Date.now();
+                    if (event.timestamp >= now) {
+                        events['Upcoming'].push(event);
+                    } else {
+                        events['Previous'].push(event);
+                    }
                 });
                 
                 deferred.resolve(events);
