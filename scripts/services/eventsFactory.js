@@ -27,7 +27,6 @@ angular.module('upl-site').
                     var mins = matches[5];
                     var ampm = matches[6];
                     event.timestamp = new Date(year, month-1, day, hours, mins);
-                    console.log(event.timestamp);
                     event.dateString = days[event.timestamp.getDay()] + ', ' + months[month] + ' ' + day + ', ' + year + ' at ' + hours + ':' + mins + ' ' + ampm;
                     var now = Date.now();
                     if (event.timestamp >= now) {
