@@ -9,7 +9,4 @@ angular.module('upl-site').
         }, function(data) {
             alert(data);
         });
-
-        $scope.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        $scope.days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     }]);
