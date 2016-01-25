@@ -53,7 +53,7 @@ table.hours {
 
 }
 
-@include breakpoint("560px") {
+@include breakpoint("760px") {
     table.hours {
         &.large-only {
             display: table;

@@ -464,18 +464,19 @@ a {
     flex-wrap: wrap;
     justify-content: flex-end; }
     .header .nav li {
-      padding: 3px 0;
-      text-align: center;
-      vertical-align: center;
-      margin: 5px;
-      display: inline-block;
-      border-bottom: solid 3px transparent; }
-      .header .nav li:hover, .header .nav li.active {
+      display: inline-block; }
+      .header .nav li:hover a, .header .nav li.active a {
         border-bottom-color: #b70101;
         cursor: pointer; }
       .header .nav li a {
         text-decoration: none;
-        color: #212121; }
+        color: #212121;
+        padding: 3px 0;
+        text-align: center;
+        vertical-align: center;
+        margin: 5px;
+        display: block;
+        border-bottom: solid 3px transparent; }
         .header .nav li a:hover {
           color: #212121; }
 
@@ -564,7 +565,7 @@ table.hours {
     table.hours.small-only tbody:last-child tr:last-child td {
       border-bottom: none; }
 
-@media (min-width: 560px) {
+@media (min-width: 760px) {
   table.hours.large-only {
     display: table; }
   table.hours.small-only {

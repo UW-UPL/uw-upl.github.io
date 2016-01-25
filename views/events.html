@@ -1,6 +1,6 @@
 <div class="wrapper">
   <section ng-repeat="(key, events_part) in events" ng-if="events_part.length">
-    <heading>{{key}} events:</heading>
+    <h1>{{key}} events:</h1>
     <ul>
       <li ng-repeat="event in events_part track by $index">
         <div class="event">
@@ -10,6 +10,7 @@
           <div class="event-desc">
             <h2 class="event-title">{{event.title}}</h2>
             <h3 class="event-date">{{event.dateString}}</h3>
+            <h3 class="event-location">{{event.location}}</h3>
             <p>{{event.description}}</p>
           </div>
         </div>

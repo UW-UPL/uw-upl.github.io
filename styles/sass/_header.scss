@@ -35,14 +35,9 @@
         justify-content: flex-end;
 
         li {
-            padding: 3px 0;
-            text-align: center;
-            vertical-align: center;
-            margin: 5px;
             display: inline-block;
-            border-bottom: solid 3px transparent;
 
-            &:hover, &.active {
+            &:hover a, &.active a {
                 border-bottom-color: $badgerRed;
                 cursor: pointer;
             }
@@ -50,6 +45,12 @@
             a {
                 text-decoration: none;
                 color: $textDark;
+                padding: 3px 0;
+                text-align: center;
+                vertical-align: center;
+                margin: 5px;
+                display: block;
+                border-bottom: solid 3px transparent;
                 &:hover {
                     color: $textDark;
                 }
