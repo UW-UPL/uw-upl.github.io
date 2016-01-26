@@ -42,6 +42,12 @@ angular.module('upl-site')
 
                 response.data.forEach(function(event) {
 
+
+                    // allow html in descriptions
+
+                    event.description = $sce.trustAsHtml(event.description);
+
+
                     event.timestamp = new Date(event.date);
 
                     event.dateString = "";
@@ -112,10 +118,6 @@ angular.module('upl-site')
 
                 });
 
-
-                // allow html in descriptions
-
-                event.description = $sce.trustAsHtml(event.description);
 
                 deferred.resolve(events);
 

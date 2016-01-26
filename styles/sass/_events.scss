@@ -1,0 +1,32 @@
+h1 {
+    background: $badgerRed;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 10px;
+    font-size: 1.75em;
+}
+
+.event-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.event {
+    border-bottom: 1px solid $divider;
+    padding: 12px 0;
+
+    .event-title {
+        margin-top: 0;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+}

@@ -570,6 +570,29 @@ table.hours {
     display: table; }
   table.hours.small-only {
     display: none; } }
+h1 {
+  background: #b70101;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 10px;
+  font-size: 1.75em; }
+
+.event-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .event-list li {
+    margin: 0;
+    padding: 0; }
+
+.event {
+  border-bottom: 1px solid #B6B6B6;
+  padding: 12px 0; }
+  .event .event-title {
+    margin-top: 0; }
+  .event h3 {
+    margin: 0; }
+
 .footer {
   background: #b70101;
   color: #fff;

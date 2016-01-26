@@ -1,17 +1,20 @@
 <div class="wrapper">
+  <p><a href="https://github.com/UW-UPL/Talks" title="Full list of events">Click here</a> for a comprehensive list of past events.</p>
   <section ng-repeat="(key, events_part) in events" ng-if="events_part.length">
-    <h1>{{key}} events:</h1>
-    <ul>
+    <h1>{{key}} events</h1>
+    <ul class="event-list">
       <li ng-repeat="event in events_part track by $index">
         <div class="event">
+          <!--
           <div class="event-thumb">
             <img ng-if="event.image" ng-src="content/events/{{event.image}}" title="{{event.title}}" />
           </div>
+          -->
           <div class="event-desc">
             <h2 class="event-title">{{event.title}}</h2>
             <h3 class="event-date">{{event.dateString}}</h3>
             <h3 class="event-location">{{event.location}}</h3>
-            <p>{{event.description}}</p>
+            <p ng-bind-html="event.description"></p>
           </div>
         </div>
       </li>
