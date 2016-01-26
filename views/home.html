@@ -1,27 +1,34 @@
 <div class="wrapper">
-  <div style="margin: 0 auto; display: table">
-    <video height="320" autoplay="autoplay">
-      <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
-        <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
-    </video>
-    <br>
-    <input id="defaultSlider" type="range" min="30" max="150">
-    <script>
-      var skip = false;
+    <div class="webcam-container">
+        <video autoplay="autoplay">
+            <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
+                <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
+        </video>
+        <!--
+        <br>
+        <input id="defaultSlider" type="range" min="30" max="150">
+        <script>
+            var skip = false;
 
-      setTimeout(function(){
-        setInterval(function(){
-          skip = false;
-        }, 250);
+            setTimeout(function(){
+                setInterval(function(){
+                    skip = false;
+                }, 250);
 
-        $('#defaultSlider').bind('input', function() {
-          if( !skip ){
-            var degrees = 180 - $(this).val(); // get the current value of the input field.
-            $.getJSON( "http://eris.upl.cs.wisc.edu:1337/pos/" + degrees, function( data ) {});
-            skip = true;
-          }
-        });
-      }, 1000);
-    </script>
-  </div>
+                $('#defaultSlider').bind('input', function() {
+                    if( !skip ){
+                        var degrees = 180 - $(this).val(); // get the current value of the input field.
+                        $.getJSON( "http://eris.upl.cs.wisc.edu:1337/pos/" + degrees, function( data ) {});
+                        skip = true;
+                    }
+                });
+            }, 1000);
+        </script>
+        -->
+    </div>
+
+    <div class="upcomming-events">
+        <div ng-repeat="event in events.Upcoming track by $index | limitTo: 3">
+        </div>
+    </div>
 </div>

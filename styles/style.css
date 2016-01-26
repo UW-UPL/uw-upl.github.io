@@ -368,6 +368,10 @@ html {
 body {
   color: #212121; }
 
+video {
+  width: 100%;
+  height: auto; }
+
 .loader,
 .loader:before,
 .loader:after {
@@ -484,6 +488,11 @@ a {
   .header .logo img {
     width: 120px;
     min-width: none; } }
+.webcam-container {
+  margin-bottom: 12px; }
+  .webcam-container video {
+    max-height: 320px; }
+
 .coords-list {
   list-style-type: none;
   margin: 24px 0 0 0;

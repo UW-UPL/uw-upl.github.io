@@ -1,14 +1,16 @@
 <div class="wrapper">
+    <p>Interested in getting your project on our website? Add your project's info to <a href="https://github.com/UW-UPL/uw-upl.github.io/tree/master/content/projects" title="Projects folder on GitHub">projects.json</a> and make a pull request. Alternatively, if you do not have a GitHub account you can email us at <a href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu with your information.</p>
+    
     <ul class="project-list">
-      <li ng-repeat="project in projects track by $index | orderBy: 'title'">
-        <div class="project">
-          <div class="project-desc">
-            <h2 class="project-title">{{project.title}}</h2>
-            <h3 class="project-authors">{{project.authors.join(", ")}}</h3>
-            <a class="project-link" ng-href="{{project.link}}" title="Link to {{project.title}}">{{project.link}}</a>
-            <p>{{project.description}}</p>
-          </div>
-        </div>
-      </li>
+        <li ng-repeat="project in projects track by $index | orderBy: 'title'">
+            <div class="project">
+                <div class="project-desc">
+                    <h2 class="project-title">{{project.title}}</h2>
+                    <h3 class="project-authors">{{project.authors.join(", ")}}</h3>
+                    <a class="project-link" ng-href="{{project.link}}" title="Link to {{project.title}}">{{project.link}}</a>
+                    <p>{{project.description}}</p>
+                </div>
+            </div>
+        </li>
     </ul>
 </div>
