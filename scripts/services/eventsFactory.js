@@ -89,9 +89,17 @@ angular.module('upl-site')
                     event.dateString = days[event.timestamp.getDay()] + ', ' + months[month] + ' ' + day + ', ' + year + ' at ' + hours + ':' + mins + ' ' + ampm;
 
                     // for linking to a single event
-                    event.link = event.title.toLowerCase().replace(/[\s-]/g, '_')
-                        + '-' + event.timestamp.getTime().toString();
-                        
+                    var linkify = function (event) {
+                      var name = event.title.toLowerCase().replace(/[\s-]/g, '_');
+                      name = encodeURIComponent(name);
+                      var time = event.timestamp.getTime().toString();
+
+                      return name + '-' + time;
+                    };
+
+                    event.link = linkify(event);
+
+                    // place each event its in correct partition
                     if (event.timestamp >= now) {
 
                         events['Upcoming'].push(event);
@@ -103,8 +111,6 @@ angular.module('upl-site')
                     }
 
                 });
-
-
 
                 // Sort upcoming events in chronological order and
 
@@ -121,7 +127,6 @@ angular.module('upl-site')
                     return b.timestamp - a.timestamp;
 
                 });
-
 
                 deferred.resolve(events);
 
