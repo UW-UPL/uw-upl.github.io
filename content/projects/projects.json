@@ -1,9 +1,9 @@
 [
     {
-        "title": "",
-        "authors": [""],
-        "description": "",
-        "link": "",
+        "title": "Cruft Engine",
+        "authors": ["Matt Neil", "Yusef Sohail"],
+        "description": "Game and graphics engine built using the new JavaScript ES6 specifications.",
+        "link": "https://github.com/mjneil/CruftEngine",
         "image": ""
     }
 ]
