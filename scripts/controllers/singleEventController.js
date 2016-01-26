@@ -16,7 +16,7 @@ angular.module('upl-site').
           for (var someEventIndex in allEvents) {
             var someEvent = allEvents[someEventIndex];
 
-            var someEventNameSC = someEvent.title.toLowerCase().replace(/[\s]/g, '_');
+            var someEventNameSC = someEvent.title.toLowerCase().replace(/[\s-]/g, '_');
             var someEventTimestamp = someEvent.timestamp.getTime();
 
             if (eventNameSnakeCase === someEventNameSC
