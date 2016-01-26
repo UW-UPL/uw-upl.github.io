@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <ul class="project-list">
+      <li ng-repeat="project in projects track by $index | orderBy: 'title'">
+        <div class="project">
+          <div class="project-desc">
+            <h2 class="project-title">{{project.title}}</h2>
+            <h3 class="project-authors">{{project.authors.join(", ")}}</h3>
+            <a class="project-link" ng-href="{{project.link}}" title="Link to {{project.title}}">{{project.link}}</a>
+            <p>{{project.description}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+</div>

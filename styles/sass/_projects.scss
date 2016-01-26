@@ -1,16 +1,8 @@
-h1 {
-    background: $badgerRed;
-    color: #fff;
-    display: inline-block;
-    padding: 12px 10px;
-    font-size: 1.75em;
-}
-
-.event {
+.project {
     border-bottom: 1px solid $divider;
     padding: 12px 0;
 
-    .event-title {
+    .project-title {
         margin-top: 0;
     }
 
@@ -20,7 +12,7 @@ h1 {
 
 }
 
-.event-list {
+.project-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,7 +21,7 @@ h1 {
         margin: 0;
         padding: 0;
 
-        &:last-child .event {
+        &:last-child .project {
             border-bottom: none;
         }
     }
