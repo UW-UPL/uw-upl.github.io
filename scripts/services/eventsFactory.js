@@ -20,7 +20,7 @@ angular.module('upl-site')
 
         var now = Date.now();
 
-        
+
 
         service.list = function() {
 
@@ -97,6 +97,11 @@ angular.module('upl-site')
                         events['Previous'].push(event);
 
                     }
+
+
+                    // for linking to a single event
+                    event.link = event.title.toLowerCase().replace(/[\s-]/g, '_')
+                        + '-' + event.timestamp.getTime().toString();
 
                 });
 
