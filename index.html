@@ -26,7 +26,7 @@
                         <li ng-class="{active: (locationPath == '/')}">
                             <a ng-href="/#/">Home</a>
                         </li>
-                        <li ng-class="{active: (locationPath == '/events')}">
+                        <li ng-class="{active: (locationPath.startsWith('/events'))}">
                             <a ng-href="/#/events">Events</a>
                         </li>
                         <li ng-class="{active: (locationPath == '/projects')}">
@@ -96,6 +96,7 @@
         <script src="scripts/controllers/eventsController.js"></script>
         <script src="scripts/controllers/hoursController.js"></script>
         <script src="scripts/controllers/projectsController.js"></script>
+        <script src="scripts/controllers/singleEventController.js"></script>
 
 </body>
 </html>
