@@ -16,5 +16,12 @@
         "date": "1/28/2016 7:00 PM",
         "location": "CS 1240",
         "description": "We'll go over a range of topics, including common and rare algorithm questions, personality questions, and application and design questions."
+    },
+    {
+	"title": "UPL GameHax",
+	"date": "1/29/2016 8:30 PM",
+	"location": "CS 1341",
+	"description": "Start off your semester strong and spend your Friday night making games with the Badger Game Network! UPL GameHax is a weekly event held on Fridays for student developers of any skill level-- no experience necessary.<br><br>For more information, check out the <a href='https://www.facebook.com/events/1067910606584843/'>current Facebook event.</a>",
+	"image": "GameHaxSmall.png"
     }
 ]

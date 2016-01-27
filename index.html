@@ -10,69 +10,74 @@
     </head>
     <body ng-app="upl-site" class='container'>
 
-        <!-- header -->
-        <!-- uses NavigationLinks as a controller -->
-        <div class="header">
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="images/upl_logo.png" />
-                </div>
-                <div class="nav-container">
-                    <div class="social">
-                        <p>Join us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL Facebook Page">Facebook</a></p>
-                        <p>Check out our <a href="https://github.com/UW-UPL/" title="UPL GitHub Profile">GitHub</a> profile</p>
+        <div class="page">
+
+            <!-- header -->
+            <!-- uses NavigationLinks as a controller -->
+            <div class="header">
+                <div class="wrapper">
+                    <div class="logo">
+		        <a href="http://uw-upl.github.io/#/">
+		 	    <img src="images/upl_logo.png" />
+			</a>
                     </div>
-                    <ul ng-controller='NavigationController' class="nav">
-                        <li ng-class="{active: (locationPath == '/')}">
-                            <a ng-href="/#/">Home</a>
-                        </li>
-                        <li ng-class="{active: (locationPath == '/events')}">
-                            <a ng-href="/#/events">Events</a>
-                        </li>
-                        <li ng-class="{active: (locationPath == '/projects')}">
-                            <a ng-href="/#/projects">Projects</a>
-                        </li>
-                        <li ng-class="{active: (locationPath == '/coords')}">
-                            <a ng-href="/#/coords">Coords</a>
-                        </li>
-                        <li ng-class="{active: (locationPath == '/hours')}">
-                            <a ng-href="/#/hours">Hours</a>
-                        </li>
-                        <li ng-class="{active: (locationPath == '/about')}">
-                            <a ng-href="/#/about">About</a>
-                        </li>
-                    </ul>
+                    <div class="nav-container">
+                        <div class="social">
+                            <p>Join us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL Facebook Page">Facebook</a>.</p>
+                            <p>Check out our <a href="https://github.com/UW-UPL/" title="UPL GitHub Profile">GitHub</a> profile.</p>
+                        </div>
+                        <ul ng-controller='NavigationController' class="nav">
+                            <li ng-class="{active: (locationPath == '/')}">
+                                <a ng-href="/#/">Home</a>
+                            </li>
+                            <li ng-class="{active: (locationPath.startsWith('/events'))}">
+                                <a ng-href="/#/events">Events</a>
+                            </li>
+                            <li ng-class="{active: (locationPath == '/projects')}">
+                                <a ng-href="/#/projects">Projects</a>
+                            </li>
+                            <li ng-class="{active: (locationPath == '/coords')}">
+                                <a ng-href="/#/coords">Coords</a>
+                            </li>
+                            <li ng-class="{active: (locationPath == '/hours')}">
+                                <a ng-href="/#/hours">Hours</a>
+                            </li>
+                            <li ng-class="{active: (locationPath == '/about')}">
+                                <a ng-href="/#/about">About</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Your site or application content will appear here -->
-        <div ng-view>
+            <!-- Your site or application content will appear here -->
+            <div class="content" ng-view>
 
-                <div style="height:300px"><div class="loader">Loading...</div></div>
+                    <div style="height:300px"><div class="loader">Loading...</div></div>
 
-        </div>
+            </div>
 
-        <div class="footer">
-            <div class="wrapper">
-                <div class="location-info">
-                    <p>
-                        <a href="http://cs.wisc.edu">Department of Computer Sciences</a>
-                        <br />
-                        Room 1341
-                        <br />
-                        1210 West Dayton Street
-                        <br />
-                        Madison, WI 53706
-                        <br />
-                    </p>
-                </div>
-                <div class="uw-credit">
-                    <a href="http://www.wisc.edu/" title="University of Wisconsin-Madison"><img id="uw-logo" src="images/uwlogo.png"></a>
-                    <p>© 2016 The Board of Regents of the University of Wisconsin System</p>
-                    <p>Feedback, questions or issues: upl-coords -at- cs.wisc.edu</p>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="location-info">
+                        <p>
+                            <a href="http://cs.wisc.edu">Department of Computer Sciences</a>
+                            <br />
+                            Room 1341
+                            <br />
+                            1210 West Dayton Street
+                            <br />
+                            Madison, WI 53706
+                            <br />
+                        </p>
+                    </div>
+                    <div class="uw-credit">
+                        <a href="http://www.wisc.edu/" title="University of Wisconsin-Madison"><img id="uw-logo" src="images/csDepartmentLogo.png"></a>
+                        <p>© 2016 The Board of Regents of the University of Wisconsin System<br>Feedback, questions, or issues: upl-coords -at- cs.wisc.edu</p>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <script src="lib/jquery-2.1.4.min.js"></script>
@@ -96,6 +101,7 @@
         <script src="scripts/controllers/eventsController.js"></script>
         <script src="scripts/controllers/hoursController.js"></script>
         <script src="scripts/controllers/projectsController.js"></script>
+        <script src="scripts/controllers/singleEventController.js"></script>
 
 </body>
 </html>
