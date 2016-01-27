@@ -27,5 +27,13 @@
         "major": "Computer Sciences and Mathematics",
         "github": "https://github.com/LOZORD",
         "photo": "ten_minutes_into_haskell_and_chill.jpg"
+    },
+    {
+        "id": "leon",
+        "name": "Leon Dinh",
+        "year": "Junior",
+        "major": "Computer Sciences",
+        "github": "https://github.com/lwdinh",
+        "photo": "ldinh.png"
     }
 ]
