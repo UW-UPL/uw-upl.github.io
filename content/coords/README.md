@@ -16,5 +16,7 @@
 }
 ```
 
+Please make your photo have square dimensions to prevent bad stretching/shrinking.
+
 If you do not want to include a photo, just do not add the photo property to
 the object. We have a default (anonymous) photo if no image is provided.
