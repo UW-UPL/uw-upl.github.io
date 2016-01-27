@@ -21,6 +21,10 @@ angular.module('upl-site', ['ngRoute']).
                 templateUrl: 'views/home.html',
                 controller: 'HomeController'
             }).
+            when('/events/:event', {
+                templateUrl: 'views/single-event.html',
+                controller: 'SingleEventController'
+            }).
             when('/events', {
                 templateUrl: 'views/events.html',
                 controller: 'EventsController'
