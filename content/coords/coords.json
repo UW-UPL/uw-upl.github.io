@@ -26,5 +26,12 @@
         "year": "Senior",
         "major": "Computer Sciences and Mathematics",
         "github": "https://github.com/LOZORD"
+    },
+    {
+        "id": "leon",
+	"name": "Leon Dinh",
+	"year": "Junior",
+	"major": "Computer Sciences",
+	"github": "https://github.com/lwdinh"
     }
 ]
