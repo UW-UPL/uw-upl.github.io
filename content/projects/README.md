@@ -1,6 +1,6 @@
 # Content: Projects
 
-`projects.json` is the list of UPL Coordinators
+`projects.json` is the list of projects.
 
 ## Projects Object Specification:
 
