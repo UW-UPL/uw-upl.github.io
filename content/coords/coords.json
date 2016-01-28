@@ -45,5 +45,13 @@
         "major": "Computer Sciences",
         "github": "https://github.com/simplywondrous",
         "photo": "cutestfatsquirreleversquare.jpg"
+    },
+    {
+        "id": "marshallm",
+        "name": "Marshall Mueller",
+        "year": "Sophomore",
+        "major": "Computer Engineering & Computer Sciences",
+        "github": "https://github.com/marshmue",
+        "photo": "uplnumberonecoordmarshale.jpg"
     }
 ]
