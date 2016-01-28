@@ -4,7 +4,7 @@
 }
 
 .content {
-    padding-bottom: 150px;
+    padding-bottom: 260px;
 }
 
 .wrapper {
@@ -26,6 +26,10 @@ a {
     .wrapper {
         width: 740px;
         max-width: none;
+    }
+
+    .content {
+        padding-bottom: 150px;
     }
 }
 

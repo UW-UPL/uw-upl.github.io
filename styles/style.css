@@ -435,7 +435,7 @@ video {
   position: relative; }
 
 .content {
-  padding-bottom: 150px; }
+  padding-bottom: 260px; }
 
 .wrapper {
   width: 100%;
@@ -451,7 +451,10 @@ a {
 @media (min-width: 760px) {
   .wrapper {
     width: 740px;
-    max-width: none; } }
+    max-width: none; }
+
+  .content {
+    padding-bottom: 150px; } }
 @media (min-width: 1060px) {
   .wrapper {
     width: 1020px; } }
@@ -657,7 +660,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 145px; }
+  height: 260px; }
   .footer a {
     color: #fff;
     text-decoration: none; }
@@ -675,7 +678,8 @@ h1 {
     align-items: center; }
 
   .footer {
-    padding: 13px 0; }
+    padding: 13px 0;
+    height: 150px; }
     .footer div {
       padding: 0; }
     .footer .uw-credit {
