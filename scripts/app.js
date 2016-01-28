@@ -43,6 +43,7 @@ angular.module('upl-site', ['ngRoute']).
             }).
             when('/about', {
                 templateUrl: 'views/about.html',
+                controller: 'AboutController'
             }).
             otherwise({
                 redirectTo: '/'
