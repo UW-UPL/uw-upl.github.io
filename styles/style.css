@@ -8,6 +8,7 @@
  *    without disabling user zoom.
  */
 html {
+  overflow-y: scroll;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -640,7 +641,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px; }
+  height: 145px; }
   .footer a {
     color: #fff;
     text-decoration: none; }
@@ -658,7 +659,7 @@ h1 {
     align-items: center; }
 
   .footer {
-    padding: 6px 0; }
+    padding: 13px 0; }
     .footer div {
       padding: 0; }
     .footer .uw-credit {
