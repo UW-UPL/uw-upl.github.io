@@ -11,7 +11,8 @@
         "id": "cook",
         "name": "Michael Cook",
         "year": "Junior",
-        "major": "Computer Sciences"
+        "major": "Computer Sciences",
+        "github": "https://github.com/MikeCook9994"
     },
     {
         "id": "riccardo",
