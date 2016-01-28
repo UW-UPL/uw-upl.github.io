@@ -19,5 +19,11 @@ Run the following terminal command:
 $ python -m SimpleHTTPServer <port number> # defaults to 8000
 ```
 
+If you're using Powershell, set the environment variable:
+
+```bash
+$env:path="$env:Path;C:\Python27"
+ ```
+ 
 Then you can open your web browser to `http://localhost:<port number>` to see
 how the site will appear when served from GitHub.
