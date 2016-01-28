@@ -37,5 +37,13 @@
         "major": "Computer Sciences",
         "github": "https://github.com/lwdinh",
         "photo": "ldinh.png"
+    },
+    {
+        "id": "jasminew",
+        "name": "Jasmine Wang",
+        "year": "Sophomore",
+        "major": "Computer Sciences",
+        "github": "https://github.com/simplywondrous",
+        "photo": "cutestfatsquirreleversquare.png"
     }
 ]
