@@ -1,6 +1,10 @@
 /**
  * Stylesheet for UW-UPL site.
  */
+/* Found this rule added to style.css. Putting it here. -Zach */
+html {
+  overflow-y: scroll; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -8,7 +12,6 @@
  *    without disabling user zoom.
  */
 html {
-  overflow-y: scroll;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -631,6 +634,19 @@ h1 {
     padding: 0; }
     .project-list li:last-child .project {
       border-bottom: none; }
+
+.para-expand {
+  color: #b70101;
+  display: none; }
+
+.para-expand:hover {
+  display: inline; }
+
+.para h2:hover {
+  cursor: pointer; }
+
+.para-hidden {
+  display: none; }
 
 .footer {
   background: #b70101;

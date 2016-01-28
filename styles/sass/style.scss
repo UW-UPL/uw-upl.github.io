@@ -2,6 +2,11 @@
  * Stylesheet for UW-UPL site.
  */
 
+/* Found this rule added to style.css. Putting it here. -Zach */
+html {
+     overflow-y: scroll;
+}
+
 @import "_variables.scss";
 
 @import "_normalize.scss";
@@ -21,5 +26,7 @@
 @import "_events.scss";
 
 @import "_projects.scss";
+
+@import "_about.scss";
 
 @import "_footer.scss";
