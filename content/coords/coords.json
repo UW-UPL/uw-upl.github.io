@@ -1,5 +1,12 @@
 [
     {
+        "id": "le nick de la heindl",
+        "name": "Nick Heindl",
+        "year": "Senior++",
+        "major": "Computer Sciences and Linguistics",
+        "github": "https://github.com/katamaritaco",
+    },
+    {
         "id": "mneil",
         "name": "Matt Neil",
         "year": "Senior",
