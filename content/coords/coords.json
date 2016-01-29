@@ -62,5 +62,13 @@
         "major": "Computer Engineering & Computer Sciences",
         "github": "https://github.com/marshmue",
         "photo": "uplnumberonecoordmarshale.jpg"
+    },
+    {
+        "id": "detter",
+        "name": "John Detter",
+        "year": "Junior",
+        "major": "Computer Sciences",
+        "github": "https://github.com/johnrox5231",
+        "photo": "johndetter.jpg"
     }
 ]
