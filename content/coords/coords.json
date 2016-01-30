@@ -64,6 +64,14 @@
         "photo": "uplnumberonecoordmarshale.jpg"
     },
     {
+        "id": "swilson",
+        "name": "Sean Wilson",
+        "year": "Junior",
+        "major": "Computer Sciences",
+        "github": "https://github.com/spwilson2",
+        "photo": "sean.jpg"
+    },
+    {
         "id": "detter",
         "name": "John Detter",
         "year": "Junior",
