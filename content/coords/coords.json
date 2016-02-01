@@ -87,4 +87,12 @@
         "github": "https://github.com/johnrox5231",
         "photo": "johndetter.jpg"
     }
+    {
+        "id": "bhansen",
+        "name": "Benjamin Hansen",
+        "year": "Junior",
+        "major": "Computer Sciences, Mathematics, and Communication Arts",
+        "github": "https://github.com/bhans117",
+        "photo": "mneil.jpg"
+    }
 ]
