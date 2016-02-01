@@ -72,6 +72,14 @@
         "photo": "sean_as_a_square.jpg"
     },
     {
+        "id": "ysohail",
+        "name": "Yusef Sohail",
+        "year": "Sophomore",
+        "major": "Computer Sciences",
+        "github": "https://github.com/Squeakrats",
+        "photo": "squanch.jpg"
+    },
+    {
         "id": "detter",
         "name": "John Detter",
         "year": "Junior",
