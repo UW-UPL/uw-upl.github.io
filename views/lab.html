@@ -1,0 +1,15 @@
+<div>
+
+<div ng-repeat="(name, status) in status.workstations.machines">
+	{{name}} is {{ (status)? "Alive":"Dead" }}
+</div>
+<p>
+
+
+</p>
+<div ng-repeat="(name, status) in status.servers.machines">
+	{{name}} is {{ (status)? "Alive":"Dead" }}
+</div>
+<div>
+</div>
+</div>

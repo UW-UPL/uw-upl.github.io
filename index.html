@@ -17,9 +17,9 @@
             <div class="header">
                 <div class="wrapper">
                     <div class="logo">
-		        <a href="http://uw-upl.github.io/#/">
-		 	    <img src="images/uplLogo.png" />
-			</a>
+                <a href="http://uw-upl.github.io/#/">
+                <img src="images/uplLogo.png" />
+            </a>
                     </div>
                     <div class="nav-container">
                         <div class="social">
@@ -44,6 +44,9 @@
                             </li>
                             <li ng-class="{active: (locationPath == '/about')}">
                                 <a ng-href="/#/about">About</a>
+                            </li>
+                             <li ng-class="{active: (locationPath == '/lab')}">
+                                <a ng-href="/#/lab">Lab</a>
                             </li>
                         </ul>
                     </div>
@@ -94,6 +97,7 @@
         <script src="scripts/services/eventsFactory.js"></script>
         <script src="scripts/services/hoursFactory.js"></script>
         <script src="scripts/services/projectsFactory.js"></script>
+         <script src="scripts/services/labFactory.js"></script>
         <!-- app controllers -->
         <script src="scripts/controllers/homeController.js"></script>
         <script src="scripts/controllers/coordsController.js"></script>
@@ -103,6 +107,7 @@
         <script src="scripts/controllers/projectsController.js"></script>
         <script src="scripts/controllers/singleEventController.js"></script>
         <script src="scripts/controllers/aboutController.js"></script>
+         <script src="scripts/controllers/labController.js"></script>
 
 </body>
 </html>
