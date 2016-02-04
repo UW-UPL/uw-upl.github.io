@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="lab-table-container">
+        <table class="striped lab-status">
+            <tr class="t-head">
+                <th>Workstation</th>
+                <th>Status</th>
+            </tr>
+
+            <tbody>
+                <tr ng-repeat="(name, status) in status.workstations.machines">
+                    <td class="st-key">{{name}}</td>
+                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                </tr>            
+            </tbody>
+            
+            <tr class="t-head">
+                <th>Server</th>
+                <th>Status</th>
+            </tr>
+
+            <tbody>
+                <tr ng-repeat="(name, status) in status.servers.machines">
+                    <td class="st-key">{{name}}</td>
+                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>
+</div>
