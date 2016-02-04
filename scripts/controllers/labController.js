@@ -7,7 +7,6 @@ angular.module('upl-site').
         Lab.status().then(function(data) {
             $scope.status = data;
         }, function(data) {
-        	console.log(data);
-           // alert(data);
+        	$scope.status = {unavailable : true, message : data}; 
         });
     }]);
