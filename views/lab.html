@@ -1,15 +1,29 @@
-<div>
+<div class="wrapper">
+    <div class="lab-table-container">
+        <table class="striped lab-status">
+            <tr class="t-head">
+                <th>Workstation</th>
+                <th>Status</th>
+            </tr>
 
-<div ng-repeat="(name, status) in status.workstations.machines">
-	{{name}} is {{ (status)? "Alive":"Dead" }}
-</div>
-<p>
+            <tbody>
+                <tr ng-repeat="(name, status) in status.workstations.machines">
+                    <td class="st-key">{{name}}</td>
+                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                </tr>            
+            </tbody>
+            
+            <tr class="t-head">
+                <th>Server</th>
+                <th>Status</th>
+            </tr>
 
-
-</p>
-<div ng-repeat="(name, status) in status.servers.machines">
-	{{name}} is {{ (status)? "Alive":"Dead" }}
-</div>
-<div>
-</div>
+            <tbody>
+                <tr ng-repeat="(name, status) in status.servers.machines">
+                    <td class="st-key">{{name}}</td>
+                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>
 </div>
