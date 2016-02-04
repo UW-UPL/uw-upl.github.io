@@ -13,7 +13,7 @@ angular.module('upl-site').
             $http.get('http://eris.upl.cs.wisc.edu:1312/status').then(function(response) {
                 deferred.resolve(response.data);
             }, function(response) {
-                deferred.reject("Error loading projects");
+                deferred.reject("Unable To Retreive Lab Status.");
             });
         };
 

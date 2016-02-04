@@ -1,5 +1,8 @@
 <div class="wrapper">
-    <div class="lab-table-container">
+	<div ng-if="status.unavailable">
+		{{status.message}}
+	</div>
+    <div class="lab-table-container" ng-if="!status.unavailable">
         <table class="striped lab-status">
             <tr class="t-head">
                 <th>Workstation</th>
@@ -7,9 +10,9 @@
             </tr>
 
             <tbody>
-                <tr ng-repeat="(name, status) in status.workstations.machines">
-                    <td class="st-key">{{name}}</td>
-                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                <tr ng-repeat="machine in status.workstations.machines | orderBy:'name'">
+                    <td class="st-key">{{machine.name}}</td>
+                    <td class="st-val" ng-class="{ offline: !machine.online }">{{(machine.online)? "Online":"Offline"}}</td>
                 </tr>            
             </tbody>
             
@@ -19,9 +22,9 @@
             </tr>
 
             <tbody>
-                <tr ng-repeat="(name, status) in status.servers.machines">
-                    <td class="st-key">{{name}}</td>
-                    <td class="st-val" ng-class="{ offline: !status }">{{(status)? "Online":"Offline"}}</td>
+                <tr ng-repeat="machine in status.servers.machines | orderBy:'name'">
+                    <td class="st-key">{{machine.name}}</td>
+                    <td class="st-val" ng-class="{ offline: !machine.online }">{{(machine.online)? "Online":"Offline"}}</td>
                 </tr>            
             </tbody>
         </table>
