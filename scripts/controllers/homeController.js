@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module('upl-site').
-    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', function($scope, Events, Projects) {
+    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", function($scope, Events, Projects, Lab) {
         $scope.events = [];
         $scope.projects = [];
 
@@ -16,4 +16,16 @@ angular.module('upl-site').
         }, function(data) {
             alert(data);
         });
+
+        $scope.sliderSettings = {
+            value : (30 + 150)/2,
+            options : {
+                floor : 30,
+                ceil : 150,
+                step : 1,
+                onEnd : function (id, val, highVal) {
+                    Lab.setCameraPosition(val);
+                }
+            }
+        }
     }]);

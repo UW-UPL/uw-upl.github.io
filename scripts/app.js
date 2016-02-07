@@ -10,7 +10,7 @@ var TemplatePrefix = 'views/';
 // Declare ngRoute as a dependency. http://docs.angularjs.org/api/ngRoute
 // Then configure the $routeProvider by defining the routes.
 
-angular.module('upl-site', ['ngRoute']).
+angular.module('upl-site', ['ngRoute', "rzModule"]).
 
     config(function ($routeProvider) {
         // register the routes and the templates
