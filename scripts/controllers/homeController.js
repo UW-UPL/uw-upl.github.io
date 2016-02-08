@@ -42,5 +42,5 @@ angular.module('upl-site').
                     Lab.setCameraPosition(val);
                 }
             }
-        }
+        };
     }]);
