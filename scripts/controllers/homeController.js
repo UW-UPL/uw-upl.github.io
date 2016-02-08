@@ -36,15 +36,18 @@ angular.module('upl-site').
             alert(data);
         });
 
+        var moveCamera = function(id, val, highVal) {
+            Lab.setCameraPosition(val);
+        };
+
         $scope.sliderSettings = {
             value : (30 + 150)/2,
             options : {
                 floor : 30,
                 ceil : 150,
                 step : 1,
-                onEnd : function (id, val, highVal) {
-                    Lab.setCameraPosition(val);
-                }
+                onChange : moveCamera,
+                onInput : moveCamera
             }
         };
     }]);
