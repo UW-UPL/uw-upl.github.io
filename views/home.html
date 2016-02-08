@@ -37,7 +37,7 @@
         <div class="project-row" ng-repeat="pair in projects">
           <div class="project-box" ng-repeat="project in pair">
             <div class="project-inner-box">
-              <h3 class="project-title"><a ng-href="{{project.link}}">{{project.title}}</a></h3>
+              <h3 class="project-title"><a ng-href="/#/projects#proj-{{project.title}}">{{project.title}}</a></h3>
               <p>{{project.description}}</p>
             </div>
           </div>
