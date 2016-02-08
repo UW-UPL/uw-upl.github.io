@@ -6,6 +6,8 @@ $textDark: #212121;
 $textLight: #727272;
 $successGreen: #4F8A10;
 $errorRed: #D8000C;
+$midBreakpoint: 760px;
+$bigBreakpoint: 1060px;
 
 @mixin clearfix() {
     & {
