@@ -562,6 +562,9 @@ table.striped {
 .intro p {
   font-size: 24px; }
 
+.home-container {
+  margin-bottom: 20px; }
+
 .webcam-container {
   margin-bottom: 12px; }
   .webcam-container h2 {
@@ -593,6 +596,8 @@ table.striped {
 
 .events-container h2 {
   font-size: 32px; }
+.events-container h3 {
+  font-size: 24px; }
 
 .coords-list {
   list-style-type: none;
