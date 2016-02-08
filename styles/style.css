@@ -598,6 +598,11 @@ table.striped {
   font-size: 32px; }
 .events-container h3 {
   font-size: 24px; }
+@media (min-width: 760px) {
+  .events-container .event-desc {
+    margin-left: 10px; } }
+.events-container .event-desc .event-info {
+  margin-left: 10px; }
 
 .coords-list {
   list-style-type: none;

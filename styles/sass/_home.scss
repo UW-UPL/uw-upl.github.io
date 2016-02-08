@@ -66,4 +66,14 @@
     h3 {
         font-size: 24px;
     }
+
+    .event-desc {
+        @include breakpoint($midBreakpoint) {
+            margin-left: 10px;
+        }
+
+        .event-info {
+            margin-left: 10px;
+        }
+    }
 }
