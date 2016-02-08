@@ -1,5 +1,12 @@
 <div class="wrapper">
+    <div class="intro">
+        <section>
+            <h2>Undergraduate Projects Lab</h2>
+            <p>We're a resource for undergraduate students in UW Madison's Computer Science department. Find out why you should <a href="/#/about">join us!</a></p>
+        </section>
+    </div>
     <div class="webcam-container">
+        <h2>The lab</h2>
         <video autoplay="autoplay">
             <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
                 <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
@@ -27,7 +34,7 @@
         -->
     </div>
 
-    <section ng-if="projects.length">
+    <section class="projects-container" ng-if="projects.length">
       <h2>Projects</h2>
       <div class="project-table">
         <div class="project-row" ng-repeat="pair in projects">
@@ -40,15 +47,15 @@
         </div>
     </section>
 
-    <section ng-if="events.length">
+    <section class="events-container" ng-if="events.length">
         <h2>Upcoming events</h2>
         <ul class="events-list">
             <li ng-repeat="event in events">
                 <div class="event">
                     <div class="event-desc">
-                        <h2 class="event-title"><a ng-href='/#/events/{{event.link}}'>{{event.title}}</a></h2>
-                        <h3 class="event-date">{{event.dateString}}</h3>
-                        <h3 class="event-location">{{event.location}}</h3>
+                        <h3 class="event-title"><a ng-href='/#/events/{{event.link}}'>{{event.title}}</a></h2>
+                        <h4 class="event-date">{{event.dateString}}</h3>
+                        <h4 class="event-location">{{event.location}}</h3>
                     </div>
                 </div>
             </li>
