@@ -27,8 +27,31 @@
         -->
     </div>
 
-    <div class="upcomming-events">
-        <div ng-repeat="event in events.Upcoming track by $index | limitTo: 3">
+    <section ng-if="projects.length">
+      <h2>Projects</h2>
+      <div class="project-table">
+        <div class="project-row" ng-repeat="pair in projects">
+          <div class="project-box" ng-repeat="project in pair">
+            <div class="project-inner-box">
+              <h3 class="project-title"><a ng-href="{{project.link}}">{{project.title}}</a></h3>
+              <p>{{project.description}}</p>
+            </div>
+          </div>
         </div>
-    </div>
+    </section>
+
+    <section ng-if="events.length">
+        <h2>Upcoming events</h2>
+        <ul class="events-list">
+            <li ng-repeat="event in events">
+                <div class="event">
+                    <div class="event-desc">
+                        <h2 class="event-title"><a ng-href='/#/events/{{event.link}}'>{{event.title}}</a></h2>
+                        <h3 class="event-date">{{event.dateString}}</h3>
+                        <h3 class="event-location">{{event.location}}</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
 </div>

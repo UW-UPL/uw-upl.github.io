@@ -562,6 +562,28 @@ table.striped {
   .webcam-container video {
     max-height: 320px; }
 
+.project-table {
+  display: table;
+  border-collapse: separate;
+  border: 2.5%; }
+
+.project-row {
+  display: table-row; }
+
+.project-box {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  min-height: 150px;
+  vertical-align: top;
+  padding: 2.5%; }
+  @media (min-width: 760px) {
+    .project-box {
+      width: 45%;
+      display: table-cell; } }
+  .project-box p {
+    font-style: italic;
+    color: #727272; }
+
 .coords-list {
   list-style-type: none;
   margin: 24px 0 0 0;
