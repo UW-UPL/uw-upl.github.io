@@ -12,6 +12,10 @@ angular.module('upl-site').
         });
 
         Projects.list().then(function(data) {
+            data.sort(function(a, b) {
+                return a.title.toLocaleLowerCase()
+                    .localeCompare(b.title.toLocaleLowerCase());
+            });
             var left = true;
             var row = 0;
             for (var i = 0; i < data.length; i++) {
