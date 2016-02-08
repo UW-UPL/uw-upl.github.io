@@ -6,7 +6,7 @@ angular.module('upl-site').
         $scope.projects = [];
 
         Events.list().then(function(data) {
-            $scope.events = data.Previous.slice(0, 3);
+            $scope.events = data.Upcoming.slice(0, 3);
         }, function(data) {
             alert(data);
         });
