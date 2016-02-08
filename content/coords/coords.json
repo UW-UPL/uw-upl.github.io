@@ -29,7 +29,8 @@
         "name": "Riccardo Mutschlechner",
         "year": "1y Graduate Student",
         "major": "Computer Sciences",
-        "github": "https://github.com/ricky54326"
+        "github": "https://github.com/ricky54326",
+        "photo": "riccardo.jpg"
     },
     {
         "id": "leo",
@@ -46,7 +47,7 @@
         "year": "Junior",
         "major": "Computer Sciences",
         "github": "https://github.com/lwdinh",
-        "photo": "ldinh.png"
+        "photo": "ldinh.jpg"
     },
     {
         "id": "jasminew",
