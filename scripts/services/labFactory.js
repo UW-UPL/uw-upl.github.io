@@ -10,12 +10,17 @@ angular.module('upl-site').
         };
 
         service.populate = function() {
-            $http.get('http://eris.upl.cs.wisc.edu:1312/status').then(function(response) {
+            $http.get('http://eris.upl.cs.wisc.edu:1312/lab-status').then(function(response) {
                 deferred.resolve(response.data);
+                console.log(response.data)
             }, function(response) {
                 deferred.reject("Unable To Retreive Lab Status.");
             });
         };
+
+        service.setCameraPosition = function (pos) {
+            $http.get('http://eris.upl.cs.wisc.edu:1312/pos/' + (150-pos) );
+        }
 
         return service;
     }])
