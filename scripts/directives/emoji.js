@@ -1,4 +1,6 @@
 /* Emoji directive for better use-friendliness
+ * Based on http://afeld.github.io/emoji-css/
+ * See that site for the list of all supported emoji
  * original: <i class='em em-dog'></i> (ewwww...)
  * examples:
  * <emoji name='em-bug'></emoji>

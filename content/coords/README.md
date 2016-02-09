@@ -12,7 +12,8 @@
     "major": major(s) [Required] (String),
     "github": GitHub url [Optional] (String - include 'http://'),
     "photo": filename of your photo [Optional] (String - just the file name, not path, save in same
-           directory as this json)
+           directory as this json),
+    "emoji": favorite emoji name (see options in 'emoji.js' directive)
 }
 ```
 
