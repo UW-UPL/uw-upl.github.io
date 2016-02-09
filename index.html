@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/2.5.0/rzslider.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            // don't pollute global scope
+            (function (hname) {
+                var _noop = function() {};
+            
+                // turn off consoling for production
+                if (hname !== 'localhost') {
+                    console.log = _noop;
+                }
+            })(window.location.hostname);
+        </script>
     </head>
     <body ng-app="upl-site" class='container'>
 
