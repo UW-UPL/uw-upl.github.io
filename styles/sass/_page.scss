@@ -22,7 +22,7 @@ a {
     }
 }
 
-@include breakpoint("760px") {
+@include breakpoint($midBreakpoint) {
     .wrapper {
         width: 740px;
         max-width: none;
@@ -33,7 +33,7 @@ a {
     }
 }
 
-@include breakpoint("1060px") {
+@include breakpoint($bigBreakpoint) {
     .wrapper {
         width: 1020px;
     }

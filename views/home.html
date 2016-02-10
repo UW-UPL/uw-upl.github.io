@@ -1,14 +1,49 @@
 <div class="wrapper">
-    <div class="webcam-container">
-        <video autoplay="autoplay">
-            <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
-                <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
-        </video>
-        <rzslider rz-slider-model="sliderSettings.value" rz-slider-options="sliderSettings.options"></rzslider>
+    <div class="intro">
+        <section>
+            <h2>Undergraduate Projects Lab</h2>
+            <p>We're a resource for undergraduate students in UW Madison's Computer Science department. Find out why you should <a href="/#/about">join us!</a></p>
+        </section>
     </div>
-
-    <div class="upcomming-events">
-        <div ng-repeat="event in events.Upcoming track by $index | limitTo: 3">
+    <div class="home-container webcam-container">
+        <h2>The Lab</h2>
+        <div class="webcam-wrapper">
+            <video autoplay="autoplay">
+                <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
+                    <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
+            </video>
+            <rzslider rz-slider-model="sliderSettings.value" rz-slider-options="sliderSettings.options"></rzslider>
         </div>
     </div>
+
+    <section class="home-container events-container" ng-if="events.length">
+        <h2>Upcoming Events</h2>
+        <ul class="event-list">
+            <li ng-repeat="event in events">
+                <div class="event">
+                    <div class="event-desc">
+                        <h3 class="event-title"><a ng-href='/#/events/{{event.link}}'>{{event.title}}</a></h3>
+                        <div class="event-info">
+                            <h4 class="event-date">{{event.dateString}}</h4>
+                            <h4 class="event-location">{{event.location}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="home-container projects-container" ng-if="projects.length">
+      <h2>Projects</h2>
+      <div class="project-table">
+        <div class="project-row" ng-repeat="pair in projects">
+          <div class="project-box" ng-repeat="project in pair">
+            <div class="project-inner-box">
+              <h3 class="project-title"><a ng-href="/#/projects#proj-{{project.title}}">{{project.title}}</a></h3>
+              <p>{{project.description}}</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
 </div>
