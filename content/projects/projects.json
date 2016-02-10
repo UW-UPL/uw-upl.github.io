@@ -13,5 +13,21 @@
         "description": "Like Twitch Plays Pokemon but with tinder.",
         "link": "https://github.com/MikeCook9994/TwitchPlaysTinder",
         "image": ""
+    },
+
+    {
+        "title": "glut",
+        "authors": ["Zach Thomae"],
+        "description": "An esoteric programming language.",
+        "link": "https://github.com/zthomae/glut",
+        "image": ""
+    },
+
+    {
+        "title": "Chronos",
+        "authors": ["John Detter"],
+        "description": "An operating system built completely from scratch.",
+        "link": "https://github.com/ChronosSystems/Chronos",
+        "image": ""
     }
 ]
