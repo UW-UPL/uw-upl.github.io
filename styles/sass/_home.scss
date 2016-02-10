@@ -9,7 +9,13 @@
 }
 
 .home-container {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $divider;
+
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .webcam-container {
