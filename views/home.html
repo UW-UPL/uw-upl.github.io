@@ -7,11 +7,13 @@
     </div>
     <div class="home-container webcam-container">
         <h2>The Lab</h2>
-        <video autoplay="autoplay">
-            <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
-                <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
-        </video>
-        <rzslider rz-slider-model="sliderSettings.value" rz-slider-options="sliderSettings.options"></rzslider>
+        <div class="webcam-wrapper">
+            <video autoplay="autoplay">
+                <source src="http://eris.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
+                    <!-- <img src="http://eris.upl.cs.wisc.edu:8090/webcam.mjpeg"> -->
+            </video>
+            <rzslider rz-slider-model="sliderSettings.value" rz-slider-options="sliderSettings.options"></rzslider>
+        </div>
     </div>
 
     <section class="home-container events-container" ng-if="events.length">

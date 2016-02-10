@@ -13,14 +13,27 @@
 }
 
 .webcam-container {
+    text-align: center;
+
     h2 {
         font-size: 32px;
+        text-align: left;
     }
     
     margin-bottom: 12px;
     
     video {
         max-height: 320px;
+    }
+
+    .webcam-wrapper {
+        text-align: left;
+        max-width: 480px;
+        margin: 0 auto;
+
+        .rz-pointer {
+            background-color: $badgerRed;
+        }
     }
 }
 
