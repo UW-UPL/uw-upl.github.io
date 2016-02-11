@@ -33,7 +33,8 @@
         "year": "1y Graduate Student",
         "major": "Computer Sciences",
         "github": "https://github.com/ricky54326",
-        "photo": "riccardo.jpg"
+        "photo": "riccardo.jpg",
+        "emoji": "100"
     },
     {
         "id": "leo",
@@ -59,7 +60,8 @@
         "year": "Sophomore",
         "major": "Computer Sciences",
         "github": "https://github.com/simplywondrous",
-        "photo": "jasmore.jpg"
+        "photo": "jasmore.jpg",
+        "emoji": "squirrel"
     },
     {
         "id": "marshallm",
@@ -75,7 +77,8 @@
         "year": "Junior",
         "major": "Computer Sciences",
         "github": "https://github.com/spwilson2",
-        "photo": "sean_as_a_square.jpg"
+        "photo": "sean_as_a_square.jpg",
+        "emoji": "spaghetti"
     },
     {
         "id": "ysohail",
