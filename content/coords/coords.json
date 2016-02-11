@@ -7,7 +7,7 @@
         "github": "https://github.com/katamaritaco/me",
         "website": "http://nheindl.com/",
         "photo": "nick.jpg",
-        "emoji": "art"
+        "emoji": "dromedary_camel"
     },
     {
         "id": "mneil",
@@ -52,7 +52,8 @@
         "year": "Junior",
         "major": "Computer Sciences",
         "github": "https://github.com/lwdinh",
-        "photo": "ldinh.jpg"
+        "photo": "ldinh.jpg",
+        "emoji": "art"
     },
     {
         "id": "jasminew",
@@ -69,7 +70,8 @@
         "year": "Sophomore",
         "major": "Computer Engineering & Computer Sciences",
         "github": "https://github.com/marshmue",
-        "photo": "uplnumberonecoordmarshale.jpg"
+        "photo": "uplnumberonecoordmarshale.jpg",
+        "emoji": "no_mobile_phones"
     },
     {
         "id": "swilson",
@@ -78,7 +80,7 @@
         "major": "Computer Sciences",
         "github": "https://github.com/spwilson2",
         "photo": "sean_as_a_square.jpg",
-        "emoji": "spaghetti"
+        "emoji": "rocket"
     },
     {
         "id": "ysohail",
@@ -86,7 +88,8 @@
         "year": "Sophomore",
         "major": "Computer Sciences",
         "github": "https://github.com/Squeakrats",
-        "photo": "squanch.jpg"
+        "photo": "squanch.jpg",
+        "emoji": "spaghetti"
     },
     {
         "id": "detter",
@@ -94,7 +97,8 @@
         "year": "Junior",
         "major": "Computer Sciences",
         "github": "https://github.com/jdetter",
-        "photo": "johndetter.jpg"
+        "photo": "johndetter.jpg",
+        "emoji": "jack_o_lantern"
     },
     {
         "id": "bhansen",
@@ -102,13 +106,15 @@
         "year": "Junior",
         "major": "Computer Sciences, Mathematics, and Communication Arts",
         "github": "https://github.com/bhans117",
-        "photo": "ben.jpg"
+        "photo": "ben.jpg",
+        "emoji": "ghost"
     },
     {
         "id": "randy",
         "name": "Randy Amundson",
         "year": "Sophomore",
         "major": "Computer Sciences",
-        "github": "https://github.com/ranman166"
+        "github": "https://github.com/ranman166",
+        "emoji": "octopus"
     }
 ]
