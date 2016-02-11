@@ -14,3 +14,13 @@
 .para-hidden {
     display: none;
 }
+
+.para h2 {
+    span {
+        display: none;
+    }
+
+    &:hover span {
+        display: inline;
+    }
+}

@@ -706,6 +706,11 @@ h1 {
 .para-hidden {
   display: none; }
 
+.para h2 span {
+  display: none; }
+.para h2:hover span {
+  display: inline; }
+
 .lab-table-container {
   width: 100%;
   max-width: 300px;
