@@ -4,3 +4,4 @@
 .DS_Store
 .sass-cache/
 .tern-port
+node_modules/

@@ -1,0 +1,15 @@
+{
+  "name": "upl-website-services",
+  "version": "0.0.0",
+  "description": "resource for controllung webcam and fetching lab status data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "ping": "~0.1.10",
+    "express": "~4.13.4"
+  }
+}
