@@ -53,7 +53,6 @@ angular.module('upl-site', ['ngRoute', "rzModule"]).
                 redirectTo: '/'
             });
     }).
-    
     run(['CoordFactory', 'EventsFactory', 'HoursFactory', 'ProjectsFactory', 'LabFactory', function(Coords, Events, Hours, Projects, Lab) {
         Coords.populate();
         Events.populate();
