@@ -1,6 +1,7 @@
 'use strict';
 angular.module('upl-site')
-// should this be a controller?
+// TODO: should this be a controller?
+// EVEN BETTER: add "main" func and helpers to Hours factory?
 .directive('currentCoord', ['HoursFactory', '$interval',
   function(Hours, $interval) {
     return function(scope, elem, attrs) {
@@ -106,6 +107,7 @@ angular.module('upl-site')
       }
 
       function isOfficeHour(hourTs, nowTs) {
+        // TODO: check or mod for overflow/rollover
         return (hourTs <= nowTs) && (nowTs <= (hourTs + COORD_HOUR_DURATION));
       }
 
