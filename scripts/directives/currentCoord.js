@@ -1,23 +1,22 @@
-//'use strict'; TODO: see if we want to use this
-
+'use strict';
 angular.module('upl-site')
-.directive('current-coord-banner', ['HoursFactory', '$interval', 'moment',
-  function(Hours, $interval, moment) {
+// should this be a controller?
+.directive('currentCoord', ['HoursFactory', '$interval',
+  function(Hours, $interval) {
     return function(scope, elem, attrs) {
       var hoursData = Hours.list(); // a promise
       var stopTime  = null;
       var INTERVAL_TIME = 1000 * 60 * 5; // five minutes
       var DAY_NAMES = [
-        'sunday',
-        'monday',
-        'tuesday',
-        'wednesday',
-        'thursday',
-        'friday',
-        'saturday'
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
       ];
-      var COORD_HOUR_DURATION = 50; // 50 minutes
-      // TODO convert hour json data keys to millsecs past midnight
+      var COORD_HOUR_DURATION = 1000 * 60 * 50; // 50 minutes
 
       function convertToMadisonTime(dateObj) {
         //I apologize for the esoteric-ness of the following code
@@ -27,8 +26,8 @@ angular.module('upl-site')
         var madisonMinute;
         var isDaylightSavings;
 
-        var jan = new Date(this.getFullYear(), 0, 1);
-        var jul = new Date(this.getFullYear(), 6, 1);
+        var jan = new Date(dateObj.getFullYear(), 0, 1);
+        var jul = new Date(dateObj.getFullYear(), 6, 1);
 
         var janOff = jan.getTimezoneOffset();
         var julOff = jul.getTimezoneOffset();
@@ -42,7 +41,8 @@ angular.module('upl-site')
         // what is the offset to CST/CDT?
         var hoursBehind = isDaylightSavings ? 5 : 6;
         var greenwichHour = dateObj.getUTCHours();
-        madisonHour = greenwichHour - hourOffset;
+        // do the "plus 12 mod 12" for negative case
+        madisonHour = (greenwichHour - hoursBehind + 12) % 12;
 
         // not necessarily correct if you are outside the US
         madisonMinute = dateObj.getUTCMinutes();
@@ -50,7 +50,7 @@ angular.module('upl-site')
         var currDay = dateObj.getUTCDay();
 
         // if it is a new day in Greenwich
-        if (madisonHour > dateObj.getUTCHours()) {
+        if (madisonHour > greenwichHour) {
           madisonDay = (currDay - 1) % (DAY_NAMES.length);
         } else {
           madisonDay = currDay;
@@ -67,13 +67,17 @@ angular.module('upl-site')
         // e.g. '12:05PM' -> { hour: 12, minute: 5  }
         // e.g. '4:35PM'  -> { hour; 16, minute: 35 }
 
+        // first find the hour (24-hour format)
         var hourPrefix = parseInt(hourKey, 10);
 
-        if (hourPrefix < 12 && hourKey.include('PM') > -1) {
+        if (hourPrefix < 12 && hourKey.indexOf('PM') > -1) {
           hourPrefix += 12;
+        } else if (hourPrefix === 12 && hourKey.indexOf('AM') > -1) {
+          hourPrefix = 0;
         }
 
-        var minuteRegex = /^\d+:(\d)[AP]M$/
+        // then find the minute
+        var minuteRegex = /^\d+:(\d+)([AP]M)$/
 
         var rgxMatch = hourKey.match(minuteRegex);
 
@@ -89,8 +93,20 @@ angular.module('upl-site')
         };
       }
 
-      function isOfficeHour(prev, curr, next, now) {
-        //TODO
+      function hoursAndMinutesToMillisecondsPastMidnight(hourAndMinuteObj) {
+        // expects 24-hour format
+        var hourMs  = hourAndMinuteObj.hour * 1000 * 60 * 60;
+        var minMs   = hourAndMinuteObj.minute * 1000 * 60;
+
+        return hourMs + minMs;
+      }
+
+      function hourKeyToMillisecondsPastMidnight (hourKey) {
+        return hoursAndMinutesToMillisecondsPastMidnight(hourKeyToObj(hourKey));
+      }
+
+      function isOfficeHour(hourTs, nowTs) {
+        return (hourTs <= nowTs) && (nowTs <= (hourTs + COORD_HOUR_DURATION));
       }
 
       function updateTime() {
@@ -98,46 +114,37 @@ angular.module('upl-site')
           var madisonData = convertToMadisonTime(new Date());
           var dayData = data[DAY_NAMES[madisonData.day]];
 
-          var hourData = [];
           var hourHolder = null;
 
           var hourKeys = Object.keys(dayData);
-          //var mappedHours = [];
+          var nowTs = hoursAndMinutesToMillisecondsPastMidnight(madisonData);
 
+          //console.log('Looking for coord hours around: ', madisonData.hour + ':' + madisonData.minute, ' on a ', DAY_NAMES[madisonData.day]);
 
-          //Object.keys(dayData).forEach(function(hourKey, ind
-
-          for (var hourKey in dayData) {
-            var parsedObj = hourKeyToObj(hourKey);
-            hourData.push({
-              key: hourKey
-              // in 24-hour format
-              hour: parsedObj.hour,
-              minute: parsedObj.minute
-            });
-          }
-
-          hourData.sort(function(a, b) {
-            return a.hour - b.hour
+          //NOTE: this could be a binary search if I wanted to be cool
+          var currentOfficeHour = hourKeys
+          .map(function(someHourKey) {
+            return {
+              key: someHourKey,
+              ts:  hourKeyToMillisecondsPastMidnight(someHourKey)
+            };
+          })
+          .find(function(obj) {
+            //console.log(obj.ts + '<=' + nowTs + '<=' + (obj.ts + COORD_HOUR_DURATION));
+            return isOfficeHour(obj.ts, nowTs);
           });
 
-          hourData.forEach(function(someHourObj, index) {
-            var prev = hourData[index - 1] || null;
-            var next = hourData[index + 1] || null;
+          hourHolder = currentOfficeHour ? dayData[currentOfficeHour.key] : null;
 
-            if (isOfficeHour(prev, someHourObj, next, madisonData)) {
-              hourHolder = dayData[someHourObj.key];
-              return;
-            }
-          });
-
+          // TODO: show/hide element if there is a coord
           if (hourHolder) {
-            //TODO
+            $(elem).css('background-color', 'green');
+            //console.log(hourHolder);
+            $(elem).text(hourHolder + ' should be in the lab');
           } else {
-            //TODO
+            //console.log('no hour holder');
+            $(elem).css('background-color', 'red').text('[ I should be hidden ]');
           }
-
-          // TODO: something with `element.text`
 
         }, angular.noop);
       }
@@ -146,17 +153,14 @@ angular.module('upl-site')
         updateTime();
       });
 
-      stopTime = $interval(updateTime, INTERVAL_TIME);
+      $(elem).css('background-color', 'blue');
+
+      // TODO: remove 2000 (only for testing);
+      stopTime = $interval(updateTime, 2000 || INTERVAL_TIME);
 
       elem.on('$destroy', function() {
         $interval.cancel(stopTime);
       });
 
     };
-    /*
-    return {
-      restrict: 'E',
-      template: '<div class="current-coord-banner"></div>',
-    };
-    */
   }]);
