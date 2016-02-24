@@ -616,6 +616,13 @@ table.striped {
 .events-container .event-desc .event-info {
   margin-left: 10px; }
 
+.coord-not-present {
+  display: none; }
+
+.coord-present {
+  background-color: #CCFFCC;
+  display: block; }
+
 .coords-list {
   list-style-type: none;
   margin: 24px 0 0 0;

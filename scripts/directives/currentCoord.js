@@ -40,12 +40,11 @@ angular.module('upl-site')
           */
           // TODO: show/hide element if there is a coord
           if (hourHolder) {
-            $(elem).css('background-color', 'green');
             console.log(hourHolder);
+            $(elem).attr('class', 'coord-present');
             $(elem).text(hourHolder + ' should be in the lab');
           } else {
             console.log('no hour holder');
-            $(elem).css('background-color', 'red').text('[ I should be hidden ]');
           }
 
         }, angular.noop);
@@ -54,8 +53,6 @@ angular.module('upl-site')
       scope.$watch(attrs.currentCoordBanner, function(value) {
         updateTime();
       });
-
-      $(elem).css('background-color', 'blue');
 
       // TODO: remove 2000 (only for testing);
       stopTime = $interval(updateTime, 2000 || INTERVAL_TIME);
