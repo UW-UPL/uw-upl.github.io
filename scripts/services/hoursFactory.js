@@ -54,8 +54,8 @@ angular.module('upl-site').
           // what is the offset to CST/CDT?
           var hoursBehind = isDaylightSavings ? 5 : 6;
           var greenwichHour = dateObj.getUTCHours();
-          // do mod 24 for negative case
-          madisonHour = (greenwichHour - hoursBehind) % 24;
+          // do "add 24 mod 24" for negative case
+          madisonHour = (greenwichHour - hoursBehind + 24) % 24;
 
           // not necessarily correct if you are outside the US
           madisonMinute = dateObj.getUTCMinutes();
