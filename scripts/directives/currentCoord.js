@@ -11,41 +11,15 @@ angular.module('upl-site')
       var INTERVAL_TIME = 1000 * 60 * 5; // five minutes
 
       function updateTime() {
-        currentCoordName.then(function(hourHolder) {
-          /*
-          var madisonData = convertToMadisonTime(new Date());
-          var dayData = data[DAY_NAMES[madisonData.day]];
-
-          var hourHolder = null;
-
-          var hourKeys = Object.keys(dayData);
-          var nowTs = hoursAndMinutesToMillisecondsPastMidnight(madisonData);
-
-          //console.log('Looking for coord hours around: ', madisonData.hour + ':' + madisonData.minute, ' on a ', DAY_NAMES[madisonData.day]);
-
-          //NOTE: this could be a binary search if I wanted to be cool
-          var currentOfficeHour = hourKeys
-          .map(function(someHourKey) {
-            return {
-              key: someHourKey,
-              ts:  hourKeyToMillisecondsPastMidnight(someHourKey)
-            };
-          })
-          .find(function(obj) {
-            //console.log(obj.ts + '<=' + nowTs + '<=' + (obj.ts + COORD_HOUR_DURATION));
-            return isOfficeHour(obj.ts, nowTs);
-          });
-
-          hourHolder = currentOfficeHour ? dayData[currentOfficeHour.key] : null;
-          */
+        currentCoordName.then(function(hourHolderMsg) {
           // TODO: show/hide element if there is a coord
-          if (hourHolder) {
-            $(elem).css('background-color', 'green');
-            console.log(hourHolder);
-            $(elem).text(hourHolder + ' should be in the lab');
+          if (hourHolderMsg) {
+            console.log(hourHolderMsg);
+            $(elem).attr('class', 'coord-present');
+            //            $(elem).text(hourHolderMsg + ' should be in the lab');
+            $(elem).text(hourHolderMsg);
           } else {
             console.log('no hour holder');
-            $(elem).css('background-color', 'red').text('[ I should be hidden ]');
           }
 
         }, angular.noop);
@@ -54,8 +28,6 @@ angular.module('upl-site')
       scope.$watch(attrs.currentCoordBanner, function(value) {
         updateTime();
       });
-
-      $(elem).css('background-color', 'blue');
 
       // TODO: remove 2000 (only for testing);
       stopTime = $interval(updateTime, 2000 || INTERVAL_TIME);

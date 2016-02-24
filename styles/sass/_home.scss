@@ -96,3 +96,12 @@
         }
     }
 }
+
+.coord-not-present {
+    display: none;
+}
+
+.coord-present {
+    background-color: #CCFFCC;
+    display: block;
+}
