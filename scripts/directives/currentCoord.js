@@ -11,7 +11,7 @@ angular.module('upl-site')
       var INTERVAL_TIME = 1000 * 60 * 5; // five minutes
 
       function updateTime() {
-        currentCoordName.then(function(hourHolder) {
+        currentCoordName.then(function(hourHolderMsg) {
           /*
           var madisonData = convertToMadisonTime(new Date());
           var dayData = data[DAY_NAMES[madisonData.day]];
@@ -39,10 +39,11 @@ angular.module('upl-site')
           hourHolder = currentOfficeHour ? dayData[currentOfficeHour.key] : null;
           */
           // TODO: show/hide element if there is a coord
-          if (hourHolder) {
-            console.log(hourHolder);
+          if (hourHolderMsg) {
+            console.log(hourHolderMsg);
             $(elem).attr('class', 'coord-present');
-            $(elem).text(hourHolder + ' should be in the lab');
+            //            $(elem).text(hourHolderMsg + ' should be in the lab');
+            $(elem).text(hourHolderMsg);
           } else {
             console.log('no hour holder');
           }

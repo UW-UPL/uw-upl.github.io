@@ -28,7 +28,8 @@ angular.module('upl-site').
           'Friday',
           'Saturday'
         ];
-        var COORD_HOUR_DURATION = 1000 * 60 * 50; // 50 minutes
+        var COORD_MINUTE_DURATION = 50;
+        var COORD_HOUR_DURATION = 1000 * 60 * COORD_MINUTE_DURATION;
 
         function convertToMadisonTime(dateObj) {
           //I apologize for the esoteric-ness of the following code
@@ -149,7 +150,23 @@ angular.module('upl-site').
               var hourTs = hourKeyToTimestamp(hourKey);
               if (isOfficeHour(hourTs, currTs)) {
                 // Found the coord!
-                return currDayData[hourKey];
+                var coordTime = hourKeyToObj(hourKey);
+                var newHour = coordTime.hour;
+                var newMin = coordTime.minute + COORD_MINUTE_DURATION;
+                if (newMin > 59) {
+                  newHour++;
+                  newMin -= 60;
+                }
+                var ampm = 'AM';
+                if (newHour >= 12) {
+                  ampm = 'PM';
+                  if (newHour > 12) {
+                    newHour -= 12;
+                  }
+                }
+                var end = newHour + ':' + newMin + ampm;
+                var msg = 'Office hours for ' + currDayData[hourKey] + ': ' + hourKey + ' to ' + end;
+                return msg;
               } else {
                 console.log(hourTs, ' to ', hourTs + COORD_HOUR_DURATION, ' is not ', currTs);
               }
