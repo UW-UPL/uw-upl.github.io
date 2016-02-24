@@ -5,8 +5,9 @@ angular.module('upl-site').
         var deferred = $q.defer();
         var service = {};
 
+        /* Main code for Hours service */
         service.list = function() {
-            return deferred.promise;
+          return deferred.promise;
         };
 
         service.populate = function() {
@@ -16,6 +17,148 @@ angular.module('upl-site').
                 deferred.reject("Error loading hours");
             });
         }
+
+        /* Below is the code required for `currentCoord` */
+        var DAY_NAMES = [
+          'Sunday',
+          'Monday',
+          'Tuesday',
+          'Wednesday',
+          'Thursday',
+          'Friday',
+          'Saturday'
+        ];
+        var COORD_HOUR_DURATION = 1000 * 60 * 50; // 50 minutes
+
+        function convertToMadisonTime(dateObj) {
+          //I apologize for the esoteric-ness of the following code
+          //See http://bit.ly/1LGQwnq
+          var madisonDay;
+          var madisonHour;
+          var madisonMinute;
+          var isDaylightSavings;
+
+          var jan = new Date(dateObj.getFullYear(), 0, 1);
+          var jul = new Date(dateObj.getFullYear(), 6, 1);
+
+          var janOff = jan.getTimezoneOffset();
+          var julOff = jul.getTimezoneOffset();
+
+          var stdTimezoneOffset = Math.max(janOff, julOff);
+
+          var currOff = dateObj.getTimezoneOffset();
+
+          isDaylightSavings = currOff < stdTimezoneOffset;
+
+          // what is the offset to CST/CDT?
+          var hoursBehind = isDaylightSavings ? 5 : 6;
+          var greenwichHour = dateObj.getUTCHours();
+          // do the "plus 12 mod 12" for negative case
+          madisonHour = (greenwichHour - hoursBehind + 12) % 12;
+
+          // not necessarily correct if you are outside the US
+          madisonMinute = dateObj.getUTCMinutes();
+
+          var currDay = dateObj.getUTCDay();
+
+          // if it is a new day in Greenwich
+          if (madisonHour > greenwichHour) {
+            madisonDay = (currDay - 1) % (DAY_NAMES.length);
+          } else {
+            madisonDay = currDay;
+          }
+
+          return {
+            day: madisonDay,
+            hour: madisonHour,
+            minute: madisonMinute
+          };
+        }
+
+        function hourKeyToObj(hourKey) {
+          // e.g. '12:05PM' -> { hour: 12, minute: 5  }
+          // e.g. '4:35PM'  -> { hour; 16, minute: 35 }
+
+          // first find the hour (24-hour format)
+          var hourPrefix = parseInt(hourKey, 10);
+
+          if (hourPrefix < 12 && hourKey.indexOf('PM') > -1) {
+            hourPrefix += 12;
+          } else if (hourPrefix === 12 && hourKey.indexOf('AM') > -1) {
+            hourPrefix = 0;
+          }
+
+          // then find the minute
+          var minuteRegex = /^\d+:(\d+)([AP]M)$/
+          var rgxMatch = hourKey.match(minuteRegex);
+
+          if (!rgxMatch) {
+            throw Error('Bad date format!');
+          }
+
+          var minuteStr = rgxMatch[1];
+
+          return {
+            hour: hourPrefix,
+            minute: parseInt(minuteStr, 10)
+          };
+        }
+
+        // Timestamp is number of MILLIseconds past midnight
+        // FIXME: timing seems to be off
+        function hoursAndMinutesToTimestamp(hourAndMinuteObj) {
+          // expects 24-hour format
+          var hourMs  = hourAndMinuteObj.hour   * 1000 * 60 * 60;
+          var minMs   = hourAndMinuteObj.minute * 1000 * 60;
+
+          return hourMs + minMs;
+        }
+
+        function hourKeyToTimestamp (hourKey) {
+          return hoursAndMinutesToTimestamp(hourKeyToObj(hourKey));
+        }
+
+        // If the current timestamp (`nowTs`) falls within an office
+        // hour timestamp (regardless of day)
+        function isOfficeHour(hourTs, nowTs) {
+          // TODO: check or mod for overflow/rollover
+          console.log(hourTs + '<=' + nowTs + '<=' + (hourTs + COORD_HOUR_DURATION));
+          return (hourTs <= nowTs) && (nowTs <= (hourTs + COORD_HOUR_DURATION));
+        }
+
+        // TODO: comment
+        service.currentCoord = function(date) {
+          // use the current time if it isn't passed
+          date = date || new Date();
+
+          var madisonTime = convertToMadisonTime(date);
+
+          var currDay = DAY_NAMES[madisonTime.day];
+          // FIXME
+          var currTs  = hoursAndMinutesToTimestamp(madisonTime) * 10;
+
+          var hourHolder = null;
+
+          return service.list().then(function(hoursData) {
+            var currDayData = hoursData[currDay];
+
+            for (var hourKey in currDayData) {
+              if (!currDayData[hourKey]) {
+                continue;
+              }
+              var hourTs = hourKeyToTimestamp(hourKey);
+              if (isOfficeHour(hourTs, currTs)) {
+                // Found the coord!
+                return currDayData[hourKey];
+              } else {
+                console.log(hourTs, ' to ', hourTs + COORD_HOUR_DURATION, ' is not ', currTs);
+              }
+           }
+
+            // Nothing found
+            return null;
+          }, function () { return null; });
+        };
 
         return service;
     }]);
