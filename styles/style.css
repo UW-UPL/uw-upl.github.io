@@ -616,13 +616,6 @@ table.striped {
 .events-container .event-desc .event-info {
   margin-left: 10px; }
 
-.coord-not-present {
-  display: none; }
-
-.coord-present {
-  background-color: #CCFFCC;
-  display: block; }
-
 .coords-list {
   list-style-type: none;
   margin: 24px 0 0 0;
@@ -656,7 +649,11 @@ table.striped {
       border-bottom: none;
       width: 240px;
       margin: 0 10px 24px 10px; } }
-/* No specific styles in hours currently. WIP */
+.current-coord .coord-present {
+  color: #4F8A10; }
+.current-coord .coord-not-present {
+  color: #D8000C; }
+
 h1 {
   background: #b70101;
   color: #fff;

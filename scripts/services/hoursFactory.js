@@ -166,14 +166,22 @@ angular.module('upl-site').
                 }
                 var end = newHour + ':' + newMin + ampm;
                 var msg = 'Office hours for ' + currDayData[hourKey] + ': ' + hourKey + ' to ' + end;
-                return msg;
+
+                return {
+                  coordName:  currDayData[hourKey],
+                  start:  hourKey,
+                  end:    end,
+                  msg:    msg
+                };
+
               } else {
-                console.log(hourTs, ' to ', hourTs + COORD_HOUR_DURATION, ' is not ', currTs);
+                // no coord at this particular time
               }
            }
 
             // Nothing found
             return null;
+
           }, function () { return null; });
         };
 

@@ -7,9 +7,12 @@
     </div>
     <div class="home-container webcam-container">
         <h2>The Lab</h2>
-        <div>
-          <div current-coord class="coord-not-present">
-            <h3>CURRENT COORD STUFF HERE</h3>
+        <div current-coord>
+          <div ng-show='coordDataPayload' class='coord-present'>
+            {{ coordDataPayload.msg }}
+          </div>
+          <div ng-show='!coordDataPayload' class='coord-not-present'>
+            No designated coord at this time. Please check the webcam for activity.
           </div>
         </div>
         <br>
