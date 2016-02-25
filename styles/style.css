@@ -649,7 +649,11 @@ table.striped {
       border-bottom: none;
       width: 240px;
       margin: 0 10px 24px 10px; } }
-/* No specific styles in hours currently. WIP */
+.current-coord .coord-present {
+  color: #4F8A10; }
+.current-coord .coord-not-present {
+  color: #D8000C; }
+
 h1 {
   background: #b70101;
   color: #fff;

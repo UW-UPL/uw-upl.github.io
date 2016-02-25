@@ -63,7 +63,7 @@ After you've changed one or more `.scss` files, you can
 regenerate the main `style.css` with the following command:
 
 ```
-$ sass sass/style.scss:style.css
+$ sass styles/sass/style.scss:styles/style.css
 ```
 
 You can pass the `--watch` flag to `sass` if you want `sass`
