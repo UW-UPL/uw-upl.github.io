@@ -106,7 +106,6 @@ angular.module('upl-site').
         }
 
         // Timestamp is number of MILLIseconds past midnight
-        // FIXME: timing seems to be off
         function hoursAndMinutesToTimestamp(hourAndMinuteObj) {
           // expects 24-hour format
           var hourMs  = hourAndMinuteObj.hour   * 1000 * 60 * 60;
@@ -122,8 +121,8 @@ angular.module('upl-site').
         // If the current timestamp (`nowTs`) falls within an office
         // hour timestamp (regardless of day)
         function isOfficeHour(hourTs, nowTs) {
-          // TODO: check or mod for overflow/rollover
-          console.log(hourTs + '<=' + nowTs + '<=' + (hourTs + COORD_HOUR_DURATION));
+          // XXX: might need to check or mod for overflow/rollover
+          //console.log(hourTs + '<=' + nowTs + '<=' + (hourTs + COORD_HOUR_DURATION));
           return (hourTs <= nowTs) && (nowTs <= (hourTs + COORD_HOUR_DURATION));
         }
 
