@@ -45,5 +45,13 @@
         "description": "A MUD game for your web browser!",
         "link": "https://github.com/LOZORD/xanadu",
         "image": ""
+    },
+    
+    {
+        "title": "UPL-MMORPG",
+        "authors": ["John Detter"],
+        "description": "An open source MMORPG made by the UPL!",
+        "link": "https://github.com/UW-UPL/UPL-MMORPG",
+        "image": ""
     }
 ]
