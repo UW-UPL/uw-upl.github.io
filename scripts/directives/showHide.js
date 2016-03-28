@@ -14,15 +14,12 @@ angular.module('upl-site').
                     }
                     
                     var para = angular.element(element[0].querySelector(".para-hidden"));
-                    var expand = angular.element(element[0].querySelector(".para-expand"));
                     if (para.css("display") === "none") {
                         para.css("display", "block");
-                        expand.css("display", "none");
                     } else {
                         para.css("display", "none");
-                        expand.css("display", "inline");
                     }
                 });                
             }
-        }
-    })
+        };
+    });
