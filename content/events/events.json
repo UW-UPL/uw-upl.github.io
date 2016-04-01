@@ -28,7 +28,14 @@
 	"title": "UPL Games II",
 	"date": "04/01/2016 5:00 PM",
 	"location": "CS 1240",
-	"description": "The second annual UPL Games extravaganza! A fun and engaging hybrid puzzle/trivia/coding event that will test all of your skills!<br><br>ALL SKILL LEVELS WELCOME! No experience needed!<br><br>For more information, check out the <a href='https://www.facebook.com/events/1121835311168825/'>current Facebook event.</a>"
+	"description": "The second annual UPL Games extravaganza! A fun and engaging hybrid puzzle/trivia/coding event that will test all of your skills!<br><br>ALL SKILL LEVELS WELCOME! No experience needed!<br><br>Sign up <a href='http://bit.ly/1QmAzTb'>here</a>!<br><br>For more information, check out the <a href='https://www.facebook.com/events/1121835311168825/'>current Facebook event.</a>",
+	"image": "coverphoto.jpg"
+    },
+    {
+    	"title": "Perry's Debugging Talk",
+    	"date": "03/28/2016 7:00 PM",
+    	"location": "CS 1240",
+    	"description": "Perry Kivolowitz, who recently left UW-Madison for Carthage College, is returning to give his famous debugging talk Monday March 28th at 7pm in CS 1240. Perry is a revered teacher and software crafstman, and has contributed much to the areas of graphics and systems. His talk is as entertaining as it is informative. We plan on having pizza at the talk! Here's the <a href='https://www.facebook.com/events/163131024072903/'>Facebook event</a>."
     }
 
 ]

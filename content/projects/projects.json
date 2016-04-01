@@ -29,5 +29,29 @@
         "description": "An operating system built completely from scratch.",
         "link": "https://github.com/ChronosSystems/Chronos",
         "image": ""
+    },
+
+    {
+        "title": "RISCY-AS",
+        "authors": ["Sean Wilson"],
+        "description": "An elementary assembler for the RISC-V ISA.",
+        "link": "https://github.com/spwilson2/RISCY-AS",
+        "image": "riscv-logo-retina.jpg"
+    },
+    
+    {
+        "title": "Xanadu",
+        "authors": ["Leo Rudberg", "Leon Dinh", "Max Horowitz"],
+        "description": "A MUD game for your web browser!",
+        "link": "https://github.com/LOZORD/xanadu",
+        "image": ""
+    },
+    
+    {
+        "title": "UPL-MMORPG",
+        "authors": ["John Detter"],
+        "description": "An open source MMORPG made by the UPL!",
+        "link": "https://github.com/UW-UPL/UPL-MMORPG",
+        "image": ""
     }
 ]

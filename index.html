@@ -15,7 +15,8 @@
             
                 // turn off consoling for production
                 if (hname !== 'localhost') {
-                    console.log = _noop;
+                    console.log('`console.log` is only available on `localhost`');
+                    window.console = { log: _noop };
                 }
             })(window.location.hostname);
         </script>
