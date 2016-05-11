@@ -6,7 +6,7 @@
         "link": "https://github.com/mjneil/CruftEngine",
         "image": ""
     },
-    
+
     {
         "title": "Twitch Plays Tinder",
         "authors": ["Michael Cook"],
@@ -38,15 +38,15 @@
         "link": "https://github.com/spwilson2/RISCY-AS",
         "image": "riscv-logo-retina.jpg"
     },
-    
+
     {
         "title": "Xanadu",
-        "authors": ["Leo Rudberg", "Leon Dinh", "Max Horowitz"],
+        "authors": ["Leo Rudberg", "Leon Dinh", "Max Horowitz", "Zach Thomae"],
         "description": "A MUD game for your web browser!",
         "link": "https://github.com/LOZORD/xanadu",
         "image": ""
     },
-    
+
     {
         "title": "UPL-MMORPG",
         "authors": ["John Detter"],
