@@ -107,5 +107,16 @@
         "photo": "Randy_Amundson_filler.jpg",
         "github": "https://github.com/ranman166",
         "emoji": "octopus"
+    },
+
+    {
+        "id": "ekivolowitz",
+        "name": "Evan Kivolowitz",
+        "year": "Sophomore",
+        "major": "Computer Sciences and Statistics",
+        "photo": "rude_boy_jr.jpg",
+        "github": "https://github.com/ekivolowitz",
+        "emoji": "smirk"
+
     }
 ]
