@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <table ng-if="books.length > 0">
+    <thead>
+      <tr><th ng-repeat="(key, _) in books[0]">{{key}}</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="book in books | orderBy: 'title' track by $index" id="book-{{book.title}}">
+        <td ng-repeat="(_, value) in book">{{value}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

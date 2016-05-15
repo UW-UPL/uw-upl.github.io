@@ -1,0 +1,2022 @@
+[
+    {
+        "authors":"De Goes, John",
+        "isbn":"1-57610-400-1",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Game Development",
+        "title":"3D Game Programming with C++",
+        "topics":"C++, Game Development, 3D Game Development",
+        "year":"2000"
+    },
+    {
+        "authors":"Rule, Keith",
+        "isbn":"0-201-48835-3",
+        "lang":"C/C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"3D Graphics File Formats: A Programmer's Reference",
+        "topics":"3D Graphics, File formats",
+        "year":"1996"
+    },
+    {
+        "authors":"Polevoi, Rob",
+        "isbn":"1-57610-432-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"3D Studio Max R3 In Depth",
+        "topics":"Graphics, 3D animation",
+        "year":"1999"
+    },
+    {
+        "authors":"Kane, Gerry;Hawkins, Doug; Lenventhal, Lance",
+        "isbn":"0-07-931062-1",
+        "lang":"68000 assembly",
+        "num":"1",
+        "subject":"Assembly Language",
+        "title":"6800 Assembly language programming",
+        "topics":"68000 assembly",
+        "year":"1981"
+    },
+    {
+        "authors":"Intel",
+        "isbn":"1-55512-022-9",
+        "lang":"x86",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"80386 Programmer's Reference Manual",
+        "topics":"Intel, 80386, Assembly",
+        "year":"1987"
+    },
+    {
+        "authors":"Press, Sheldon",
+        "isbn":"0-13-185662-6",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Probability",
+        "title":"A First Course in Probability 7th Edition",
+        "topics":"Statistics, Textbook, Probablity, Math",
+        "year":"2006"
+    },
+    {
+        "authors":"Woo, Andrew; Poulin, Pierre; Fournier, Alain",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Shadow Algorithms",
+        "title":"A Survey of Shadow ",
+        "topics":"survey, shadowing, hard shadow, soft shadow, transparency, caustics, parametric and implicit surface, umbra, penumbra, illumination, self-shadowing, particles, inter-reflections, scanline, ray tracing, radiosity",
+        "year":"1990"
+    },
+    {
+        "authors":"Graham, Paul",
+        "isbn":"0-13-370875-6",
+        "lang":"Lisp",
+        "num":"1",
+        "subject":"Functional Programming",
+        "title":"ANSI Common Lisp",
+        "topics":"Functional Programming",
+        "year":"1996"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"0-201-65895-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Photoshop",
+        "title":"Adobe Photoshop 5.5",
+        "topics":"Graphics, tools, Adobe, Photoshop",
+        "year":"1999"
+    },
+    {
+        "authors":"Srinivasan, Sriram",
+        "isbn":"1-56592-220-4",
+        "lang":"Perl",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Advanced Perl Programming",
+        "topics":"Perl",
+        "year":"1997"
+    },
+    {
+        "authors":"Nyhoff, Larry; Leestma, Sanford",
+        "isbn":"0-02-369550-1",
+        "lang":"Pascal",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Advanced Programming in Pascal with Data Structures",
+        "topics":"Pascal, Data Structures",
+        "year":"1988"
+    },
+    {
+        "authors":"Stevens, Richard",
+        "isbn":"0-201-56317-7",
+        "lang":"C",
+        "num":"2",
+        "subject":"UNIX",
+        "title":"Advanced Programming in the UNIX Environment",
+        "topics":"System Calls, UNIX, ANSI C, Advanced I/O, IPC",
+        "year":"1992"
+    },
+    {
+        "authors":"Fromkin, Victoria; Rodman, Robert",
+        "isbn":"0-03-006532-1",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linguistics",
+        "title":"An Introduction to Language",
+        "topics":"Linguistics, language",
+        "year":"1988"
+    },
+    {
+        "authors":"Wu, Thomas C.",
+        "isbn":"0-07-292195-1",
+        "lang":"Java",
+        "num":"2",
+        "subject":"Programming",
+        "title":"An Introduction to Object-Oriented Programming with Java",
+        "topics":"Java, Object-oriented programming",
+        "year":"2004"
+    },
+    {
+        "authors":"Baraff, David",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Rigid Body Simulation",
+        "title":"An Introduction to Physically Based Modeling: Rigid Body Simulation I-Unconstrained Rigid Body Dynamics",
+        "topics":"Rigid Body Simulation, Rigid Bodies, Simulation, Dynamics",
+        "year":"1997"
+    },
+    {
+        "authors":"Brown, Beth; Presley, Bruce",
+        "isbn":"1-879233-21-5",
+        "lang":"Visual Basic",
+        "num":"1",
+        "subject":"Programming",
+        "title":"An Introduction to Programming Using Microsoft Visual Basic (Versions 5 and 6)",
+        "topics":"Programming, Microsoft, Visual Basic",
+        "year":"1999"
+    },
+    {
+        "authors":"Richter, Jeffrey",
+        "isbn":"0-7356-1422-0",
+        "lang":"C#, .NET",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Applied Microsoft .NET Framework Programming",
+        "topics":"Microsoft, C#, .NET, Web Development",
+        "year":"2002"
+    },
+    {
+        "authors":"Levey, Steven",
+        "isbn":"0-679-40774-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Fiction",
+        "title":"Artificial Life",
+        "topics":"Fiction",
+        "year":"1992"
+    },
+    {
+        "authors":"Hahn, Harley",
+        "isbn":"n/a",
+        "lang":"x86",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"Assembler: Inside & Out",
+        "topics":"Assembly, Assembler, x86, Intel, Microsoft",
+        "year":"1992"
+    },
+    {
+        "authors":"Tisdall, James",
+        "isbn":"0-596-00080-4",
+        "lang":"Perl",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Beginning Perl for Bioinformatics",
+        "topics":"Perl, Bioinformatics",
+        "year":"2001"
+    },
+    {
+        "authors":"Kean, Ron",
+        "isbn":"978-0-07-339370-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Animal Sciences",
+        "title":"Biology Appreciation Companion of Animals 3rd Edition",
+        "topics":"Animal Sciences 200",
+        "year":"2008"
+    },
+    {
+        "authors":"Chapman, Brent; Zwicky, Elizabeth",
+        "isbn":"1-56592-124-0",
+        "lang":"n/a",
+        "num":"",
+        "subject":"Internet Security",
+        "title":"Building Internet Firewalls",
+        "topics":"Networking, Security, Firewalls, Filtering, Proxies",
+        "year":"1995"
+    },
+    {
+        "authors":"Esposito, Dino",
+        "isbn":"0-7356-1578-0",
+        "lang":"C#, .NET",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Building Web Solutions with ASP.NET",
+        "topics":"Microsoft, C#, .NET, Web Development, ASP.NET, ADO.NET",
+        "year":"2002"
+    },
+    {
+        "authors":"Prata, Stephen",
+        "isbn":"0-672-32222-6",
+        "lang":"C",
+        "num":"1",
+        "subject":"C Primer",
+        "title":"C Primer Plus 4th Edition",
+        "topics":"C, Tutorial, Primer",
+        "year":"2002"
+    },
+    {
+        "authors":"Albahari, Ben; Drayton, Peter; Merrill, Brad",
+        "isbn":"0-596-00079-0",
+        "lang":"C#",
+        "num":"1",
+        "subject":"Programming",
+        "title":"C# Essentials",
+        "topics":"C#",
+        "year":"2001"
+    },
+    {
+        "authors":"Blanchette, Jasmin; Summerfield, Mark",
+        "isbn":"978-0-13-235416-5",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"C++ GUI Programming with Qt 4",
+        "topics":"C++, GUI, Qt 4",
+        "year":"2008"
+    },
+    {
+        "authors":"Deitel, H. M.; Deitel P. J.",
+        "isbn":"0-13-117334-0",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"C++ How to Program",
+        "topics":"C++",
+        "year":"1994"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Networks",
+        "title":"CS640 Notes",
+        "topics":"Computer Networks",
+        "year":"n/a"
+    },
+    {
+        "authors":"Varber, Dale; Purcell, Edwin J.;  Rigdon, Steven E.",
+        "isbn":"0-13-081137-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Math, Calculus",
+        "title":"Calculus 8th. Edition",
+        "topics":"Calculus",
+        "year":"2000"
+    },
+    {
+        "authors":"Steele Jr., Guy L. ",
+        "isbn":"1-55558-041-6",
+        "lang":"Lisp",
+        "num":"1",
+        "subject":"Functional Programming",
+        "title":"Common Lisp the Language 2nd Edition",
+        "topics":"Functional Programming",
+        "year":"1990"
+    },
+    {
+        "authors":"Computer Architecture News, ACM",
+        "isbn":"(ISSN) 0163-5964",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Architecture",
+        "title":"Computer Architecture News Vol 38, No. 2",
+        "topics":"Comp. Arch., Internet Nuggets, Storage, CPU",
+        "year":"5/1/2010"
+    },
+    {
+        "authors":"Hearn, Donald; Baker, M. Pauline",
+        "isbn":"0-13-161530-0",
+        "lang":"FORTRAN/PHIGS",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Computer Graphics",
+        "topics":"Graphics, 3D animation",
+        "year":"1994"
+    },
+    {
+        "authors":"Foley; van Dam; Feiner; Hughes",
+        "isbn":"0-201-84840-6",
+        "lang":"SPHIGS",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Computer Graphics",
+        "topics":"Graphics",
+        "year":"1996"
+    },
+    {
+        "authors":"Kurose, James F.; Ross, Keith W.",
+        "isbn":"7-04-012231-6",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Networks",
+        "title":"Computer Networking: A Top-Down Approach Featuring the Internet",
+        "topics":"Networks, Internet",
+        "year":"2005"
+    },
+    {
+        "authors":"Peterson, Larry; Davie, Bruce",
+        "isbn":"0-12-370548-7",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Networks",
+        "title":"Computer Networks: A systems approach",
+        "topics":"Computer Networks",
+        "year":"2007"
+    },
+    {
+        "authors":"Patterson, David A.; Hennessy, John L.",
+        "isbn":"978-0-12-374750-1",
+        "lang":"MIPS",
+        "num":"1",
+        "subject":"Hardware/Software",
+        "title":"Computer Organization and Design",
+        "topics":"Hardware, Architecture, OS, Assembly, 354",
+        "year":"2012"
+    },
+    {
+        "authors":"Lea, Doug",
+        "isbn":"0-201-69581-2",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Concurrent Programming in Java: Design Principles and Patterns",
+        "topics":"Java, Concurrency, Monitors, Threads",
+        "year":"1997"
+    },
+    {
+        "authors":"McDowell, Gayle Laakmann",
+        "isbn":"978-0-9847828-5-7",
+        "lang":"n/a",
+        "num":"3",
+        "subject":"Interview Prep",
+        "title":"Cracking the Coding Interview 6th Edition",
+        "topics":"Inverview Questions",
+        "year":"2015"
+    },
+    {
+        "authors":"Petzold, Charles",
+        "isbn":"978-1-5093-0089-1",
+        "lang":"C#",
+        "num":"1",
+        "subject":"App Development",
+        "title":"Creating Mobile Apps with Xamarin.Forms",
+        "topics":"Mobile Apps, Xamarin Forms, Cross-platform, C#, Windows Android iOS phone",
+        "year":"2015"
+    },
+    {
+        "authors":"Freeman, Tzvi",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Design Document",
+        "title":"Creating a Great Design Document",
+        "topics":"Design Document",
+        "year":"9/12/1997"
+    },
+    {
+        "authors":"StereoGraphics",
+        "isbn":"n/a",
+        "lang":"C",
+        "num":"2",
+        "subject":"Graphics",
+        "title":"CrystalEyes Software Development Kit",
+        "topics":"Graphics, CrystalEyes, StereoGraphics",
+        "year":"12/1/1997"
+    },
+    {
+        "authors":"Albitz, Paul; Liu, Cricket",
+        "isbn":"1-56592-010-4",
+        "lang":"Terminal",
+        "num":"1",
+        "subject":"System Administration",
+        "title":"DNS and BIND",
+        "topics":"Terminal, System Administration, DNS, BIND",
+        "year":"1993"
+    },
+    {
+        "authors":"Carrano, Frank M.",
+        "isbn":"0-8053-1226-9",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Data Abstraction and Problem Solving with C++: Walls and Mirrors",
+        "topics":"C++",
+        "year":"1995"
+    },
+    {
+        "authors":"Weiss, Mark Allen",
+        "isbn":"0-201-54991-3",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Data Structures",
+        "title":"Data Structures & Problem Solving Using Java",
+        "topics":"Java, Data Structures, Algorithms",
+        "year":"1998"
+    },
+    {
+        "authors":"Carrano, Frank M.; Savitch, Walter",
+        "isbn":"0-13-017489-0",
+        "lang":"Java",
+        "num":"",
+        "subject":"Data structures",
+        "title":"Data Structures and Abstractions with Java",
+        "topics":"Data structures, programming, Java",
+        "year":"2003"
+    },
+    {
+        "authors":"Rob, Peter; Coronel, Carlos",
+        "isbn":"0-619-06269-X",
+        "lang":"SQL",
+        "num":"1",
+        "subject":"Databases",
+        "title":"Database Systems: Design, Implementation, & Management",
+        "topics":"Databases",
+        "year":"2002"
+    },
+    {
+        "authors":"Feldman, Ari",
+        "isbn":"1-55622-755-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Designing Arcade Computer Game Graphics",
+        "topics":"Games development, graphics",
+        "year":"2001"
+    },
+    {
+        "authors":"Englander, Robert",
+        "isbn":"978-1-56592-289-1",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Developing Java Beans",
+        "topics":"Java, Java Beans, Packages, Libraries",
+        "year":"1997"
+    },
+    {
+        "authors":"Axelson, Jan",
+        "isbn":"1-931448-00-0",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Networking",
+        "title":"Embedded Ethernet and Internet Complete",
+        "topics":"Email, FTP, Security, Network Design",
+        "year":"2003"
+    },
+    {
+        "authors":"Hyder, Kamal; Perrin, Bob",
+        "isbn":"0-7506-7872-0",
+        "lang":"C, Assembly",
+        "num":"1",
+        "subject":"Embedded Systems",
+        "title":"Embedded System Design Using the Rabbit 3000 Microprocessor",
+        "topics":"Embedded Systems, Microprocessor, C, Assembly, Eletronics, Networking, Rabbit",
+        "year":"2005"
+    },
+    {
+        "authors":"Murray, James D.; vanRyper, William",
+        "isbn":"1-56592-058-9",
+        "lang":"C/C++",
+        "num":"",
+        "subject":"Graphics",
+        "title":"Encyclopedia of Graphics File Formats",
+        "topics":"3D Graphics, File formats",
+        "year":"1994"
+    },
+    {
+        "authors":"Frisch, \u00c6leen",
+        "isbn":"0-937175-80-3",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"Essential System Administration",
+        "topics":"Security, UNIX, backup, automation, disks, accounts",
+        "year":"1991"
+    },
+    {
+        "authors":"Beck, Kent",
+        "isbn":"0-201-6164106",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Software Engineering",
+        "title":"Extreme Programming Explained",
+        "topics":"Software Engineering",
+        "year":"2000"
+    },
+    {
+        "authors":"Muller, Tim-Philipp",
+        "isbn":"n/a",
+        "lang":"GIMP Toolkit",
+        "num":"1",
+        "subject":"GTK Tree View",
+        "title":"GTK+ 2.0 Tree View Tutorial",
+        "topics":"GTK Tree View, Manual, Tutorial, GIMP Toolkit",
+        "year":"3/31/2004"
+    },
+    {
+        "authors":"Ward, Antony",
+        "isbn":"0-7357-1438-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Game Character Development with Maya",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2005"
+    },
+    {
+        "authors":"Hight, John; Novak, Jeannie",
+        "isbn":"1-4180-1541-5",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Game development",
+        "title":"Game Project Management",
+        "topics":"Games, project management",
+        "year":"2008"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Gameinformer Issue 202",
+        "topics":"Games, Magazine",
+        "year":"2/1/2010"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"Gameinformer Issue 203",
+        "topics":"Games, Magazine",
+        "year":"3/1/2010"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"Gameinformer Issue 205",
+        "topics":"Games, Magazine",
+        "year":"5/1/2010"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"Gameinformer Issue 206",
+        "topics":"Games, Magazine",
+        "year":"6/1/2010"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"Gameinformer Issue 207",
+        "topics":"Games, Magazine",
+        "year":"7/1/2010"
+    },
+    {
+        "authors":"Gameinformer",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"Gameinformer Issue 208",
+        "topics":"Games, Magazine",
+        "year":"8/1/2010"
+    },
+    {
+        "authors":"Paeth, Alan W.",
+        "isbn":"0-12-543455-3",
+        "lang":"C",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Graphics Gems V",
+        "topics":"Graphics",
+        "year":"1995"
+    },
+    {
+        "authors":"Harper, Allen; Ness, Jonathan; Lenkey, Gideon; Shor, Harris; Eagle, Chris; Terron, Williams",
+        "isbn":"978-0-07-174255-9",
+        "lang":"C, x86, bash",
+        "num":"1",
+        "subject":"Security",
+        "title":"Gray Hat Hacking: The Ethical Hacker's Handbook",
+        "topics":"Security, hacking, exploits, penetration testing",
+        "year":"2011"
+    },
+    {
+        "authors":"Erickson, Jon",
+        "isbn":"978-1-59327-144-2",
+        "lang":"C, bash, Terminal",
+        "num":"1",
+        "subject":"Hacking",
+        "title":"Hacking: The Art of Exploitation",
+        "topics":"Hacking, Networks, Crypto, Assembly, Terminal",
+        "year":"2008"
+    },
+    {
+        "authors":"Turnbull, James",
+        "isbn":"1-59059-444-4",
+        "lang":"Bash Scripting",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Hardening Linux",
+        "topics":"Security, Linux, Unix",
+        "year":"2005"
+    },
+    {
+        "authors":"Zaks, Rodnay",
+        "isbn":"n/a",
+        "lang":"Z80",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"How to Program the Z80",
+        "topics":"Assembly, Z80",
+        "year":"1980"
+    },
+    {
+        "authors":"IEEE",
+        "isbn":"n/a",
+        "lang":"Verilog HDL",
+        "num":"1",
+        "subject":"Verilog",
+        "title":"IEEE Standard for Verilog Register Transfer Level Synthesis",
+        "topics":"Verilog, Tutorial, Manual",
+        "year":"12/18/2002"
+    },
+    {
+        "authors":"Shanley, Tom; Anderson, Don",
+        "isbn":"0-201-40996-8",
+        "lang":"NA",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"ISA system architecture",
+        "topics":"Pentium architecture, systems programming",
+        "year":"1995"
+    },
+    {
+        "authors":"Archer, Tom; Whitechapel, Andrew",
+        "isbn":"0-7356-1648-5",
+        "lang":"C#",
+        "num":"2",
+        "subject":"Programming",
+        "title":"Inside C#",
+        "topics":"C#, Windows, Microsoft",
+        "year":"2002"
+    },
+    {
+        "authors":"Kruglinski, David J.",
+        "isbn":"1-57231-565-2",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Inside Visual C++",
+        "topics":"Microsoft, C++, Visual C++",
+        "year":"1997"
+    },
+    {
+        "authors":"Lippman, Stanley B.",
+        "isbn":"0-201-83454-5",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Inside the C++ Object Model",
+        "topics":"C++",
+        "year":"1996"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Installation & Liscensing Guide",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2004"
+    },
+    {
+        "authors":"Comer, Douglas",
+        "isbn":"0-13-216987-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Networking",
+        "title":"Internetworking with TCP/IP",
+        "topics":"IP, TCP, IP addressing, Subnetting, UDP, Muticast",
+        "year":"1995"
+    },
+    {
+        "authors":"Comer, Douglas",
+        "isbn":"0-13-470154-2",
+        "lang":"C",
+        "num":"1",
+        "subject":"Networks",
+        "title":"Internetworking with TCP/IP",
+        "topics":"Networks, Internet",
+        "year":"1988"
+    },
+    {
+        "authors":"Derakhshani, Dariush",
+        "isbn":"0-7821-4353-9",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Introducing Maya 6",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2004"
+    },
+    {
+        "authors":"Platt, David S.",
+        "isbn":"0-7356-1377-X",
+        "lang":"C#, .NET",
+        "num":"2",
+        "subject":"Programming",
+        "title":"Introducing Microsoft .NET",
+        "topics":"Microsoft, C#, .NET, Web Development",
+        "year":"2001"
+    },
+    {
+        "authors":"Dean, John; Dean, Raymond",
+        "isbn":"978-0-07-304702-7",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Introduction to Programming with Java: A Problem Solving Approach",
+        "topics":"Java",
+        "year":"2008"
+    },
+    {
+        "authors":"Hickey, Jason",
+        "isbn":"n/a",
+        "lang":"O-Caml",
+        "num":"2",
+        "subject":"Objective Caml",
+        "title":"Introduction to the Objective Caml Programming Language",
+        "topics":"Objective Caml, Function Programming, Tutorial, Programming Language",
+        "year":"9/4/2002"
+    },
+    {
+        "authors":"Jones, Oliver",
+        "isbn":"0-13-499997-5",
+        "lang":"C",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Introduction to the X Window System",
+        "topics":"C, X Window System, Unix, Linux, Graphics",
+        "year":"1989"
+    },
+    {
+        "authors":"Brualdi, A. Richard",
+        "isbn":"0-13-181488-5",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Math, Combinartorics",
+        "title":"Introductory Combinatorics",
+        "topics":"Math, Combinartorics",
+        "year":"1999"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Tool",
+        "title":"Jasc Paint Shop Pro 7",
+        "topics":"Graphics, tool, Jasc, editing, photos",
+        "year":"2000"
+    },
+    {
+        "authors":"Farley, Jim",
+        "isbn":"1-56592-209-9",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Java Distributed Computing",
+        "topics":"Java, Distributed Systems",
+        "year":"1998"
+    },
+    {
+        "authors":"Lewis, John; Loftus, William",
+        "isbn":"0-201-57164-1",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Java Software Solutions: Foundations of Program Design",
+        "topics":"Java",
+        "year":"1998"
+    },
+    {
+        "authors":"Oaks, Scott; Wong, Henry",
+        "isbn":"1-56592-216-6",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Java Threads",
+        "topics":"Java, OS, Threads, Concurrency",
+        "year":"1997"
+    },
+    {
+        "authors":"Apple",
+        "isbn":"0-596-00160-6",
+        "lang":"Objective-C",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Learning Cocoa",
+        "topics":"Cocoa, Apple, Objective-C",
+        "year":"2001"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"1-894893-05-0",
+        "lang":"n/a",
+        "num":"",
+        "subject":"Graphics",
+        "title":"Learning Maya: Dynamics",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2002"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Learning Maya: Rendering",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2002"
+    },
+    {
+        "authors":"Lay, David C.",
+        "isbn":"978-0-321-38517-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linear Algebra",
+        "title":"Linear Algebra 4th Edition",
+        "topics":"Linear Algebra, Math, Textbook",
+        "year":"2012"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 181",
+        "topics":"Linux, Magazine",
+        "year":"5/1/2009"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 182",
+        "topics":"Linux, Magazine",
+        "year":"6/1/2009"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 188",
+        "topics":"Linux, Magazine",
+        "year":"9/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 189",
+        "topics":"Linux, Magazine",
+        "year":"1/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 190",
+        "topics":"Linux, Magazine",
+        "year":"2/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 191",
+        "topics":"Linux, Magazine",
+        "year":"3/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 192",
+        "topics":"Linux, Magazine",
+        "year":"4/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 193",
+        "topics":"Linux, Magazine",
+        "year":"5/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 194",
+        "topics":"Linux, Magazine",
+        "year":"6/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 195",
+        "topics":"Linux, Magazine",
+        "year":"7/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 196",
+        "topics":"Linux, Magazine",
+        "year":"8/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 197",
+        "topics":"Linux, Magazine",
+        "year":"9/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 199",
+        "topics":"Linux, Magazine",
+        "year":"11/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 200",
+        "topics":"Linux, Magazine",
+        "year":"12/1/2010"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 201",
+        "topics":"Linux, Magazine",
+        "year":"1/1/2011"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 202",
+        "topics":"Linux, Magazine",
+        "year":"2/1/2011"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 203",
+        "topics":"Linux, Magazine",
+        "year":"3/1/2011"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 204",
+        "topics":"Linux, Magazine",
+        "year":"4/1/2011"
+    },
+    {
+        "authors":"Linux Journal",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux Journal Issue 305",
+        "topics":"Linux, Magazine",
+        "year":"5/1/2011"
+    },
+    {
+        "authors":"Grace, Rich; Parker, Tim",
+        "isbn":"0-13-999269-3",
+        "lang":"Bash Scripting",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Linux to go",
+        "topics":"Linux, Scripting, Bash, System Administration",
+        "year":"2000"
+    },
+    {
+        "authors":"Mano, Morris M.; Kine, Charles R.",
+        "isbn":"978-0-13-206711-9",
+        "lang":"Verilog",
+        "num":"1",
+        "subject":"Computer Engineering",
+        "title":"Logic And Computer Design Fundametal",
+        "topics":"Hardware, Verilog, 352, Digital Systems",
+        "year":"2008"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"MATLAB",
+        "num":"1",
+        "subject":"MATLAB",
+        "title":"MATLAB: High-Performance Numeric Computation and Visualization Software",
+        "topics":"MATLAB",
+        "year":"1992"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"ActionScript",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Macromedia Flash 5",
+        "topics":"Flash, ActionScript",
+        "year":"2000"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"3",
+        "subject":"Tool",
+        "title":"Macromedia Studio MX, Exploring Macromedia Studio MX",
+        "topics":"Graphics, tools, Macromedia",
+        "year":"2002"
+    },
+    {
+        "authors":"Walsh, Norman",
+        "isbn":"1-56592-051-1",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Typesetting System",
+        "title":"Making TEX Work",
+        "topics":"Desktop Publishing",
+        "year":"1994"
+    },
+    {
+        "authors":"Liu, Cricket; Peek, Jerry; Jones, Russ; Buus, Bryan; Nye, Adrian",
+        "isbn":"1-56592-062-7",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Networking Services",
+        "title":"Managing Internet Information Services",
+        "topics":"TCP, IP, Gopher, WWW, apache, Finger, Telnet, FTP, ",
+        "year":"1995"
+    },
+    {
+        "authors":"Choi, Jae-jin",
+        "isbn":"0-7821-4171-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Maya Character Animation",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2003"
+    },
+    {
+        "authors":"Choi, Jae-jin",
+        "isbn":"0-7821-4328-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Maya Character Animation",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2004"
+    },
+    {
+        "authors":"Sedra, Adel S.; Smith, Kenneth C.",
+        "isbn":"0-19-510370-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Engineering",
+        "title":"Microelectronic Circuits 3rd Edition",
+        "topics":"Microelectionic Circuts",
+        "year":"1989"
+    },
+    {
+        "authors":"Sedra, Adel S.; Smith, Kenneth C.",
+        "isbn":"978-0-19-532303-0",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Engineering",
+        "title":"Microelectronic Circuits 6th Edition",
+        "topics":"Microelectionic Circuts",
+        "year":"2010"
+    },
+    {
+        "authors":"Trubetskoy, Gregory",
+        "isbn":"n/a",
+        "lang":"Python",
+        "num":"1",
+        "subject":"Python Manual 3.1.3",
+        "title":"Mod_python Manual (Release 3.1.3)",
+        "topics":"Mod_python, Python 3.1.3, Tutorial, Manual",
+        "year":"2/17/2004"
+    },
+    {
+        "authors":"Tanenbaum, Andrew S.",
+        "isbn":"0-13-031358-0",
+        "lang":"C",
+        "num":"1",
+        "subject":"Operating Systems",
+        "title":"Modern Operating Systems",
+        "topics":"Operating systems, C",
+        "year":"2001"
+    },
+    {
+        "authors":"Jameson, Kevin",
+        "isbn":"1-56592-059-7",
+        "lang":"Terminal, C",
+        "num":"1",
+        "subject":"Software Engineering",
+        "title":"Multi-platform Code Management",
+        "topics":"Software Engineering",
+        "year":"1994"
+    },
+    {
+        "authors":"Singhal, Sandeep; Zyda, Michael",
+        "isbn":"0-201-32557-8",
+        "lang":"C/C++/Java",
+        "num":"1",
+        "subject":"Networking",
+        "title":"Networked virtual environments",
+        "topics":"Virtualization, Networking",
+        "year":"1999"
+    },
+    {
+        "authors":"Nakamura, Shoichiro",
+        "isbn":"0-13-051518-3",
+        "lang":"MATLAB",
+        "num":"1",
+        "subject":"MATLAB",
+        "title":"Numerical Analysis and Graphic Visualization with MATLAB",
+        "topics":"MATLAB",
+        "year":"1996"
+    },
+    {
+        "authors":"Mathews, John H.",
+        "isbn":"0-13-624990-6",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Mathematics",
+        "title":"Numerical Methods for Mathematics, Science, and Engineering 2nd Edition",
+        "topics":"Mathematics, Numerical Methods",
+        "year":"1992"
+    },
+    {
+        "authors":"Lafore, Robert",
+        "isbn":"0-672-32308-7",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Object-Oriented Programming in C++",
+        "topics":"C++, Object-orientation, STL, UML",
+        "year":"2002"
+    },
+    {
+        "authors":"Fogel, Karl",
+        "isbn":"1",
+        "lang":"",
+        "num":"1",
+        "subject":"Open Source, CVS",
+        "title":"Open Source Development with CVS",
+        "topics":"CVS, Programming",
+        "year":"1999"
+    },
+    {
+        "authors":"Hawkins, Kevin; Astle, Dave",
+        "isbn":"0-7615-3330-3",
+        "lang":"C++",
+        "num":"2",
+        "subject":"Graphics",
+        "title":"OpenGL Game Programming",
+        "topics":"Graphics, OpenGL, Game programming, Game graphics",
+        "year":"2001"
+    },
+    {
+        "authors":"Shreiner, Dave; Woo, Mason; Neider, Jackie; Davis, Tom",
+        "isbn":"0-321-17348-1",
+        "lang":"C++",
+        "num":"2",
+        "subject":"Graphics",
+        "title":"OpenGL Programming Guide Fourth Edition: The Official Guide to Learning OpenGL, Version 1.4",
+        "topics":"Graphics, OpenGL",
+        "year":"2004"
+    },
+    {
+        "authors":"Shreiner, Dave",
+        "isbn":"0-321-55262-8",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"OpenGL Programming Guide Seventh Edition: The Official Guide to Learning OpenGL, Version 3.0 and 3.1",
+        "topics":"Graphics, OpenGL",
+        "year":"2010"
+    },
+    {
+        "authors":"Woo, Mason; Neider, Jackie; Davis, Tom; Shreiner, Dave",
+        "isbn":"0-201-60458-2",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"OpenGL Programming Guide Third Edition: The Official Guide to Learning OpenGL, Version 1.2",
+        "topics":"Graphics, OpenGL",
+        "year":"1999"
+    },
+    {
+        "authors":"Kilgard, Mark J.",
+        "isbn":"0-201-48359-9",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"OpenGL Programming for the X Window System",
+        "topics":"Graphics, OpenGL, X Window",
+        "year":"1996"
+    },
+    {
+        "authors":"Silberschatz, Abraham; Galvin, Peter Baer",
+        "isbn":"0-471-36414-2",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Operating Systems",
+        "title":"Operating System Concepts (Fifth Edition)",
+        "topics":"Operating systems",
+        "year":"1999"
+    },
+    {
+        "authors":"Nutt, Gary",
+        "isbn":"0-201-61251-8",
+        "lang":"C",
+        "num":"1",
+        "subject":"Operating systems",
+        "title":"Operating Systems",
+        "topics":"Operating systems",
+        "year":"2000"
+    },
+    {
+        "authors":"Kacmarcik, Gary",
+        "isbn":"0-201-40839-2",
+        "lang":"PowerPC",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"Optimizing PowerPC Code",
+        "topics":"Assembly, PowerPC, Optimization",
+        "year":"1995"
+    },
+    {
+        "authors":"Shanley, Tom",
+        "isbn":"0-201-40993-3",
+        "lang":"NA",
+        "num":"1",
+        "subject":"Hardware",
+        "title":"PCI System Architecture",
+        "topics":"PCI, Busses, Hardware, Signals",
+        "year":"1995"
+    },
+    {
+        "authors":"Garginkel, Simson",
+        "isbn":"1-56592-098-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Security/Privacy",
+        "title":"PGP: pretty good privacy",
+        "topics":"Encryption, Privacy, Security",
+        "year":"1995"
+    },
+    {
+        "authors":"Mykland, Robert",
+        "isbn":"0-07-212152-1",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Palm OS, Programming",
+        "title":"Palm OS Programming ",
+        "topics":"Programming, Handheld Devices, Interfaces",
+        "year":"1976"
+    },
+    {
+        "authors":"Drake, Chris; Brown, Kimberly",
+        "isbn":"0-13-149386",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"Panic! UNIX system crash dump analysis",
+        "topics":"Analysis, Crashes, UNIX, ADB",
+        "year":"1995"
+    },
+    {
+        "authors":"Intel",
+        "isbn":"1-55512-259-0",
+        "lang":"i386 (32 bit)",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"Pentium Pro Family Developer's Manual: vol 1",
+        "topics":"Pentium architecture, systems programming",
+        "year":"1996"
+    },
+    {
+        "authors":"Intel",
+        "isbn":"1-55512-261-2",
+        "lang":"i386 (32 bit)",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"Pentium Pro Family Developer's Manual: vol 3",
+        "topics":"Pentium architecture, systems programming",
+        "year":"1996"
+    },
+    {
+        "authors":"Intel",
+        "isbn":"1-55512-260-4",
+        "lang":"i386 (32 bit)",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"Pentium Pro Family Developer's Manual: vol2",
+        "topics":"Pentium architecture, systems programming",
+        "year":"1996"
+    },
+    {
+        "authors":"Anderson, Don",
+        "isbn":"0-201-40992-5",
+        "lang":"i386 (32 bit)",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"Pentium Processor System Architecture",
+        "topics":"Pentium architecture, systems programming",
+        "year":"1995"
+    },
+    {
+        "authors":"Stamminger, Marc; Drettakis, Greg",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Shadow Maps",
+        "title":"Perspective Shadow Maps",
+        "topics":"Frame Buffer Algorithms, Graphics Hardware, Illumination, Level of Detail Algorithms, Rendering, Shadow Algorithms",
+        "year":"2002"
+    },
+    {
+        "authors":"Adobe",
+        "isbn":"0-201-10174-2",
+        "lang":"PostScript",
+        "num":"1",
+        "subject":"Programming",
+        "title":"PostScript Language Reference Manual",
+        "topics":"Adobe, PostScript",
+        "year":"1985"
+    },
+    {
+        "authors":"Adobe",
+        "isbn":"0-201-10179-3",
+        "lang":"PostScript",
+        "num":"1",
+        "subject":"Programming",
+        "title":"PostScript Language Tutorial and Cookbook",
+        "topics":"Adobe, PostScript",
+        "year":"1985"
+    },
+    {
+        "authors":"Garfinkel, Simson; Spafford, Gene",
+        "isbn":"0-937175-72-2",
+        "lang":"n/a",
+        "num":"2",
+        "subject":"Security",
+        "title":"Practical UNIX Security",
+        "topics":"UNIX, Security, kernels, Kerberos, Passwords, Privacy",
+        "year":"1991"
+    },
+    {
+        "authors":"Savitch, Walter",
+        "isbn":"0-8053-7440-X",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Problem Solving with C++: The Object of Programming",
+        "topics":"C++",
+        "year":"1996"
+    },
+    {
+        "authors":"Johnson, Eric F.; Reichard, Kevin",
+        "isbn":"1-55828-255-6",
+        "lang":"C",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Professional Graphics Programming in the X Window System",
+        "topics":"C, X Window System, Unix, Linux, Graphics",
+        "year":"1993"
+    },
+    {
+        "authors":"Norton, Peter",
+        "isbn":"0-914845-46-2",
+        "lang":"DOS",
+        "num":"1",
+        "subject":"DOS",
+        "title":"Programmer's Guide to the IBM PC",
+        "topics":"DOS, IBM, PC, Microsoft",
+        "year":"1985"
+    },
+    {
+        "authors":"Williams, Steve",
+        "isbn":"0-89588-133-0",
+        "lang":"68000",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"Programming  the 68000",
+        "topics":"Assembly, 68000",
+        "year":"1985"
+    },
+    {
+        "authors":"Boling, Douglas",
+        "isbn":"0-7356-1884-4",
+        "lang":"C#, .NET",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Programming Microsoft Windows CE .NET",
+        "topics":"Microsoft, C#, .NET, Web Development",
+        "year":"2003"
+    },
+    {
+        "authors":"Petzold, Charles",
+        "isbn":"0-7356-1370-2",
+        "lang":"C#",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Programming Microsoft Windows with C#",
+        "topics":"Microsoft, Windows, C#",
+        "year":"2002"
+    },
+    {
+        "authors":"Lutz, Mark",
+        "isbn":"1-56592-197-6",
+        "lang":"Python",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Programming Python",
+        "topics":"Python",
+        "year":"1996"
+    },
+    {
+        "authors":"Strang, John",
+        "isbn":"0-937175-02-1",
+        "lang":"C",
+        "num":"1",
+        "subject":"Curses/UNIX",
+        "title":"Programming with Curses",
+        "topics":"Curses, UNIX",
+        "year":"1986"
+    },
+    {
+        "authors":"Butehof, David R.",
+        "isbn":"0-201-63392-2",
+        "lang":"C",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Programming with POSIX Threads",
+        "topics":"C, OS, Threads, Concurrency",
+        "year":"1997"
+    },
+    {
+        "authors":"Beazley, David M.",
+        "isbn":"0-7357-1091-0",
+        "lang":"Python",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Python Essential Reference (2nd Ed)",
+        "topics":"Python",
+        "year":"2001"
+    },
+    {
+        "authors":"Rossum, Guido van",
+        "isbn":"n/a",
+        "lang":"Python",
+        "num":"3",
+        "subject":"Python Tutorial 2.3.3",
+        "title":"Python Tutorial (Release 2.3.3)",
+        "topics":"Python, Tutorial",
+        "year":"12/19/2003"
+    },
+    {
+        "authors":"Holden, Steve",
+        "isbn":"0-7357-1090-2",
+        "lang":"Python",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Python Web Programming",
+        "topics":"Python, Web, Framework",
+        "year":"2002"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Barcode",
+        "title":"QuickReader Genealogy",
+        "topics":"QuickReader, Barcode, Genealogy, UPL",
+        "year":"12/15/1999"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Barcode",
+        "title":"QuickReader Menus",
+        "topics":"QuickReader, Barcode",
+        "year":"12/15/1999"
+    },
+    {
+        "authors":"Oppenheim, Alan V.; Willsky, Alan S. with Nawab, Hamid",
+        "isbn":"0-13-814757-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Engineering",
+        "title":"Signals & Systems 2nd Edition",
+        "topics":"Electrical Signals, Fourier Series, Transforms",
+        "year":"1997"
+    },
+    {
+        "authors":"Stephenson, Neal",
+        "isbn":"978-0-554-38095-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"n/a",
+        "title":"Snow Crash",
+        "topics":"Science Fiction",
+        "year":"1992"
+    },
+    {
+        "authors":"Jensen, Randall W.; Tonies, Charles C.",
+        "isbn":"0-13-822130-8",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Software Engineering",
+        "title":"Software Engineering",
+        "topics":"Software Engineering",
+        "year":"1979"
+    },
+    {
+        "authors":"Buxton, J. M.; Naur, Peter; Randell, Brian",
+        "isbn":"0-88405-334-2",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Software Engineering",
+        "title":"Software Engineering Concepts and Techniques",
+        "topics":"Software Engineering",
+        "year":"1976"
+    },
+    {
+        "authors":"Sun Microsystems",
+        "isbn":"0-13-160896-7",
+        "lang":"C",
+        "num":"1",
+        "subject":"Solaris",
+        "title":"Solaris multithreaded programming guide",
+        "topics":"Solaris, Unix, Multithreading",
+        "year":"1995"
+    },
+    {
+        "authors":"Staugaard Jr., Andrew C.",
+        "isbn":"0-13-012576-8",
+        "lang":"C++",
+        "num":"2",
+        "subject":"Programming",
+        "title":"Structuring Techniques: An Introduction to C++",
+        "topics":"C++",
+        "year":"1994"
+    },
+    {
+        "authors":"Hunt, Craig",
+        "isbn":"1-56592-322-7",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Networking",
+        "title":"TCP/IP Network Administration",
+        "topics":"TCP, IP, Networks, Administration, DNS, Email, BIND",
+        "year":"1998"
+    },
+    {
+        "authors":"AUTHOR",
+        "isbn":"ISBN",
+        "lang":"PROGRAMMING LANGUAGE",
+        "num":"NUM COPIES",
+        "subject":"SUBJECT AREA",
+        "title":"TITLE",
+        "topics":"TOPICS",
+        "year":"YEAR"
+    },
+    {
+        "authors":"Rogers, David F.; Earnshaw, Rae A.",
+        "isbn":"0-387-96492-4",
+        "lang":"C",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Techniques for Computer Graphics",
+        "topics":"Graphics",
+        "year":"1987"
+    },
+    {
+        "authors":"Ryan, Tim",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Game Design",
+        "title":"The Anatomy of A Design Document, Part 1",
+        "topics":"Game Design, Design Document, Documentation",
+        "year":"10/19/1999"
+    },
+    {
+        "authors":"Ryan, Tim",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Game Design",
+        "title":"The Anatomy of A Design Document, Part 2",
+        "topics":"Game Design, Design Document, Documentation",
+        "year":"12/17/1999"
+    },
+    {
+        "authors":"Knuth, Donald E.",
+        "isbn":"0-201-89683-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Programming Fundamentals",
+        "title":"The Art of Computer Programming Vol. 1, 3rd Ed.",
+        "topics":"Algorithms, Programming Fundamentals",
+        "year":"1997"
+    },
+    {
+        "authors":"Yaroshenko, Oleg",
+        "isbn":"1-874416-26-5",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"The Beginner's Guide to C++",
+        "topics":"C++",
+        "year":"1994"
+    },
+    {
+        "authors":"Goodman, Danny",
+        "isbn":"0-553-34391-2",
+        "lang":"HyperTalk",
+        "num":"1",
+        "subject":"HyperCard",
+        "title":"The Complete HyperCard Handbook",
+        "topics":"HyperCard, HyperTalk, Apple, UI",
+        "year":"1987"
+    },
+    {
+        "authors":"Stroustrup, Bjarne",
+        "isbn":"0-201-54330-3",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"The Design and Evolution of C++",
+        "topics":"C++",
+        "year":"1994"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Games",
+        "title":"The Heiretsu Kaizen Combat System in the Disruption of Essence Universe",
+        "topics":"Games, UPL, RPG, Combat System",
+        "year":"n/a"
+    },
+    {
+        "authors":"Messmer, Hans-Peter",
+        "isbn":"0-201-87697-3",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Computer Engineering",
+        "title":"The Indispensable PC Hardware Book",
+        "topics":"PC Hardware",
+        "year":"1995"
+    },
+    {
+        "authors":"Arnold, Ken; Gosling, James; Holmes, David",
+        "isbn":"0-201-70433-1",
+        "lang":"Java",
+        "num":"1",
+        "subject":"Programming",
+        "title":"The Java Programming Language",
+        "topics":"Java",
+        "year":"2000"
+    },
+    {
+        "authors":"Fogiel, Dr.M.",
+        "isbn":"0-87891-518-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Math, Linear Algebra",
+        "title":"The Linear Algebra Problem Solver",
+        "topics":"Linear Algebra Problems",
+        "year":"1984"
+    },
+    {
+        "authors":"Shotts, Jr., William E.",
+        "isbn":"978-1-59327-389-7",
+        "lang":"bash, Terminal",
+        "num":"1",
+        "subject":"Linux",
+        "title":"The Linux Command Line",
+        "topics":"Linux, Terminal, Command Line, bash, vi",
+        "year":"2012"
+    },
+    {
+        "authors":"Bergmann, Merrie; Moor, James; Nelson, Jack",
+        "isbn":"0-07-909524-0",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Mathematics",
+        "title":"The Logic Book",
+        "topics":"Mathematics, Logic",
+        "year":"1990"
+    },
+    {
+        "authors":"Smith, Roderick W.",
+        "isbn":"0-7897-2283-6",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Operating Systems",
+        "title":"The Milti-Boot Configuration Handbook",
+        "topics":"Multi-Boot",
+        "year":"2000"
+    },
+    {
+        "authors":"Weaver, David",
+        "isbn":"0-13-099227-5",
+        "lang":"Sparc assembly",
+        "num":"1",
+        "subject":"Systems Programming",
+        "title":"The Sparc architecture manual",
+        "topics":"Sparc architecture, assembly language, systems programming",
+        "year":"1994"
+    },
+    {
+        "authors":"Groening, Matt",
+        "isbn":"0-06-051630-5",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Fiction",
+        "title":"The Ultimate Simpsons In a Big Ol' Box",
+        "topics":"TV, Simpsions",
+        "year":"1997"
+    },
+    {
+        "authors":"Schroeder, Will; Martin, Ken; Lorenson, Bill",
+        "isbn":"0-13-954694-4",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"The Visualization Toolkit",
+        "topics":"Graphics, OOP",
+        "year":"1998"
+    },
+    {
+        "authors":"Walsh, Peter",
+        "isbn":"0-7615-3429-6",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"The Zen of Direct3D Game Programming",
+        "topics":"Graphics, games",
+        "year":"2001"
+    },
+    {
+        "authors":"Thomas Jr., George B. (et al.)",
+        "isbn":"978-0-321-72641-4",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Mathematics",
+        "title":"Thomas' Calculus with Second-Order Differential Equations (12th Ed)",
+        "topics":"Mathematics, Calculus, 221, 222, 234, Differential Equations",
+        "year":"2011"
+    },
+    {
+        "authors":"LaMothe, Andr\u00e9",
+        "isbn":"0-672-31361-8",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Tricks of the Windows Game Programming Gurus",
+        "topics":"Games, 3D graphics, 2D graphics, Windows",
+        "year":"1999"
+    },
+    {
+        "authors":"Goodheart, Berny",
+        "isbn":"0-13-931957-3",
+        "lang":"C",
+        "num":"1",
+        "subject":"Curses/UNIX",
+        "title":"UNIX Curses Explained",
+        "topics":"Curses, UNIX",
+        "year":"1991"
+    },
+    {
+        "authors":"Nemeth, Evi; Snyder, Garth; Seebass Scott; Hein, Trent",
+        "isbn":"0-13-151051-7",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"UNIX System Administration Handbook",
+        "topics":"Booting, root, filesystem, processes, users, drivers, serial devices, disks, backup, kernels, networking",
+        "year":"1995"
+    },
+    {
+        "authors":"Peek, Jerry; O'Reilly, Tim; Loukides, Mike",
+        "isbn":"0-679-79073-X",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"UNIX power tools",
+        "topics":"UNIX, passwords, pipes, backups, VIM, EMACS, AWK, Disks",
+        "year":"1993"
+    },
+    {
+        "authors":"Bovet, Daniel; Cesati, Marco",
+        "isbn":"0-596-00002-2",
+        "lang":"C",
+        "num":"1",
+        "subject":"Linux",
+        "title":"Understanding the Linux Kernel",
+        "topics":"Linux, Kernel, Kernel Development, Systems Programming",
+        "year":"2001"
+    },
+    {
+        "authors":"DuBois, Paul",
+        "isbn":"1-56592-132-1",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"Using csh & tcsh",
+        "topics":"Shells, csh, tsch",
+        "year":"1995"
+    },
+    {
+        "authors":"Hyman, Michael; Arnson, Bob",
+        "isbn":"0-7645-0372-3",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Visual C++ 6 For Dummies",
+        "topics":"Microsoft, C++, Visual C++",
+        "year":"1998"
+    },
+    {
+        "authors":"n/a",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"What's New in Maya 6",
+        "topics":"Graphics, 3D animation, Maya",
+        "year":"2004"
+    },
+    {
+        "authors":"Cohen, Aaron; Woodring, Mike",
+        "isbn":"1-56592-296-4",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Windows",
+        "title":"Win32 Multithreaded programming",
+        "topics":"Windows, Multithreading",
+        "year":"1998"
+    },
+    {
+        "authors":"Leventhal, Lance A.",
+        "isbn":"0931988-21-7",
+        "lang":"Z80",
+        "num":"1",
+        "subject":"Assembly",
+        "title":"Z80 Assembly Language Programming",
+        "topics":"Assembly, Z80",
+        "year":"1979"
+    },
+    {
+        "authors":"Abrash, Michael",
+        "isbn":"1-883577-08-X",
+        "lang":"Assembly, C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"Zen of Graphics Programming",
+        "topics":"Graphics, 3D animation",
+        "year":"1995"
+    },
+    {
+        "authors":"Heesch, Dimitri van",
+        "isbn":"n/a",
+        "lang":"n/a",
+        "num":"2",
+        "subject":"doxygen",
+        "title":"doxygen manual version 1.3.6",
+        "topics":"doxygen, Manual, Tutorial",
+        "year":"2004"
+    },
+    {
+        "authors":"Dougherty, Dale",
+        "isbn":"0-937175-59-5",
+        "lang":"sed/awk",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"sed & awk",
+        "topics":"sed, awk, UNIX",
+        "year":"1991"
+    },
+    {
+        "authors":"Costales, Bryan; Allman, Eric; Rickert, Neil",
+        "isbn":"1-56592-056-2",
+        "lang":"n/a",
+        "num":"1",
+        "subject":"UNIX",
+        "title":"sendmail",
+        "topics":"UNIX, Email",
+        "year":"1993"
+    }
+]

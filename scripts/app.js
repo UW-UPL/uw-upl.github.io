@@ -49,14 +49,19 @@ angular.module('upl-site', ['ngRoute', "rzModule"]).
                 templateUrl: 'views/lab.html',
                 controller: 'LabController'
             }).
+            when('/library', {
+                templateUrl: 'views/library.html',
+                controller: 'LibraryController'
+            }).
             otherwise({
                 redirectTo: '/'
             });
     }).
-    run(['CoordFactory', 'EventsFactory', 'HoursFactory', 'ProjectsFactory', 'LabFactory', function(Coords, Events, Hours, Projects, Lab) {
+    run(['CoordFactory', 'EventsFactory', 'HoursFactory', 'ProjectsFactory', 'LabFactory', 'LibraryFactory', function(Coords, Events, Hours, Projects, Lab, Library) {
         Coords.populate();
         Events.populate();
         Hours.populate();
         Projects.populate();
         Lab.populate();
+        Library.populate();
     }]);
