@@ -108,6 +108,15 @@
         "github": "https://github.com/ranman166",
         "emoji": "octopus"
     },
+    {
+        "id": "borst",
+        "name": "Christian Borst",
+        "year": "Junior",
+        "major": "Computer Sciences and Mathematics",
+        "photo": "christianborst.jpg",
+        "github": "https://github.com/christianborst",
+        "emoji": "scales"
+    },
 
     {
         "id": "ekivolowitz",
