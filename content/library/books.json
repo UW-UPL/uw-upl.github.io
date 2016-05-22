@@ -120,6 +120,16 @@
         "year":"1992"
     },
     {
+        "authors":"Kleinberg, Jon; Tados, Eva",
+        "isbn":"0-321-29535-8",
+        "lang":"N/A",
+        "num":"1",
+        "subject":"Algorithms",
+        "title":"Algorithm Design",
+        "topics":"Algorithms",
+        "year":"2006"
+    },
+    {
         "authors":"Fromkin, Victoria; Rodman, Robert",
         "isbn":"0-03-006532-1",
         "lang":"n/a",
@@ -373,7 +383,7 @@
         "authors":"McDowell, Gayle Laakmann",
         "isbn":"978-0-9847828-5-7",
         "lang":"n/a",
-        "num":"3",
+        "num":"2",
         "subject":"Interview Prep",
         "title":"Cracking the Coding Interview 6th Edition",
         "topics":"Inverview Questions",
@@ -450,6 +460,16 @@
         "year":"2003"
     },
     {
+        "authors":"Ramakrishnana; Gehrke",
+        "isbn":"0-07-246563-8",
+        "lang":"SQL",
+        "num":"1",
+        "subject":"Databases",
+        "title":"Database Management Systems 3rd Edition",
+        "topics":"Databases, SQL",
+        "year":"2003"
+    },
+    {
         "authors":"Rob, Peter; Coronel, Carlos",
         "isbn":"0-619-06269-X",
         "lang":"SQL",
@@ -518,6 +538,16 @@
         "title":"Essential System Administration",
         "topics":"Security, UNIX, backup, automation, disks, accounts",
         "year":"1991"
+    },
+    {
+        "authors":"Frisch, \u00c6leen",
+        "isbn":"978-0-596-00343-2",
+        "lang":"n/a",
+        "num":"",
+        "subject":"programming",
+        "title":"Essential System Administration 3rd edition",
+        "topics":"System Admin.",
+        "year":"2002"
     },
     {
         "authors":"Beck, Kent",
@@ -850,6 +880,16 @@
         "year":"1997"
     },
     {
+        "authors":"Flanagan, David",
+        "isbn":"978-0-596-80552-4",
+        "lang":"Javascript",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Javascript: The Definitive Guide",
+        "topics":"Javascript, ECMAScript 5, HTML5",
+        "year":"2011"
+    },
+    {
         "authors":"Apple",
         "isbn":"0-596-00160-6",
         "lang":"Objective-C",
@@ -878,6 +918,16 @@
         "title":"Learning Maya: Rendering",
         "topics":"Graphics, 3D animation, Maya",
         "year":"2002"
+    },
+    {
+        "authors":"Schwartz, Randal L.; foy, brian d.; Phoenix, Tom",
+        "isbn":"978-1-449-30358-7",
+        "lang":"Perl",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Learning Perl",
+        "topics":"Perl, Programming",
+        "year":"2011"
     },
     {
         "authors":"Lay, David C.",
@@ -1260,6 +1310,16 @@
         "year":"2002"
     },
     {
+        "authors":"Randi J, Rost Bill Licea-Kane",
+        "isbn":"978-0-321-63763-5",
+        "lang":"Open GL ",
+        "num":"",
+        "subject":"Graphics",
+        "title":"Open GL Shading Language third edition",
+        "topics":"Graphics, shading",
+        "year":"2010"
+    },
+    {
         "authors":"Fogel, Karl",
         "isbn":"1",
         "lang":"",
@@ -1268,6 +1328,26 @@
         "title":"Open Source Development with CVS",
         "topics":"CVS, Programming",
         "year":"1999"
+    },
+    {
+        "authors":"Wolff, David",
+        "isbn":"978-1-849514-76-7",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"OpenGL 4.0 Shading Language Cookboook",
+        "topics":"OpenGL, Shaders, C++, Graphics",
+        "year":"2011"
+    },
+    {
+        "authors":"Munshi, Aaftab; Ginsburg, Dan; Shreiner, Dave",
+        "isbn":"978-0-321-50279-7",
+        "lang":"C++",
+        "num":"1",
+        "subject":"Graphics",
+        "title":"OpenGL ES 2.0 Programming Guide",
+        "topics":"OpenGL, C++, Graphics",
+        "year":"2009"
     },
     {
         "authors":"Hawkins, Kevin; Astle, Dave",
@@ -1530,6 +1610,16 @@
         "year":"2002"
     },
     {
+        "authors":"Larry Wall, Tom Christiansen & Jon Orwant",
+        "isbn":"0-596-00027-8",
+        "lang":"Perl",
+        "num":"",
+        "subject":"progamming",
+        "title":"Programming Perl",
+        "topics":"Perl",
+        "year":"2000"
+    },
+    {
         "authors":"Lutz, Mark",
         "isbn":"1-56592-197-6",
         "lang":"Python",
@@ -1610,6 +1700,16 @@
         "year":"12/15/1999"
     },
     {
+        "authors":"Baird, Kevin C.",
+        "isbn":"978-1-59327-148-0",
+        "lang":"Ruby",
+        "num":"1",
+        "subject":"Programming",
+        "title":"Ruby By Example: Concepts and Code",
+        "topics":"Ruby, Object Oriented Programming, Functional Programming, Ruby on Raisl",
+        "year":"2007"
+    },
+    {
         "authors":"Oppenheim, Alan V.; Willsky, Alan S. with Nawab, Hamid",
         "isbn":"0-13-814757-4",
         "lang":"n/a",
@@ -1680,16 +1780,6 @@
         "year":"1998"
     },
     {
-        "authors":"AUTHOR",
-        "isbn":"ISBN",
-        "lang":"PROGRAMMING LANGUAGE",
-        "num":"NUM COPIES",
-        "subject":"SUBJECT AREA",
-        "title":"TITLE",
-        "topics":"TOPICS",
-        "year":"YEAR"
-    },
-    {
         "authors":"Rogers, David F.; Earnshaw, Rae A.",
         "isbn":"0-387-96492-4",
         "lang":"C",
@@ -1730,6 +1820,16 @@
         "year":"1997"
     },
     {
+        "authors":"Matloff, Norman",
+        "isbn":"978-1-59327-2",
+        "lang":"R",
+        "num":"1",
+        "subject":"Programming",
+        "title":"The Art of R Programming: A Tour of Statistical Software Design",
+        "topics":"R, Programming, Data",
+        "year":"2011"
+    },
+    {
         "authors":"Yaroshenko, Oleg",
         "isbn":"1-874416-26-5",
         "lang":"C++",
@@ -1738,6 +1838,16 @@
         "title":"The Beginner's Guide to C++",
         "topics":"C++",
         "year":"1994"
+    },
+    {
+        "authors":"Kernighan, Brian W.; Ritchie, Dennis M.",
+        "isbn":"0-13-110362-8",
+        "lang":"C",
+        "num":"1",
+        "subject":"Programming",
+        "title":"The C Programming Language",
+        "topics":"C, Unix, Programming, Operating Systems",
+        "year":"2013"
     },
     {
         "authors":"Goodman, Danny",

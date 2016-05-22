@@ -8,7 +8,8 @@ def main(filename):
     books = []
     with open(filename, 'r') as f:
         lines = csv.reader(f, delimiter='\t')
-        for l in lines:
+        for i, l in enumerate(lines):
+            if i == 0: continue
             title, authors, isbn, year, subject, lang, topics, num = l
             books.append({
                 'title': title,
