@@ -11,17 +11,8 @@ def main(filename):
         for i, l in enumerate(lines):
             if i == 0: continue
             title, authors, isbn, year, subject, lang, topics, num = l
-            books.append({
-                'title': title,
-                'authors': authors,
-                'isbn': isbn,
-                'year': year,
-                'subject': subject,
-                'lang': lang,
-                'topics': topics,
-                'num': num,
-            })
-    books.sort(key=lambda x: x['title'])
+            books.append([title, authors, subject, year, lang, topics, num, isbn])
+    books.sort(key=lambda x: x[0])
     print json.dumps(books, sort_keys=True, indent=4, separators=(',', ':'))
 
 if __name__ == '__main__':
