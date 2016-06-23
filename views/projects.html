@@ -5,10 +5,12 @@
         <li ng-repeat="project in projects | orderBy: 'title' track by $index" id="proj-{{project.title}}">
             <div class="project">
                 <div class='project-img-container' ng-if='project.image'>
-                  <a ng-href='{{ project.imageLink || project.link }}'>
-                    <img class='project-img'
-                      ng-src='{{ (project.imageRemote ? "" : "content/projects/") + project.image }}'>
-                  </a>
+                    <div class='project-img-frame'>
+                        <a ng-href='{{ project.imageLink || project.link }}'>
+                            <img class='project-img'
+                            ng-src='{{ (project.imageRemote ? "" : "content/projects/") + project.image }}'>
+                        </a>
+                    </div>
                 </div>
                 <div class="project-desc">
                     <h2 class="project-title">{{project.title}}</h2>

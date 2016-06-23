@@ -683,12 +683,20 @@ h1 {
   border-bottom: 1px solid #B6B6B6;
   padding: 12px 0; }
   .project .project-img-container {
-    margin-bottom: 2em; }
-    .project .project-img-container .project-img {
-      max-width: 50vw;
+    max-width: 90%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    border-bottom: 1px solid #EEE; }
+    .project .project-img-container .project-img-frame {
       display: block;
       margin: 0 auto;
-      border-bottom: 1px dotted #B6B6B6; }
+      max-width: 50vmin; }
+      .project .project-img-container .project-img-frame .project-img {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 1em; }
   .project .project-title {
     margin-top: 0; }
   .project h3 {

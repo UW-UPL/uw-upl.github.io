@@ -3,12 +3,23 @@
     padding: 12px 0;
 
     .project-img-container {
-      margin-bottom: 2em;
-        .project-img {
-            max-width: 50vw;
+        max-width: 90%;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 1em;
+        margin-left: auto;
+        border-bottom: 1px solid $lightDivider;
+
+        .project-img-frame {
             display: block;
             margin: 0 auto;
-            border-bottom: 1px dotted $divider;
+            max-width: 50vmin;
+
+            .project-img {
+                margin: 0 auto;
+                display: block;
+                padding-bottom: 1em;
+            }
         }
     }
 
