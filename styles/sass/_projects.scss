@@ -2,6 +2,16 @@
     border-bottom: 1px solid $divider;
     padding: 12px 0;
 
+    .project-img-container {
+      margin-bottom: 2em;
+        .project-img {
+            max-width: 50vw;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 1px dotted $divider;
+        }
+    }
+
     .project-title {
         margin-top: 0;
     }

@@ -682,6 +682,13 @@ h1 {
 .project {
   border-bottom: 1px solid #B6B6B6;
   padding: 12px 0; }
+  .project .project-img-container {
+    margin-bottom: 2em; }
+    .project .project-img-container .project-img {
+      max-width: 50vw;
+      display: block;
+      margin: 0 auto;
+      border-bottom: 1px dotted #B6B6B6; }
   .project .project-title {
     margin-top: 0; }
   .project h3 {
