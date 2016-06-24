@@ -32,6 +32,12 @@ angular.module('upl-site')
 
         // TODO: accounts for "off-by-one-hour" events due to DST
         // see http://stackoverflow.com/questions/11887934/check-if-daylight-saving-time-is-in-effect-and-if-it-is-for-how-many-hours
+        /*
+         * What needs to happen:
+         * maybe normalize everything to either yes-DST or no-DST
+         * add +/- 1 hr to normalize
+         * so 7pm in Feb == 7pm in June for example
+         */
         var createRepeatingEvents = function (repeatingEvent) {
           const repeatData = repeatingEvent.repeats;
 

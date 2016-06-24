@@ -34,22 +34,11 @@ angular.module('upl-site').
         function convertToMadisonTime(dateObj) {
           //I apologize for the esoteric-ness of the following code
           //See http://bit.ly/1LGQwnq
+          //(Date has been augmented with this code in `app.js`)
           var madisonDay;
           var madisonHour;
           var madisonMinute;
-          var isDaylightSavings;
-
-          var jan = new Date(dateObj.getFullYear(), 0, 1);
-          var jul = new Date(dateObj.getFullYear(), 6, 1);
-
-          var janOff = jan.getTimezoneOffset();
-          var julOff = jul.getTimezoneOffset();
-
-          var stdTimezoneOffset = Math.max(janOff, julOff);
-
-          var currOff = dateObj.getTimezoneOffset();
-
-          isDaylightSavings = currOff < stdTimezoneOffset;
+          var isDaylightSavings = dateObj.isDST();
 
           // what is the offset to CST/CDT?
           var hoursBehind = isDaylightSavings ? 5 : 6;
