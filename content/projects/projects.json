@@ -36,6 +36,7 @@
         "authors": ["Sean Wilson"],
         "description": "An elementary assembler for the RISC-V ISA.",
         "link": "https://github.com/spwilson2/RISCY-AS",
+        "imageLink": "https://riscv.org/",
         "image": "riscv-logo-retina.jpg"
     },
 
