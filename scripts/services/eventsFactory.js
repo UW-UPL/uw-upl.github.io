@@ -29,15 +29,26 @@ angular.module('upl-site')
 
         };
 
+        // this function determines how much of an offset (0/+1/-1) we need
+        // when comparing two dates WRT daylight savings
+        // `basis` is the date that we are comparing target to
+        // it is often the `startDate` of a repeating event
+        const getDSTOffset = function(basisDate, targetDate) {
+          const oneHour = 60 * 60 * 1000;
+          if (basisDate.isDST() == targetDate.isDST()) {
+            // no difference in timing
+            return 0;
+          } else if (basisDate.isDST()) {
+            // basis DST: true  | target DST: false
+            return +oneHour;
+          } else {
+            // basis DST: false | target DST: true
+            return -oneHour;
+          }
+        };
 
-        // TODO: accounts for "off-by-one-hour" events due to DST
+
         // see http://stackoverflow.com/questions/11887934/check-if-daylight-saving-time-is-in-effect-and-if-it-is-for-how-many-hours
-        /*
-         * What needs to happen:
-         * maybe normalize everything to either yes-DST or no-DST
-         * add +/- 1 hr to normalize
-         * so 7pm in Feb == 7pm in June for example
-         */
         var createRepeatingEvents = function (repeatingEvent) {
           const repeatData = repeatingEvent.repeats;
 
@@ -108,19 +119,26 @@ angular.module('upl-site')
           if (startDate.getTime() + repeatOffset < nowTimestamp) {
             var newPreviousEvent = angular.copy(repeatingEvent);
 
-            newPreviousEvent.date  = newPreviousEventTimestamp;
+            const prevDSTOffset =
+              getDSTOffset(startDate, new Date(newPreviousEventTimestamp));
+
+            newPreviousEvent.date = newPreviousEventTimestamp + prevDSTOffset;
             newPreviousEvent.title = repeatingEventTitle;
 
             newEvents.push(newPreviousEvent);
           }
 
           // now for the upcoming repeating event
+          // if we've gotten here, we know that we can DEFINITELY include it
           const newUpcomingEventTimestamp =
             startDate.getTime() + ((numElapsedRepeats + 1) * repeatOffset);
 
           var newUpcomingEvent = angular.copy(repeatingEvent);
 
-          newUpcomingEvent.date  = newUpcomingEventTimestamp;
+          const upcomingDSTOffset =
+            getDSTOffset(startDate, new Date(newUpcomingEventTimestamp));
+
+          newUpcomingEvent.date = newUpcomingEventTimestamp + upcomingDSTOffset;
           newUpcomingEvent.title = repeatingEventTitle;
 
           newEvents.push(newUpcomingEvent);
