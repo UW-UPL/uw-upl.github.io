@@ -4,17 +4,82 @@ angular.module('upl-site').
     factory("ProjectsFactory", ['$http', '$q', function($http, $q) {
         var deferred = $q.defer();
         var service = {};
+        var ghRepos = {};
 
         service.list = function() {
             return deferred.promise;
         };
 
+        service.gitHubData = function (link) {
+          if (ghRepos[link]) {
+            return ghRepos[link].promise;
+          } else {
+            return null;
+          }
+        };
+
         service.populate = function() {
             $http.get('content/projects/projects.json').then(function(response) {
                 deferred.resolve(response.data);
+                // XXX: maybe zip in the latest commit date with the project objects?
+                populateGitHubData(response.data);
             }, function(response) {
                 deferred.reject("Error loading projects");
             });
+        };
+
+        var populateGitHubData = function(data) {
+          // first build up the map of link => promise
+          data.forEach(function(project) {
+            var link = project.link;
+            if (link && link.includes('github.com')) {
+              ghRepos[link] = $q.defer();
+            } else {
+              // do nothing
+            }
+          });
+
+          var baseURL = 'https://api.github.com/';
+
+          // then execute the requests for the promises
+          for (var link in ghRepos) {
+            var parse = parseOwnerAndRepoFromLink(link);
+
+            // default to always fetching the master branch
+            var getURL = baseURL + 'repos/' + parse.owner
+              + '/' + parse.repo + '/branches/master';
+
+            $http.get(getURL).then(function(response) {
+              console.log(response);
+              var headCommit      = response.data.commit.commit.committer;
+              var headCommitDate  = new Date(headCommit.date);
+
+              console.log(link, headCommitDate);
+
+              // use the timestamp instead of the date object
+              ghRepos[link].resolve(headCommitDate.getTime());
+            }, function(response) {
+              // TODO: test this failure case!
+              ghRepos[link].reject('Error loading GitHub information');
+            });
+          }
+        };
+
+        var parseOwnerAndRepoFromLink = function(link) {
+          // I'm not saying this regex is 100% robust,
+          // but it should cover most cases, feel free to update
+          var regex = /github\.com\/([\w-]+)\/([\w-]+)/;
+
+          var matches = link.match(regex);
+
+          if (!matches) {
+            return null;
+          } else {
+            return {
+              owner:  matches[1],
+              repo:   matches[2]
+            };
+          }
         };
 
         return service;
