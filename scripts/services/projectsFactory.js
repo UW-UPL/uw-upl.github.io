@@ -22,12 +22,14 @@ angular.module('upl-site').
             $http.get('content/projects/projects.json').then(function(response) {
                 deferred.resolve(response.data);
                 // XXX: maybe zip in the latest commit date with the project objects?
+                console.log('POPULATING...'); // only repopulates on refresh (duh)
                 populateGitHubData(response.data);
             }, function(response) {
                 deferred.reject("Error loading projects");
             });
         };
 
+        // TODO: only fetch if the field isn't present
         var populateGitHubData = function(data) {
           // first build up the map of link => promise
           data.forEach(function(project) {
@@ -88,6 +90,10 @@ angular.module('upl-site').
         var failureGitHubResponseHandler = function (repoLink) {
           return function (response) {
             // TODO: test this failure case!
+            // TODO: this will happen if the rate limit is hit!
+            // XXX: maybe don't fetch the latest commit if the field is already valid...
+            // rate limit <-> reponse.status === 403
+            console.log('FAILURE!', response);
             ghRepos[repoLink].reject('Error loading GitHub information');
           };
         };

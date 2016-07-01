@@ -1,7 +1,8 @@
 "use strict";
 
 angular.module('upl-site').
-    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", function($scope, Events, Projects, Lab) {
+    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", '$filter',
+      function($scope, Events, Projects, Lab, $filter) {
         $scope.events = [];
         $scope.projects = [];
 
@@ -48,11 +49,15 @@ angular.module('upl-site').
             }
 
             // TODO: this should be done in the view
+            /*
             data.sort(function(a, b) {
                 // TODO: github sort here (but in view!!!)
                 return a.title.toLocaleLowerCase()
                     .localeCompare(b.title.toLocaleLowerCase());
             });
+            -- transitioning this sort into the view
+            */
+            data = $filter('orderBy')(data, ['-latestCommitTimestamp', '+title']);
             // TODO: the Left/Right split should be accomplished through CSS
             var left = true;
             var row = 0;
