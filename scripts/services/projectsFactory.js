@@ -10,7 +10,7 @@ angular.module('upl-site').
             return deferred.promise;
         };
 
-        service.gitHubData = function (link) {
+        service.getGitHubDataPromise = function (link) {
           if (ghRepos[link]) {
             return ghRepos[link].promise;
           } else {
@@ -43,14 +43,15 @@ angular.module('upl-site').
 
           // then execute the requests for the promises
           for (var link in ghRepos) {
+            console.log(`link is ${link}`);
             var parse = parseOwnerAndRepoFromLink(link);
 
             // default to always fetching the master branch
             var getURL = baseURL + 'repos/' + parse.owner
               + '/' + parse.repo + '/branches/master';
 
+            /*
             $http.get(getURL).then(function(response) {
-              console.log(response);
               var headCommit      = response.data.commit.commit.committer;
               var headCommitDate  = new Date(headCommit.date);
 
@@ -62,7 +63,33 @@ angular.module('upl-site').
               // TODO: test this failure case!
               ghRepos[link].reject('Error loading GitHub information');
             });
+            */
+
+            $http.get(getURL).then(
+                successGitHubResponseHandler(link),
+                failureGitHubResponseHandler(link)
+            );
           }
+        };
+
+        // need to return a closure because iteration over keys is dumb & slow
+        var successGitHubResponseHandler = function (repoLink) {
+          return function (response) {
+            var headCommit      = response.data.commit.commit.committer;
+            var headCommitDate  = new Date(headCommit.date);
+
+            console.log(repoLink, headCommitDate);
+
+            // use the timestamp instead of the date object
+            ghRepos[repoLink].resolve(headCommitDate.getTime());
+          };
+        };
+
+        var failureGitHubResponseHandler = function (repoLink) {
+          return function (response) {
+            // TODO: test this failure case!
+            ghRepos[repoLink].reject('Error loading GitHub information');
+          };
         };
 
         var parseOwnerAndRepoFromLink = function(link) {

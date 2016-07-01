@@ -52,6 +52,8 @@
             <div class="project-inner-box">
               <h3 class="project-title"><a ng-href="/#/projects#proj-{{project.title}}">{{project.title}}</a></h3>
               <p>{{project.description}}</p>
+              <!--<pre>{{ project | json }}</pre>-->
+              <p ng-cloak>Last updated {{ project.latestCommitTimestamp | date }}</p>
             </div>
           </div>
         </div>
