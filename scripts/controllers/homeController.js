@@ -4,7 +4,8 @@ angular.module('upl-site').
     controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", '$filter',
       function($scope, Events, Projects, Lab, $filter) {
         $scope.events = [];
-        $scope.projects = [];
+        $scope.pairedProjects = [];
+        $scope.rawProjects = []; // TODO: try to go to just `projects`
 
         /* Events */
         Events.list().then(function(data) {
@@ -36,48 +37,46 @@ angular.module('upl-site').
               var ghPromise = Projects.getGitHubDataPromise(project.link);
 
               if (ghPromise) {
-                /*
-                ghPromise.then(function(latestCommitTimestamp) {
-                  console.log(`title: ${ project.title }, ts: ${ latestCommitTimestamp }`);
-                  project.latestCommitTimestamp = latestCommitTimestamp;
-                });
-                */
                 ghPromise.then(successHandler(project), failureHandler(project));
               } else {
                 project.latestCommitTimestamp = 0;
               }
             }
 
-            // TODO: this should be done in the view
-            /*
-            data.sort(function(a, b) {
-                // TODO: github sort here (but in view!!!)
-                return a.title.toLocaleLowerCase()
-                    .localeCompare(b.title.toLocaleLowerCase());
-            });
-            -- transitioning this sort into the view
-            */
-            data = $filter('orderBy')(data, ['-latestCommitTimestamp', '+title']);
-            // TODO: the Left/Right split should be accomplished through CSS
-            var left = true;
-            var row = 0;
-            for (var i = 0; i < data.length; i++) {
-                var d = data[i];
-                if (d.description.length > 100) {
-                    d.description = d.description.substring(0, 100) + "...";
-                }
-                // TODO: shouldn't `left` be `i % 2 == 0` and `row` be `Math.floor(i/2)`?
-                if (left) {
-                    $scope.projects.push([d]);
-                    left = false;
-                } else {
-                    $scope.projects[row].push(d);
-                    left = true;
-                    row++;
-                }
-            }
+            // TODO: update the sorting order on promise completion
+            $scope.rawProjects = data;
         }, function(data) {
             alert(data);
+        });
+
+        var sortProjects = function(projects) {
+          var orderingExpr = ['-latestCommitTimestamp', '+title'];
+          return $filter('orderBy')(projects, orderingExpr);
+        };
+
+        var chunkArray = function(array, chunkSize) {
+          var chunk = function(n) {
+            return function(acc, project, projectInd, arr) {
+              if (projectInd % n === 0) {
+                var newChunk = arr.slice(projectInd, projectInd + n);
+                return acc.concat([newChunk]);
+              } else {
+                return acc;
+              }
+            };
+          };
+
+          return array.reduce(chunk(chunkSize), []);
+        };
+
+        var sortAndChunk = function(projects) {
+          return chunkArray(sortProjects(projects), 2);
+        };
+
+        // TODO: this does not seem to work as intended
+        // maybe call some `pairedProject` updater function in the promise callback
+        $scope.$watch('rawProjects', function() {
+          $scope.pairedProjects = sortAndChunk($scope.rawProjects);
         });
 
         /* Webcam stuff */

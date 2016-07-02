@@ -43,20 +43,21 @@
         </ul>
     </section>
 
-    <section class="home-container projects-container" ng-if="projects.length">
+    <section class="home-container projects-container" ng-if="pairedProjects.length">
       <h2>Projects</h2>
-      Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">Pull Request on github</a> to add your projects here!
+      Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">Pull Request on GitHub</a> to add your projects here!
       <div class="project-table">
-        <div class="project-row" ng-repeat="pair in projects">
+        <div class="project-row" ng-repeat="pair in pairedProjects track by $index">
           <div class="project-box" ng-repeat="project in pair">
             <div class="project-inner-box">
               <h3 class="project-title"><a ng-href="/#/projects#proj-{{project.title}}">{{project.title}}</a></h3>
               <p>{{project.description}}</p>
-              <!--<pre>{{ project | json }}</pre>-->
-              <p ng-cloak>Last updated {{ project.latestCommitTimestamp | date }}</p>
+              <p ng-show='project.latestCommitTimestamp'>
+                Last updated {{ project.latestCommitTimestamp | date }}
+              </p>
             </div>
           </div>
         </div>
+      </div>
     </section>
-
 </div>
