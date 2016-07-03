@@ -85,12 +85,14 @@ angular.module('upl-site').
 
         var failureGitHubResponseHandler = function (repoLink) {
           return function (response) {
-            // TODO: test this failure case!
-            // TODO: this will happen if the rate limit is hit!
-            // XXX: maybe don't fetch the latest commit if the field is already valid...
-            // rate limit <-> reponse.status === 403
-            console.log('FAILURE!', response);
-            ghRepos[repoLink].reject('Error loading GitHub information');
+            // this will likely happen if the rate limit is hit!
+            // rate limit exceeded <-> reponse.status === 403;
+            // if you are worried about the 403 errors logged in the console,
+            // they are put there by the browser (i.e. there is no method to
+            // catch or hide them);
+            // since we are using this failure handler and rejecting the
+            // promise, we can handle this case gracefully later on
+            ghRepos[repoLink].reject(response);
           };
         };
 
