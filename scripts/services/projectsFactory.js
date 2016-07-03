@@ -5,6 +5,7 @@ angular.module('upl-site').
         var deferred = $q.defer();
         var service = {};
         var ghRepos = {};
+        var SHOULD_PULL_GITHUB_DATA = true;
 
         service.list = function() {
             return deferred.promise;
@@ -21,15 +22,14 @@ angular.module('upl-site').
         service.populate = function() {
             $http.get('content/projects/projects.json').then(function(response) {
                 deferred.resolve(response.data);
-                // XXX: maybe zip in the latest commit date with the project objects?
-                console.log('POPULATING...'); // only repopulates on refresh (duh)
-                populateGitHubData(response.data);
+                if (SHOULD_PULL_GITHUB_DATA) {
+                  populateGitHubData(response.data);
+                }
             }, function(response) {
                 deferred.reject("Error loading projects");
             });
         };
 
-        // TODO: only fetch if the field isn't present
         var populateGitHubData = function(data) {
           // first build up the map of link => promise
           data.forEach(function(project) {
@@ -37,7 +37,20 @@ angular.module('upl-site').
             if (link && link.includes('github.com')) {
               ghRepos[link] = $q.defer();
             } else {
-              // do nothing
+              /* DO NOTHING -- if we wanted to allow non-GitHub repos
+               * to use the sorting ability, we could allow users to enter
+               * in the JS timestamp in the projects JSON themselves.
+               * The code directly below "should" be correct for that purpose, but the
+               * for loop below would need to be modified to handle
+               * non-GitHub repos.
+              // if a timestamp was supplied in the JSON
+              if (data.latestCommitTimestamp) {
+                // a promise with an immediately fulfilled value
+                ghRepos[link] = $q(data.latestCommitTimestamp);
+              } else {
+                // do nothing
+              }
+              */
             }
           });
 
@@ -45,27 +58,11 @@ angular.module('upl-site').
 
           // then execute the requests for the promises
           for (var link in ghRepos) {
-            console.log(`link is ${link}`);
             var parse = parseOwnerAndRepoFromLink(link);
 
             // default to always fetching the master branch
             var getURL = baseURL + 'repos/' + parse.owner
               + '/' + parse.repo + '/branches/master';
-
-            /*
-            $http.get(getURL).then(function(response) {
-              var headCommit      = response.data.commit.commit.committer;
-              var headCommitDate  = new Date(headCommit.date);
-
-              console.log(link, headCommitDate);
-
-              // use the timestamp instead of the date object
-              ghRepos[link].resolve(headCommitDate.getTime());
-            }, function(response) {
-              // TODO: test this failure case!
-              ghRepos[link].reject('Error loading GitHub information');
-            });
-            */
 
             $http.get(getURL).then(
                 successGitHubResponseHandler(link),
@@ -78,9 +75,8 @@ angular.module('upl-site').
         var successGitHubResponseHandler = function (repoLink) {
           return function (response) {
             var headCommit      = response.data.commit.commit.committer;
+            // convert the date string to a date object
             var headCommitDate  = new Date(headCommit.date);
-
-            console.log(repoLink, headCommitDate);
 
             // use the timestamp instead of the date object
             ghRepos[repoLink].resolve(headCommitDate.getTime());

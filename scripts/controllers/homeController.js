@@ -1,11 +1,11 @@
 "use strict";
 
 angular.module('upl-site').
-    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", '$filter',
-      function($scope, Events, Projects, Lab, $filter) {
+    controller('HomeController', ['$scope', '$filter', 'EventsFactory', 'ProjectsFactory', "LabFactory",
+      function($scope, $filter, Events, Projects, Lab) {
         $scope.events = [];
         $scope.pairedProjects = [];
-        $scope.rawProjects = []; // TODO: try to go to just `projects`
+        var rawProjects = [];
 
         /* Events */
         Events.list().then(function(data) {
@@ -19,37 +19,44 @@ angular.module('upl-site').
 
             var successHandler = function(project) {
               return function(latestCommitTimestamp) {
-                console.log(`title: ${ project.title }, ts: ${ latestCommitTimestamp }`);
                 project.latestCommitTimestamp = latestCommitTimestamp;
               };
             };
 
             var failureHandler = function(project) {
               return function() {
-                console.log('fetch failure');
                 project.latestCommitTimestamp = 0;
               };
             };
 
+            rawProjects = data;
+
             // first get all the GitHub data
-            for (var projectInd in data) {
+            for (var projectInd in rawProjects) {
               var project = data[projectInd];
               var ghPromise = Projects.getGitHubDataPromise(project.link);
 
               if (ghPromise) {
-                ghPromise.then(successHandler(project), failureHandler(project));
+                ghPromise
+                  .then(successHandler(project), failureHandler(project))
+                  .finally(function() {
+                    // regardless of success or failure,
+                    // update the pairedProjects list
+                    $scope.pairedProjects = sortAndChunk(rawProjects);
+                  });
               } else {
                 project.latestCommitTimestamp = 0;
               }
             }
 
-            // TODO: update the sorting order on promise completion
-            $scope.rawProjects = data;
+            $scope.pairedProjects = sortAndChunk(rawProjects);
         }, function(data) {
             alert(data);
         });
 
         var sortProjects = function(projects) {
+          // order by timestamp decreasing (latest first)
+          // then alpha increasing (A -> Z);
           var orderingExpr = ['-latestCommitTimestamp', '+title'];
           return $filter('orderBy')(projects, orderingExpr);
         };
@@ -72,12 +79,6 @@ angular.module('upl-site').
         var sortAndChunk = function(projects) {
           return chunkArray(sortProjects(projects), 2);
         };
-
-        // TODO: this does not seem to work as intended
-        // maybe call some `pairedProject` updater function in the promise callback
-        $scope.$watch('rawProjects', function() {
-          $scope.pairedProjects = sortAndChunk($scope.rawProjects);
-        });
 
         /* Webcam stuff */
         var moveCamera = function(id, val, highVal) {
