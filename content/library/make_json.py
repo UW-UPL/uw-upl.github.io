@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+
+import csv
+import json
+import sys
+
+def main(filename):
+    books = []
+    with open(filename, 'r') as f:
+        lines = csv.reader(f, delimiter='\t')
+        for i, l in enumerate(lines):
+            if i == 0: continue
+            title, authors, isbn, year, subject, lang, topics, num = l
+            books.append([title, authors, subject, year, lang, topics, num, isbn])
+    books.sort(key=lambda x: x[0])
+    print json.dumps(books, sort_keys=True, indent=4, separators=(',', ':'))
+
+if __name__ == '__main__':
+    main(sys.argv[1])
