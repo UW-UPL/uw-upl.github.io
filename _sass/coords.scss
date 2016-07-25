@@ -1,0 +1,49 @@
+.coords-list {
+  list-style-type: none;
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  li {
+    padding: 0 0 24px 0;
+    margin: 0 0 24px 0;
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px $divider;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .coord-mug {
+    margin-bottom: 6px;
+
+    img {
+      min-width: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .coord-info p{
+    margin: 0;
+    color: $textLight;
+  }
+
+  h4 {
+    margin: 6px 0;
+  }
+}
+
+@include breakpoint("560px") {
+  .coords-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+      border-bottom: none;
+      width: 240px;
+      margin: 0 10px 24px 10px;
+    }
+  }
+}

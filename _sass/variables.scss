@@ -1,0 +1,31 @@
+$badgerRed: #b70101;
+$black: #000;
+$darkRed: #660000;
+$divider: #B6B6B6;
+$lightDivider: #EEE;
+$textDark: #212121;
+$textLight: #727272;
+$successGreen: #4F8A10;
+$errorRed: #D8000C;
+$midBreakpoint: 760px;
+$bigBreakpoint: 1060px;
+
+@mixin clearfix() {
+  & {
+    *zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: #{$breakpoint}) {
+    @content;
+  }
+}

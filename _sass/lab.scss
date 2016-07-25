@@ -1,0 +1,20 @@
+.lab-table-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+table.lab-status {
+
+  td.st-val {
+    color: $successGreen;
+
+    &.offline {
+      color: $errorRed;
+    }
+  }
+
+  td.st-key {
+    text-align: left;
+  }
+}

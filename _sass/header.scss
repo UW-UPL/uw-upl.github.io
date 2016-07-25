@@ -1,0 +1,67 @@
+.header {
+  border-top: solid $badgerRed 6px;
+  padding: 24px 0 0 0;
+  margin-bottom: 24px;
+
+  .wrapper {
+    display: flex;
+    align-items:  flex-end;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: solid 1px $divider;
+  }
+
+  .logo {
+    img {
+      width: 100px;
+      min-width: 100px;
+    }
+  }
+
+  .social {
+    text-align: right;
+    font-size: 14px;
+    p {
+      margin: 0;
+    }
+  }
+
+  .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 24px 0 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    li {
+      display: inline-block;
+
+      &:hover a, &.active a {
+        border-bottom-color: $badgerRed;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: $textDark;
+        padding: 3px 0;
+        text-align: center;
+        vertical-align: center;
+        margin: 5px;
+        display: block;
+        border-bottom: solid 3px transparent;
+        &:hover {
+          color: $textDark;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint("760px") {
+  .header .logo img {
+    width: 120px;
+    min-width: none;
+  }
+}

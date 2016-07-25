@@ -1,0 +1,12 @@
+.current-coord {
+  margin: 10px;
+  text-align: center;
+
+  .coord-present {
+    color: $successGreen;
+  }
+
+  .coord-not-present {
+    color: $errorRed;
+  }
+}

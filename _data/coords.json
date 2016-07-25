@@ -1,0 +1,131 @@
+[
+  {
+    "id": "le nick de la heindl",
+    "name": "Nick Heindl",
+    "year": "Senior++",
+    "major": "Computer Sciences and Linguistics; Cert. in Game Development",
+    "github": "https://github.com/katamaritaco/me",
+    "website": "http://nheindl.com/",
+    "photo": "nick.jpg",
+    "emoji": "dromedary_camel"
+  },
+  {
+    "id": "mneil",
+    "name": "Matt Neil",
+    "year": "Senior",
+    "major": "Computer Sciences and Mathematics",
+    "github": "https://github.com/mjneil",
+    "photo": "mneil.jpg",
+    "emoji": "whale"
+  },
+  {
+    "id": "cook",
+    "name": "Michael Cook",
+    "year": "Junior",
+    "major": "Computer Sciences",
+    "github": "https://github.com/MikeCook9994",
+    "photo": "Hello-MLady.jpg",
+    "emoji": "eggplant"
+  },
+  {
+    "id": "riccardo",
+    "name": "Riccardo Mutschlechner",
+    "year": "2y Graduate Student",
+    "major": "Computer Sciences",
+    "github": "https://github.com/ricky54326",
+    "photo": "riccardo.jpg",
+    "emoji": "100"
+  },
+  {
+    "id": "leon",
+    "name": "Leon Dinh",
+    "year": "Junior",
+    "major": "Computer Sciences",
+    "github": "https://github.com/lwdinh",
+    "photo": "ldinh.jpg",
+    "emoji": "art"
+  },
+  {
+    "id": "jasminew",
+    "name": "Jasmine Wang",
+    "year": "Sophomore",
+    "major": "Computer Sciences",
+    "github": "https://github.com/simplywondrous",
+    "photo": "jasmore.jpg",
+    "emoji": "squirrel"
+  },
+  {
+    "id": "marshallm",
+    "name": "Marshall Mueller",
+    "year": "Sophomore",
+    "major": "Computer Engineering & Computer Sciences",
+    "github": "https://github.com/marshmue",
+    "photo": "uplnumberonecoordmarshale.jpg",
+    "emoji": "no_mobile_phones"
+  },
+  {
+    "id": "swilson",
+    "name": "Sean Wilson",
+    "year": "Junior",
+    "major": "Computer Sciences",
+    "github": "https://github.com/spwilson2",
+    "photo": "sean_as_a_square.jpg",
+    "emoji": "rocket"
+  },
+  {
+    "id": "ysohail",
+    "name": "Yusef Sohail",
+    "year": "Sophomore",
+    "major": "Computer Sciences",
+    "github": "https://github.com/Squeakrats",
+    "photo": "squanch.jpg",
+    "emoji": "spaghetti"
+  },
+  {
+    "id": "detter",
+    "name": "John Detter",
+    "year": "Senior",
+    "major": "Computer Sciences",
+    "github": "https://github.com/jdetter",
+    "photo": "johndetter.jpg",
+    "emoji": "jack_o_lantern"
+  },
+  {
+    "id": "bhansen",
+    "name": "Benjamin Hansen",
+    "year": "Junior",
+    "major": "Computer Sciences, Mathematics, and Communication Arts",
+    "github": "https://github.com/bhans117",
+    "photo": "ben.jpg",
+    "emoji": "ghost"
+  },
+  {
+    "id": "randy",
+    "name": "Randy Amundson",
+    "year": "Sophomore",
+    "major": "Computer Sciences",
+    "photo": "Randy_Amundson_filler.jpg",
+    "github": "https://github.com/ranman166",
+    "emoji": "octopus"
+  },
+  {
+    "id": "borst",
+    "name": "Christian Borst",
+    "year": "Junior",
+    "major": "Computer Sciences and Mathematics",
+    "photo": "christianborst.jpg",
+    "github": "https://github.com/christianborst",
+    "emoji": "dragon"
+  },
+
+  {
+    "id": "ekivolowitz",
+    "name": "Evan Kivolowitz",
+    "year": "Sophomore",
+    "major": "Computer Sciences and Statistics",
+    "photo": "rude_boy_jr.jpg",
+    "github": "https://github.com/ekivolowitz",
+    "emoji": "smirk"
+
+  }
+]

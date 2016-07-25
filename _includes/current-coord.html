@@ -1,0 +1,35 @@
+<div class="current-coord"></div>
+
+<script>
+  $(document).ready(function() {
+    var days = {{ site.data.hours | jsonify }}
+    var now = moment();
+    var today = now.format('dddd');
+    for (var i = 0; i < days.length; i++) {
+      var day = days[i];
+      if (day.day === today) {
+        var keys = Object.keys(day.times);
+        for (var k = 0; k < keys.length; k++) {
+          var key = keys[k];
+          var start = moment(key, 'h:mmA');
+          var end = start.clone().add(50, 'minutes');
+          if (now.isSameOrAfter(start) && now.isSameOrBefore(end)) {
+            var msg = 'Office hours for '
+                + day.times[key]
+                + ': ' + start.format('h:mmA') + ' to ' + end.format('h:mmA');
+            return $('.current-coord')
+                .html(
+                    $('<div class="coord-present"></div>')
+                        .text(msg)
+                );
+          }
+        }
+      }
+    }
+    return $('.current-coord')
+        .html(
+            $('<div class="coord-not-present"></div>')
+                .text('No designated coord at this time.')
+        );
+  });
+</script>

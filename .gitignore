@@ -1,7 +1,6 @@
-.buildignore
-.history
-.htaccess
-.DS_Store
-.sass-cache/
-.tern-port
-node_modules/
+_site
+.sass-cache
+.jekyll-metadata
+.idea
+.vagrant
+*.log

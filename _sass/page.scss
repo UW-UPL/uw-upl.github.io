@@ -1,0 +1,40 @@
+.page {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 260px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 540px;
+}
+
+a {
+  color: $badgerRed;
+
+  &:hover {
+    color: $darkRed;
+  }
+}
+
+@include breakpoint($midBreakpoint) {
+  .wrapper {
+    width: 740px;
+    max-width: none;
+  }
+
+  .content {
+    padding-bottom: 150px;
+  }
+}
+
+@include breakpoint($bigBreakpoint) {
+  .wrapper {
+    width: 1020px;
+  }
+}
