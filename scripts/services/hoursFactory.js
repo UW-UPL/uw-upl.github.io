@@ -32,9 +32,6 @@ angular.module('upl-site').
         var COORD_HOUR_DURATION = 1000 * 60 * COORD_MINUTE_DURATION;
 
         function convertToMadisonTime(dateObj) {
-          //I apologize for the esoteric-ness of the following code
-          //See http://bit.ly/1LGQwnq
-          //(Date has been augmented with this code in `app.js`)
           var madisonDay;
           var madisonHour;
           var madisonMinute;
