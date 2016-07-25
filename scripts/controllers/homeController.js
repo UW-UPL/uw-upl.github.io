@@ -1,41 +1,86 @@
 "use strict";
 
 angular.module('upl-site').
-    controller('HomeController', ['$scope', 'EventsFactory', 'ProjectsFactory', "LabFactory", function($scope, Events, Projects, Lab) {
+    controller('HomeController', ['$scope', '$filter', 'EventsFactory', 'ProjectsFactory', "LabFactory",
+      function($scope, $filter, Events, Projects, Lab) {
         $scope.events = [];
-        $scope.projects = [];
+        $scope.pairedProjects = [];
+        var rawProjects = [];
 
+        /* Events */
         Events.list().then(function(data) {
             $scope.events = data.Upcoming.slice(0, 3);
         }, function(data) {
             alert(data);
         });
 
+        /* Projects */
         Projects.list().then(function(data) {
-            data.sort(function(a, b) {
-                return a.title.toLocaleLowerCase()
-                    .localeCompare(b.title.toLocaleLowerCase());
-            });
-            var left = true;
-            var row = 0;
-            for (var i = 0; i < data.length; i++) {
-                var d = data[i];
-                if (d.description.length > 100) {
-                    d.description = d.description.substring(0, 100) + "...";
-                }
-                if (left) {
-                    $scope.projects.push([d]);
-                    left = false;
-                } else {
-                    $scope.projects[row].push(d);
-                    left = true;
-                    row++;
-                }
+
+            var successHandler = function(project) {
+              return function(latestCommitTimestamp) {
+                project.latestCommitTimestamp = latestCommitTimestamp;
+              };
+            };
+
+            var failureHandler = function(project) {
+              return function() {
+                project.latestCommitTimestamp = 0;
+              };
+            };
+
+            rawProjects = data;
+
+            // first get all the GitHub data
+            for (var projectInd in rawProjects) {
+              var project = data[projectInd];
+              var ghPromise = Projects.getGitHubDataPromise(project.link);
+
+              if (ghPromise) {
+                ghPromise
+                  .then(successHandler(project), failureHandler(project))
+                  .finally(function() {
+                    // regardless of success or failure,
+                    // update the pairedProjects list
+                    $scope.pairedProjects = sortAndChunk(rawProjects);
+                  });
+              } else {
+                project.latestCommitTimestamp = 0;
+              }
             }
+
+            $scope.pairedProjects = sortAndChunk(rawProjects);
         }, function(data) {
             alert(data);
         });
 
+        var sortProjects = function(projects) {
+          // order by timestamp decreasing (latest first)
+          // then alpha increasing (A -> Z);
+          var orderingExpr = ['-latestCommitTimestamp', '+title'];
+          return $filter('orderBy')(projects, orderingExpr);
+        };
+
+        var chunkArray = function(array, chunkSize) {
+          var chunk = function(n) {
+            return function(acc, project, projectInd, arr) {
+              if (projectInd % n === 0) {
+                var newChunk = arr.slice(projectInd, projectInd + n);
+                return acc.concat([newChunk]);
+              } else {
+                return acc;
+              }
+            };
+          };
+
+          return array.reduce(chunk(chunkSize), []);
+        };
+
+        var sortAndChunk = function(projects) {
+          return chunkArray(sortProjects(projects), 2);
+        };
+
+        /* Webcam stuff */
         var moveCamera = function(id, val, highVal) {
             Lab.setCameraPosition(val);
         };
