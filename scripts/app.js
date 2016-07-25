@@ -53,6 +53,20 @@ angular.module('upl-site', ['ngRoute', "rzModule"]).
                 redirectTo: '/'
             });
     }).
+    run(function() {
+      // augment the Date object with some useful functions
+      // using the code from:
+      // http://stackoverflow.com/questions/11887934/check-if-daylight-saving-time-is-in-effect-and-if-it-is-for-how-many-hours
+      Date.prototype.standardTimezoneOffset = function() {
+        const jan = new Date(this.getFullYear(), 0, 1);
+        const jul = new Date(this.getFullYear(), 6, 1);
+        return Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
+      };
+
+      Date.prototype.isDST = function() {
+        return this.getTimezoneOffset() < this.standardTimezoneOffset();
+      };
+    }).
     run(['CoordFactory', 'EventsFactory', 'HoursFactory', 'ProjectsFactory', 'LabFactory', function(Coords, Events, Hours, Projects, Lab) {
         Coords.populate();
         Events.populate();
