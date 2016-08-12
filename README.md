@@ -8,10 +8,16 @@ issue reports are welcomed!
 
 ## Dependencies
 
-<!-- This should be fleshed out more -->
+This project uses the official [GitHub Pages gem](https://github.com/github/pages-gem).
+This manages all of the project dependencies for you, as long as you have a working
+version of Ruby and Bundler.
 
-- Ruby
-- Bundler
+On a Unix-like OS, I recommend using [rbenv](https://github.com/rbenv/rbenv) to install
+a new version of Ruby. Follow the instructions in that README and then enter the following:
+
+```
+$ gem install bundler
+```
 
 To install Jekyll and the other dependencies, navigate to the project directory
 in a shell and type
@@ -26,31 +32,11 @@ To run the development server, navigate to the project directory in a shell
 and type
 
 ```
-$ jekyll serve -H 0.0.0.0 -P 8000
+$ jekyll serve
 ```
 
-### Vagrant
-
-If you prefer, you can use [Vagrant](http://vagrantup.com) to create a virtual
-development environment with all the dependencies. You can initialize a virtual
-machine using our provided Vagrantfile by navigating to the project directory
-in a shell and typing
-
-```
-$ vagrant up
-```
-
-You can then `ssh` into this machine to launch a server.
-
-You should refer to the Vagrant docs if you have any questions. If things don't work
-as expected, you are not alone.
-
-**NOTE**: You will need to have rsync watch for changes in the project directory
-for this to work. Open up another shell and type
-
-```
-$ vagrant rsync-auto
-```
+This will launch a local server (by default on port 4000 -- see `_config.yml` if you intend
+to change this!)
 
 ## How to do common things
 
