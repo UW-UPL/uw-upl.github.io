@@ -1,0 +1,127 @@
+---
+- title: Intro to Functional Programming with Haskell
+  date: 10/29/2015 7:00 PM
+  location: CS 1240
+  description: |
+    <p>The UPL Video Lecture Series will be giving a talk on functional programming
+    and Haskell this Thursday (10/29) at 7pm in CS 1240. Functional programming, and
+    its related concepts, are becoming more prevalent in computation as machines become
+    more powerful, concurrent, and complex.</p>
+
+    <p>In this talk, we'll briefly go over the paradigm and then dig in with
+    some Haskell, one of the most (in)famous functional programming languages.
+    Attendees should be at the intermediate level (i.e. have completed CS 367),
+    and should come with laptops with the Haskell platform installed.</p>
+
+- title: Intro to Programming with Ruby
+  date: 9/22/2015 7:00 PM
+  location: CS 1240
+  description: |
+    <p>Ruby is the only programming language designed for programmer happiness. Made in
+    the 90s, with inspiration from languages such as Perl, Python, Lisp, and
+    Smalltalk, Ruby is a great language to learn for beginners and pros alike. It is
+    not only useful for small scripting jobs, but it also works well for abstracting
+    large systems and powers the ubiquitous Ruby on Rails web framework.</p>
+
+    <p>In this tutorial, you will learn how to get up and running with Ruby and on
+    your way to programming more happily and productively. The intended audience
+    for this talk is beginners, but anyone is welcome to be there.</p>
+
+    <p>We will use a free, online interpreter (<a
+    href='https://repl.it/'>repl.it</a>), but you can use Ruby, irb, or your
+    Ruby tool of choice, as well.</p>
+
+- title: UPL Interview Prep Night
+  date: 1/28/2016 7:00 PM
+  location: CS 1240
+  description: |
+    <p>We'll go over a range of topics, including common and rare algorithm
+    questions, personality questions, and application and design questions.</p>
+
+- title: UPL GameHax (weekly)
+  date: 4/8/2016 8:30 PM
+  location: UPL - CS 1341
+  description: |
+    <p>Continue rocking the start of your semester strong and spend your Friday
+    night making games with the Badger Game Network! UPL GameHax is a weekly event
+    held on Fridays for student developers of any skill level-- no experience necessary.</p>
+
+    <p>For more information, check out the <a
+    href='https://www.facebook.com/events/676087532532792/'>current Facebook
+    event.</a></p>
+  image: GameHaxSmall.png
+- title: UPL Games II
+  date: 04/01/2016 5:00 PM
+  location: CS 1240
+  description: |
+    <p>The second annual UPL Games extravaganza! A fun and engaging hybrid
+    puzzle/trivia/coding event that will test all of your skills!</p>
+
+    <p>ALL SKILL LEVELS WELCOME! No experience needed!</p>
+
+    <p>Sign up <a href='http://bit.ly/1QmAzTb'>here</a>!</p>
+
+    <p>For more information, check out the <a
+    href='https://www.facebook.com/events/1121835311168825/'>current Facebook
+    event.</a></p>
+  image: coverphoto.jpg
+
+- title: Perry's Debugging Talk
+  date: 03/28/2016 7:00 PM
+  location: CS 1240
+  description: |
+    <p>Perry Kivolowitz, who recently left UW-Madison for Carthage College,
+    is returning to give his famous debugging talk Monday March 28th at 7pm in CS
+    1240. Perry is a revered teacher and software crafstman, and has contributed much
+    to the areas of graphics and systems. His talk is as entertaining as it is informative.
+    We plan on having pizza at the talk! Here's the <a href='https://www.facebook.com/events/163131024072903/'>Facebook
+    event</a>.</p>
+
+- title: 'UPL Video Lecture Series: Intro to Python'
+  date: 04/19/2016 5:00 PM
+  location: CS 1240
+  description: |
+    <p>The UPL video lecture series (VLS) will be doing a talk targeted at
+    students to introduce them to <a href='https://www.python.org/'>Python</a>. The
+    talk will assume completion of 302 and will focus on the syntactic elements of
+    python and introduce some of the strengths and weaknesses of the language. No
+    tools are needed, except for something to take notes with if you're interested.
+    All materials will be posted on our public <a href='https://github.com/UW-UPL/Talks'>github
+    repository</a>.</p>
+
+    <p>For more information, check out the <a href='https://www.facebook.com/events/1715110728774384/'>facebook
+    event</a></p>
+
+- title: 'UPL Answers: What courses should I take?'
+  date: 04/11/2016 5:00 PM
+  location: CS 1240
+  description: |
+    <p>The UPL will be walking through the massive collection of computer
+    science courses and providing input on what you're likely to learn in a given
+    course over the course of the semester. This talk will be targeted at freshmen
+    and sophomores who will be jumping into their upper level courses soon and aren't
+    quite sure what to take (although all students are welcome!). <br> If you are
+    wondering if you should post on the computer science facebook page about what
+    courses you should take or if a given combination of courses in a good idea, consider
+    coming to this event instead prior to registration so you can figure things out
+    and get opinions from some rising and graduating seniors.</p>
+
+    <p>For more information, check out the <a
+    href='https://www.facebook.com/events/1732205113692702/'>facebook
+    event</a></p>
+
+- title: PGP, Tor, and You
+  date: 04/13/2016 5:00 PM
+  location: CS 1240
+  description: |
+    <p>Topics will include:
+      <ul>
+        <li>High-level crypto overview (public-key/asymmetric, symmetric)</li>
+        <li>PGP and how to actually <strong>use</strong> it</li>
+        <li>What Tor is and how to get started using it</li>
+        <li>More? Suggest things in the event if you all would like to see them. We will see what we can do.</li>
+      </ul>
+    </p>
+
+    <p>For more information, check out the <a
+    href="https://www.facebook.com/events/974380169343221/">facebook event</a></p>
