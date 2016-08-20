@@ -14,7 +14,8 @@ layout: default
   {% assign coords = site.data.coords | sort: 'name' %}
   {% for coord in coords %}
   <li>
-    <div class="coord-mug"><img title="{{coord.name}}" src="images/coords/{{coord.photo ? coord.photo : 'default.png'}}" /></div>
+    {% assign photo = coord.photo || 'default.png' %}
+    <div class="coord-mug"><img title="{{coord.name}}" src="{{'images/coords/' | append: photo | prepend: site.baseurl }}" /></div>
     <h4>{{ coord.name }}</h4>
     <div class="coord-info">
       <p>
