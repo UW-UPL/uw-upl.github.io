@@ -7,7 +7,8 @@ layout: default
 <section id="events">
   <div>
     <ul class="event-list">
-      {% for event in site.data.events %}
+      {% assign events = site.data.events | sort: 'date' %}
+      {% for event in events reversed %}
       <li>
         <div class="event">
           <div class="event-desc">
@@ -34,7 +35,7 @@ layout: default
   var now = moment();
   events.each(function(i, event) {
     var dateElem = $(event).find('.event-date').first();
-    var date = moment(dateElem.text(), 'MM/DD/YYYY h:mm A');
+    var date = moment(dateElem.text(), 'YYYY-MM-DD h:mm A');
     dateElem.text(date.format('dddd, MMMM Do YYYY, h:mm A'));
     if (date.isBefore(now)) {
       previousEventsList.append(event);

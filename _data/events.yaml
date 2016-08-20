@@ -1,6 +1,6 @@
 ---
 - title: Intro to Functional Programming with Haskell
-  date: 10/29/2015 7:00 PM
+  date: 2015-10-29 7:00 PM
   location: CS 1240
   description: |
     <p>The UPL Video Lecture Series will be giving a talk on functional programming
@@ -14,7 +14,7 @@
     and should come with laptops with the Haskell platform installed.</p>
 
 - title: Intro to Programming with Ruby
-  date: 9/22/2015 7:00 PM
+  date: 2015-09-22 7:00 PM
   location: CS 1240
   description: |
     <p>Ruby is the only programming language designed for programmer happiness. Made in
@@ -32,14 +32,14 @@
     Ruby tool of choice, as well.</p>
 
 - title: UPL Interview Prep Night
-  date: 1/28/2016 7:00 PM
+  date: 2016-01-28 7:00 PM
   location: CS 1240
   description: |
     <p>We'll go over a range of topics, including common and rare algorithm
     questions, personality questions, and application and design questions.</p>
 
 - title: UPL GameHax (weekly)
-  date: 4/8/2016 8:30 PM
+  date: 2016-04-08 8:30 PM
   location: UPL - CS 1341
   description: |
     <p>Continue rocking the start of your semester strong and spend your Friday
@@ -50,8 +50,9 @@
     href='https://www.facebook.com/events/676087532532792/'>current Facebook
     event.</a></p>
   image: GameHaxSmall.png
+
 - title: UPL Games II
-  date: 04/01/2016 5:00 PM
+  date: 2016-04-01 5:00 PM
   location: CS 1240
   description: |
     <p>The second annual UPL Games extravaganza! A fun and engaging hybrid
@@ -67,7 +68,7 @@
   image: coverphoto.jpg
 
 - title: Perry's Debugging Talk
-  date: 03/28/2016 7:00 PM
+  date: 2016-03-28 7:00 PM
   location: CS 1240
   description: |
     <p>Perry Kivolowitz, who recently left UW-Madison for Carthage College,
@@ -78,7 +79,7 @@
     event</a>.</p>
 
 - title: 'UPL Video Lecture Series: Intro to Python'
-  date: 04/19/2016 5:00 PM
+  date: 2016-04-19 5:00 PM
   location: CS 1240
   description: |
     <p>The UPL video lecture series (VLS) will be doing a talk targeted at
@@ -93,7 +94,7 @@
     event</a></p>
 
 - title: 'UPL Answers: What courses should I take?'
-  date: 04/11/2016 5:00 PM
+  date: 2016-04-11 5:00 PM
   location: CS 1240
   description: |
     <p>The UPL will be walking through the massive collection of computer
@@ -111,7 +112,7 @@
     event</a></p>
 
 - title: PGP, Tor, and You
-  date: 04/13/2016 5:00 PM
+  date: 2016-04-13 5:00 PM
   location: CS 1240
   description: |
     <p>Topics will include:

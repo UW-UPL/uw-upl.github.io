@@ -31,10 +31,10 @@ the object. We have a default (anonymous) photo if no image is provided.
 ```
 {
     "title": event title [Required] (String),
-    "date": event date and time [Required] (Format String: "mm/dd/yyyy H:MM p;
-    example: "02/18/2018 7:00pm"),
+    "date": event date and time [Required] (Format String: "yyyy-mm-dd H:MM p;
+    example: "2018-02-18 7:00pm"),
     "location": event location [Required] (String),
-    "description": event description [Required] (String),
+    "description": event description HTML [Required] (String),
     "image": image title [Optional] (String),
     "repeats": see 'Repeating Events' below [Optional] (Object)
 }
