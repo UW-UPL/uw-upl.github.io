@@ -20,7 +20,18 @@ h1 {
 
 }
 
-.event-list {
+.recurring-event-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.onetime-event-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -34,3 +45,4 @@ h1 {
     }
   }
 }
+
