@@ -28,7 +28,7 @@ $ bundle install
 
 ## Development
 
-### Do all development work on the "develop" branch. To deploy changes to the live site, merge into master.
+### Do all development work in branches off of develop. Submit pull requests to the develop branch to have your changes reviewed and checked in.
 
 To run the development server, navigate to the project directory in a shell
 and type
