@@ -1,0 +1,26 @@
+.para-expand {
+  color: $badgerRed;
+  display: none;
+}
+
+.para-expand:hover {
+  display: inline;
+}
+
+.para h2:hover {
+  cursor: pointer;
+}
+
+.para-hidden {
+  display: none;
+}
+
+.para h2 {
+  span {
+    display: none;
+  }
+
+  &:hover span {
+    display: inline;
+  }
+}

@@ -1,0 +1,49 @@
+.project {
+  border-bottom: 1px solid $divider;
+  padding: 12px 0;
+
+  .project-img-container {
+    max-width: 90%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
+    border-bottom: 1px solid $lightDivider;
+
+    .project-img-frame {
+      display: block;
+      margin: 0 auto;
+      max-width: 50vmin;
+
+      .project-img {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  .project-title {
+    margin-top: 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+}
+
+.project-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    &:last-child .project {
+      border-bottom: none;
+    }
+  }
+}

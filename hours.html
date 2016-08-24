@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<p>The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours. These office hours are in 50-minute increments.</p>
+
+<hr />
+
+<h2>Summer is in effect! No coord hours are held unless otherwise stated!</h2>
+
+<strong>The schedule below is for Fall 2016!</strong>
+
+{% include current-coord.html %}
+
+<table class="hours striped large-only">
+  <tbody>
+  <tr class="t-head">
+    <th>Time</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  </tbody>
+  <tbody>
+  {% for time in site.data.hours[0].times %}
+  {% assign t_index = forloop.index %}
+  <tr>
+    <td>{{ time }}</td>
+    {% for day in site.data.hours %}
+      {% for t in day.times %}
+        {% if forloop.index == t_index %}
+        <td>{{ t[1] }}</td>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<table class="hours striped small-only">
+  {% for day in site.data.hours %}
+  <tbody>
+  <tr class="tr-head">
+    <th class="st-key">Time</th>
+    <th class="st-val">{{ day.day }}</th>
+  </tr>
+  </tbody>
+  <tbody>
+  {% for time in day.times %}
+  <tr>
+    <td class="st-key">{{ time[0] }}</td>
+    <td class="st-val">{{ time[1] }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  {% endfor %}
+</table>
+
+<script src="js/lib/stacktable.js"></script>

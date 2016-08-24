@@ -1,0 +1,24 @@
+<div class="header">
+  <div class="wrapper">
+    <div class="logo">
+      <a href="{{ site.baseurl }}"><img src="images/uplLogo.png"/></a>
+    </div>
+    <div class="nav-container">
+      <div class="social">
+        <p>Join us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL Facebook Page">Facebook</a>.</p>
+        <p>Check out our <a href="https://github.com/UW-UPL/" title="UPL GitHub Profile">GitHub</a> profile.</p>
+      </div>
+      <ul class="nav">
+        {% for my_page in site.data.pagelist %}
+          {% if my_page.title %}
+            {% assign is_active = nil %}
+            {% if page.url == my_page.url %}
+              {% assign is_active = "active" %}
+            {% endif %}
+            <li class="{{ is_active }}"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

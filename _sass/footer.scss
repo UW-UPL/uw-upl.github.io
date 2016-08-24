@@ -1,0 +1,51 @@
+.footer {
+  background: $badgerRed;
+  color: #fff;
+  padding: 6px 0 0 0;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 260px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  div {
+    padding-bottom: 6px;
+  }
+
+  img#uw-logo {
+    max-width: 200px;
+  }
+}
+
+@include breakpoint("760px") {
+  .footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer {
+    padding: 13px 0;
+    height: 150px;
+
+    div {
+      padding: 0;
+    }
+    .uw-credit {
+      order: 1;
+      text-align: left;
+    }
+    .location-info {
+      order: 2;
+      text-align: right;
+    }
+  }
+}

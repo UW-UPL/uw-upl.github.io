@@ -1,0 +1,72 @@
+.st-key { width: 49%; text-align: right; padding-right: 1%; }
+.st-val { width: 49%; padding-left: 1%; text-align: center }
+
+table.large-only { display: none; }
+table.small-only { display: table; }
+
+table.striped {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  empty-cells: show;
+  border: 1px solid $divider;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+
+  tr.t-head {
+    background-color: #e0e0e0;
+    color: $black;
+    vertical-align: bottom;
+  }
+
+  th, td {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    margin: 0;
+    overflow: visible;
+    padding: 0.5em 1em;
+  }
+
+  th:first-child, td:first-child {
+    border-left-width: 0;
+  }
+
+  tbody tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+  }
+
+  &.large-only {
+    display: none;
+  }
+
+  &.small-only {
+    display: table;
+    tbody tr:last-child td{
+      border-bottom: 1px solid $divider;
+    }
+
+    tbody:last-child tr:last-child td{
+      border-bottom: none;
+    }
+  }
+
+}
+
+@include breakpoint("760px") {
+  table.striped {
+    &.large-only {
+      display: table;
+    }
+
+    &.small-only {
+      display: none;
+    }
+  }
+}
+
+.stacktable { width: 100%; }
+.st-head-row { padding-top: 1em; }
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0; }
+.st-key { width: 49%; text-align: right; padding-right: 1%; }
+.st-val { width: 49%; padding-left: 1%; }

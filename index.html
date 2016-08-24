@@ -1,130 +1,31 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Undergraduate Projects Lab</title>
-        <meta name="description" content="">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/2.5.0/rzslider.min.css">
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            // don't pollute global scope
-            (function (hname) {
-                var _noop = function() {};
-            
-                // turn off consoling for production
-                if (hname !== 'localhost') {
-                    console.log('`console.log` is only available on `localhost`');
-                    window.console = { log: _noop };
-                }
-            })(window.location.hostname);
-        </script>
-    </head>
-    <body ng-app="upl-site" class='container'>
+---
+layout: default
+---
 
-        <div class="page">
+<div class="intro">
+  <section>
+    <h2>Undergraduate Projects Lab</h2>
+    <p>We're a resource for undergraduate students in UW Madison's Computer Science department. Find out why you should <a href="/#/about">join us!</a></p>
+    <p>If the lab is open, feel free to come in!</p>
+  </section>
+</div>
+<div class="home-container webcam-container">
+  <h2>The Lab</h2>
+  {% include current-coord.html %}
+</div>
+<section class="home-container projects-container">
+  <h2>Projects</h2>
+  <p>Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">pull request on GitHub</a> to add your projects here!</p>
+  <div class="projects-table">
+    {% assign projects = site.data.projects | sort: 'title' %}
+    {% for project in projects %}
+    <div class="project-box">
+      <h3 class="project-title">
+        <a href="/projects.html#proj-{{ project.title }}">{{ project.title }}</a>
+      </h3>
+      <p>{{ project.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-            <!-- header -->
-            <!-- uses NavigationLinks as a controller -->
-            <div class="header">
-                <div class="wrapper">
-                    <div class="logo">
-                <a href="http://uw-upl.github.io/#/">
-                <img src="images/uplLogo.png" />
-            </a>
-                    </div>
-                    <div class="nav-container">
-                        <div class="social">
-                            <p>Join us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL Facebook Page">Facebook</a>.</p>
-                            <p>Check out our <a href="https://github.com/UW-UPL/" title="UPL GitHub Profile">GitHub</a> profile.</p>
-                        </div>
-                        <ul ng-controller='NavigationController' class="nav">
-                            <li ng-class="{active: (locationPath == '/')}">
-                                <a ng-href="/#/">Home</a>
-                            </li>
-                            <li ng-class="{active: (locationPath.startsWith('/events'))}">
-                                <a ng-href="/#/events">Events</a>
-                            </li>
-                            <li ng-class="{active: (locationPath == '/projects')}">
-                                <a ng-href="/#/projects">Projects</a>
-                            </li>
-                            <li ng-class="{active: (locationPath == '/coords')}">
-                                <a ng-href="/#/coords">Coords</a>
-                            </li>
-                            <li ng-class="{active: (locationPath == '/hours')}">
-                                <a ng-href="/#/hours">Hours</a>
-                            </li>
-                            <li ng-class="{active: (locationPath == '/about')}">
-                                <a ng-href="/#/about">About</a>
-                            </li>
-                             <li ng-class="{active: (locationPath == '/lab')}">
-                                <a ng-href="/#/lab">Lab</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Your site or application content will appear here -->
-            <div class="content" ng-view>
-
-                    <div style="height:300px"><div class="loader">Loading...</div></div>
-
-            </div>
-
-            <div class="footer">
-                <div class="wrapper">
-                    <div class="location-info">
-                        <p>
-                            <a href="http://cs.wisc.edu">Department of Computer Sciences</a>
-                            <br />
-                            Room 1341
-                            <br />
-                            1210 West Dayton Street
-                            <br />
-                            Madison, WI 53706
-                            <br />
-                        </p>
-                    </div>
-                    <div class="uw-credit">
-                        <a href="http://www.wisc.edu/" title="University of Wisconsin-Madison"><img id="uw-logo" src="images/uwlogo.png"></a>
-                        <p>© 2016 The Board of Regents of the University of Wisconsin System<br>Feedback, questions, or issues: <a href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <script src="lib/jquery-2.1.4.min.js"></script>
-        <script src="lib/stacktable.js"></script>
-    
-        <!-- the angular core and the ngRoute module --> 
-        <script src="lib/angular-1.4.8/angular.js"></script>
-        <script src="lib/angular-1.4.8/angular-route.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/2.5.0/rzslider.min.js"></script>
-
-        <!-- the main angular app code -->
-        <script src="scripts/app.js"></script>
-        <!-- app services -->
-        <script src="scripts/services/coordFactory.js"></script>
-        <script src="scripts/services/eventsFactory.js"></script>
-        <script src="scripts/services/hoursFactory.js"></script>
-        <script src="scripts/services/projectsFactory.js"></script>
-         <script src="scripts/services/labFactory.js"></script>
-        <!-- app controllers -->
-        <script src="scripts/controllers/homeController.js"></script>
-        <script src="scripts/controllers/coordsController.js"></script>
-        <script src="scripts/controllers/navigationController.js"></script>
-        <script src="scripts/controllers/eventsController.js"></script>
-        <script src="scripts/controllers/hoursController.js"></script>
-        <script src="scripts/controllers/projectsController.js"></script>
-        <script src="scripts/controllers/singleEventController.js"></script>
-        <script src="scripts/controllers/aboutController.js"></script>
-        <script src="scripts/controllers/labController.js"></script>
-        <!-- app directives -->
-        <script src="scripts/directives/emoji.js"></script>
-        <script src="scripts/directives/showHide.js"></script>
-        <script src="scripts/directives/currentCoord.js"></script>
-</body>
-</html>
