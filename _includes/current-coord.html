@@ -13,7 +13,7 @@
           var key = keys[k];
           var start = moment(key, 'h:mmA');
           var end = start.clone().add(50, 'minutes');
-          if (now.isSameOrAfter(start) && now.isSameOrBefore(end)) {
+          if (now.isSameOrAfter(start) && now.isSameOrBefore(end) && day.times[key]) {
             var msg = 'Office hours for '
                 + day.times[key]
                 + ': ' + start.format('h:mmA') + ' to ' + end.format('h:mmA');
