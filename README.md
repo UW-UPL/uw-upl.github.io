@@ -34,11 +34,11 @@ To run the development server, navigate to the project directory in a shell
 and type
 
 ```
-$ jekyll serve
+$ jekyll serve --config _config.yml,_config.dev.yml
 ```
 
-This will launch a local server (by default on port 4000 -- see `_config.yml` if you intend
-to change this!)
+This will launch a local server on port 4000 -- see `_config.dev.yml` if you intend
+to change this for yourself.
 
 ## How to do common things
 
