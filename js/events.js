@@ -29,3 +29,5 @@ if (upcomingEventsList.children().length > 0) {
 if (previousEventsList.children().length > 0) {
   eventsSection.append(previousEvents);
 }
+
+$('.onetime-event-list-container').css('display', 'block');

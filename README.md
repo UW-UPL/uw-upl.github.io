@@ -28,6 +28,8 @@ $ bundle install
 
 ## Development
 
+### Do all development work on the "develop" branch. To deploy changes to the live site, merge into master.
+
 To run the development server, navigate to the project directory in a shell
 and type
 
