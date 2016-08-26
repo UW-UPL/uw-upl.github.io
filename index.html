@@ -15,17 +15,6 @@ layout: default
 </div>
 <section class="home-container projects-container">
   <h2>Projects</h2>
-  <p>Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">pull request on GitHub</a> to add your projects here!</p>
-  <div class="projects-table">
-    {% assign projects = site.data.projects | sort: 'title' %}
-    {% for project in projects %}
-    <div class="project-box">
-      <h3 class="project-title">
-        <a href="/projects.html#{{ project.title | slugify }}">{{ project.title }}</a>
-      </h3>
-      <p>{{ project.description }}</p>
-    </div>
-    {% endfor %}
-  </div>
+  {% include sorted-projects.html %}
 </section>
 
