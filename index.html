@@ -5,7 +5,7 @@ layout: default
 <div class="intro">
   <section>
     <h2>Undergraduate Projects Lab</h2>
-    <p>We're a resource for undergraduate students in UW Madison's Computer Science department. Find out why you should <a href="/#/about">join us!</a></p>
+    <p>We're a resource for undergraduate students in UW Madison's Computer Science department. Find out why you should <a href="/about.html">join us!</a></p>
     <p>If the lab is open, feel free to come in!</p>
   </section>
 </div>
@@ -21,7 +21,7 @@ layout: default
     {% for project in projects %}
     <div class="project-box">
       <h3 class="project-title">
-        <a href="/projects.html#proj-{{ project.title }}">{{ project.title }}</a>
+        <a href="/projects.html#{{ project.title | slugify }}">{{ project.title }}</a>
       </h3>
       <p>{{ project.description }}</p>
     </div>

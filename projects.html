@@ -7,7 +7,7 @@ layout: default
 <ul class="project-list">
   {% assign projects = site.data.projects | sort: 'title' %}
   {% for project in projects %}
-  <li id="{{ project.title }}">
+  <li id="{{ project.title | slugify }}">
     <div class="project">
       {% if project.image != "" %}
       <div class="project-img-container">
