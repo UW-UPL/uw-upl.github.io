@@ -1,21 +1,147 @@
 <!-- default (non-sorted) template -->
 <p>Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">pull request on GitHub</a> to add your projects here!</p>
 <div class="projects-table">
-    {% assign projects = site.data.projects | sort: 'title' %} {% for project in projects %}
-    <div class="project-box">
-        <h3 class="project-title">
-            <a href="/projects.html#proj-{{ project.title }}">{{ project.title }}</a>
-        </h3>
-        <p>{{ project.description }}</p>
-    </div>
-    {% endfor %}
+  {% assign projects = site.data.projects | sort: 'title' %} {% for project in projects %}
+  <div class="project-box">
+    <h3 class="project-title">
+      <a href="/projects.html#proj-{{ project.title }}">{{ project.title }}</a>
+    </h3>
+    <p>{{ project.description }}</p>
+    <small class='last-updated'></small>
+  </div>
+  {% endfor %}
 </div>
 <!-- end default template -->
 
 <script src="{{ '/js/gitHubTimestamp.js' | prepend: site.baseurl }}"></script>
-
 <script>
-    $(document).ready(function() {
-        console.log('foobar');
+  // timestampPromises is a dictionary of:
+  // project.link => Promise({ timestamp: number, error: Error })
+  // NOTE: all Promises are guaranteed to resolve (i.e. not `.catch`)
+  // however, some will have will have tsObj.error truthy if an error occurred
+
+  // this function combines sync project data with async project timestamp info
+  // it returns a promise that combines both values (at the same "level of sync")
+  function combineProjectAndTimestampPromise(project, timestampPromises) {
+    var tsObjPromise = timestampPromises[project.link];
+    return new Promise(function(resolve) {
+      tsObjPromise.then(function(tsObj) {
+        resolve({
+          project: project,
+          tsObj: tsObj
+        });
+
+        return tsObj;
+      });
     });
+  }
+
+  // this function returns a promise containing the combined values
+  // (not promises of combineds) mentioned above
+  // combineds are sorted by timestamp descending
+  function sortedCombinedPromise(projects, timestampPromises) {
+    // a will come before b if a > b
+    function tsDescending(combinedA, combinedB) {
+      return combinedB.tsObj.timestamp - combinedA.tsObj.timestamp;
+    }
+
+    function titleAscending(combinedA, combinedB) {
+      return combinedA.project.title.localeCompare(combinedB.project.title);
+    }
+
+    var combinedPromises = projects.map(function(project) {
+      return combineProjectAndTimestampPromise(project, timestampPromises);
+    });
+
+    // remember: all are guaranteed to resolve
+    return Promise.all(combinedPromises).then(function(combinedVals) {
+      return combinedVals.sort(function(combinedA, combinedB) {
+        // sort first by timestamp desc, then by title asc
+        return tsDescending(combinedA, combinedB) || titleAscending(combinedA, combinedB);
+      });
+    });
+  }
+
+  function getProjectBox(project, $) {
+    return $('.project-box').filter(function(indx, elem) {
+        return $(elem).find('a').text() === project.title;
+    });
+  }
+
+  function tsToString(ts) {
+    return moment(ts).format('MMMM Do YYYY, h:mm a');
+  }
+
+  // TODO: Might want to remove...
+  function addUpdateTime(project, timestampPromises, $) {
+    var myProjectBox = getProjectBox(project, $);
+
+    timestampPromises[project.link].then(function(tsObj) {     
+      if (!tsObj.error) {
+        myProjectBox.find('.last-updated').text('Last updated ' + tsToString(tsObj.timestamp));
+      } else {
+        // do nothing
+      }
+
+      return tsObj;
+    });
+
+    return myProjectBox;
+  }
+
+
+  $(document).ready(function() {
+    var projects = {{ site.data.projects | jsonify }}
+    
+    // a map of project link -> promise of project timestamp
+    var timestampPromises = projects.reduce(function(accum, project) {
+      accum[project.link] = getGitHubTimestampPromise(project);
+      return accum;
+    }, {});
+
+
+    /* XXX remove eventually
+    projects.forEach(function(project) {
+      addUpdateTime(project, timestampPromises, $);
+    });
+    */ 
+
+    var sortProm = sortedCombinedPromise(projects, timestampPromises);
+
+    // TODO: move to own function
+    sortProm.then(function(sortedItems) {
+      console.log(sortedItems);
+      return sortedItems;
+    }).then(function(sortedItems) {
+      var projectTable = $('div.projects-table');
+
+      projectTable.empty();
+
+      var sortedProjectBoxes = sortedItems.map(function(combined) {
+        var project = combined.project;
+        var tsObj = combined.tsObj;
+
+        var updateStr = tsObj.error ? '' : ('Last updated ' + tsToString(tsObj.timestamp));
+
+        return (
+          $('<div>').addClass('project-box').append(
+            $('<h3>').addClass('project-title').append(
+              // TODO: kebabify/slugify and escape url
+              $('<a>')
+              .attr('href', 'projects.html#proj-' + project.title)
+              .text(project.title)
+            ),
+            $('<p>').text(project.description),
+            $('<small>').addClass('last-updated').text(updateStr)
+          )
+        );
+      });
+
+      // TODO: in an attempt to remove content flashES...
+      // one big one is ok :)
+      projectTable.append(sortedProjectBoxes);
+
+      return sortedItems;
+    });
+  });
 </script>

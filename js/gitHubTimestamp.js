@@ -1,23 +1,48 @@
 var baseURL = 'https://api.github.com/';
 
-var getGitHubTimestamp = function (project) {
+var getGitHubTimestampPromise = function (project) {
   var requestURL = buildRequestURL(project);
 
-  return new Promise(function(resolve, reject) {
-    var onSuccess = function(data) {
-      resolve(data.commit.commit.committer.date);
-    };
+  if (!requestURL) {
+    return Promise.resolve({
+      timestamp: 0,
+      // TODO: is this what we want here?
+      // maybe just have a `successful` boolean
+      error: 'unable to parse'
+    });
+  } else {
+    return new Promise(function (resolve) {
+      var onSuccess = function (data) {
+        var dateStr = data.commit.commit.committer.date;
+        var timestamp = new Date(dateStr);
+        resolve({
+          timestamp: timestamp,
+          error: null
+        });
+      };
 
-    var onFailure = reject;
+      // if there's an error, use zero as a sentinel value
+      var onFailure = function (error) {
+        resolve({
+          timestamp: 0,
+          // TODO: worth it to hold on to the error?
+          error: error || true
+        });
+      };
 
-    $.get(requestURL).then(onSuccess, onFailure);
-  });
+      $.get(requestURL).then(onSuccess, onFailure);
+    });
+  }
 };
 
-var buildRequestURL = function(project) {
+var buildRequestURL = function (project) {
   var parse = parseOwnerAndRepoFromLink(project.link);
 
-  return baseURL.concat('repos/', parse.owner, '/', parse.repo, '/branches/master');
+  if (!parse) {
+    return null;
+  } else {
+    return baseURL.concat('repos/', parse.owner, '/', parse.repo, '/branches/master');
+  }
 };
 
 var parseOwnerAndRepoFromLink = function (link) {
