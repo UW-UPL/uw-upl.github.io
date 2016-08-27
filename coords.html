@@ -22,7 +22,9 @@ layout: default
       {{ coord.year }} majoring in {{ coord.major }}
       <br />
       {% if coord.emoji %}
-      <p>Favorite emoji: <i class="em em-{{ coord.emoji }}"></i></p>
+      <p>Favorite emoji:
+        <img class="emoji" title=":{{ coord.emoji }}:" alt=":{{ coord.emoji }}:" src="https://assets-cdn.github.com/images/icons/emoji/{{coord.emoji}}.png" height="20" width="20" align="absmiddle" />
+      </p>
       {% endif %}
       {% if coord.github %}
       <a title="{{ coord.name }}: GitHub" href="{{ coord.github }}">GitHub</a>
