@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (date.isBefore(now)) {
       previousEventsList.append(event);
     } else {
-      upcomingEventsList.append(event);
+      upcomingEventsList.prepend(event);
     }
   });
 
