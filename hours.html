@@ -27,7 +27,7 @@ layout: default
   {% for time in site.data.hours[0].times %}
   {% assign t_index = forloop.index %}
   <tr>
-    <td>{{ time }}</td>
+    <td>{{ time[0] }}</td>
     {% for day in site.data.hours %}
       {% for t in day.times %}
         {% if forloop.index == t_index %}
