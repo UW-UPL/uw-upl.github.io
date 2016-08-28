@@ -7,3 +7,16 @@ layout: default
 </div>
 
 <script src="{{ '/js/lab.js' | prepend: site.baseurl }}"></script>
+
+<div class="lab-table-container">
+  <table class="striped lab-status">
+    <tbody>
+      <tr class="t-head"><th>Workstation</th><th>Status</th></tr>
+    </tbody>
+    <tbody id="lab-table-workstation-container""></tbody>
+    <tbody>
+      <tr class="t-head"><th>Server</th><th>Status</th></tr>
+    </tobdy>
+    <tbody id="lab-table-server-container""></tbody>
+  </table>
+</div>
