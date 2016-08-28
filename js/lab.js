@@ -8,7 +8,7 @@
     }
 
     function sortByName(a, b) {
-      return a.name > b.bame;
+      return a.name > b.name;
     }
 
     $.ajax({
