@@ -1,13 +1,4 @@
 ---
-- id: le nick de la heindl
-  name: Nick Heindl
-  year: Senior++
-  major: Computer Sciences and Linguistics; Cert. in Game Development
-  github: https://github.com/katamaritaco/me
-  website: http://nheindl.com/
-  photo: nick.jpg
-  emoji: dromedary_camel
-
 - id: mneil
   name: Matt Neil
   year: Senior
