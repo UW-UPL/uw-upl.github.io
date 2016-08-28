@@ -2,7 +2,7 @@
 <p>Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">pull request on GitHub</a> to add your projects here!</p>
 <div class="projects-table">
   {% assign projects = site.data.projects | sort: 'title' %} {% for project in projects %}
-  <div class="project-box">
+  <div class="project-box" data-project-link='{{ project.link }}'>
     <h3 class="project-title">
       <a href="/projects.html#proj-{{ project.title | slugify }}">{{ project.title }}</a>
     </h3>
@@ -21,7 +21,7 @@
 
   // a will come before b if a > b
   function tsDescending(tsA, tsB) {
-    return tsA - tsB;
+    return tsB - tsA;
   }
 
   function titleAscendingIgnoreCase(titleA, titleB) {
@@ -48,24 +48,23 @@
     $box.find('.last-updated').text(updateText);
   }
 
-  function getTitleFromBox($box) {
-    return $box.find('a').text();
+  // the project link is treated as the unique identifier
+  function getLinkFromBox($box) {
+    return $box.attr('data-project-link');
   }
 
-  // I assume all titles will be unique!  
   function sortProjectBoxes(projects, timestampPromises, $) {
     var $projectsTable = $('.projects-table');
 
     var $boxes = $projectsTable.children().toArray();
 
-    // this assumes that project titles will be unique
-    // tsObjs[i] is the result of the request for projects[i]
+    // reminder: tsObjs[i] is the result of the request for projects[i]
     return Promise.all(timestampPromises).then(function(tsObjs) {
       $projectsTable.hide();
 
       var titleToProjTsPairs = projects.reduce(function(accum, project, index) {
         var myTsObj = tsObjs[index];
-        accum[project.title] = {
+        accum[project.link] = {
           project: project,
           tsObj: myTsObj
         };
@@ -75,10 +74,11 @@
       // this will be in abc-order (including case!!!)
       // but this is not nec. what we want...
       var boxProjTsTriples = $boxes.map(function(box) {
-        var myTitle = getTitleFromBox($(box));
-        var myProjTsPair = titleToProjTsPairs[myTitle];
+        var $box = $(box);
+        var myLink = getLinkFromBox($box);
+        var myProjTsPair = titleToProjTsPairs[myLink];
         return {
-          box: $(box),
+          box: $box,
           project: myProjTsPair.project,
           tsObj: myProjTsPair.tsObj
         };
@@ -96,10 +96,7 @@
       });
 
       sortedTriples.forEach(function(triple) {
-        var $box = $(triple.box);
-        var tsObj = triple.tsObj;
-
-        applyLastUpdatedText($box, tsObj)
+        applyLastUpdatedText(triple.box, triple.tsObj);
       });   
 
       var sortedBoxes = sortedTriples.map(function(triple) { return triple.box });
