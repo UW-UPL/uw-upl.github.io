@@ -6,9 +6,7 @@ var getGitHubTimestampPromise = function (project) {
   if (!requestURL) {
     return Promise.resolve({
       timestamp: 0,
-      // TODO: is this what we want here?
-      // maybe just have a `successful` boolean
-      error: 'unable to parse'
+      error: '400: unable to build valid GitHub request URL'
     });
   } else {
     return new Promise(function (resolve) {
@@ -25,8 +23,7 @@ var getGitHubTimestampPromise = function (project) {
       var onFailure = function (error) {
         resolve({
           timestamp: 0,
-          // TODO: worth it to hold on to the error?
-          error: error || true
+          error: error.status.toString() + ': ' + error.statusText
         });
       };
 
