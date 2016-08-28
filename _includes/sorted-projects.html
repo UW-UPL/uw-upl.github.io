@@ -24,16 +24,9 @@
     return tsB - tsA;
   }
 
-  function titleAscendingIgnoreCase(titleA, titleB) {
+  // localeCompare ignores case
+  function titleAscending(titleA, titleB) {
     return titleA.localeCompare(titleB);
-  }
-
-  function titleAscendingWithCase(titleA, titleB) {
-    if (titleA === titleB) {
-      return 0;
-    } else {
-      return titleA < titleB ? -1 : 1;
-    }
   }
 
   function applyLastUpdatedText($box, tsObj) {
@@ -71,8 +64,6 @@
         return accum;
       }, {});
 
-      // this will be in abc-order (including case!!!)
-      // but this is not nec. what we want...
       var boxProjTsTriples = $boxes.map(function(box) {
         var $box = $(box);
         var myLink = getLinkFromBox($box);
@@ -87,12 +78,11 @@
       var sortedTriples = boxProjTsTriples.sort(function(tripleA, tripleB) {
         var tsA = tripleA.tsObj.timestamp;
         var tsB = tripleB.tsObj.timestamp;
-        // may want to lower case the titles depending on how we want the sort to work
+
         var titleA = tripleA.project.title;
         var titleB = tripleB.project.title;
 
-        // TODO: resolve this case conundrum
-        return tsDescending(tsA, tsB) || titleAscendingWithCase(titleA, titleB);
+        return tsDescending(tsA, tsB) || titleAscending(titleA, titleB);
       });
 
       sortedTriples.forEach(function(triple) {
