@@ -27,6 +27,7 @@
           serverContainer.append(createMachineRow(machine));
         });
 
+        $('#labStatus').remove();
         $(".lab-status").show();
       }
     });
