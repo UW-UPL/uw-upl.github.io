@@ -67,7 +67,11 @@
 
     p {
       font-style: italic;
-      color: #727272;
+      color: $textLight;
+    }
+
+    small {
+      color: $textLight;
     }
   }
 }
