@@ -1,7 +1,7 @@
 ---
 - id: cook
   name: Michael Cook
-  year: Junior
+  year: Senior
   major: Computer Sciences
   github: https://github.com/MikeCook9994
   photo: Hello-MLady.jpg
@@ -25,7 +25,7 @@
 
 - id: jasminew
   name: Jasmine Wang
-  year: Sophomore
+  year: Junior
   major: Computer Sciences
   github: https://github.com/simplywondrous
   photo: jasmore.jpg
@@ -33,7 +33,7 @@
 
 - id: marshallm
   name: Marshall Mueller
-  year: Sophomore
+  year: Junior
   major: Computer Engineering & Computer Sciences
   github: https://github.com/marshmue
   photo: uplnumberonecoordmarshale.jpg
@@ -41,7 +41,7 @@
 
 - id: swilson
   name: Sean Wilson
-  year: Junior
+  year: Senior
   major: Computer Sciences
   github: https://github.com/spwilson2
   photo: sean_as_a_square.jpg
@@ -49,7 +49,7 @@
 
 - id: ysohail
   name: Yusef Sohail
-  year: Sophomore
+  year: Junior
   major: Computer Sciences
   github: https://github.com/Squeakrats
   photo: squanch.jpg
@@ -65,7 +65,7 @@
 
 - id: bhansen
   name: Benjamin Hansen
-  year: Junior
+  year: Senior
   major: Computer Sciences, Mathematics, and Communication Arts
   github: https://github.com/bhans117
   photo: ben.jpg
@@ -73,7 +73,7 @@
 
 - id: randy
   name: Randy Amundson
-  year: Sophomore
+  year: Junior
   major: Computer Sciences
   photo: Randy_Amundson_filler.jpg
   github: https://github.com/ranman166
@@ -89,7 +89,7 @@
 
 - id: ekivolowitz
   name: Evan Kivolowitz
-  year: Sophomore
+  year: Junior
   major: Computer Sciences and Statistics
   photo: rude_boy_jr.jpg
   github: https://github.com/ekivolowitz
