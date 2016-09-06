@@ -9,7 +9,7 @@
     2:25PM: Jasmine
     3:30PM: ''
     4:35PM: 'John'
-    5:40PM: ''
+    5:40PM: Evan
 
 - day: Tuesday
   times:
@@ -33,7 +33,7 @@
     2:25PM: Ricky
     3:30PM: ''
     4:35PM: 'John'
-    5:40PM: ''
+    5:40PM: Evan
 
 - day: Thursday
   times:
@@ -57,4 +57,4 @@
     2:25PM: 'Randy'
     3:30PM: ''
     4:35PM: ''
-    5:40PM: ''
+    5:40PM: Evan
