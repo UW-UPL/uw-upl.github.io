@@ -1,0 +1,116 @@
+<!-- default (non-sorted) template -->
+<p>Send us a <a href="https://github.com/UW-UPL/uw-upl.github.io">pull request on GitHub</a> to add your projects here!</p>
+<div class="projects-table">
+  {% assign projects = site.data.projects | sort: 'title' %}
+  {% for project in projects %}
+  <div class="project-box" data-project-link='{{ project.link }}'>
+    <h3 class="project-title">
+      <a href="/projects.html#{{ project.title | slugify }}">{{ project.title }}</a>
+    </h3>
+    <p>{{ project.description }}</p>
+    <small class='last-updated'></small>
+  </div>
+  {% endfor %}
+</div>
+<!-- end default template -->
+
+<script src="{{ '/js/gitHubTimestamp.js' | prepend: site.baseurl }}"></script>
+<script>
+  function tsToString(ts) {
+    return moment(ts).format('MMMM Do YYYY, h:mm a');
+  }
+
+  // a will come before b if a > b
+  function tsDescending(tsA, tsB) {
+    return tsB - tsA;
+  }
+
+  // localeCompare ignores case
+  function titleAscending(titleA, titleB) {
+    return titleA.localeCompare(titleB);
+  }
+
+  function applyLastUpdatedText($box, tsObj) {
+    var updateText;
+
+    if (!tsObj.error) {
+      updateText = 'Last updated ' + tsToString(tsObj.timestamp);
+    } else {
+      updateText = '';
+    }
+
+    $box.find('.last-updated').text(updateText);
+  }
+
+  // the project link is treated as the unique identifier
+  function getLinkFromBox($box) {
+    return $box.attr('data-project-link');
+  }
+
+  function sortProjectBoxes(projects, timestampPromises, $) {
+    var $projectsTable = $('.projects-table');
+
+    var $boxes = $projectsTable.children().toArray();
+
+    // reminder: tsObjs[i] is the result of the request for projects[i]
+    return Promise.all(timestampPromises).then(function(tsObjs) {
+      $projectsTable.hide();
+
+      var titleToProjTsPairs = projects.reduce(function(accum, project, index) {
+        var myTsObj = tsObjs[index];
+        accum[project.link] = {
+          project: project,
+          tsObj: myTsObj
+        };
+        return accum;
+      }, {});
+
+      var boxProjTsTriples = $boxes.map(function(box) {
+        var $box = $(box);
+        var myLink = getLinkFromBox($box);
+        var myProjTsPair = titleToProjTsPairs[myLink];
+        return {
+          box: $box,
+          project: myProjTsPair.project,
+          tsObj: myProjTsPair.tsObj
+        };
+      });
+
+      var sortedTriples = boxProjTsTriples.sort(function(tripleA, tripleB) {
+        var tsA = tripleA.tsObj.timestamp;
+        var tsB = tripleB.tsObj.timestamp;
+
+        var titleA = tripleA.project.title;
+        var titleB = tripleB.project.title;
+
+        return tsDescending(tsA, tsB) || titleAscending(titleA, titleB);
+      });
+
+      sortedTriples.forEach(function(triple) {
+        applyLastUpdatedText(triple.box, triple.tsObj);
+      });   
+
+      var sortedBoxes = sortedTriples.map(function(triple) { return triple.box });
+
+      $projectsTable.empty().append(sortedBoxes).show();
+
+      return tsObjs;
+    });
+  }
+
+  $(document).ready(function() {
+    var projects = {{ site.data.projects | jsonify }}
+
+    var USE_GITHUB_TIMESTAMPS = true;    
+    
+    if (USE_GITHUB_TIMESTAMPS) {
+
+      // tsPromises[i] is the promised (always resolved) result of request for projects[i]
+      var timestampPromises = projects.map(function(project) {
+        return getGitHubTimestampPromise(project);
+      });
+
+      var allPromise = sortProjectBoxes(projects, timestampPromises, $);
+    }
+  });
+</script>

@@ -2,9 +2,13 @@
     function createMachineRow(machine) {
       var offlineClass = !machine.online && 'offline';
       var status = machine.online ? 'Online' : 'Offline';
-      return $('<tr>')
-          .append($('<td class="st-key">').text(machine.name))
-          .append($('<td class="st-val">').addClass(offlineClass).text(status));
+      return $('<tr class="lab-table-machine-container">')
+          .append($('<td>').text(machine.name))
+          .append($('<td>').addClass(offlineClass).text(status));
+    }
+
+    function sortByName(a, b) {
+      return a.name > b.name;
     }
 
     $.ajax({
@@ -12,32 +16,19 @@
       type: 'GET',
       success: function(txt) {
         var data = JSON.parse(txt);
-        data.workstations.machines.sort(function (a, b) {
-          return a.name > b.name;
-        });
-        data.servers.machines.sort(function (a, b) {
-          return a.name > b.name;
-        });
-        var container = $('<div class="lab-table-container">');
-        var table = $('<table class="striped lab-status">');
-        var machineHeader = $('<tr class="t-head"><th>Workstation</th><th>Status</th></tr>');
-        table.append($('<tbody>').append(machineHeader));
-        var machines = $('<tbody>');
-        data.workstations.machines.forEach(function (machine) {
-          machines.append(createMachineRow(machine));
-        });
-        table.append(machines);
 
-        var serverHeader = $('<tr class="t-head"><th>Server</th><th>Status</th></tr>');
-        table.append($('<tbody>').append(serverHeader));
-        var servers = $('<tbody>');
-        data.servers.machines.forEach(function (machine) {
-          servers.append(createMachineRow(machine));
+        var machineContainer = $("#lab-table-workstation-container");
+        data.workstations.machines.sort(sortByName).forEach(function(machine) {
+          machineContainer.append(createMachineRow(machine));
         });
-        table.append(servers);
 
-        container.append(table);
-        $('#labStatus').html(container);
+        var serverContainer = $("#lab-table-server-container");
+        data.servers.machines.sort(sortByName).forEach(function(machine) {
+          serverContainer.append(createMachineRow(machine));
+        });
+
+        $('#labStatus').remove();
+        $(".lab-status").show();
       }
     });
   });

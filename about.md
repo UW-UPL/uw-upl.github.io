@@ -59,7 +59,7 @@ onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501Z1_UkqUn
 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
 return false;" title="Reveal this e-mail address">b...</a>@cs.wisc.edu.
 
-[Coordinators]({{ 'coords' | prepend: site.baseurl }}), "coords" for short,
+[Coordinators]({{ 'coords.html' | prepend: site.baseurl }}), "coords" for short,
 handle the day to day operations of the UPL. These operations include paperwork
 processing, system administration, and organizing events as well as other tasks.
 
@@ -78,9 +78,9 @@ Contributions, updates, and stories are always welcome!
 
 The UPL has a
 [library](https://docs.google.com/spreadsheets/d/1vvBGUE4_Y-BbBa2enLRiEGEVqUorZEdq1Rb1O8NG4NM/edit#gid=0)
-that contains books on computer related topics</a>. Do not remove any books from
+that contains books on computer related topics. Do not remove any books from
 the UPL without the consent of a coord. Many books are the personal property of
-various members who are generously making them available.</p>
+various members who are generously making them available.
 
 ## What sources of help are available in the UPL?
 
@@ -116,26 +116,26 @@ UPL will be the same as your other CS account(s) username.
 
 The UPL was established for students to learn about computers. While we support
 exploration of the system, it is important to be considerate of the other users
-of the system and the security needs of the UPL. Alongside <a
-href="https://github.com/UW-UPL/Documentation/blob/master/Code-of-Conduct.markdown">the
-code of conduct</a> which all UPL members must abide by, the following rules
-represent guidelines on appropriate and inappropriate behavior. Violation of
-these rules may lead to your account being locked or deleted.
+of the system and the security needs of the UPL. Alongside
+[the code of conduct](https://github.com/UW-UPL/Documentation/blob/master/Code-of-Conduct.markdown)
+which all UPL members must abide by, the following rules represent guidelines on
+appropriate and inappropriate behavior. Violation of these rules may lead to
+your account being locked or deleted.
 
-1) You may not break into other accounts, break into other computers, use UPL
+1. You may not break into other accounts, break into other computers, use UPL
 resources to crack passwords, or otherwise use UPL resources to subvert any
 established security system. You may not attempt to steal passwords, files, or
 other system or user information from these or other computers.
 
-2) You may not delete any other user's files, or disrupt the accessibility,
+1. You may not delete any other user's files, or disrupt the accessibility,
 usability, or performance of another user's account. You may not harass or
 threaten any other user either here or at another site.
 
-3) You may not disrupt the accessibility, usability, or performance of any UPL
+1. You may not disrupt the accessibility, usability, or performance of any UPL
 resources. Distasteful or offensive displays, printouts, or stored files are not
 permitted, and will be removed.
 
-4) Passing of copyrighted material to another ("pirating") is prohibited.
+1. Passing of copyrighted material to another ("pirating") is prohibited.
 
 If you have an interest in testing system security, or you want to use UPL
 resources in a way that may disrupt performance, please contact a coordinator to

@@ -6,4 +6,17 @@ layout: default
   Retrieving lab status. Please email the coordinators at <a href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu if this doesn't work.
 </div>
 
+<div class="lab-table-container">
+  <table class="striped lab-status">
+    <tbody>
+      <tr class="t-head"><th>Workstation</th><th>Status</th></tr>
+    </tbody>
+    <tbody id="lab-table-workstation-container"></tbody>
+    <tbody>
+      <tr class="t-head"><th>Server</th><th>Status</th></tr>
+    </tbody>
+    <tbody id="lab-table-server-container"></tbody>
+  </table>
+</div>
+
 <script src="{{ '/js/lab.js' | prepend: site.baseurl }}"></script>
