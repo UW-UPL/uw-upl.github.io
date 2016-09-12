@@ -7,7 +7,7 @@
     12:05PM: 'Ben'
     1:20PM: Jasmine
     2:25PM: Jasmine
-    3:30PM: ''
+    3:30PM: 'John'
     4:35PM: 'Evan'
     5:40PM: 'Evan'
 
@@ -31,9 +31,9 @@
     12:05PM: 'Ben'
     1:20PM: Christian
     2:25PM: Ricky
-    3:30PM: ''
-    4:35PM: 'John'
-    5:40PM: 'John'
+    3:30PM: 'John'
+    4:35PM: ''
+    5:40PM: ''
 
 - day: Thursday
   times:
@@ -55,6 +55,6 @@
     12:05PM: Leon
     1:20PM: 'Randy'
     2:25PM: 'Randy'
-    3:30PM: ''
+    3:30PM: 'John'
     4:35PM: ''
-    5:40PM: Evan
+    5:40PM: 'Evan'
