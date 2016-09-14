@@ -16,7 +16,7 @@
     8:50AM: ''
     9:55AM: ''
     11:00AM: Yusef
-    12:05PM: ''
+    12:05PM: 'Marshall'
     1:20PM: Christian
     2:25PM: 'Sean'
     3:30PM: 'Sean'
@@ -26,7 +26,7 @@
 - day: Wednesday
   times:
     8:50AM: ''
-    9:55AM: 'Marshall'
+    9:55AM: ''
     11:00AM: ''
     12:05PM: 'Ben'
     1:20PM: Christian
