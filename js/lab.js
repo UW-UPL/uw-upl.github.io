@@ -12,7 +12,7 @@
     }
 
     $.ajax({
-      url: 'http://eris.upl.cs.wisc.edu:1312/lab-status',
+      url: 'http://siren.upl.cs.wisc.edu:1312/lab-status',
       type: 'GET',
       success: function(txt) {
         var data = JSON.parse(txt);

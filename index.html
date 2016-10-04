@@ -10,9 +10,10 @@ layout: default
   </section>
 </div>
 <div class="home-container webcam-container">
-  <video autoplay width="320" height="240" controls>
-  <source src="http://siren.upl.cs.wisc.edu:8090/webcam.webm" type="video/webm">
-Your browser does not support the webcam. Please use Chrome or Firefox.
+  <div class="webcam-wrapper">
+    <p id="click-to-stream">click for live stream</p>
+    <canvas id="webcam-canvas" width="432" height="240"></canvas>
+  </div>
 </video>
   <h2>The Lab</h2>
   {% include current-coord.html %}
@@ -22,3 +23,4 @@ Your browser does not support the webcam. Please use Chrome or Firefox.
   {% include sorted-projects.html %}
 </section>
 
+<script src="{{ '/js/webcam.js' | prepend: site.baseurl }}"></script>
