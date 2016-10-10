@@ -12,9 +12,13 @@ layout: default
 <div class="home-container webcam-container">
   <div class="webcam-wrapper">
     <p id="click-to-stream">click for live stream</p>
-    <canvas id="webcam-canvas" width="432" height="240"></canvas>
+    <canvas id="webcam-canvas" width="432" height="240">
+    </canvas>
+    <div id="webcam-slider"></div>
+
   </div>
-</video>
+
+
   <h2>The Lab</h2>
   {% include current-coord.html %}
 </div>
@@ -23,4 +27,6 @@ layout: default
   {% include sorted-projects.html %}
 </section>
 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="{{ '/js/webcam.js' | prepend: site.baseurl }}"></script>

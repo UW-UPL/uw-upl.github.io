@@ -15,6 +15,7 @@
   }
 
   var load = function () {
+    // TODO dont commit "http://siren.upl.cs.wisc.edu:1312/webcam-frame.jpg?"
     image.src = "http://siren.upl.cs.wisc.edu:1312/webcam-frame.jpg?" + Math.random();
   }
 
@@ -24,6 +25,14 @@
     $("#click-to-stream").hide()
     interval = setInterval(load, 40);
   });
+
+
+  var slider = $("#webcam-slider")
+    slider.slider();
+    slider.width(canvas.width());
+    slider.on('slidestop', function () {
+      $.get('http://siren.upl.cs.wisc.edu:1312/pos/degrees=' + slider.slider("value"));
+    })
   
 })()
    
