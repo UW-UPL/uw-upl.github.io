@@ -41,6 +41,14 @@
       background-color: $badgerRed;
     }
   }
+
+  #click-to-stream {
+    position:absolute;
+    margin:0px;
+    padding:4px;
+    color:white;
+    font-size:20px;
+  }
 }
 
 .projects-container {
