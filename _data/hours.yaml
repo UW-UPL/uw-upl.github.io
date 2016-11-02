@@ -8,7 +8,7 @@
     1:20PM: 'Jasmine'
     2:25PM: 'Jasmine'
     3:30PM: ''
-    4:35PM: 'Evan'
+    4:35PM: ''
     5:40PM: 'Evan'
 
 - day: Tuesday
@@ -21,7 +21,7 @@
     2:25PM: 'Sean'
     3:30PM: 'Sean'
     4:35PM: ''
-    5:40PM: ''
+    5:40PM: 'Evan'
 
 - day: Wednesday
   times:
