@@ -14,15 +14,7 @@
   github: https://github.com/ricky54326
   photo: riccardo.jpg
   emoji: '100'
-
-- id: leon
-  name: Leon Dinh
-  year: Senior
-  major: Computer Sciences
-  github: https://github.com/lwdinh
-  photo: ldinh.jpg
-  emoji: art
-
+  
 - id: jasminew
   name: Jasmine Wang
   year: Junior
