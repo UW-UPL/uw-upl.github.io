@@ -41,7 +41,7 @@
     9:55AM: 'Jasmine'
     11:00AM: 'Marshall'
     12:05PM: ''
-    1:20PM: ''
+    1:20PM: 'Cook'
     2:25PM: 'John'
     3:30PM: ''
     4:35PM: ''
@@ -51,7 +51,7 @@
   times:
     8:50AM: ''
     9:55AM: ''
-    11:00AM: ''
+    11:00AM: 'Cook'
     12:05PM: ''
     1:20PM: 'Randy'
     2:25PM: 'Randy'
