@@ -8,7 +8,7 @@
     1:20PM: 'Ben'
     2:25PM: 'Ben'
     3:30PM: ''
-    4:35PM: 'Evan'
+    4:35PM: ''
     5:40PM: ''
 
 - day: Tuesday
@@ -32,7 +32,7 @@
     1:20PM: 'John'
     2:25PM: ''
     3:30PM: ''
-    4:35PM: ''
+    4:35PM: 'Evan'
     5:40PM: ''
 
 - day: Thursday
