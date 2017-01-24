@@ -39,11 +39,11 @@
   times:
     8:50AM: ''
     9:55AM: 'Jasmine'
-    11:00AM: 'Marshall'
+    11:00AM: ''
     12:05PM: ''
     1:20PM: 'Cook'
     2:25PM: 'John'
-    3:30PM: ''
+    3:30PM: 'Marshall'
     4:35PM: ''
     5:40PM: ''
 
