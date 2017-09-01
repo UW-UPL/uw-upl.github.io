@@ -1,11 +1,11 @@
 ---
-- id: cook
-  name: Michael Cook
+- id: levin
+  name: Aaron Levin
   year: Senior
-  major: Computer Sciences
-  github: https://github.com/MikeCook9994
-  photo: Hello-MLady.jpg
-  emoji: eggplant
+  major: Computer Engineering & Computer Science
+  github: https://github.com/awlevin
+  photo: levin.jpg
+  emoji: 🤔
 
 - id: riccardo
   name: Riccardo Mutschlechner
