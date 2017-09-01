@@ -1,4 +1,12 @@
 ---
+- id: roz
+  name: Rosalind Stengle
+  year: Sophomore
+  major: Computer Science and Economics
+  github: https://github.com/rosalindstengle
+  photo: roz.jpg
+  emoji: 'money-mouth face'
+
 - id: levin
   name: Aaron Levin
   year: Senior
