@@ -102,3 +102,11 @@
   photo: andrew.jpg
   github: https://github.com/Andretti77
   emoji: fire
+
+- id: balis
+  name: John Balis
+  year: Sophomore
+  major: Computer Sciences 
+  github: https://github.com/balisujohn
+  photo: johnbalis.jpg
+  emoji: satellite
