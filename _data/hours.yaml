@@ -13,11 +13,11 @@
 
 - day: Tuesday
   times:
-    8:50AM: 'Marshall Mueller'
+    8:50AM: ''
     9:55AM: ''
     11:00AM: 'Aaron Levin'
     12:05PM: 'Jasmine Wang'
-    1:20PM: ''
+    1:20PM: 'Marshall Mueller'
     2:25PM: 'Randy Amundson'
     3:30PM: 'Randy Amundson'
     4:35PM: ''
@@ -37,13 +37,13 @@
 
 - day: Thursday
   times:
-    8:50AM: 'Marshall Mueller'
+    8:50AM: ''
     9:55AM: ''
     11:00AM: 'Aaron Levin'
     12:05PM: 'Jasmine Wang'
     1:20PM: 'Christian Borst'
     2:25PM: 'Christian Borst'
-    3:30PM: ''
+    3:30PM: 'Marshall Mueller'
     4:35PM: ''
     5:40PM: ''
 
