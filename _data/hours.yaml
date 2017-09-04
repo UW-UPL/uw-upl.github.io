@@ -18,8 +18,8 @@
     11:00AM: 'Aaron Levin'
     12:05PM: 'Jasmine Wang'
     1:20PM: 'Marshall Mueller'
-    2:25PM: 'Randy Amundson'
-    3:30PM: 'Randy Amundson'
+    2:25PM: 'Jonas Klare'
+    3:30PM: 'Jonas Klare'
     4:35PM: ''
     5:40PM: ''
 
@@ -37,7 +37,7 @@
 
 - day: Thursday
   times:
-    8:50AM: 'Jonas Klare'
+    8:50AM: ''
     9:55AM: ''
     11:00AM: 'Aaron Levin'
     12:05PM: 'Jasmine Wang'
@@ -50,11 +50,11 @@
 - day: Friday
   times:
     8:50AM: ''
-    9:55AM: 'Jonas Klare'
-    11:00AM: ''
+    9:55AM: ''
+    11:00AM: 'Randy Amundson'
     12:05PM: 'Andrew Petti'
     1:20PM: 'Andrew Petti'
-    2:25PM: ''
+    2:25PM: 'Randy Amundson'
     3:30PM: ''
     4:35PM: ''
     5:40PM: ''
