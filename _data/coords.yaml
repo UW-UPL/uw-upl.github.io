@@ -15,13 +15,6 @@
   photo: aaronlevin.png
   emoji: 'thinking face'
 
-- id: riccardo
-  name: Riccardo Mutschlechner
-  year: 2y Graduate Student
-  major: Computer Sciences
-  github: https://github.com/ricky54326
-  photo: riccardo.jpg
-  emoji: '100'
   
 - id: jasminew
   name: Jasmine Wang
@@ -39,14 +32,6 @@
   photo: uplnumberonecoordmarshale.jpg
   emoji: ok_hand
 
-- id: swilson
-  name: Sean Wilson
-  year: Senior
-  major: Computer Sciences
-  github: https://github.com/spwilson2
-  photo: sean_as_a_square.jpg
-  emoji: "8ball"
-
 - id: ysohail
   name: Yusef Sohail
   year: Junior
@@ -54,14 +39,6 @@
   github: https://github.com/Squeakrats
   photo: squanch.jpg
   emoji: spaghetti
-
-- id: detter
-  name: John Detter
-  year: Senior
-  major: Computer Sciences
-  github: https://github.com/jdetter
-  photo: johndetter.jpg
-  emoji: jack_o_lantern
 
 - id: bhansen
   name: Benjamin Hansen
