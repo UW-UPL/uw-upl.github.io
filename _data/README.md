@@ -95,3 +95,13 @@ Just supply the empty string (`""`) if no coordinator is present at that time.
   imageLink: additional link laid on top of image, defaults to link above [Optional] (String),
   featuredOnHomepage: feature this project on the homepage [Optional - defaults to false] (Boolean)
 ```
+
+# Content: Lab
+
+`lab.yaml` is general lab information
+
+## Lab Specification:
+
+```
+hours: if the lab is currently holding hours. [Required] (Boolean)
+```
