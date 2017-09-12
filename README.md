@@ -6,11 +6,6 @@ Found at [uw-upl.github.io](http://uw-upl.github.io) and
 This website is powered by [jekyll](http://jekyllrb.com). Contributions and
 issue reports are welcomed!
 
-### Before making any changes, be aware of the following:
-### 1. If you're changing a file in `_data/` or `images/`, you can commit to master
-### 2. If you're changing _anything else_, make a pull request to the develop branch.
-### If your commit skips the development/review process, expect it to be reverted.
-
 ## Dependencies
 
 This project uses the official [GitHub Pages gem](https://github.com/github/pages-gem).
