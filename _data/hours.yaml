@@ -20,14 +20,14 @@
     1:20PM: 'Marshall Mueller'
     2:25PM: 'Jonas Klare'
     3:30PM: 'Jonas Klare'
-    4:35PM: 'Ben Hansen'
+    4:35PM: ''
     5:40PM: ''
 
 - day: Wednesday
   times:
     8:50AM: ''
     9:55AM: ''
-    11:00AM: ''
+    11:00AM: 'Ben Hansen'
     12:05PM: 'Yusef Sohail'
     1:20PM: 'Yusef Sohail'
     2:25PM: 'Ben Hansen'
