@@ -18,7 +18,7 @@
   
 - id: jasminew
   name: Jasmine Wang
-  year: Junior
+  year: Senior
   major: Computer Sciences
   github: https://github.com/simplywondrous
   photo: jasmore.jpg
@@ -26,7 +26,7 @@
 
 - id: marshallm
   name: Marshall Mueller
-  year: Junior
+  year: Senior
   major: Mathematics & Computer Sciences
   github: https://github.com/marshmue
   photo: uplnumberonecoordmarshale.jpg
@@ -34,7 +34,7 @@
 
 - id: ysohail
   name: Yusef Sohail
-  year: Junior
+  year: Senior
   major: Computer Sciences
   github: https://github.com/Squeakrats
   photo: squanch.jpg
@@ -50,7 +50,7 @@
 
 - id: randy
   name: Randy Amundson
-  year: Junior
+  year: Senior
   major: Computer Sciences
   photo: Randy_Amundson_filler.jpg
   github: https://github.com/ranman166
@@ -58,7 +58,7 @@
 
 - id: borst
   name: Christian Borst
-  year: Junior
+  year: Senior
   major: Computer Sciences and Mathematics
   photo: christianborst.jpg
   github: https://github.com/christianborst
@@ -66,7 +66,7 @@
 
 - id: ekivolowitz
   name: Evan Kivolowitz
-  year: Sophomore
+  year: Junior
   major: Computer Sciences, Math, Statistics
   photo: rude_boy_jr.jpg
   github: https://github.com/ekivolowitz
@@ -74,7 +74,7 @@
   
 - id: apetti
   name: Andrew Petti
-  year: Junior
+  year: Senior
   major: Computer Engineering & Computer Science
   photo: andrew.jpg
   github: https://github.com/Andretti77
