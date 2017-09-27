@@ -5,7 +5,7 @@
   major: Computer Science and Economics
   github: https://github.com/rosalindstengle
   photo: roz.jpg
-  emoji: 'money-mouth face'
+  emoji: money-mouth face
 
 - id: levin
   name: Aaron Levin
@@ -13,7 +13,7 @@
   major: Computer Engineering & Computer Science
   github: https://github.com/awlevin
   photo: aaronlevin.png
-  emoji: 'thinking face'
+  emoji: thinking face
 
   
 - id: jasminew
@@ -87,3 +87,11 @@
   github: https://github.com/balisujohn
   photo: johnbalis.jpg
   emoji: satellite
+
+- id: klare
+  name: Jonas Klare
+  year: Sophomore
+  major: Computer Science & Atmospheric+Oceanic Sciences
+  photo: jonasklare.jpg
+  github: https://github.com/jonasklare
+  emoji: cloud
