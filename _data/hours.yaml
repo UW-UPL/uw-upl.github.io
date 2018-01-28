@@ -13,8 +13,8 @@
 
 - day: Tuesday
   times:
-    8:50AM: ''
-    9:55AM: 'David Chen'
+    8:50AM: 'David Chen'
+    9:55AM: ''
     11:00AM: 'Yusef Sohail'
     12:05PM: 'Claire Jolly'
     1:20PM: 'Chris Olszewski'
@@ -37,8 +37,8 @@
 
 - day: Thursday
   times:
-    8:50AM: ''
-    9:55AM: 'David Chen'
+    8:50AM: 'David Chen'
+    9:55AM: ''
     11:00AM: 'Yusef Sohail'
     12:05PM: 'Claire Jolly'
     1:20PM: 'Harrison Brewton'
