@@ -15,7 +15,6 @@
   photo: aaronlevin.png
   emoji: wink
 
-  
 - id: brewton
   name: Harrison Brewton
   year: Sophomore
@@ -24,13 +23,13 @@
   photo: harrisonbrewton.jpg
   emoji: bullettrain_side
 
-- id: marshallm
-  name: Marshall Mueller
-  year: Senior
-  major: Mathematics & Computer Sciences
-  github: https://github.com/marshmue
-  photo: uplnumberonecoordmarshale.jpg
-  emoji: ok_hand
+- id: dchen
+  name: David Chen
+  year: Sophomore
+  major: Computer Sciences & Mathematics
+  github: https://github.com/dlchen98
+  photo: davidchen.jpg
+  emoji: mushroom
 
 - id: ysohail
   name: Yusef Sohail
@@ -48,20 +47,20 @@
   photo: ben.jpg
   emoji: ghost
 
-- id: randy
-  name: Randy Amundson
-  year: Senior
+- id: cjolly
+  name: Claire Jolly
+  year: Junior
   major: Computer Sciences
-  photo: Randy_Amundson_filler.jpg
-  github: https://github.com/ranman166
+  photo: clairejolly.jpg
+  github: https://github.com/clairehjolly
   emoji: octopus
 
-- id: borst
-  name: Christian Borst
-  year: Senior
-  major: Computer Sciences and Mathematics
-  photo: christianborst.jpg
-  github: https://github.com/christianborst
+- id: Olszewski
+  name: Chris Olszewski
+  year: Junior
+  major: Computer Sciences
+  photo: chrisolszewski.jpg
+  github: https://github.com/chris-olszewski
   emoji: dragon
 
 - id: ekivolowitz
