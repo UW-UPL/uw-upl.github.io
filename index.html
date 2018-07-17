@@ -18,9 +18,11 @@ layout: default
 
 
   <h2>The Lab</h2>
-  {% include current-coord.html %}
+
   {% if site.data.lab.hours == false %}
   <p>We are not currently holding any official office hours. Check back during the Spring/Fall semester.</p>
+  {% else %}
+  {% include current-coord.html %}
   {% endif %}
 </div>
 <section class="home-container projects-container">
