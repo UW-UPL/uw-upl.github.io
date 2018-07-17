@@ -7,54 +7,55 @@ layout: default
 <hr />
 
 <strong>The schedule below is for Spring 2018!</strong>
-
-{% include current-coord.html %}
-
-<table class="hours striped large-only">
-  <tbody>
-  <tr class="t-head">
-    <th>Time</th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-  </tbody>
-  <tbody>
-  {% for time in site.data.hours[0].times %}
-  {% assign t_index = forloop.index %}
-  <tr>
-    <td>{{ time[0] }}</td>
-    {% for day in site.data.hours %}
-      {% for t in day.times %}
-        {% if forloop.index == t_index %}
-        <td>{{ t[1] }}</td>
-        {% endif %}
+{% if site.data.lab.hours == false %}
+  <p>We are not currently holding any official office hours. Check back during the Spring/Fall semester</p>
+{% else %}
+  {% include current-coord.html %}
+  <table class="hours striped large-only">
+    <tbody>
+    <tr class="t-head">
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    </tbody>
+    <tbody>
+    {% for time in site.data.hours[0].times %}
+    {% assign t_index = forloop.index %}
+    <tr>
+      <td>{{ time[0] }}</td>
+      {% for day in site.data.hours %}
+        {% for t in day.times %}
+          {% if forloop.index == t_index %}
+          <td>{{ t[1] }}</td>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
+    </tr>
     {% endfor %}
-  </tr>
-  {% endfor %}
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<table class="hours striped small-only">
-  {% for day in site.data.hours %}
-  <tbody>
-  <tr class="tr-head">
-    <th class="st-key">Time</th>
-    <th class="st-val">{{ day.day }}</th>
-  </tr>
-  </tbody>
-  <tbody>
-  {% for time in day.times %}
-  <tr>
-    <td class="st-key">{{ time[0] }}</td>
-    <td class="st-val">{{ time[1] }}</td>
-  </tr>
-  {% endfor %}
-  </tbody>
-  {% endfor %}
-</table>
-
+  <table class="hours striped small-only">
+    {% for day in site.data.hours %}
+    <tbody>
+    <tr class="tr-head">
+      <th class="st-key">Time</th>
+      <th class="st-val">{{ day.day }}</th>
+    </tr>
+    </tbody>
+    <tbody>
+    {% for time in day.times %}
+    <tr>
+      <td class="st-key">{{ time[0] }}</td>
+      <td class="st-val">{{ time[1] }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    {% endfor %}
+  </table>
+{% endif %}
 <script src="https://files-stackablejs.netdna-ssl.com/stacktable.min.js"></script>
