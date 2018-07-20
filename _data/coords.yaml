@@ -31,22 +31,6 @@
   photo: davidchen.jpg
   emoji: mushroom
 
-- id: ysohail
-  name: Yusef Sohail
-  year: Senior
-  major: Computer Sciences
-  github: https://github.com/Squeakrats
-  photo: squanch.jpg
-  emoji: spaghetti
-
-- id: bhansen
-  name: Benjamin Hansen
-  year: Senior
-  major: Computer Sciences, Mathematics, and Communication Arts
-  github: https://github.com/bhans117
-  photo: ben.jpg
-  emoji: ghost
-
 - id: cjolly
   name: Claire Jolly
   year: Junior
