@@ -1,4 +1,22 @@
 ---
+- title: Codeprehend
+  authors:
+  - Evan Kivolowitz
+  description: We are taught to write code before we are taught to read it.
+  link: https://github.com/UW-UPL/codeprehend
+  image: ''
+- title: Straw
+  authors:
+  - John Balis
+  description: Partial screen scraper with character recognition. Easy and rapid way to set an interface up with software that refuses to save to file or programatically interact with other processes.
+  link: https://github.com/balisujohn/straw
+  image: ''
+- title: ColorReductionArt
+  authors:
+  - Evan Kivolowitz
+  description: Euclidean distance color reduction picture generator. 
+  link: 'https://github.com/ekivolowitz/ColorReductionArt'
+  image: ''
 - title: Cruft Engine
   authors:
   - Matt Neil
