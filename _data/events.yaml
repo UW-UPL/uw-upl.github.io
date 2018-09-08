@@ -1,6 +1,7 @@
 ---
 isRecurring: false
-recurring:
+# recurring:
+# recurring:
 # - title: UPL GameHax
 #   date: Friday 8:30 PM
 #   location: UPL - CS 1341
