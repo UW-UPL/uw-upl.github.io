@@ -30,7 +30,7 @@ layout: default
       {% for day in site.data.hours %}
         {% for t in day.times %}
           {% if forloop.index == t_index %}
-          <td>{{ t[1] }}</td>
+          <td><a href="/coords.html#{{ t[1] }}">{{ t[1] }}</a></td>
           {% endif %}
         {% endfor %}
       {% endfor %}
