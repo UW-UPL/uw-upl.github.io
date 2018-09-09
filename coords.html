@@ -10,12 +10,11 @@ layout: default
 
 <p>These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at: <a href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu.</p>
 
-<!-- <ul class="coords-list"> -->
+<ul class="coords-list">
   {% assign coords = site.data.coords | sort: 'name' %}
   {% for coord in coords %}
 
-    <ul class="coords-list" id="{{ coord.name }}">
-    <li>
+    <li id="{{ coord.name }}">
       {% assign photo = coord.photo || 'default.png' %}
       <div><a href="#{{ coord.name }}"></a></div>
       <div class="coord-mug"><img title="{{coord.name}}" src="{{'images/coords/' | append: photo | prepend: site.baseurl }}" /></div>
@@ -38,7 +37,6 @@ layout: default
         </p>
       </div>
       </li>
-    </ul>
       
   {% endfor %}
-<!-- </ul> -->
+</ul>
