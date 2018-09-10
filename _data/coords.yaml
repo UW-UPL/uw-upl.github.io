@@ -1,7 +1,7 @@
 ---
 - id: roz
   name: Rosalind Stengle
-  year: Sophomore
+  year: Junior
   major: Computer Science and Economics
   github: https://github.com/rosalindstengle
   photo: roz.jpg
@@ -17,7 +17,7 @@
 
 - id: brewton
   name: Harrison Brewton
-  year: Sophomore
+  year: Junior
   major: Computer Sciences & Economics 
   github: https://github.com/hpbrewton
   photo: harrisonbrewton.jpg
@@ -25,7 +25,7 @@
 
 - id: dchen
   name: David Chen
-  year: Sophomore
+  year: Junior
   major: Computer Sciences & Mathematics
   github: https://github.com/dlchen98
   photo: davidchen.jpg
@@ -33,7 +33,7 @@
 
 - id: cjolly
   name: Claire Jolly
-  year: Junior
+  year: Senior
   major: Computer Sciences
   photo: clairejolly.jpg
   github: https://github.com/clairehjolly
@@ -41,7 +41,7 @@
 
 - id: Olszewski
   name: Chris Olszewski
-  year: Junior
+  year: Senior
   major: Computer Sciences
   photo: chrisolszewski.jpg
   github: https://github.com/chris-olszewski
@@ -49,7 +49,7 @@
 
 - id: ekivolowitz
   name: Evan Kivolowitz
-  year: Junior
+  year: Senior
   major: Computer Sciences, Math, Statistics
   photo: rude_boy_jr.jpg
   github: https://github.com/ekivolowitz
@@ -65,15 +65,15 @@
 
 - id: balis
   name: John Balis
-  year: Junior
-  major: Computer Sciences and Math
+  year: Sophomore
+  major: Computer Sciences 
   github: https://github.com/balisujohn
   photo: johnbalis.jpg
   emoji: satellite
 
 - id: klare
   name: Jonas Klare
-  year: Sophomore
+  year: Junior
   major: Computer Science & Atmospheric+Oceanic Sciences
   photo: coordnamedjonas.jpg
   github: https://github.com/jonasklare
