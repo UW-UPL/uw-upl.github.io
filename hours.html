@@ -9,7 +9,7 @@ layout: default
 {% if site.data.lab.hours == false %}
   <p>We are not currently holding any official office hours. Check back during the school year. There may be coords in the UPL during the summer; if the door is open, you are welcome to come in.</p>
 {% else %}
-  <strong>The schedule below is for Spring 2018!</strong>
+  <strong>The schedule below is for Fall 2018!</strong>
   {% include current-coord.html %}
   <table class="hours striped large-only">
     <tbody>
@@ -30,7 +30,7 @@ layout: default
       {% for day in site.data.hours %}
         {% for t in day.times %}
           {% if forloop.index == t_index %}
-          <td>{{ t[1] }}</td>
+          <td><a href="/coords.html#{{ t[1] }}">{{ t[1] }}</a></td>
           {% endif %}
         {% endfor %}
       {% endfor %}
