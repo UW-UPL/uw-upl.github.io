@@ -86,3 +86,11 @@
   photo: maya.jpg
   github: https://github.com/mayagitsit
   emoji: penguin
+  
+- id: ageng
+  name: Andrew Geng
+  year: Senior
+  major: Computer Engineering & Computer Science
+  photo: ageng.jpg
+  github: https://github.com/TheGengster
+  emoji: trumpet
