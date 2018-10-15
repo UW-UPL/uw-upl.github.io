@@ -4,3 +4,4 @@ _site
 .idea
 .vagrant
 *.log
+.DS_Store

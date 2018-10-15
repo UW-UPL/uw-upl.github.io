@@ -4,7 +4,6 @@ $(document).ready(function() {
           'Undergraduate Projects Lab',
           'Undergraduate Pickle Lab',
           'Undergraduate Penguin Lab',
-	  'Undergraduate Poop Lab',
         ];
 
         var index = Math.floor(Math.random() * names.length);
