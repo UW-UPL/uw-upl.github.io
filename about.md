@@ -33,11 +33,7 @@ students that frequent the lab as well.
 You can contact us in numerous ways:
 
 Email us all at: <a
-    href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go="
-    onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075',
-    '',
-    'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
-    return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu. <br>
+    href="mailto:upl@cs.wisc.edu">upl@cs.wisc.edu</a>.<br>
     Like us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL
     Facebook page">Facebook</a>!
     
