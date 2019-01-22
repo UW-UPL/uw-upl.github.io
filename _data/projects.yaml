@@ -1,9 +1,10 @@
 ---
-- title: Codeprehend
+- title: ezgit
   authors:
   - Evan Kivolowitz
-  description: We are taught to write code before we are taught to read it.
-  link: https://github.com/UW-UPL/codeprehend
+  - Jon Stewart
+  description: Git for non programmers.
+  link: 'https://github.com/ekivolowitz/ezgit'
   image: ''
 - title: Straw
   authors:

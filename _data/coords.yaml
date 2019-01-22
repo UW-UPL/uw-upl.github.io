@@ -7,14 +7,6 @@
   photo: roz.jpg
   emoji: stuck_out_tongue
 
-- id: levin
-  name: Aaron Levin
-  year: Senior
-  major: Computer Engineering & Computer Science
-  github: https://github.com/awlevin
-  photo: aaronlevin.png
-  emoji: wink
-
 - id: brewton
   name: Harrison Brewton
   year: Junior
@@ -50,7 +42,7 @@
 - id: ekivolowitz
   name: Evan Kivolowitz
   year: Senior
-  major: Computer Sciences, Math, Statistics
+  major: Computer Sciences
   photo: rude_boy_jr.jpg
   github: https://github.com/ekivolowitz
   emoji: smirk
