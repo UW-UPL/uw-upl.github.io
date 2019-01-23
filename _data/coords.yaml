@@ -86,3 +86,12 @@
   photo: ageng.jpg
   github: https://github.com/gengandrew
   emoji: trumpet
+
+- id: stephan
+  name: Karl Stephan
+  year: Sophomore
+  major: Computer Sciences
+  github: https://github.com/aquarial
+  photo: stephan.jpg
+  emoji: fish
+
