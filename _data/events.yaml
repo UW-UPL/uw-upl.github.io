@@ -1,19 +1,19 @@
 ---
 isRecurring: true
-# recurring:
-# recurring:
-# - title: UPL GameJam
-#   date: Friday 2:00 PM - 5:00 PM (See UPL Facebook page for dates)
-#   location: UPL - CS 1341
-#   description: |
-  #   <p>Continue rocking the start of your semester strong and spend your Friday
-  #   night making games with the Badger Game Network! UPL GameHax is a biweekly event
-  #   held on Fridays for student developers of any skill level-- no experience necessary.</p>
+ recurring:
+ recurring:
+ - title: UPL GameJam
+   date: Friday 2:00 PM - 5:00 PM (See UPL Facebook page for dates)
+   location: UPL - CS 1341
+   description: |
+     <p>Continue rocking the start of your semester strong and spend your Friday
+     night making games with the Badger Game Network! UPL GameHax is a biweekly event
+     held on Fridays for student developers of any skill level-- no experience necessary.</p>
 
-  #   <p>For more information, check out the <a
-  #   href='https://www.facebook.com/events/676087532532792/'>current Facebook
-  #   event.</a></p>
-  # image: GameHaxSmall.png
+     <p>For more information, check out the <a
+     href='https://www.facebook.com/events/676087532532792/'>current Facebook
+     event.</a></p>
+   image: GameHaxSmall.png
 
 onetime:
 - title: Intro to Functional Programming with Haskell
