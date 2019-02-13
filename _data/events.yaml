@@ -1,13 +1,13 @@
 ---
-isRecurring: false
+isRecurring: true
 # recurring:
 # recurring:
-# - title: UPL GameHax
-#   date: Friday 8:30 PM
+# - title: UPL GameJam
+#   date: Friday 2:00 PM - 5:00 PM (See UPL Facebook page for dates)
 #   location: UPL - CS 1341
 #   description: |
   #   <p>Continue rocking the start of your semester strong and spend your Friday
-  #   night making games with the Badger Game Network! UPL GameHax is a weekly event
+  #   night making games with the Badger Game Network! UPL GameHax is a biweekly event
   #   held on Fridays for student developers of any skill level-- no experience necessary.</p>
 
   #   <p>For more information, check out the <a
