@@ -1,13 +1,13 @@
 ---
 - day: Monday
   times:
-    8:50AM: 'Chris Olszewski'
-    9:55AM: 'Chris Olszewski'
+    8:50AM: ''
+    9:55AM: ''
     11:00AM: 'David Chen'
     12:05PM: 'John Balis'
     1:20PM: 'Karl Stephan'
     2:25PM: 'Karl Stephan'
-    3:30PM: 'Maya Submaranian'
+    3:30PM: ''
     4:35PM: ''
     5:40PM: ''
 
@@ -17,7 +17,7 @@
     9:55AM: ''
     11:00AM: 'Harrison Brewton'
     12:05PM: 'John Balis'
-    1:20PM: 'Jon Stewart'
+    1:20PM: ''
     2:25PM: ''
     3:30PM: 'Evan Kivolowitz'
     4:35PM: ''
@@ -31,7 +31,7 @@
     12:05PM: 'John Balis'
     1:20PM: 'Andrew Petti'
     2:25PM: 'Jonas Qlaire'
-    3:30PM: 'Maya Submaranian' 
+    3:30PM: '' 
     4:35PM: ''
     5:40PM: ''
 
@@ -41,7 +41,7 @@
     9:55AM: ''
     11:00AM: 'Harrison Brewton'
     12:05PM: 'Jonas Qlaire'
-    1:20PM: 'Jon Stewart'
+    1:20PM: ''
     2:25PM: ''
     3:30PM: 'Claire Jolly'
     4:35PM: 'Evan Kivolowitz'
