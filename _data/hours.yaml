@@ -3,7 +3,7 @@
   times:
     10:00AM: ''
     11:00AM: ''
-    12:00PM: ''
+    12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: ''
     3:00PM: ''
@@ -13,7 +13,7 @@
   times:
     10:00AM: ''
     11:00AM: ''
-    12:00PM: ''
+    12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: ''
     3:00PM: ''
@@ -23,7 +23,7 @@
   times:
     10:00AM: ''
     11:00AM: ''
-    12:00PM: ''
+    12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: ''
     3:00PM: ''
@@ -37,7 +37,7 @@
     1:00PM: ''
     2:00PM: ''
     3:00PM: ''
-    4:00PM: ''
+    4:00PM: 'Roz Stengle'
 
 - day: Friday
   times:
