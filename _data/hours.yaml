@@ -2,7 +2,7 @@
 - day: Monday
   times:
     10:00AM: ''
-    11:00AM: ''
+    11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: ''
@@ -22,7 +22,7 @@
 - day: Wednesday
   times:
     10:00AM: ''
-    11:00AM: ''
+    11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: ''
@@ -44,7 +44,7 @@
     10:00AM: ''
     11:00AM: ''
     12:00PM: ''
-    1:00PM: ''
+    1:00PM: 'Matt Wildman'
     2:00PM: ''
     3:00PM: ''
     4:00PM: ''
