@@ -1,17 +1,17 @@
 ---
 - day: Monday
   times:
-    10:00AM: ''
+    10:00AM: 'Andrew Geng'
     11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
     2:00PM: 'David Chen'
-    3:00PM: ''
+    3:00PM: 'Harrison Brewton'
     4:00PM: 'Evan Kivolowitz'
 
 - day: Tuesday
   times:
-    10:00AM: ''
+    10:00AM: 'Jonas Klare'
     11:00AM: ''
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
@@ -21,30 +21,30 @@
 
 - day: Wednesday
   times:
-    10:00AM: ''
+    10:00AM: 'Andrew Geng'
     11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
-    2:00PM: ''
-    3:00PM: ''
+    2:00PM: 'Jonas Klare'
+    3:00PM: 'Harrison Brewton'
     4:00PM: 'Evan Kivolowitz'
 
 - day: Thursday
   times:
-    10:00AM: ''
+    10:00AM: 'Jonas Klare'
     11:00AM: ''
     12:00PM: ''
-    1:00PM: ''
-    2:00PM: ''
-    3:00PM: ''
+    1:00PM: 'Andrew Geng'
+    2:00PM: 'Andrew Geng'
+    3:00PM: 'Harrison Brewton'
     4:00PM: 'Roz Stengle'
 
 - day: Friday
   times:
-    10:00AM: ''
-    11:00AM: ''
-    12:00PM: ''
+    10:00AM: 'Claire Jolly'
+    11:00AM: 'Karl Stephan'
+    12:00PM: 'Claire Jolly'
     1:00PM: 'Matt Wildman'
-    2:00PM: ''
-    3:00PM: ''
-    4:00PM: ''
+    2:00PM: 'Claire Jolly'
+    3:00PM: 'Karl Stephan'
+    4:00PM: 'Karl Stephan'
