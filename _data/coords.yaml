@@ -21,7 +21,7 @@
   major: Computer Sciences & Mathematics
   github: https://github.com/dlchen98
   photo: davidchen.jpg
-  emoji: mushroom
+  emoji: oncoming_bus
 
 - id: cjolly
   name: Claire Jolly
@@ -31,14 +31,6 @@
   github: https://github.com/clairehjolly
   emoji: octopus
 
-- id: Olszewski
-  name: Chris Olszewski
-  year: Senior
-  major: Computer Sciences
-  photo: chrisolszewski.jpg
-  github: https://github.com/chris-olszewski
-  emoji: dragon
-
 - id: ekivolowitz
   name: Evan Kivolowitz
   year: Senior
@@ -47,14 +39,6 @@
   github: https://github.com/ekivolowitz
   emoji: smirk
   
-- id: apetti
-  name: Andrew Petti
-  year: Senior
-  major: Computer Engineering & Computer Science
-  photo: andrew.jpg
-  github: https://github.com/Andretti77
-  emoji: fire
-
 - id: balis
   name: John Balis
   year: Junior
@@ -71,14 +55,6 @@
   github: https://github.com/jonasklare
   emoji: cloud
 
-- id: maya
-  name: Maya Subramanian
-  year: Senior
-  major: Computer Science & Spanish
-  photo: maya.jpg
-  github: https://github.com/mayagitsit
-  emoji: penguin
-  
 - id: ageng
   name: Andrew Geng
   year: Junior
@@ -95,3 +71,10 @@
   photo: stephan.jpg
   emoji: fish
 
+- id: mjwildman
+  name: Matt Wildman
+  year: Sophomore
+  major: Computer Sciences
+  github: https://github.com/shardstealth
+  photo: matt.jpg
+  emoji: shipit
