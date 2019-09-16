@@ -1,7 +1,7 @@
 ---
 - day: Monday
   times:
-    10:00AM: 'Andrew Geng'
+    10:00AM: 'John Balis'
     11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
@@ -24,7 +24,7 @@
     10:00AM: 'Andrew Geng'
     11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
-    1:00PM: 'John Balis'
+    1:00PM: ''
     2:00PM: 'Jonas Klare'
     3:00PM: 'Harrison Brewton'
     4:00PM: 'Evan Kivolowitz'
