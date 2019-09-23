@@ -1,11 +1,11 @@
 ---
 - day: Monday
   times:
-    10:00AM: 'John Balis'
+    10:00AM: 
     11:00AM: 'Matt Wildman'
     12:00PM: 'Roz Stengle'
     1:00PM: 'John Balis'
-    2:00PM: ''
+    2:00PM: 'John Balis'
     3:00PM: 'Harrison Brewton'
     4:00PM: 'Evan Kivolowitz'
 
