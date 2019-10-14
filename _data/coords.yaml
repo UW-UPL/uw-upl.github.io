@@ -1,24 +1,24 @@
 ---
 - id: roz
   name: Rosalind Stengle
-  year: Junior
-  major: Computer Science and Economics
+  year: Senior
+  major: Computer Science & Economics
   github: https://github.com/rosalindstengle
   photo: roz.jpg
   emoji: stuck_out_tongue
 
 - id: brewton
   name: Harrison Brewton
-  year: Junior
-  major: Computer Sciences & Dairy Sciences 
+  year: Senior
+  major: Computer Science
   github: https://github.com/hpbrewton
   photo: harrisonbrewton.jpg
   emoji: bullettrain_side
 
 - id: dchen
   name: David Chen
-  year: Junior
-  major: Computer Sciences & Mathematics
+  year: Senior
+  major: Computer Science & Math
   github: https://github.com/dlchen98
   photo: davidchen.jpg
   emoji: oncoming_bus
@@ -26,7 +26,7 @@
 - id: cjolly
   name: Claire Jolly
   year: Senior
-  major: Computer Sciences
+  major: Computer Science
   photo: clairejolly.jpg
   github: https://github.com/clairehjolly
   emoji: octopus
@@ -34,7 +34,7 @@
 - id: ekivolowitz
   name: Evan Kivolowitz
   year: Senior
-  major: Computer Sciences
+  major: Computer Science
   photo: rude_boy_jr.jpg
   github: https://github.com/ekivolowitz
   emoji: smirk
@@ -42,14 +42,14 @@
 - id: balis
   name: John Balis
   year: Senior
-  major: Computer Sciences and Applied Math
+  major: Computer Science & Math
   github: https://github.com/balisujohn
   photo: johnbalis.jpg
   emoji: satellite
 
 - id: klare
   name: Jonas Klare
-  year: Junior
+  year: Senior
   major: Computer Science & Atmospheric+Oceanic Sciences
   photo: coordnamedjonas.jpg
   github: https://github.com/jonasklare
@@ -57,16 +57,16 @@
 
 - id: ageng
   name: Andrew Geng
-  year: Junior
-  major: Mathematics & Computer Science
+  year: Senior
+  major: Computer Science & Math
   photo: ageng.jpg
   github: https://github.com/gengandrew
   emoji: trumpet
 
 - id: stephan
   name: Karl Stephan
-  year: Sophomore
-  major: Computer Sciences
+  year: Junior
+  major: Computer Science
   github: https://github.com/aquarial
   photo: stephan.jpg
   emoji: fish
@@ -74,7 +74,7 @@
 - id: mjwildman
   name: Matt Wildman
   year: Sophomore
-  major: Computer Sciences
+  major: Computer Science
   github: https://github.com/shardstealth
   photo: matt.jpg
   emoji: shipit
