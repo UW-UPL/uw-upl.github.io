@@ -1,5 +1,14 @@
 ---
-- id: roz
+
+- id: phoenix
+  name: Phoenix Kahlo
+  year: Freshman
+  major: Computer Science
+  github: https://github.com/gretchenfrage
+  photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
+  emoji: octopus
+
+- id: roz  
   name: Rosalind Stengle
   year: Senior
   major: Computer Science & Economics
