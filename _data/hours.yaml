@@ -1,50 +1,50 @@
 ---
 - day: Monday
   times:
-    10:00AM: 
-    11:00AM: 'Matt Wildman'
-    12:00PM: 'Roz Stengle'
-    1:00PM: 'John Balis'
-    2:00PM: 'John Balis'
-    3:00PM: 'Harrison Brewton'
-    4:00PM: 'Evan Kivolowitz'
+    11:00AM: ''
+    12:00PM: ''
+    1:00PM: 'Harrison Brewton'
+    2:00PM: 'Amanda Robinson'
+    3:00PM: 'Matt Wildman'
+    4:00PM: 'Phoenix Kahlo'
+    5:00PM: ''
 
 - day: Tuesday
   times:
-    10:00AM: 'Jonas Klare'
-    11:00AM: ''
-    12:00PM: ''
-    1:00PM: 'John Balis'
-    2:00PM: 'David Chen'
-    3:00PM: 'David Chen'
-    4:00PM: 'Evan Kivolowitz'
+    11:00AM: 'Andrew Geng'
+    12:00PM: 'Anisa Kundu'
+    1:00PM: 'Claire Jolly'
+    2:00PM: ''
+    3:00PM: 'Karl Stephan'
+    4:00PM: 'Andrew Geng'
+    5:00PM: ''
 
 - day: Wednesday
   times:
-    10:00AM: 'Andrew Geng'
-    11:00AM: 'Matt Wildman'
-    12:00PM: 'Roz Stengle'
-    1:00PM: ''
-    2:00PM: 'Jonas Klare'
-    3:00PM: 'Harrison Brewton'
-    4:00PM: 'Evan Kivolowitz'
+    11:00AM: ''
+    12:00PM: ''
+    1:00PM: 'John Balis'
+    2:00PM: 'Amanda Robinson'
+    3:00PM: 'Jonas Klare'
+    4:00PM: 'Jonas Klare'
+    5:00PM: ''
 
 - day: Thursday
   times:
-    10:00AM: 'Jonas Klare'
-    11:00AM: 'David Chen'
-    12:00PM: ''
-    1:00PM: 'Andrew Geng'
-    2:00PM: 'Andrew Geng'
-    3:00PM: 'Harrison Brewton'
+    11:00AM: ''
+    12:00PM: 'Anisa Kundu'
+    1:00PM: 'Matt Wildman'
+    2:00PM: ''
+    3:00PM: 'Karl Stephan'
     4:00PM: 'Roz Stengle'
+    5:00PM: ''
 
 - day: Friday
   times:
-    10:00AM: 'Claire Jolly'
-    11:00AM: 'Claire Jolly'
-    12:00PM: 'Karl Stephan'
-    1:00PM: 'Matt Wildman'
-    2:00PM: 'Claire Jolly'
-    3:00PM: 'Karl Stephan'
-    4:00PM: 'Karl Stephan'
+    11:00AM: 'Roz Stengle'
+    12:00PM: 'Harrison Brewton'
+    1:00PM: 'Claire Jolly'
+    2:00PM: 'John Balis'
+    3:00PM: 'Phoenix Kahlo'
+    4:00PM: 'Will Woods'
+    5:00PM: 'Will Woods'
