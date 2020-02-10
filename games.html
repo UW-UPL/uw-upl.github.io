@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<h2>Faculty Advisor</h2>
+
+<p>Our faculty advisor is <a href='http://cs.wisc.edu/~bart'>Professor Bart Miller</a>, who can be contacted at: <a href="http://www.google.com/recaptcha/mailhide/d?k=01Z1_UkqUnyoKdioWqOFLdUA==&amp;c=F2EDWSQsmN1SRBWVdMSIbR1d1CP1eqTqDRWQzLyEefw=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501Z1_UkqUnyoKdioWqOFLdUA\75\75\46c\75F2EDWSQsmN1SRBWVdMSIbR1d1CP1eqTqDRWQzLyEefw\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">b...</a>@cs.wisc.edu.</p>
+
+<h2>Coordinators</h2>
+
+<p>These are the people responsible for the daily operation and maintenance of the UPL. If you have any questions email us at: <a href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu.</p>
+
+<ul class="coords-list">
+  {% assign coords = site.data.coords | sort: 'name' %}
+  {% for coord in coords %}
+  <li>
+    {% assign photo = coord.photo || 'default.png' %}
+    <div class="coord-mug"><img title="{{coord.name}}" src="{{'images/coords/' | append: photo | prepend: site.baseurl }}" /></div>
+    <h4>{{ coord.name }}</h4>
+    <div class="coord-info">
+      <p>
+      {{ coord.year }} majoring in {{ coord.major }}
+      <br />
+      {% if coord.emoji %}
+      <p>Favorite emoji:
+        <img class="emoji" title=":{{ coord.emoji }}:" alt=":{{ coord.emoji }}:" src="https://github.githubassets.com/images/icons/emoji/{{coord.emoji}}.png" height="20" width="20" align="absmiddle" />
+      </p>
+      {% endif %}
+      {% if coord.github %}
+      <a title="{{ coord.name }}: GitHub" href="{{ coord.github }}">GitHub</a>
+      {% endif %}
+      {% if coord.website %}
+      <a title="{{ coord.name }}: Website" href="{{ coord.website }}">Website</a>
+      {% endif %}
+      </p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
