@@ -12,7 +12,7 @@ layout: default
   <li>
     {% assign photo = game.photo || 'default.png' %}
     <div class="coord-mug"><a href="{{'games/' | append: game.link | prepend: site.baseurl}}"> <img title="{{game.name}}" src="{{'images/games/' | append: photo | prepend: site.baseurl}}" /> </a></div>
-    <h4>{{ game.name }}</h4>
+    <a title="{{ game.name }}" href="{{'games/' | append: game.link | prepend: site.baseurl}}">{{game.name}}</a>
     <div class="coord-info">
       {% if game.github and game.github != 'none' %}
       <a title="{{ game.name }}: GitHub" href="{{ game.github }}">GitHub</a>
