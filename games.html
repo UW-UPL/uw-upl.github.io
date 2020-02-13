@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<h2>Games</h2>
+
+<p>These are games and neat javascript things that people in the UPL have made</p>
+
+<ul class="coords-list">
+  {% assign games = site.data.games | sort: 'name' %}
+  {% for game in games %}
+  <li>
+    {% assign photo = game.photo || 'default.png' %}
+    <div class="coord-mug"><a href="{{'games/' | append: game.link | prepend: site.baseurl}}"> <img title="{{game.name}}" src="{{'images/games/' | append: photo | prepend: site.baseurl}}" /> </a></div>
+    <a title="{{ game.name }}" href="{{'games/' | append: game.link | prepend: site.baseurl}}">{{game.name}}</a>
+    <div class="coord-info">
+      {% if game.github and game.github != 'none' %}
+      <a title="{{ game.name }}: GitHub" href="{{ game.github }}">GitHub</a>
+      {% endif %}
+      {% if game.website and game.website != 'none' %}
+      <a title="{{ game.name }}: Website" href="{{ game.website }}">Website</a>
+      {% endif %}
+      </p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
