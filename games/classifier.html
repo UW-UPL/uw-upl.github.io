@@ -65,9 +65,9 @@ expTerm = math.multiply(-.5, offsetTranspose , covInverse, offset);
 numerator = math.exp(expTerm)
 
 
-covMag = math.norm(cov, 'inf')
+covDet = math.det(cov)
 denomCoefficient = math.pow(math.multiply(2, math.pi),k)
-denominator = math.sqrt(denomCoefficient * covMag)
+denominator = math.sqrt(denomCoefficient * covDet)
 return numerator / denominator
 }
 
