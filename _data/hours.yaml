@@ -3,7 +3,7 @@
   times:
     11:00AM: ''
     12:00PM: ''
-    1:00PM: 'Harrison Brewton'
+    1:00PM: 'John Balis'
     2:00PM: 'Amanda Robinson'
     3:00PM: 'Matt Wildman'
     4:00PM: 'Phoenix Kahlo'
@@ -11,12 +11,12 @@
 
 - day: Tuesday
   times:
-    11:00AM: 'Andrew Geng'
+    11:00AM: 'Andre Geng'
     12:00PM: 'Anisa Kundu'
     1:00PM: 'Claire Jolly'
     2:00PM: ''
     3:00PM: 'Karl Stephan'
-    4:00PM: 'Andrew Geng'
+    4:00PM: 'Andre Geng'
     5:00PM: ''
 
 - day: Wednesday
@@ -31,9 +31,9 @@
 
 - day: Thursday
   times:
-    11:00AM: ''
+    11:00AM: 'Matt Wildman'
     12:00PM: 'Anisa Kundu'
-    1:00PM: 'Matt Wildman'
+    1:00PM: ''
     2:00PM: ''
     3:00PM: 'Karl Stephan'
     4:00PM: 'Roz Stengle'
@@ -44,7 +44,7 @@
     11:00AM: 'Roz Stengle'
     12:00PM: 'Harrison Brewton'
     1:00PM: 'Claire Jolly'
-    2:00PM: 'John Balis'
+    2:00PM: 'Harrison Brewton'
     3:00PM: 'Phoenix Kahlo'
     4:00PM: 'Will Woods'
     5:00PM: 'Will Woods'
