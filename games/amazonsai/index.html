@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <noscript>
+    This page contains webassembly and javascript content,
+    please enable javascript in your browser.
+  </noscript>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Game_of_the_Amazons">Game of the Amazons</a>
+  </p>
+  <p>
+    An abstract strategy game with two teams taking turns back and forth. The last team to
+    make a move wins.
+  </p>
+  <p>
+    On a turn a player clicks
+    one of their pieces to select it, then clicks a location to move it,
+    then clicks a location to
+    place a 'stone' blocker pieces. Pieces and stones move like queens,
+    and cannot move through other pieces/stones.
+  </p>
+
+  <p>
+    The entire website
+    will freeze up while the AI is computing.
+    Be careful to click "Make AI Move" just once because
+    otherwise it will make multiple moves one-after-another.
+    I can't run this webassembly in the background thread easily until
+    <a href="https://stackoverflow.com/questions/44118600/web-workers-how-to-import-modules">module webworkers</a>
+    are merged.
+  </p>
+
+  <div style="display:flex; flex-direction: row;
+     justify-content: left; align-items: center; padding:1%">
+
+    <button id="newgame" type="button">New Game</button>&nbsp;
+    <button id="undo" type="button">Undo Move</button>&nbsp;
+    <button id="makeai" type="button">Make AI Move</button>
+    &nbsp;&nbsp; Waiting for &nbsp;
+    <canvas id="next2go" height="40px" width="40px"></canvas>
+  </div>
+
+  <canvas id="thecanvas" height="600px" width="600px"></canvas>
+  <br /> <br />
+  <script src="./bootstrap.js"></script>
+</body>
+
+</html>
