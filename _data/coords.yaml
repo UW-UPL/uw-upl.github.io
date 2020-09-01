@@ -24,38 +24,6 @@
   photo: harrisonbrewton.jpg
   emoji: bullettrain_side
 
-- id: dchen
-  name: David Chen
-  year: Senior
-  major: Computer Science & Math
-  github: https://github.com/dlchen98
-  photo: davidchen.jpg
-  emoji: oncoming_bus
-
-- id: cjolly
-  name: Claire Jolly
-  year: Senior
-  major: Computer Science
-  photo: clairejolly.jpg
-  github: https://github.com/clairehjolly
-  emoji: octopus
-
-- id: ekivolowitz
-  name: Evan Kivolowitz
-  year: Senior
-  major: Computer Science
-  photo: rude_boy_jr.jpg
-  github: https://github.com/ekivolowitz
-  emoji: smirk
-  
-- id: balis
-  name: John Balis
-  year: Senior
-  major: Computer Science & Math
-  github: https://github.com/balisujohn
-  photo: johnbalis.jpg
-  emoji: satellite
-
 - id: klare
   name: Jonas Klare
   year: Senior
