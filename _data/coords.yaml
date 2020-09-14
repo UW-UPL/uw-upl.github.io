@@ -55,3 +55,11 @@
   github: https://github.com/shardstealth
   photo: matt.jpg
   emoji: shipit
+
+- id: willwoods
+  name: Will Woods
+  year: Junior
+  Major: Computer Science and Math
+  github: https://github.com/WilliamWoods
+  photo: willwoods.jpg
+  emoji: fish
