@@ -2,8 +2,8 @@
 - title: Home
   url: "/"
 
-- title: About
-  url: "/about.html"
+#- title: About
+#  url: "/about.html"
 
 - title: Events
   url: "/events.html"
