@@ -14,8 +14,8 @@
 - title: Coords
   url: "/coords.html"
 
-- title: Hours
-  url: "/hours.html"
+#- title: Hours
+#  url: "/hours.html"
 
 - title: Games
   url: "/games.html"
