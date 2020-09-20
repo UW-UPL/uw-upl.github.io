@@ -59,7 +59,7 @@
 - id: willwoods
   name: Will Woods
   year: Junior
-  Major: Computer Science and Math
+  major: Computer Science and Math
   github: https://github.com/WilliamWoods
   photo: willwoods.jpg
   emoji: fish
@@ -72,7 +72,7 @@
   photo: codey.jpg
   emoji: fire
 
-  - id: rnelson
+- id: rnelson
   name: Reed Nelson
   year: Sophomore
   major: Computer Science & Philosophy
