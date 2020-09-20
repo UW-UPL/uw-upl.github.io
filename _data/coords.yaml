@@ -78,4 +78,12 @@
   major: Computer Science & Philosophy
   github: https://github.com/reednel
   photo: reed.JPG
-  emoji: woman_shrugging
+  emoji: ghost
+
+- id: drury
+  name: Carson Drury
+  year: Sophomore
+  major: Computer Science
+  github: https://github.com/cmdrury
+  photo: carson.jpg
+  emoji: coffee
