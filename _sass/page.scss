@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .page {
   min-height: 100%;
   position: relative;
@@ -35,6 +39,6 @@ a {
 
 @include breakpoint($bigBreakpoint) {
   .wrapper {
-    width: 1020px;
+    width: 890px;
   }
 }
