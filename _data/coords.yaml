@@ -87,3 +87,11 @@
   github: https://github.com/cmdrury
   photo: carson.jpg
   emoji: coffee
+
+- id: anisa
+  name: Anisa Kundu
+  year: Sophomore
+  major: Computer Science
+  github: https://github.com/akundu5
+  photo: anisakundu.jpg
+  emoji: octopus
