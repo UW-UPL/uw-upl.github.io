@@ -14,8 +14,8 @@ fractals["Dragon"] = {
 
 // https://en.wikipedia.org/wiki/L%C3%A9vy_C_curve#IFS_construction
 fractals["L\xE9vy C Curve"] = {
-    bottom_left: [-1/2,-1/2],
-    top_right: [1,1],
+    bottom_left: [-1/4,-1/2],
+    top_right: [1,3/4],
     maps:
     [
 	// See: https://en.wikipedia.org/wiki/L%C3%A9vy_C_curve#IFS_construction
