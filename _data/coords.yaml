@@ -8,38 +8,6 @@
   photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
   emoji: octopus
 
-- id: roz  
-  name: Rosalind Stengle
-  year: Senior
-  major: Computer Science & Economics
-  github: https://github.com/rosalindstengle
-  photo: roz.jpg
-  emoji: stuck_out_tongue
-
-- id: brewton
-  name: Harrison Brewton
-  year: Senior
-  major: Computer Science
-  github: https://github.com/hpbrewton
-  photo: harrisonbrewton.jpg
-  emoji: bullettrain_side
-
-- id: klare
-  name: Jonas Klare
-  year: Senior
-  major: Computer Science & Atmospheric+Oceanic Sciences
-  photo: coordnamedjonas.jpg
-  github: https://github.com/jonasklare
-  emoji: cloud
-
-- id: ageng
-  name: Andrew Geng
-  year: Senior
-  major: Computer Science & Math
-  photo: ageng.jpg
-  github: https://github.com/gengandrew
-  emoji: trumpet
-
 - id: stephan
   name: Karl Stephan
   year: Senior
@@ -63,14 +31,6 @@
   github: https://github.com/WilliamWoods
   photo: willwoods.jpg
   emoji: fish
-
-- id: codey
-  name: Codey Severance
-  year: Senior
-  major: Computer Science
-  github: https://github.com/IronnButterfly
-  photo: codey.jpg
-  emoji: fire
 
 - id: rnelson
   name: Reed Nelson
