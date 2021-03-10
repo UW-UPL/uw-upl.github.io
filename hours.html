@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<p>The UPL is open whenever there is a coord present. If the door is open you are welcome to come in. In addition, the UPL is always open when a coord has office hours. These office hours are in 60-minute increments.</p>
+<p>
+Traditionally, anyone is welcome in the UPL room whenever a coord is present,
+and coords commit to be present at certain office hours. Since the room is
+currently closed for covid, we instead hang out in the discord voice channels
+during those hours.
+</p>
 
-<hr />
+<hr/>
 
 {% if site.data.lab.hours == false %}
   <p>We are not currently holding any official office hours. Check back during the school year. There may be coords in the UPL during the summer; if the door is open, you are welcome to come in.</p>
 {% else %}
-  <strong>The schedule below is for Fall 2019!</strong>
   {% include current-coord.html %}
   <table class="hours striped large-only">
     <tbody>
