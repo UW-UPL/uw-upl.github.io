@@ -8,14 +8,6 @@
   photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
   emoji: octopus
 
-- id: stephan
-  name: Karl Stephan
-  year: Senior
-  major: Computer Science
-  github: https://github.com/aquarial
-  photo: stephan.jpg
-  emoji: fish
-
 - id: mjwildman
   name: Matt Wildman
   year: Junior
