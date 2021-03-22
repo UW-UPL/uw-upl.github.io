@@ -6,6 +6,8 @@
     12pm: ''
     1pm: 'Reed'
     2pm: 'Carson'
+    ...: ''
+    7pm: ''
 
 - day: Tuesday
   times:
@@ -14,6 +16,8 @@
     12pm: ''
     1pm: ''
     2pm: 'Michael'
+    ...: ''
+    7pm: 'Phoenix'
 
 - day: Wednesday
   times:
@@ -22,6 +26,8 @@
     12pm: ''
     1pm: 'Reed'
     2pm: 'Matt'
+    ...: ''
+    7pm: ''
 
 - day: Thursday
   times:
@@ -30,6 +36,8 @@
     12pm: ''
     1pm: ''
     2pm: 'Carson'
+    ...: ''
+    7pm: 'Phoenix'
 
 - day: Friday
   times:
@@ -38,3 +46,5 @@
     12pm: 'Will'
     1pm: 'Matt'
     2pm: ''
+    ...: ''
+    7pm: ''
