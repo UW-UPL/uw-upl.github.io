@@ -6,6 +6,7 @@
     12pm: ''
     1pm: 'Reed'
     2pm: 'Carson'
+    3pm: ''
     ...: ''
     7pm: ''
 
@@ -16,6 +17,7 @@
     12pm: ''
     1pm: ''
     2pm: 'Michael'
+    3pm: ''
     ...: ''
     7pm: 'Phoenix'
 
@@ -26,6 +28,7 @@
     12pm: ''
     1pm: 'Reed'
     2pm: 'Matt'
+    3pm: ''
     ...: ''
     7pm: ''
 
@@ -36,6 +39,7 @@
     12pm: ''
     1pm: ''
     2pm: 'Carson'
+    3pm: ''
     ...: ''
     7pm: 'Phoenix'
 
@@ -45,6 +49,7 @@
     11am: 'Will'
     12pm: 'Will'
     1pm: 'Matt'
-    2pm: ''
+    2pm: 'Shrey'
+    3pm: 'Shrey'
     ...: ''
     7pm: ''
