@@ -147,10 +147,10 @@ onetime:
     <p>For more information, check out the <a
     href="https://www.facebook.com/events/974380169343221/">facebook event</a></p>
 
-- title: 'Lightning Talk: Git (Matt Wildman)'
+- title: 'Lightning Talk: Git, code review, and how to actually work in a team (Matt Wildman)'
   date: 2021-03-31 7:30 PM
   location: Online (Discord Server)
-  description: ''
+  description: 'In this talk I will cover my experiences using version control and other collaboration tools to write and deploy usable services. Topics will include Git, code review, tickets, deployment, and more! This will be geared towards an eager learner who has some knowledge of version control but no formal experience.'
 
 - title: 'Lightning Talk: To Be Announced (Will Woods)'
   date: 2021-04-14 7:30 PM
