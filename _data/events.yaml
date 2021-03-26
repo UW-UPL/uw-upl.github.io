@@ -15,16 +15,16 @@ isRecurring: False
    #  event.</a></p>
   # image: GameHaxSmall.png
 
-onetime:
-- title: UPL GameJam
-  date: Friday 2:00 PM - 5:00 PM (See UPL Facebook page for dates)
-  location: UPL - CS 1341
-  description: |
-     <p>Biweekly game/AI programming night! All skill levels wrlcome-- no experience necessary.</p>
-
-     <p>For more information, check out the <a
-     href='https://www.facebook.com/events/676087532532792/'>current Facebook
-     event.</a></p>
+#onetime:
+#- title: UPL GameJam
+#  date: Friday 2:00 PM - 5:00 PM (See UPL Facebook page for dates)
+#  location: UPL - CS 1341
+#  description: |
+#     <p>Biweekly game/AI programming night! All skill levels wrlcome-- no experience necessary.</p>
+#
+#     <p>For more information, check out the <a
+#     href='https://www.facebook.com/events/676087532532792/'>current Facebook
+#     event.</a></p>
 
 
 onetime:
@@ -146,3 +146,23 @@ onetime:
 
     <p>For more information, check out the <a
     href="https://www.facebook.com/events/974380169343221/">facebook event</a></p>
+
+- title: 'Lightning Talk: Git (Matt Wildman)'
+  date: 2021-03-31 7:30 PM
+  location: Online (Discord Server)
+  description: ''
+
+- title: 'Lightning Talk: To Be Announced (Will Woods)'
+  date: 2021-04-14 7:30 PM
+  location: Online (Discord Server)
+  description: ''
+
+- title: 'Lightning Talk: To Be Announced (Michael Gira)'
+  date: 2021-04-28 7:30 PM
+  location: Online (Discord Server)
+  description: ''
+
+- title: 'Lightning Talk: To Be Announced (Phoenix Kahlo)'
+  date: 2021-5-12 7:30 PM
+  location: Online (Discord Server)
+  description: ''
