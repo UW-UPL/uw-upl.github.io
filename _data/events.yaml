@@ -157,7 +157,7 @@ onetime:
   location: Online (Discord Server)
   description: 'Let''s dive into the world of natural language processing and word embeddings! We will talk about their applications, quirks, and unfortunate prejudices. We''ll conclude with ways that researchers are trying to minimize prejudice and make these systems fair for everyone. No former experience necessary.'
 
-- title: 'Lightning Talk: To Be Announced (Will Woods)'
+- title: 'Lightning Talk: Multi-Armed Bandits (Will Woods)'
   date: 2021-04-28 7:30 PM
   location: Online (Discord Server)
   description: ''
