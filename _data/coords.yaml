@@ -72,3 +72,10 @@
   photo: nick.jpg
   emoji: sweat_smile
 
+- id: 
+  name: Michael Berkey
+  year: Sophomore
+  major: Computer Science
+  github: https://github.com/mdberkey
+  photo: berkey.jpg
+  emoji: alien
