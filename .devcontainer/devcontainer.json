@@ -1,0 +1,28 @@
+{
+  "name": "Github Pages",
+  "dockerFile": "Dockerfile",
+  "context": "../",
+  "runArgs": [
+    "-u",
+    "jekyll",
+    "-v",
+    "${env:HOME}${env:USERPROFILE}/.ssh:/root/.ssh-localhost:ro"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "appPort": [4000],
+  "postCreateCommand": "sudo cp -r /root/.ssh-localhost ~ && sudo chown -R $(id -u):$(id -g) ~/.ssh-localhost && mv ~/.ssh-localhost ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*",
+  "extensions": [
+    "redhat.vscode-yaml",
+    "sissel.shopify-liquid",
+    "ginfuru.ginfuru-vscode-jekyll-syntax",
+    "ginfuru.vscode-jekyll-snippets",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "ecmel.vscode-html-css",
+    "aeschli.vscode-css-formatter",
+    "streetsidesoftware.code-spell-checker",
+    "ms-vscode.wordcount"
+  ]
+}

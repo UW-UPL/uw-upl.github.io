@@ -26,6 +26,21 @@ in a shell and type
 $ bundle install
 ```
 
+## Docker + VS Code Dev Container
+
+Alternatively instead of setting up the environment yourself, you can use the
+[Visual Studio Code Remote - Containers extension to set up the environment using Docker
+in one click](https://code.visualstudio.com/docs/remote/containers). This requires both 
+VS Code with the Visual Studio Code Remote - Containers extension and Docker to be installed on your machine.
+
+ 1. Open up the repository in VS Code
+ 2. Click the "Reopen in Container" button in the bottom right (or press `Ctrl+Shift+P` and type `Reopen in Container`)
+ 3. Your development environment should now open in a new window
+ 4. Start the Jekyll development server with this command in the terminal 
+```
+$ jekyll serve --host 0.0.0.0 --config _config.yml,_config.dev.yml
+```
+
 ## Development
 
 To run the development server, navigate to the project directory in a shell
