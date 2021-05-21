@@ -163,41 +163,47 @@ onetime:
   description: ''
 
 - title: 'Lightning Talk: The Web (Phoenix Kahlo)'
-  date: 2021-5-12 7:30 PM
+  date: 2021-05-12 7:30 PM
   location: Online (Discord Server)
   description: 'I will give an over-scoped talk about the history, vision, and particulars of the web.'
   
-- title: 'Lightning Talk: de Bruijn Sequences'
-  date: 2021-5-26 7:30 PM
+- title: 'Lightning Talk: de Bruijn Sequences (Reed Nelson)'
+  date: 2021-05-26 7:30 PM
   location: Online (Discord Server)
-  description: 'De Bruijn sequences have fun and interesting combinatorial and graph-theoretical properties and a surprising assortment of applications. The info discussed will largely pull from a paper written by an ~esteemed mathematician~, which can be found at github.com/reednel/DeBruijn'
+  description: |
+   <p> De Bruijn sequences have fun and interesting combinatorial and graph-theoretical properties and a surprising assortment of applications. 
+    The info discussed will largely pull from a paper written by an *esteemed mathematician*, which can be found at 
+    <a href='github.com/reednel/DeBruijn'>
+     github.com/reednel/DeBruijn
+    <\a>
+   </p>
   
 - title: 'Lightning Talk: TBD'
-  date: 2021-6-9 7:30 PM
-  location: Online (Discord Server)
-  description: ''
-  
-- title: 'Lightning Talk: TBD'
-  date: 2021-6-23 7:30 PM
-  location: Online (Discord Server)
-  description: ''
-  
-- title: 'Lightning Talk: TBD'
-  date: 2021-7-7 7:30 PM
+  date: 2021-06-09 7:30 PM
   location: Online (Discord Server)
   description: ''
   
 - title: 'Lightning Talk: TBD'
-  date: 2021-7-21 7:30 PM
+  date: 2021-06-23 7:30 PM
   location: Online (Discord Server)
   description: ''
   
 - title: 'Lightning Talk: TBD'
-  date: 2021-8-4 7:30 PM
+  date: 2021-07-07 7:30 PM
   location: Online (Discord Server)
   description: ''
   
 - title: 'Lightning Talk: TBD'
-  date: 2021-8-18 7:30 PM
+  date: 2021-07-21 7:30 PM
+  location: Online (Discord Server)
+  description: ''
+  
+- title: 'Lightning Talk: TBD'
+  date: 2021-08-04 7:30 PM
+  location: Online (Discord Server)
+  description: ''
+  
+- title: 'Lightning Talk: TBD'
+  date: 2021-08-18 7:30 PM
   location: Online (Discord Server)
   description: ''
