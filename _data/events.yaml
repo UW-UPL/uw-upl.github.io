@@ -173,7 +173,7 @@ onetime:
   description: |
     <p> De Bruijn sequences have fun and interesting combinatorial and graph-theoretical properties and a surprising assortment of applications. 
     The info discussed will largely pull from a paper written by an *esteemed mathematician*, which can be found at 
-    <a href='github.com/reednel/DeBruijn'>github.com/reednel/DeBruijn</a>.
+    <a href='https://github.com/reednel/DeBruijn'>https://github.com/reednel/DeBruijn</a>.
     </p>
   
 - title: 'Lightning Talk: TBD'
