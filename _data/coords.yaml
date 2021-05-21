@@ -2,7 +2,7 @@
 
 - id: phoenix
   name: Phoenix Kahlo
-  year: Freshman
+  year: Sophomore
   major: Computer Science
   github: https://github.com/gretchenfrage
   photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
@@ -10,7 +10,7 @@
 
 - id: mjwildman
   name: Matt Wildman
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/shardstealth
   photo: matt.jpg
@@ -18,7 +18,7 @@
 
 - id: willwoods
   name: Will Woods
-  year: Junior
+  year: Senior
   major: Computer Science and Math
   github: https://github.com/WilliamWoods
   photo: willwoods.jpg
@@ -26,7 +26,7 @@
 
 - id: rnelson
   name: Reed Nelson
-  year: Sophomore
+  year: Junior
   major: Computer Science & Philosophy
   github: https://github.com/reednel
   photo: reed.JPG
@@ -34,7 +34,7 @@
 
 - id: drury
   name: Carson Drury
-  year: Sophomore
+  year: Junior
   major: Computer Science
   github: https://github.com/cmdrury
   photo: carson.jpg
@@ -42,7 +42,7 @@
 
 - id: anisa
   name: Anisa Kundu
-  year: Sophomore
+  year: Junior
   major: Computer Science
   github: https://github.com/akundu5
   photo: anisakundu.jpg
@@ -50,7 +50,7 @@
 
 - id: gira
   name: Michael Gira
-  year: Sophomore
+  year: Junior
   major: Computer Science & Entrepreneurship
   github: https://github.com/michaelgira23
   photo: gira.jpg
@@ -58,7 +58,7 @@
 
 - id: shrey
   name: Shrey Shah
-  year: Sophomore
+  year: Junior
   major: Computer Science and Economics
   github: https://github.com/shreykshah
   photo: shrey.jpg
@@ -66,7 +66,7 @@
 
 - id: 
   name: Nick Winans
-  year: Sophomore
+  year: Junior
   major: Computer Science
   github: https://github.com/Nicell
   photo: nick.jpg
@@ -74,7 +74,7 @@
 
 - id: 
   name: Michael Berkey
-  year: Sophomore
+  year: Junior
   major: Computer Science
   github: https://github.com/mdberkey
   photo: berkey.jpg
@@ -82,7 +82,7 @@
 
 - id:
   name: James Ma
-  year: Junior
+  year: senior
   major: Computer Science & Data Science
   github: https://github.com/jamesma100
   photo: jamesma.jpg
