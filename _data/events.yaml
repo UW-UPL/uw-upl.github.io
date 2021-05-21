@@ -176,10 +176,12 @@ onetime:
     <a href='https://github.com/reednel/DeBruijn'>https://github.com/reednel/DeBruijn</a>.
     </p>
   
-- title: 'Lightning Talk: TBD'
+- title: 'Lightning Talk: Build a computer from logic gates (Karl Stephan)'
   date: 2021-06-09 7:30 PM
   location: Online (Discord Server)
-  description: ''
+  description: |
+    <p> Explain how to build a toy CPU from a pile of logic gates. Show a toy computing machine built in logisim, and talk about how to build a more general computer, whether in silicon or redstone.
+    </p>
   
 - title: 'Lightning Talk: TBD'
   date: 2021-06-23 7:30 PM
