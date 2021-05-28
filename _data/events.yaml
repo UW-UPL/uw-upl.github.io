@@ -183,10 +183,13 @@ onetime:
     <p> Explain how to build a toy CPU from a pile of logic gates. Show a toy computing machine built in logisim, and talk about how to build a more general computer, whether in silicon or redstone.
     </p>
   
-- title: 'Lightning Talk: TBD'
+- title: 'Lightning Talk: Travelling salesman problem (James Ma)'
   date: 2021-06-23 7:30 PM
   location: Online (Discord Server)
-  description: ''
+  description: |
+    <p> The travelling salesman problem is a heavily studied problem in theoretical computer science and optimization and has many cool applications.
+    In this talk I will go over the basics of the problem, its formations, and how it is used in various fields of study.
+    </p>
   
 - title: 'Lightning Talk: TBD'
   date: 2021-07-07 7:30 PM
