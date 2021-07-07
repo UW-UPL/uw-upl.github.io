@@ -191,11 +191,11 @@ onetime:
     In this talk I will go over the basics of the problem, its formations, and how it is used in various fields of study.
     </p>
   
-- title: 'Lightning Talk: TBD (Nick Winans)'
+- title: 'Lightning Talk: Keyboard Matrices and Debouncing (Nick Winans)'
   date: 2021-07-07 7:30 PM
   location: Online (Discord Server)
   description: |
-    <p> 
+    <p> How do keyboards work on an electrical side? In this talk we'll learn about how keyboard matrices are designed, ghosting, n-key rollover, and how we deal with the imperfect world we live in through debouncing.
     </p>
   
 - title: 'Lightning Talk: A Combinatorial Problem (Reed Nelson)'
