@@ -207,10 +207,10 @@ onetime:
     and useful counting principle which justifies this whole talk.
     </p>
   
-- title: 'Lightning Talk: TBD'
+- title: 'Lightning Talk: Deploying and Securing Virtualized Self Hosted Servers (Michael Grube)'
   date: 2021-08-04 7:30 PM
   location: Online (Discord Server)
-  description: ''
+  description: 'Learn the basics of self hosting servers using Pfsense and ESXi. This talk delves into how to securely deploy servers on your home network without jeopardizing the security of personal devices using Dynamic DNS, port forwarding, demilitarized zones and subnets.'
   
 - title: 'Lightning Talk: Resumes, Interviewing, and Internships - Everything You Need to Know (Matt Wildman)'
   date: 2021-08-18 7:30 PM
