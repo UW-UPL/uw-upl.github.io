@@ -2,54 +2,44 @@
 - day: Monday
   times:
     10am: ''
-    11am: ''
-    12pm: ''
-    1pm: 'Reed'
-    2pm: 'Carson'
+    11am: 'Shrey'
+    12pm: 'Michael'
+    1pm: 'Matt'
+    2pm: 'Phoenix'
     3pm: ''
-    ...: ''
-    7pm: ''
 
 - day: Tuesday
   times:
-    10am: 'Anisa'
-    11am: 'Michael'
-    12pm: ''
-    1pm: ''
-    2pm: 'Michael'
+    10am: 'Reed'
+    11am: 'Nick'
+    12pm: 'Carson'
+    1pm: 'James'
+    2pm: ''
     3pm: ''
-    ...: ''
-    7pm: 'Phoenix'
 
 - day: Wednesday
   times:
     10am: ''
-    11am: ''
-    12pm: ''
-    1pm: 'Reed'
-    2pm: 'Matt'
+    11am: 'Shrey'
+    12pm: 'Berkey'
+    1pm: 'Berkey'
+    2pm: ''
     3pm: ''
-    ...: ''
-    7pm: ''
 
 - day: Thursday
   times:
-    10am: 'Anisa'
-    11am: ''
-    12pm: ''
-    1pm: ''
-    2pm: 'Carson'
+    10am: 'Matt'
+    11am: 'Nick'
+    12pm: 'Carson'
+    1pm: 'James'
+    2pm: ''
     3pm: ''
-    ...: ''
-    7pm: 'Phoenix'
 
 - day: Friday
   times:
     10am: ''
-    11am: 'Will'
-    12pm: 'Will'
-    1pm: 'Matt'
-    2pm: 'Shrey'
-    3pm: 'Shrey'
-    ...: ''
-    7pm: ''
+    11am: 'Reed'
+    12pm: 'Michael'
+    1pm: 'Phoenix'
+    2pm: ''
+    3pm: ''
