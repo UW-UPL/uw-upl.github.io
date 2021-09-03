@@ -28,7 +28,7 @@
 
 - day: Thursday
   times:
-    10am: 'Matt'
+    10am: 'Reed'
     11am: 'Nick'
     12pm: 'Carson'
     1pm: 'James'
@@ -38,7 +38,7 @@
 - day: Friday
   times:
     10am: ''
-    11am: 'Reed'
+    11am: 'Matt'
     12pm: 'Michael'
     1pm: 'Phoenix'
     2pm: ''
