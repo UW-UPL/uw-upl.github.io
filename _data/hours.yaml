@@ -14,8 +14,8 @@
     11am: 'Nick'
     12pm: 'Carson'
     1pm: 'James'
-    2pm: ''
-    3pm: ''
+    2pm: 'Anisa'
+    3pm: 'Anisa'
 
 - day: Wednesday
   times:
@@ -41,5 +41,5 @@
     11am: 'Matt'
     12pm: 'Michael'
     1pm: 'Phoenix'
-    2pm: ''
-    3pm: ''
+    2pm: 'Will'
+    3pm: 'Will'
