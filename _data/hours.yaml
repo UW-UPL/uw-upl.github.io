@@ -23,7 +23,7 @@
     11am: 'Shrey'
     12pm: 'Berkey'
     1pm: 'Berkey'
-    2pm: ''
+    2pm: 'Matt'
     3pm: ''
 
 - day: Thursday
@@ -38,7 +38,7 @@
 - day: Friday
   times:
     10am: ''
-    11am: 'Matt'
+    11am: ''
     12pm: 'Michael'
     1pm: 'Phoenix'
     2pm: 'Will'
