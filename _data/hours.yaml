@@ -32,7 +32,7 @@
     11am: 'Nick'
     12pm: 'Carson'
     1pm: 'James'
-    2pm: ''
+    2pm: 'Phoenix'
     3pm: ''
 
 - day: Friday
@@ -40,6 +40,6 @@
     10am: ''
     11am: ''
     12pm: 'Michael'
-    1pm: 'Phoenix'
+    1pm: ''
     2pm: 'Will'
     3pm: 'Will'
