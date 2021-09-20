@@ -3,7 +3,7 @@
   times:
     9am: 'Shrey'
     10am: ''
-    11am: ''
+    11am: 'Reed'
     12pm: 'Michael'
     1pm: 'Matt'
     2pm: 'Phoenix'
@@ -12,7 +12,7 @@
 - day: Tuesday
   times:
     9am: ''
-    10am: 'Reed'
+    10am: ''
     11am: 'Nick'
     12pm: 'Carson'
     1pm: 'James'
@@ -23,7 +23,7 @@
   times:
     9am: 'Shrey'
     10am: ''
-    11am: ''
+    11am: 'Reed'
     12pm: 'Berkey'
     1pm: 'Berkey'
     2pm: 'Matt'
@@ -32,7 +32,7 @@
 - day: Thursday
   times:
     9am: ''
-    10am: 'Reed'
+    10am: ''
     11am: 'Nick'
     12pm: 'Carson'
     1pm: 'James'
