@@ -225,3 +225,8 @@ onetime:
   date: 2021-10-04 6:00 PM
   location: CS 1240
   description: 'Hey, you''re a developer, not a designer. But don''t let that stop you from creating beautiful user interfaces! Let''s dive into the fundamentals of UI design and learn practical steps for producing apps and websites that look a little bit better. No prior experience necessary.'
+
+- title: 'Lightning Talk: KiCad and Keyboards - a Keynote (Nick Winans)'
+  date: 2021-10-18 6:00 PM
+  location: CS 1240
+  description: 'Learn the basics of creating simple circuit boards in KiCad through the creation of a UPL themed keyboard! We will be designing a simple keyboard schematic, laying it out in a physical space, and possibly ordering it if time permits. This builds off of the keyboard matrix lightning talk given this summer, but no prior knowledge is required.'
