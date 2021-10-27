@@ -230,3 +230,8 @@ onetime:
   date: 2021-10-18 6:00 PM
   location: CS 1240
   description: 'Learn the basics of creating simple circuit boards in KiCad through the creation of a UPL themed keyboard! We will be designing a simple keyboard schematic, laying it out in a physical space, and possibly ordering it if time permits. This builds off of the keyboard matrix lightning talk given this summer, but no prior knowledge is required.'
+
+- title: 'Lightning Talk: Cache and Memory Friendly Programming (Matt Wildman)'
+  date: 2021-11-01 6:00 PM
+  location: CS 1240
+  description: 'An introduction to improving performance by observing cache and memory locality, as well as techniques and best practices when doing common tasks in C++. No prior knowledge required although an understanding of pointers is recommended.'
