@@ -236,7 +236,7 @@ onetime:
   location: CS 1240
   description: 'An introduction to improving performance by observing cache and memory locality, as well as techniques and best practices when doing common tasks in C++. No prior knowledge required although an understanding of pointers is recommended.'
 
-- title: 'Lightning Talk: Common Pitfalls of Machine Learning in Quantatative Trading (Shrey Shah)'
+- title: 'Lightning Talk: Common Pitfalls of Machine Learning in Quantitative Trading (Shrey Shah)'
   date: 2021-11-15 6:00 PM
   location: CS 1240
-  description: 'An exploration of the causes of the high rates of failure of machine learning in quantatative trading. A basic understanding of calculus and statistics is recommended.'
+  description: 'An exploration of the causes of the high rates of failure of machine learning in quantitative trading. A basic understanding of calculus and statistics is recommended.'
