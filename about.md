@@ -33,8 +33,8 @@ students that frequent the lab as well.
 You can contact us in numerous ways:
 
 Email us all at: <a
-    href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go="
-    onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075',
+    href="https://mailhide.io/e/eu3xOgYJ"
+    onclick="window.open('https://mailhide.io/e/eu3xOgYJ',
     '',
     'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
     return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu. <br>
@@ -53,8 +53,8 @@ Madison, WI 53706
 ## Who runs the UPL?
 
 Our faculty advisor is Professor Bart Miller, who can be reached at: <a
-href="http://www.google.com/recaptcha/mailhide/d?k=01Z1_UkqUnyoKdioWqOFLdUA==&amp;c=F2EDWSQsmN1SRBWVdMSIbR1d1CP1eqTqDRWQzLyEefw="
-onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501Z1_UkqUnyoKdioWqOFLdUA\75\75\46c\75F2EDWSQsmN1SRBWVdMSIbR1d1CP1eqTqDRWQzLyEefw\075',
+href="https://mailhide.io/e/SQDlL"
+onclick="window.open('https://mailhide.io/e/SQDlL',
 '',
 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
 return false;" title="Reveal this e-mail address">b...</a>@cs.wisc.edu.
@@ -86,8 +86,8 @@ various members who are generously making them available.
 
 The people! We'll always do our best to answer your questions. Email us all at:
 <a
-href="http://www.google.com/recaptcha/mailhide/d?k=01enlvO279JKQY5RDqwSAZng==&amp;c=27tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go="
-onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501enlvO279JKQY5RDqwSAZng\75\75\46c\07527tAYEUKmtum-50yZuZ4fT4un5toOiloDmEWiGfH0go\075',
+href="https://mailhide.io/e/eu3xOgYJ"
+onclick="window.open('https://mailhide.io/e/eu3xOgYJ',
 '',
 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
 return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu.
