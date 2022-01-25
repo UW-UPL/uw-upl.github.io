@@ -40,14 +40,6 @@
   photo: carson.jpg
   emoji: coffee
 
-- id: anisa
-  name: Anisa Kundu
-  year: Junior
-  major: Computer Science
-  github: https://github.com/akundu5
-  photo: anisakundu.jpg
-  emoji: octopus
-
 - id: gira
   name: Michael Gira
   year: Junior
@@ -56,13 +48,13 @@
   photo: gira.jpg
   emoji: ok_hand
 
-- id: shrey
-  name: Shrey Shah
-  year: Junior
-  major: Computer Science and Economics
-  github: https://github.com/shreykshah
-  photo: shrey.jpg
-  emoji: ghost
+# - id: shrey
+#   name: Shrey Shah
+#   year: Junior
+#   major: Computer Science and Economics
+#   github: https://github.com/shreykshah
+#   photo: shrey.jpg
+#   emoji: ghost
 
 - id: 
   name: Nick Winans
