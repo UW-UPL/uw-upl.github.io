@@ -95,3 +95,11 @@
   github: https://github.com/wallenben
   photo: benw.jpg
   emoji: ocean
+  
+- id: eric
+  name: Eric Gjerde
+  year: Junior
+  major: Computer Science
+  github: https://github.com/cwzero
+  photo: eric.jpg
+  emoji: bridge_at_night
