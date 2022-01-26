@@ -36,7 +36,7 @@ Email us all at: <a
     href="https://mailhide.io/e/eu3xOgYJ"
     onclick="window.open('https://mailhide.io/e/eu3xOgYJ',
     '',
-    'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
+    'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=580,height=635');
     return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu. <br>
     Like us on <a href="https://www.facebook.com/groups/UWUPL/" title="UPL
     Facebook page">Facebook</a>!
@@ -56,7 +56,7 @@ Our faculty advisor is Professor Bart Miller, who can be reached at: <a
 href="https://mailhide.io/e/SQDlL"
 onclick="window.open('https://mailhide.io/e/SQDlL',
 '',
-'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
+'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=580,height=635');
 return false;" title="Reveal this e-mail address">b...</a>@cs.wisc.edu.
 
 [Coordinators]({{ 'coords.html' | prepend: site.baseurl }}), "coords" for short,
@@ -89,7 +89,7 @@ The people! We'll always do our best to answer your questions. Email us all at:
 href="https://mailhide.io/e/eu3xOgYJ"
 onclick="window.open('https://mailhide.io/e/eu3xOgYJ',
 '',
-'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300');
+'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=580,height=635');
 return false;" title="Reveal this e-mail address">u...</a>@cs.wisc.edu.
 
 ## When is the UPL open?
