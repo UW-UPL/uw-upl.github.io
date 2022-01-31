@@ -240,3 +240,8 @@ onetime:
   date: 2021-11-15 6:00 PM
   location: CS 1240
   description: 'An exploration of the causes of the high rates of failure of machine learning in quantitative trading. A basic understanding of calculus and statistics is recommended.'
+
+- title: 'UPL Open House'
+  date: 2022-01-31 7:00 PM
+  location: CS 1240
+  description: 'Come to learn more about what the UPL does, some of our ongoing projects, future events, and how you can get involved. We hope to see you there!'
