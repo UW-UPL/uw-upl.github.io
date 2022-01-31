@@ -8,8 +8,11 @@
 - title: Events
   url: "/events.html"
 
-- title: Projects
-  url: "/projects.html"
+#- title: Projects
+#  url: "/projects.html"
+
+- title: Blog
+  url: "/blog.html"
 
 - title: Coords
   url: "/coords.html"
