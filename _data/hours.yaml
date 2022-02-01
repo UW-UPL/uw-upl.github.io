@@ -6,7 +6,7 @@
     11am: 'Michael'
     12pm: 'Reed'
     1pm: 'James'
-    2pm: ''
+    2pm: 'Berkey'
     3pm: 'Carson'
     4pm: ''
 
@@ -28,9 +28,9 @@
     11am: 'Ben'
     12pm: 'Reed'
     1pm: 'Eric'
-    2pm: ''
+    2pm: 'Berkey'
     3pm: 'Carson'
-    4pm: 'Berkey'
+    4pm: ''
 
 - day: Thursday
   times:
@@ -48,7 +48,7 @@
     9am: ''
     10am: 'James'
     11am: 'Michael'
-    12pm: 'Berkey'
+    12pm: ''
     1pm: 'Eric'
     2pm: ''
     3pm: 'Rudy'
