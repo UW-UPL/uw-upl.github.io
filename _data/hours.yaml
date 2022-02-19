@@ -2,7 +2,7 @@
 - day: Monday
   times:
     9am: ''
-    10am: ''
+    10am: 'Eric'
     11am: 'Michael'
     12pm: 'Reed'
     1pm: 'James'
@@ -24,10 +24,10 @@
 - day: Wednesday
   times:
     9am: ''
-    10am: ''
+    10am: 'Eric'
     11am: 'Ben'
     12pm: 'Reed'
-    1pm: 'Eric'
+    1pm: ''
     2pm: 'Berkey'
     3pm: 'Carson'
     4pm: ''
@@ -49,7 +49,7 @@
     10am: 'James'
     11am: 'Michael'
     12pm: ''
-    1pm: 'Eric'
+    1pm: ''
     2pm: ''
     3pm: 'Rudy'
     4pm: 'Rudy'
