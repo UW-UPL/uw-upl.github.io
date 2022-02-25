@@ -233,7 +233,12 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: em;
+}
+
+/* make code not huge */
+pre {
+  font-size: 10pt;
 }
 
 /* Forms
