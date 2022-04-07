@@ -34,6 +34,7 @@ You need not completely understand these or comletely agree that they're all nec
 
 An obvious next step would be to theorize about how we actually go from plain AGI to Dasein AGI, but I feel we're running long, and that could be a blog post all its own. 
 
+---
 
 ### Additional Reading
 
@@ -56,6 +57,8 @@ This is a whole book. I can’t say whether it’s all worth reading, but there 
 Fjelland’s goal in this paper is to show that Dreyfus’s argument still holds, despite the extensive development of artificial neural networks. He argues that modern methods (e.g. ML) are merely correlative, they know nothing of causation. A higher level of reasoning, with a deeper understanding of the events in question and the context they occured in is necessary to determine causation. Thus, a machine that is not in-the-world cannot reason about causal relationships. 
 
 >“We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.” 
+
+---
 
 [^1]: I've always wanted to say this.
 [^2]: Pronounced däzīn. This is a German word which just means "being there". Our usage comes from Martin Heidegger (phenomenologist and student of Husserl). Dasein is a very important and nuanced concept for Heidegger, we're being a little fast and loose.
