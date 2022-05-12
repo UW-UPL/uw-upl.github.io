@@ -10,7 +10,7 @@ I wanted the best results, so I used Davinci as it’s the most capable of the G
 
 GPT-3 is great at text generation, but sometimes the underlying logic and common sense issues in the writing are hard to ignore. This is a problem especially if our topic is full of rigorous logic like CS. More vague topics are better, but since I still want the post to be CS-related, “artificial intelligence and consciousness” is a good compromise.
 
-For the API parameters, the only one that needed tweaking was the “temperature”. This is a float between 0 and 1. Lowering this value decreases the randomness of the text completions which produces more deterministic results. So raising the value produces more “creative” results and lowering it leads to more well-defined outputs. Given our topic and a little bit of testing, 0.6 for the temperature fit nicely.
+For the API parameters, the only one that needed tweaking was the “temperature”. This is a float between 0 and 1. Lowering this value decreases the randomness of the text completions which produces more deterministic results. So raising the value produces more “creative” results and lowering it leads to more well-defined outputs. Given our topic and a little bit of testing, 0.8 for the temperature fit nicely.
 
 <img src="https://i.imgur.com/Mx1zTrd.png" width="600" />
 
