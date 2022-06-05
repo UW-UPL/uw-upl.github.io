@@ -56,7 +56,7 @@
 #   photo: shrey.jpg
 #   emoji: ghost
 
-- id: 
+- id: nick
   name: Nick Winans
   year: Junior
   major: Computer Science
@@ -64,7 +64,7 @@
   photo: nick.jpg
   emoji: sunglasses
 
-- id: 
+- id: berkey
   name: Michael Berkey
   year: Junior
   major: Computer Science
@@ -72,7 +72,7 @@
   photo: berkey.jpg
   emoji: alien
 
-- id:
+- id: jamesma
   name: James Ma
   year: Senior
   major: Computer Science & Data Science
@@ -80,7 +80,7 @@
   photo: jamesma.jpg
   emoji: eyes
   
-- id: 
+- id: dana
   name: Dana Schneck
   year: Junior
   major: Computer Science
@@ -88,7 +88,7 @@
   photo: dana.jpg
   emoji: sparkles
  
-- id: 
+- id: benwallen
   name: Ben Wallen
   year: Junior
   major: Computer Science
@@ -112,10 +112,18 @@
   photo: rudy_good_picture_square.jpg
   emoji: trollface
   
-  id: 
+- id: chirag
   name: Chirag Bhardwaj
   year: Junior
   major: Computer Science
   github: https://github.com/Chirag-Bhardwaj
   photo: Chirag.jpg
   emoji: sunglasses
+
+- id: michael
+  name: Michael Noguera
+  year: Sophomore
+  major: Computer Science
+  github: https://github.com/michaelnoguera
+  photo: noguera.jpg
+  emoji: turtle
