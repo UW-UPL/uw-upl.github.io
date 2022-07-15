@@ -2,19 +2,11 @@
 
 - id: phoenix
   name: Phoenix Kahlo
-  year: Sophomore
+  year: Junior
   major: Computer Science
   github: https://github.com/gretchenfrage
   photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
   emoji: octopus
-
-- id: mjwildman
-  name: Matt Wildman
-  year: Senior
-  major: Computer Science
-  github: https://github.com/shardstealth
-  photo: matt.jpg
-  emoji: shipit
 
 - id: willwoods
   name: Will Woods
@@ -26,15 +18,15 @@
 
 - id: rnelson
   name: Reed Nelson
-  year: Junior
-  major: Computer Science & Philosophy
+  year: Senior
+  major: Computer Science & Math
   github: https://github.com/reednel
   photo: reed.JPG
   emoji: ghost
 
 - id: drury
   name: Carson Drury
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/cmdrury
   photo: carson.jpg
@@ -42,23 +34,23 @@
 
 - id: gira
   name: Michael Gira
-  year: Junior
+  year: Senior
   major: Computer Science & Entrepreneurship
   github: https://github.com/michaelgira23
   photo: gira.jpg
   emoji: ok_hand
 
-# - id: shrey
-#   name: Shrey Shah
-#   year: Junior
-#   major: Computer Science and Economics
-#   github: https://github.com/shreykshah
-#   photo: shrey.jpg
-#   emoji: ghost
+- id: shrey
+  name: Shrey Shah
+  year: Senior
+  major: Computer Science and Economics
+  github: https://github.com/shreykshah
+  photo: shrey.jpg
+  emoji: ghost
 
 - id: nick
   name: Nick Winans
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/Nicell
   photo: nick.jpg
@@ -66,23 +58,15 @@
 
 - id: berkey
   name: Michael Berkey
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/mdberkey
   photo: berkey.jpg
   emoji: alien
-
-- id: jamesma
-  name: James Ma
-  year: Senior
-  major: Computer Science & Data Science
-  github: https://github.com/jamesma100
-  photo: jamesma.jpg
-  emoji: eyes
   
 - id: dana
   name: Dana Schneck
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/drschneck11
   photo: dana.jpg
@@ -98,7 +82,7 @@
   
 - id: eric
   name: Eric Gjerde
-  year: Junior
+  year: Senior
   major: Computer Science
   github: https://github.com/cwzero
   photo: eric.jpeg
@@ -106,7 +90,7 @@
   
 - id: rudy
   name: Rudy Banerjee
-  year: Sophomore
+  year: Junior
   major: CE/CS
   github: https://github.com/rudyb2001
   photo: rudy_good_picture_square.jpg
@@ -127,3 +111,19 @@
   github: https://github.com/michaelnoguera
   photo: noguera.jpg
   emoji: turtle
+
+# - id: mjwildman
+#   name: Matt Wildman
+#   year: Senior
+#   major: Computer Science
+#   github: https://github.com/shardstealth
+#   photo: matt.jpg
+#   emoji: shipit
+
+# - id: jamesma
+#   name: James Ma
+#   year: Senior
+#   major: Computer Science & Data Science
+#   github: https://github.com/jamesma100
+#   photo: jamesma.jpg
+#   emoji: eyes
