@@ -111,6 +111,14 @@
   github: https://github.com/michaelnoguera
   photo: noguera.jpg
   emoji: turtle
+  
+- id: alan
+  name: Alan Mendez
+  year: Junior
+  major: Computer Science
+  github: https://github.com/zVaria
+  photo: me_smiling.jpg
+  emoji: soap
 
 # - id: mjwildman
 #   name: Matt Wildman
