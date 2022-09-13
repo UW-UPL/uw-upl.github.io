@@ -26,11 +26,11 @@
     9am: ''
     10am: 'Eric'
     11am: 'Ben'
-    12pm: ''
+    12pm: 'Dana'
     1pm: 'Ben'
-    2pm: ''
-    3pm: 'Dana'
-    4pm: 'Dana'
+    2pm: 'Dana'
+    3pm: ''
+    4pm: ''
 
 - day: Thursday
   times:
