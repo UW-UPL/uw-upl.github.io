@@ -8,13 +8,13 @@
   photo: phoenix_pretending_to_be_squinting_at_the_sun_but_actually_is_indoors_and_is_just_pretending.jpg
   emoji: octopus
 
-- id: willwoods
-  name: Will Woods
-  year: Senior
-  major: Computer Science and Math
-  github: https://github.com/WilliamWoods
-  photo: willwoods.jpg
-  emoji: fish
+#- id: willwoods
+#  name: Will Woods
+#  year: Senior
+#  major: Computer Science and Math
+#  github: https://github.com/WilliamWoods
+#  photo: willwoods.jpg
+#  emoji: fish
 
 - id: rnelson
   name: Reed Nelson
@@ -40,13 +40,13 @@
   photo: gira.jpg
   emoji: ok_hand
 
-- id: shrey
-  name: Shrey Shah
-  year: Senior
-  major: Computer Science and Economics
-  github: https://github.com/shreykshah
-  photo: shrey.jpg
-  emoji: ghost
+#- id: shrey
+#  name: Shrey Shah
+#  year: Senior
+#  major: Computer Science and Economics
+#  github: https://github.com/shreykshah
+#  photo: shrey.jpg
+#  emoji: ghost
 
 - id: nick
   name: Nick Winans
