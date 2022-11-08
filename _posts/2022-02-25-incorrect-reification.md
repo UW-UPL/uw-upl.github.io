@@ -2,7 +2,7 @@
 layout: post
 author: Phoenix Kahlo
 title: "Incorrect Reification: An Anti-Pattern"
-thumbnail: "/images/thumbnails/incorrect-reification-humbnail.jpeg"
+thumbnail: "/images/thumbnails/incorrect-reification-thumbnail.jpeg"
 ---
 
 For better or for worse, what entices me in creating software is less the prospect of engineering a working thing and more the structural elegance of a well-architectured system fitting together neatly. I tend to dive into some vastly ambitious project of creating a framework or engine of some sort, typically with self-awareness that I’ll get bored and move on once I’ve gotten a sense of what does and doesn’t work elegantly about the approach.
