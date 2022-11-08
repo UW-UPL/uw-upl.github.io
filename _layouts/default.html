@@ -2,9 +2,11 @@
 <html>
 
   <head>
-    {% if page.thumbnail %}<meta property=’og:image’ content='{{ page.thumbnail }}'/>{% endif %}
-    <!--<meta property='og:image:width' content='1200' />
-    <meta property='og:image:height' content='627' />-->
+    {% if page.thumbnail %}
+    <meta property=’og:image’ content='{{ page.thumbnail }}'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    {% endif %}
   </head>
 
   {% include head.html %}
