@@ -19,7 +19,7 @@
     1pm: 'Phoenix'
     2pm: 'Reed'
     3pm: 'Carson'
-    4pm: 'Berkey'
+    4pm: ''
 
 - day: Wednesday
   times:
@@ -27,7 +27,7 @@
     10am: ''
     11am: 'Michael N'
     12pm: 'Michael N'
-    1pm: ''
+    1pm: 'Berkey'
     2pm: ''
     3pm: 'Nick'
     4pm: 'Nick'
