@@ -120,6 +120,14 @@
   photo: alan_smiling.jpg
   emoji: soap
 
+- id: pranav
+  name: Pranav Dronavalli
+  year: Junior
+  major: Computer Science
+  github: https://github.com/dronavallipranav
+  photo: alan_smiling.jpg
+  emoji: soap
+
 # - id: mjwildman
 #   name: Matt Wildman
 #   year: Senior
