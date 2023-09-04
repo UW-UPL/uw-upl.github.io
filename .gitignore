@@ -1,7 +1,3 @@
-_site
-.sass-cache
-.jekyll-metadata
-.idea
-.vagrant
-*.log
-.DS_Store
+node_modules/
+.cache/
+/dist/

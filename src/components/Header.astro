@@ -1,0 +1,51 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+
+const ROUTES: {
+	path: string;
+	name: string;
+}[] = [
+	{
+		path: "/",
+		name: "Home",
+	},
+	{
+		path: "/events",
+		name: "Events",
+	},
+	{
+		path: "/blog",
+		name: "Blog",
+	},
+	{
+		path: "/coords",
+		name: "Coords",
+	},
+	{
+		path: "/hours",
+		name: "Hours",
+	},
+];
+---
+
+<div class="md:w-9/12 mx-auto text-red-500">
+	<nav class="md:pt-11 md:pb-16 p-2 flex md:flex-row flex-wrap justify-center">
+		<h2 class="text-red-500 text-4xl font-semibold">
+			<a href="/">Undergraduate Projects Lab</a>
+		</h2>
+		<div class="md:flex-1" />
+		<div class="flex flex-row items-end md:space-x-10 space-x-4">
+			{
+				ROUTES.map((e) => (
+					<HeaderLink
+						class="text-red-500 font-bold"
+						href={e.path}
+					>
+						{e.name}
+					</HeaderLink>
+				))
+			}
+		</div>
+	</nav>
+</div>

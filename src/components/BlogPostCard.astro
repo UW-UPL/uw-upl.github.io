@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">;
+
+const { data, render, slug } = Astro.props;
+
+let formatter = new Intl.DateTimeFormat("en", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+});
+
+const formattedPubDate = formatter.format(data.pubDate);
+
+const formattedUpdatedDate = formatter.format(data.updatedDate);
+
+const readingTime = (await render()).remarkPluginFrontmatter.minutesRead;
+---
+
+<a
+href={`/blog/${slug}/`}
+    class="flex flex-col bg-red-100 p-6 rounded-lg drop-shadow-xl text-neutral-800 font-sans"
+>
+    <h1 class="text-4xl font-semibold">
+        {data.title}
+    </h1>
+    <h6 class="font-medium text-md">
+        Published {formattedPubDate}{
+            data.updatedDate && ` · Edited ${formattedUpdatedDate}`
+        } · {readingTime} · By {data.author}
+    </h6>
+    <p class="text-md font-normal mt-2">{data.description}</p>
+</a>

@@ -1,114 +1,57 @@
-# Undergraduate Projects Lab Website
+# UPL UW Website
 
-Found at [uw-upl.github.io](http://uw-upl.github.io) and
-[upl.cs.wisc.edu](http://upl.cs.wisc.edu)
+Built in Astro and using Tailwind, this is the UPL's basic info website and blog. 
 
-This website is powered by [jekyll](http://jekyllrb.com). Contributions and
-issue reports are welcomed!
+## Adding a new Coordinator
 
-## Dependencies
+Under `/src/content/coordinators` contains the bios for each Coordinator, create a json file called `firstname-lastname.json` and follow the schema described in `/src/content/config.ts` for coordinators.
 
-This project uses the official [GitHub Pages gem](https://github.com/github/pages-gem).
-This manages all of the project dependencies for you, as long as you have a working
-version of Ruby and Bundler.
+To add your picture, title it however you like and save it to  `/src/content/profiles`, reference it just by the file name in the json file.
 
-On a Unix-like OS, I recommend using [rbenv](https://github.com/rbenv/rbenv) to install
-a new version of Ruby. Follow the instructions in that README and then enter the following:
+## Adding a new Blog Post
 
-```
-$ gem install bundler
-```
+Create a new .mdx file under `/src/content/blog`, following the schema described in `/src/content/config.ts` for blog posts. It can be saved as `blog-post.mdx` or `blog-post/index.mdx`, both will work.
 
-To install Jekyll and the other dependencies, navigate to the project directory
-in a shell and type
+# Astro Generated ReadMe
+
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
 
 ```
-$ bundle install
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
 ```
 
-## Docker + VS Code Dev Container
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-Alternatively instead of setting up the environment yourself, you can use the
-[Visual Studio Code Remote - Containers extension to set up the environment using Docker
-in one click](https://code.visualstudio.com/docs/remote/containers). This requires both 
-VS Code with the Visual Studio Code Remote - Containers extension and Docker to be installed on your machine.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
- 1. Open up the repository in VS Code
- 2. Click the "Reopen in Container" button in the bottom right (or press `Ctrl+Shift+P` and type `Reopen in Container`)
- 3. Your development environment should now open in a new window
- 4. Start the Jekyll development server with this command in the terminal 
-```
-$ jekyll serve --host 0.0.0.0 --config _config.yml,_config.dev.yml
-```
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
 
-## Development
+Any static assets, like images, can be placed in the `public/` directory.
 
-To run the development server, navigate to the project directory in a shell
-and type
+## 🧞 Commands
 
-```
-$ jekyll serve --config _config.yml,_config.dev.yml
-```
+All commands are run from the root of the project, from a terminal:
 
-This will launch a local server on port 4000 -- see `_config.dev.yml` if you intend
-to change this for yourself.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-### Setting up a dev environment on windows
+## 👀 Want to learn more?
 
-While there are ways to get jekyll working natively on windows, it's not the most reliable system in the world. This section should detail the reproducable steps necessary to get it working. These steps will rely on the windows 10 llinux subshell and native bash. For information on how to enable the linux subsystem and install bash, go [here](http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
-
-(It's assumed that you've already cloned the repo to somewhere)
-
-1. Install ruby
-  - `sudo apt-add-repository ppa:brightbox/ruby-ng`
-  - `sudo apt update`
-  - `sudo apt install ruby2.3 ruby2.3-dev ruby-switch`
-  - `ruby-switch --set ruby2.3`
-2. Install main gems
-  - `gem install jekyll -v 3.1.6`
-  - `sudo apt-get install libxml2`
-    - This might not be necessary but I didn't want to uninstall this package to see if the installation succeeded without it.
-  - `sudo apt-get install zlib1g-dev`
-  - `gem install github-pages`
-    - When it says "This could take a while..." it means it.
-3. Install proper gem version 
-  - I don't know anyway of getting around running these commands but it made mine work. Try running the last command here first and seeing if that fixes the issue.
-  - `sudo gem install colorator -v 0.1`
-  - `sudo gem install jekyll-mentions -v 1.1.3`
-  - `sudo gem install terminal-table -v 1.6.0`
-  - `sudo gem install github-pages -v 91`
-4. Install node 6
-  - `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
-  - `sudo apt-get install -y nodejs`
-5. Add alias to bashrc to build and serve jekyll site
-  - in `/home/$user/.bashrc` add `alias uwjekyll='bundle exec jekyll build; bundle exec jekyll serve --config _config.yml, _config.dev.yml --no-watch'`
-  - You'll use this alias to build and serve the site. Until some things that jekyll uses have compatibility issues resolved this is necessary.
-
-## How to do common things
-
-### Data changes
-
-By far, the most common kind of change is one you make to the site's data. This
-includes:
-
-- Changing your office hours
-- Adding a project or an event
-- Adding or changing an image
-- Changing your favorite emoji (coords only!)
-
-All of these can be done by modifying the respective files in `_data/`, with
-one exception: images are located in `images/`. Both of these locations follow
-standard Jekyll practices.
-
-### Changing page layout
-
-Each page has a corresponding `.html` or `.md` file in the top-level project directory.
-If you want to change the templates used to make these pages, start here.
-
-### Adding client-side scripting
-
-For the most part, the site's content is fully static -- that is, never changing after
-the site has been generated. However, some things cannot be generated like this --
-for example, the lab status page needs to make an AJAX call to a remote service. The
-principle we follow now is to make the template define an incomplete version of the
-page statically and to embellish it with a script. `lab.html` is an example of this.
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

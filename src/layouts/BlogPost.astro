@@ -1,0 +1,61 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+import Layout from "./Layout.astro";
+import CoordCard from "../components/CoordCard.astro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
+type Props = CollectionEntry<"blog">["data"] & { minutesRead: string };
+
+const { title, description, pubDate, updatedDate, image, author, minutesRead } =
+	Astro.props;
+
+const coordsBio = await getCollection("coordinators");
+
+const matchedCoord = coordsBio.find((d) => d.data.name === author);
+---
+
+<Layout>
+	<div class="inline w-full overflow-hidden text-slate-800">
+		<a class="ml-8 flex flex-row basis-8 text-slate-500 text-sm space-x-1 active:underline hover:underline" href="/blog">
+			<div class="w-2.5 my-auto">
+				<FontAwesomeIcon icon={faChevronLeft}/>
+			</div>
+			<h1 class="font-sans font-semibold">Back</h1>
+		</a>
+
+		<div class="mx-auto w-3/4">
+			<h1 class="text-6xl font-black">{title}</h1>
+			<div
+				class="flex flex-row my-5 font-sans font-semibold text-slate-500 text-xl space-x-1"
+			>
+				<h2
+					class="underline underline-offset-8 decoration-2 underline decoration-red-500"
+				>
+					{author}
+				</h2>
+				<span>{" · "}</span>
+				<h1>{minutesRead}</h1>
+				<span>{" · "}</span>
+				<FormattedDate date={pubDate} />
+				{
+					updatedDate && (
+						<>
+							<span>{" · "}</span>
+							<h1>
+								Last updated on <FormattedDate date={updatedDate} />
+							</h1>
+						</>
+					)
+				}
+			</div>
+			<hr class="mb-10" />
+			<div class="text-base/6 font-sans prose prose-lg prose-zinc">
+				<slot />
+			</div>
+			<hr class="my-5" />
+			{matchedCoord && <CoordCard coord={matchedCoord} isHorizontal={true} />}
+		</div>
+	</div>
+</Layout>

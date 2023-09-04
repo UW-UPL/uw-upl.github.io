@@ -1,0 +1,34 @@
+---
+import type { MarkdownHeading } from 'astro'
+import type { AstroComponentFactory } from 'astro/dist/runtime/server'
+
+type Props = {
+    content: {
+        Content: AstroComponentFactory;
+        headings: MarkdownHeading[];
+        remarkPluginFrontmatter: Record<string, any>;
+    };
+    date: Date;
+    title: string;
+    location: string;
+    description?: string | undefined;
+};
+
+const d = Astro.props
+---
+<div class="bg-red-50 p-6 rounded-lg drop-shadow-xl text-neutral-800 font-sans my-10">
+    <h1 class="text-3xl font-bold">{d.title}</h1>
+    <h2 class="font-medium text-md my-2">
+        {d.date.toLocaleDateString("en-us", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+        })}{" "}
+        · {d.location}
+    </h2>
+    <div class="mt-6 prose prose-md w-auto">
+        <d.content.Content />
+    </div>
+</div>

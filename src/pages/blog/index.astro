@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import BlogPostCard from "../../components/BlogPostCard.astro";
+
+// get all blog posts, sort by publish date
+const posts = (await getCollection("blog")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const formatter = new Intl.DateTimeFormat("en-US", {
+	month: "long",
+	year: "numeric",
+});
+
+// as we build the lsit of posts, we need to track the month-year of each one so we don't duplicated month-year headers
+let previousMonthYear = "";
+---
+
+<Layout>
+	<h1 class="text-4xl font-semibold font-lato text-center pb-2">Blog</h1>
+	<p class="font-sans text-lg text-gray-600 font-light pb-14 text-center">
+		Various ramblings from coords and other friends. Learn something new
+		about technology, and maybe even yourself.
+	</p>
+	{
+		posts.map((post) => {
+			let monthYear = null;
+			const currMonthYear = formatter.format(post.data.pubDate);
+			if (currMonthYear !== previousMonthYear) {
+				monthYear = (
+					<h2 class="text-3xl text-gray-600 font-bold mt-6 mb-9 pl-1">
+						{currMonthYear}
+					</h2>
+				);
+				previousMonthYear = currMonthYear;
+			}
+
+			return (
+				<div class="mt-14">
+					{monthYear}
+					<BlogPostCard {...post} />
+				</div>
+			);
+		})
+	}
+</Layout>

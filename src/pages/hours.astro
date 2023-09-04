@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CoordHours from "../content/coord-hours";
+
+var rows: string[][] = [];
+for (let i = 0; i < CoordHours.length; i++) {
+	let tempArr = CoordHours[i].Coords;
+	tempArr = [CoordHours[i].Time].concat(tempArr);
+	rows.push(tempArr);
+}
+
+let curDate = new Date();
+
+let curCoordInfo = {
+	hasCoord: false,
+	Coord: "",
+	Time: "",
+};
+
+if (
+	curDate.getDay() != 0 &&
+	curDate.getDay() <= 5 &&
+	curDate.getHours() >= 10 &&
+	curDate.getHours() <= 17
+) {
+	curCoordInfo = {
+		hasCoord:
+			CoordHours[curDate.getHours() - 10].Coords[curDate.getDay() - 1] !== "",
+		Coord: CoordHours[curDate.getHours() - 10].Coords[curDate.getDay() - 1],
+		Time: CoordHours[curDate.getHours() - 10].Time,
+	};
+}
+
+const hasCoordColor = curCoordInfo.hasCoord ? "green-500" : "red-700";
+---
+
+<Layout>
+	<div class="w-5/6 text-lg mx-auto font-sans text-gray-600">
+		<p>
+			Anyone is welcome in the UPL room whenever a coord is present, and coords
+			commit to be present at certain office hours. All you need to do is come
+			in and say hi!
+		</p>
+		<h5 class={`pt-2 text-${hasCoordColor} font-medium text-center`}>
+			{
+				curCoordInfo.hasCoord
+					? `Current Coord: ${curCoordInfo.Coord} (${curCoordInfo.Time})`
+					: "No Coord currently scheduled. The UPL is not guaranteed to be open at this time."
+			}
+		</h5>
+	</div>
+	<div class="mt-8">
+		<table
+			class="w-full border-t-8 border-red-500 rounded-t-md border-spacing-0 border-separate overflow-x-scroll"
+		>
+			<thead class="bg-red-500 font-lato">
+				<tr class="">
+					{
+						[
+							"Time",
+							"Monday",
+							"Tuesday",
+							"Wednesday",
+							"Thursday",
+							"Friday",
+						].map((e: String) => (
+							<th class="text-white md:text-lg text-sm text-left md:px-4 md:py-3 py-2 px-1">
+								{e.toUpperCase()}
+							</th>
+						))
+					}
+				</tr>
+			</thead>
+			<tbody class="font-sans">
+				{
+					rows.map((row, i) => (
+						<tr>
+							{row.map((d) => {
+								const additionalStyles =
+									i % 2 == 0
+										? "bg-gray-200 border-b border-neutral-300"
+										: "bg-neutral-50";
+								return (
+									<td
+										class={
+											"text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-sm " +
+											additionalStyles
+										}
+									>
+										{d}
+									</td>
+								);
+							})}
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+</Layout>
