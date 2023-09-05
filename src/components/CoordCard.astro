@@ -41,18 +41,34 @@ const additionalImgStyles = isHorizontal
 	: "inset-0 overflow-hidden rounded-t-md w-full";
 
 const iconSizeStyle = isHorizontal ? "w-6" : "w-1/12";
----
 
+const hoverImageUrl = coord.data.hover_image ? `/profiles/${coord.data.hover_image}` : null;
+const originalImageUrl = coord.data.image ? `/profiles/${coord.data.image}` : null;
+---
 <div
 	class={"hover:-translate-y-1 hover:scale-110 duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-red-800/50 shadow-xl font-lato text-gray-700 h-fit block bg-red-50 rounded-md " +
 		additionalCardStyles}
 >
 	{
-		coordInfo.image && (
+		coordInfo.image && hoverImageUrl == null && (
 			<img
 				src={`/profiles/${coord.data.image}`}
 				alt={coordInfo.name}
 				class={"aspect-square object-cover " + additionalImgStyles}
+			/>
+		)
+	}
+	{
+		coordInfo.image && hoverImageUrl != null && (
+			<img
+				id="coordImage"
+				src={originalImageUrl}
+				onmouseover="this.src=this.getAttribute('data-hover-src')"
+				onmouseout="this.src=this.getAttribute('data-original-src')"
+				alt={coordInfo.name}
+				class={"aspect-square object-cover " + additionalImgStyles}
+				data-hover-src={hoverImageUrl}
+				data-original-src={originalImageUrl}
 			/>
 		)
 	}
