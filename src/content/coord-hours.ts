@@ -20,11 +20,11 @@ let CoordHours: CoordHour[] = [
   },
   {
     Time: "1 - 2 PM",
-    Coords: ["", "Sam", "", "Sam", ""],
+    Coords: ["", "Sam", "", "Sam", "Mihir"],
   },
   {
     Time: "2 - 3 PM",
-    Coords: ["", "", "Ben W", "Rudy", ""],
+    Coords: ["", "", "Ben W", "Rudy", "Mihir"],
   },
   {
     Time: "3 - 4 PM",
