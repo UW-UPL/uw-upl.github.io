@@ -1,11 +1,11 @@
 {
   "name": "Emily Yao",
   "isActive": true,
-  "grade": "Sophmore",
+  "grade": "Junior",
   "image": "david-teather.png",
-  "study": "CS",
-  "personalLink": "https://dteather.com/",
-  "github": "davidteather",
-  "linkedIn": "davidteather/",
-  "bio": "Interested in web scraping and content design."
+  "study": "CS/Math/Econ",
+  "personalLink": "https://emilyyao.me/",
+  "github": "heyitssqueak",
+  "linkedIn": "emilyyao04",
+  "bio": "If it ain't broke, I'll fix it 'til it is."
 }
