@@ -8,7 +8,7 @@ import { remarkReadingTime } from "./remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.upl.cs.wisc.edu",
+  site: "https://uw-upl.github.io",
   integrations: [mdx(), sitemap(), tailwind(), react()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
