@@ -42,6 +42,7 @@ const coordinators = defineCollection({
 			isActive: z.boolean(),
 			grade: z.string(),
 			image: z.string(),
+      hover_image: z.optional(z.string()),
 			study: z.optional(z.string()),
 			personalLink: z.optional(z.string()),
 			github: z.optional(z.string()),
