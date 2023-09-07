@@ -1,15 +1,5 @@
 declare module 'astro:content' {
 	interface Render {
-		'.mdx': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-
-declare module 'astro:content' {
-	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -193,13 +183,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"hatathon-2022/index.md": {
-	id: "hatathon-2022/index.md";
-  slug: "hatathon-2022";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "incorrect-reification/index.md": {
 	id: "incorrect-reification/index.md";
   slug: "incorrect-reification";
@@ -221,13 +204,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"swe-job-primer.mdx": {
-	id: "swe-job-primer.mdx";
+"swe-job-primer.md": {
+	id: "swe-job-primer.md";
   slug: "swe-job-primer";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".md"] };
 "test-post-please-ignore/index.md": {
 	id: "test-post-please-ignore/index.md";
   slug: "test-post-please-ignore";
@@ -237,34 +220,27 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "events": {
-"a-combinatorial-problem-reed-nelson.mdx": {
-	id: "a-combinatorial-problem-reed-nelson.mdx";
+"a-combinatorial-problem-reed-nelson.md": {
+	id: "a-combinatorial-problem-reed-nelson.md";
   slug: "a-combinatorial-problem-reed-nelson";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
-} & { render(): Render[".mdx"] };
-"cache-and-memory-friendly-programming-matt-wildman.mdx": {
-	id: "cache-and-memory-friendly-programming-matt-wildman.mdx";
+} & { render(): Render[".md"] };
+"cache-and-memory-friendly-programming-matt-wildman.md": {
+	id: "cache-and-memory-friendly-programming-matt-wildman.md";
   slug: "cache-and-memory-friendly-programming-matt-wildman";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
-} & { render(): Render[".mdx"] };
-"common-pitfalls-of-machine-learning-in-quantitative-trading-shrey-shah.mdx": {
-	id: "common-pitfalls-of-machine-learning-in-quantitative-trading-shrey-shah.mdx";
-  slug: "common-pitfalls-of-machine-learning-in-quantitative-trading-shrey-shah";
-  body: string;
-  collection: "events";
-  data: InferEntrySchema<"events">
-} & { render(): Render[".mdx"] };
-"madhacks-fall-2023.mdx": {
-	id: "madhacks-fall-2023.mdx";
+} & { render(): Render[".md"] };
+"madhacks-fall-2023.md": {
+	id: "madhacks-fall-2023.md";
   slug: "madhacks-fall-2023";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".md"] };
 };
 
 	};
