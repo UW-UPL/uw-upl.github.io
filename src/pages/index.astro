@@ -16,7 +16,7 @@ const QAStyles = {
 	answer: "font-sans",
 };
 
-const DiscordLink = "https://discord.gg/dmefFzm"
+const DiscordLink = "https://discord.gg/dmefFzm";
 ---
 
 <Layout useFull={true}>
@@ -26,15 +26,19 @@ const DiscordLink = "https://discord.gg/dmefFzm"
 				<h1 class="text-gray-700">The UPL is the place to</h1>
 				<h1 class="text-red-500">have fun.</h1>
 			</div>
-			<a
-				href={DiscordLink}
-				class="inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
-			>
-				<div class="w-2/12 mr-2">
-					<FontAwesomeIcon icon={faDiscord} />
-				</div>
-				<p class="flex-nowrap w-40">Join the Discord</p>
-			</a>
+			<div>
+				<a
+					href={DiscordLink}
+					class="inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
+				>
+					<div class="w-2/12 mr-2">
+						<FontAwesomeIcon icon={faDiscord} />
+					</div>
+					<p class="flex-nowrap w-40">Join the Discord</p>
+				</a>
+				<!-- <h3>Visit us at CS XXXX</h3>
+				<h6>The triangle-shaped room next to the CS Shelf</h6> -->
+			</div>
 		</div>
 	</div>
 	<div class="bg-gray-100">

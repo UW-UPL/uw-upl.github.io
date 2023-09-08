@@ -31,7 +31,7 @@ if (
 	};
 }
 
-const hasCoordColor = curCoordInfo.hasCoord ? "green-500" : "red-700";
+const hasCoordColor = curCoordInfo.hasCoord ? "text-green-500" : "text-red-700";
 ---
 
 <Layout>
@@ -41,7 +41,7 @@ const hasCoordColor = curCoordInfo.hasCoord ? "green-500" : "red-700";
 			commit to be present at certain office hours. All you need to do is come
 			in and say hi!
 		</p>
-		<h5 class={`pt-2 text-${hasCoordColor} font-medium text-center`}>
+		<h5 class={`pt-2 ${hasCoordColor} font-medium text-center`}>
 			{
 				curCoordInfo.hasCoord
 					? `Current Coord: ${curCoordInfo.Coord} (${curCoordInfo.Time})`
@@ -73,24 +73,13 @@ const hasCoordColor = curCoordInfo.hasCoord ? "green-500" : "red-700";
 			</thead>
 			<tbody class="font-sans">
 				{
-					rows.map((row, i) => (
-						<tr>
-							{row.map((d) => {
-								const additionalStyles =
-									i % 2 == 0
-										? "bg-gray-200 border-b border-neutral-300"
-										: "bg-neutral-50";
-								return (
-									<td
-										class={
-											"text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-sm " +
-											additionalStyles
-										}
-									>
-										{d}
-									</td>
-								);
-							})}
+					rows.map((row) => (
+						<tr class="even:bg-gray-200 even:border-b even:border-neutral-300 odd:bg-neutral-100">
+							{row.map((d) => (
+								<td class="text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-sm">
+									{d}
+								</td>
+							))}
 						</tr>
 					))
 				}

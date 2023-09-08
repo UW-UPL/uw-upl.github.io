@@ -9,7 +9,10 @@ module.exports = {
 					'0 20px 25px rgba(0, 0, 0, 0.1)',
 					'0 10px 10px rgba(0, 0, 0, 0.04)'
 				]
-			  }
+			},
+			colors: {
+				'off-white': '#fafafa',
+			},
 		},
 		fontFamily: {
 			'sans': ['montserrat', 'sans-serif'],
