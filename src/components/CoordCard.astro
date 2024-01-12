@@ -47,12 +47,25 @@ const iconSizeStyle = isHorizontal ? "w-6" : "w-1/12";
 // import images
 const images = import.meta.glob("../assets/**");
 
-const hoverImageUrl = coord.data.hover_image ? `../assets/profiles/${coord.data.hover_image}` : null;
-const originalImageUrl = coord.data.image ? `../assets/profiles/${coord.data.image}` : null;
+let formattedHoverImageURL: string | null = null;
+if (coord.data.hover_image) {
+	const hoverImageImport = await images[`../assets/profiles/${coord.data.hover_image}`]();
+	const hoverFormattedImage = await getImage({
+		src: hoverImageImport.default,
+		format: "webp"
+	})
+	formattedHoverImageURL = hoverFormattedImage.src
+}
 
-const hoverImageImport = coord.data.hover_image ? await images[hoverImageUrl]() : null;
-const originalImageImport = coord.data.image ? await images[originalImageUrl]() : null;
-
+let formattedOriginalImageURL: string | null = null;
+if (coord.data.image) {
+	const originalImageImport = await images[`../assets/profiles/${coord.data.image}`]();
+	const originalFormattedImage = await getImage({
+		src: originalImageImport.default,
+		format: "webp"
+	})
+	formattedOriginalImageURL = originalFormattedImage.src
+}
 
 ---
 <div
@@ -60,25 +73,25 @@ const originalImageImport = coord.data.image ? await images[originalImageUrl]() 
 		additionalCardStyles}
 >
 	{
-		coordInfo.image && hoverImageImport == null && (
+		coordInfo.image && formattedHoverImageURL == null && (
 			<img
-				src={originalImageImport.default.src}
+				src={formattedOriginalImageURL}
 				alt={coordInfo.name}
 				class={"aspect-square object-cover " + additionalImgStyles}
 			/>
 		)
 	}
 	{
-		coordInfo.image && hoverImageImport != null && (
+		coordInfo.image && formattedHoverImageURL != null && (
 			<img
 				id="coordImage"
-				src={originalImageImport.default.src}
+				src={formattedOriginalImageURL}
 				onmouseover="this.src=this.getAttribute('data-hover-src')"
 				onmouseout="this.src=this.getAttribute('data-original-src')"
 				alt={coordInfo.name}
 				class={"aspect-square object-cover " + additionalImgStyles}
-				data-hover-src={hoverImageImport.default.src}
-				data-original-src={originalImageImport.default.src}
+				data-hover-src={formattedHoverImageURL}
+				data-original-src={formattedOriginalImageURL}
 			/>
 		)
 	}
