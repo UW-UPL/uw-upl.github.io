@@ -33,5 +33,5 @@ const pastEvents = events.filter((d) => d.date <= curDate);
 		futureEvents.length === 0 && <p class="ml-2 mb-4 text-xl font-bold">No upcoming events</p>
 	}
 	<h1 class="ml-2 mb-4 text-6xl font-bold">Past Events</h1>
-	{pastEvents.map((d) => <EventCard {...d} />)}
+	{pastEvents.reverse().map((d) => <EventCard {...d} />)}
 </Layout>

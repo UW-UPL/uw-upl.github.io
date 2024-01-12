@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import type { CollectionEntry } from "astro:content";
+import { Image, getImage } from "astro:assets"
 
 let { coord, isHorizontal } = Astro.props;
 let coordInfo = (coord as CollectionEntry<"coordinators">).data;
@@ -42,33 +43,42 @@ const additionalImgStyles = isHorizontal
 
 const iconSizeStyle = isHorizontal ? "w-6" : "w-1/12";
 
-const hoverImageUrl = coord.data.hover_image ? `/profiles/${coord.data.hover_image}` : null;
-const originalImageUrl = coord.data.image ? `/profiles/${coord.data.image}` : null;
+
+// import images
+const images = import.meta.glob("../assets/**");
+
+const hoverImageUrl = coord.data.hover_image ? `../assets/profiles/${coord.data.hover_image}` : null;
+const originalImageUrl = coord.data.image ? `../assets/profiles/${coord.data.image}` : null;
+
+const hoverImageImport = coord.data.hover_image ? await images[hoverImageUrl]() : null;
+const originalImageImport = coord.data.image ? await images[originalImageUrl]() : null;
+
+
 ---
 <div
 	class={"hover:-translate-y-1 hover:scale-110 duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-red-800/50 shadow-xl font-lato text-gray-700 h-fit block bg-red-50 rounded-md " +
 		additionalCardStyles}
 >
 	{
-		coordInfo.image && hoverImageUrl == null && (
+		coordInfo.image && hoverImageImport == null && (
 			<img
-				src={`/profiles/${coord.data.image}`}
+				src={originalImageImport.default.src}
 				alt={coordInfo.name}
 				class={"aspect-square object-cover " + additionalImgStyles}
 			/>
 		)
 	}
 	{
-		coordInfo.image && hoverImageUrl != null && (
+		coordInfo.image && hoverImageImport != null && (
 			<img
 				id="coordImage"
-				src={originalImageUrl}
+				src={originalImageImport.default.src}
 				onmouseover="this.src=this.getAttribute('data-hover-src')"
 				onmouseout="this.src=this.getAttribute('data-original-src')"
 				alt={coordInfo.name}
 				class={"aspect-square object-cover " + additionalImgStyles}
-				data-hover-src={hoverImageUrl}
-				data-original-src={originalImageUrl}
+				data-hover-src={hoverImageImport.default.src}
+				data-original-src={originalImageImport.default.src}
 			/>
 		)
 	}

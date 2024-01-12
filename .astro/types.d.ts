@@ -12,7 +12,12 @@ declare module 'astro:content' {
 	export { z } from 'astro/zod';
 
 	type Flatten<T> = T extends { [K: string]: infer U } ? U : never;
-	export type CollectionEntry<C extends keyof AnyEntryMap> = Flatten<AnyEntryMap[C]>;
+
+	export type CollectionKey = keyof AnyEntryMap;
+	export type CollectionEntry<C extends CollectionKey> = Flatten<AnyEntryMap[C]>;
+
+	export type ContentCollectionKey = keyof ContentEntryMap;
+	export type DataCollectionKey = keyof DataEntryMap;
 
 	// This needs to be in sync with ImageMetadata
 	export type ImageFunction = () => import('astro/zod').ZodObject<{
@@ -28,6 +33,7 @@ declare module 'astro:content' {
 				import('astro/zod').ZodLiteral<'webp'>,
 				import('astro/zod').ZodLiteral<'gif'>,
 				import('astro/zod').ZodLiteral<'svg'>,
+				import('astro/zod').ZodLiteral<'avif'>,
 			]
 		>;
 	}>;
@@ -176,9 +182,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"artificial-consciousness-and-phenomenology/index.md": {
+	id: "artificial-consciousness-and-phenomenology/index.md";
+  slug: "artificial-consciousness-and-phenomenology";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "exploiting-github-actions/index.md": {
 	id: "exploiting-github-actions/index.md";
   slug: "exploiting-github-actions";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"game-design-and-education/index.md": {
+	id: "game-design-and-education/index.md";
+  slug: "game-design-and-education";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -197,13 +217,6 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"markdown-style-guide.md": {
-	id: "markdown-style-guide.md";
-  slug: "markdown-style-guide";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "swe-job-primer.md": {
 	id: "swe-job-primer.md";
   slug: "swe-job-primer";
@@ -211,9 +224,16 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"test-post-please-ignore/index.md": {
-	id: "test-post-please-ignore/index.md";
-  slug: "test-post-please-ignore";
+"using-gpt3-to-write-a-blog-post/index.md": {
+	id: "using-gpt3-to-write-a-blog-post/index.md";
+  slug: "using-gpt3-to-write-a-blog-post";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"why-i-use-firefox/index.md": {
+	id: "why-i-use-firefox/index.md";
+  slug: "why-i-use-firefox";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
