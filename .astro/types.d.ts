@@ -277,6 +277,11 @@ declare module 'astro:content' {
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
+"chris-gottwaldt": {
+	id: "chris-gottwaldt";
+  collection: "coordinators";
+  data: InferEntrySchema<"coordinators">
+};
 "david-teather": {
 	id: "david-teather";
   collection: "coordinators";
