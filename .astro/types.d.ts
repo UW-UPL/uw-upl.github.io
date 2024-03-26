@@ -263,6 +263,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "resources": {
+".github/PULL_REQUEST_TEMPLATE/pull_request_template.md": {
+	id: ".github/PULL_REQUEST_TEMPLATE/pull_request_template.md";
+  slug: "github/pull_request_template/pull_request_template";
+  body: string;
+  collection: "resources";
+  data: any
+} & { render(): Render[".md"] };
 "README.md": {
 	id: "README.md";
   slug: "readme";
