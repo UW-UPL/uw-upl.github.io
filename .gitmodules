@@ -1,0 +1,3 @@
+[submodule "src/content/resources"]
+	path = src/content/resources
+	url = https://github.com/UW-UPL/resources.git
