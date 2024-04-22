@@ -7,6 +7,9 @@ import { remarkReadingTime } from "./remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.upl.cs.wisc.edu/",
+  redirects: {
+      "/hours.html": "/hours",
+  },
   integrations: [
     sitemap(),
     tailwind(),
