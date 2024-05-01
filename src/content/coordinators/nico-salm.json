@@ -1,9 +1,9 @@
 {
-    "grade": "Junior",
     "name": "Nico Salm",
     "isActive": true,
+    "grade": "Junior",
     "image": "nico-salm.png",
     "study": "Computer Science & Data Science",
     "github": "nicosalm",
-    "linkedIn": "nicosalm",
+    "linkedIn": "nicosalm"
 }

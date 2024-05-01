@@ -262,15 +262,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
 };
-"resources": {
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "resources";
-  data: any
-} & { render(): Render[".md"] };
-};
 
 	};
 
@@ -278,11 +269,6 @@ declare module 'astro:content' {
 		"coordinators": {
 "ben-lash": {
 	id: "ben-lash";
-  collection: "coordinators";
-  data: InferEntrySchema<"coordinators">
-};
-"ben-wallen": {
-	id: "ben-wallen";
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
@@ -331,6 +317,11 @@ declare module 'astro:content' {
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
+"nico-salm": {
+	id: "nico-salm";
+  collection: "coordinators";
+  data: InferEntrySchema<"coordinators">
+};
 "pranav-dronavalli": {
 	id: "pranav-dronavalli";
   collection: "coordinators";
@@ -346,6 +337,8 @@ declare module 'astro:content' {
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
+};
+"resources": {
 };
 
 	};
