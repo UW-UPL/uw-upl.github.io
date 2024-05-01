@@ -3,7 +3,10 @@
     "isActive": true,
     "grade": "Junior",
     "image": "nico-salm.png",
-    "study": "Computer Science & Data Science",
+    "hover_image": "nico-salm-epic.png",
+    "study": "Computer Science",
     "github": "nicosalm",
-    "linkedIn": "nicosalm"
+    "personalLink": "https://nicosalm.io",
+    "linkedIn": "nicosalm",
+    "bio": ""
 }
