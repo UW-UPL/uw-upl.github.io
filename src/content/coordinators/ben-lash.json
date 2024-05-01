@@ -1,6 +1,6 @@
 {
     "name": "Ben Lash",
-    "isActive": true,
+    "isActive": false,
     "grade": "Senior",
     "image": "ben-lash.png",
     "study": "Computer Science",
