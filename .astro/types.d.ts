@@ -262,15 +262,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
 };
-"resources": {
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "resources";
-  data: any
-} & { render(): Render[".md"] };
-};
 
 	};
 
@@ -356,6 +347,8 @@ declare module 'astro:content' {
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
+};
+"resources": {
 };
 
 	};
