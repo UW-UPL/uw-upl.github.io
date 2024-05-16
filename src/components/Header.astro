@@ -1,6 +1,17 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import { getImage } from "astro:assets"
+
+// import images
+const logo = import.meta.glob("../assets/uplLogo.svg");
+
+const loadedLogo = await logo["../assets/uplLogo.svg"]();
+
+const logoImage = await getImage({
+	src: loadedLogo.default,
+	format: "webp",
+});
 
 const ROUTES: {
 	path: string;
@@ -56,14 +67,14 @@ const ROUTES: {
 			>
 				{
 					ROUTES.map((e) => (
-						<li>
+						<li class="text-red-500 font-bold">
 							<HeaderLink href={e.path}>{e.name}</HeaderLink>
 						</li>
 					))
 				}
 			</ul>
 		</div>
-		<a class="btn btn-ghost text-red-500 lg:text-2xl text-xl font-semibold">Undergraduate Projects Lab</a>
+		<a class="btn btn-ghost text-red-500 lg:text-3xl text-2xl font-semibold">Undergraduate Projects Lab</a>
 	</div>
 
 	<div class="navbar-center hidden lg:flex">
