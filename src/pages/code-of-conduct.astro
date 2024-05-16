@@ -1,24 +1,17 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+
+const coc = await getCollection("code-of-conduct");
+const coc_rendered = await coc.filter(d => d.id == "code-of-conduct.md")[0].render();
 ---
 
 <Layout>
-    <h1 class="ml-2 mb-4 text-6xl font-bold">Code of Conduct</h1>
-    <h2 class="ml-2 mb-2 text-4xl font-semibold">Expected Behavior</h2>
-    <ul class="ml-4 mb-4 text-xl list-disc">
-        <li class="mb-2">Be Respectful - Pretty Obvious</li>
-        <li class="mb-2">Communicate with kindness and empathy.</li>
-        <li class="mb-2">Don't do anything that you wouldn't do on campus or any other school space.</li>
-    </ul>
-
-    <h2 class="ml-2 mb-2 text-4xl font-semibold">Unacceptable Behavior</h2>
-    <ul class="ml-4 mb-4 text-xl list-disc">
-        <li class="mb-2">Refrain from any form of harassment or discrimination.</li>
-        <li class="mb-2">Borrowing items from the UPL without a coordinator's permission</li>
-    </ul>
-
-    <ul class="ml-4 mb-4 text-xl list-disc">
-        <li class="mb-2">First few offenses will receive verbal warnings, repeat offenders can be removed as members at the discretion of the coordinators</li>
-        <li class="mb-2">Report any inappropriate behavior to the moderators at upl@cs.wisc.edu</li>
-    </ul>
+	<div class="inline w-full overflow-hidden text-slate-800">
+		<div class="mx-auto w-3/4">
+            <div class="text-base/6 font-sans prose prose-lg prose-zinc">
+                <coc_rendered.Content>
+            </div>
+        </div>
+    </div>
 </Layout>
