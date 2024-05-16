@@ -7,16 +7,22 @@ const TypingOutput = () => {
       sequence={[
         'have fun.',
         1000,
-        'do homework.',
+        'work on homework.',
         1000,
-        'do Leetcode.',
+        'grind Leetcode.',
         1000,
         'meet people.',
         1000,
         'learn something new.',
         1000,
-        'use Vim.',
-        5000
+        'create something amazing.',
+        1000,
+        'explore.',
+        1000,
+        'work on projects.',
+        1000,
+        'be.',
+        3000
       ]}
       wrapper="span"
       speed={40}

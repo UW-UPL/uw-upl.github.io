@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import type { CollectionEntry } from "astro:content";
-import { Image, getImage } from "astro:assets";
+import { getImage } from "astro:assets";
 
 let { coord, isHorizontal } = Astro.props;
 let coordInfo = (coord as CollectionEntry<"coordinators">).data;
@@ -34,9 +34,6 @@ const coordLinks = [
 ].filter((e) => e.givenLink); // filter out empty links/not given links
 
 // styling depending on whether the card is being displayed horizontally or vertically (default)
-// const additionalCardStyles = isHorizontal
-// 	? "flex flex-row min-h-56 h-full"
-// 	: "pb-4";
 const additionalImgStyles = isHorizontal
 	? "max-h-60 rounded-l-md h-full flex-auto grow-0"
 	: "inset-0 overflow-hidden rounded-t-md w-full";
@@ -51,8 +48,7 @@ if (coord.data.hover_image) {
 	const hoverImageImport =
 		await images[`../assets/profiles/${coord.data.hover_image}`]();
 	const hoverFormattedImage = await getImage({
-		src: hoverImageImport.default,
-		format: "webp",
+		src: hoverImageImport.default
 	});
 	formattedHoverImageURL = hoverFormattedImage.src;
 }
@@ -62,8 +58,7 @@ if (coord.data.image) {
 	const originalImageImport =
 		await images[`../assets/profiles/${coord.data.image}`]();
 	const originalFormattedImage = await getImage({
-		src: originalImageImport.default,
-		format: "webp",
+		src: originalImageImport.default
 	});
 	formattedOriginalImageURL = originalFormattedImage.src;
 }
