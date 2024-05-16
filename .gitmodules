@@ -1,3 +1,6 @@
+[submodule "src/content/code-of-conduct"]
+	path = src/content/code-of-conduct
+	url = https://gist.github.com/nicosalm/289c14c5a6709872803d50178763f9ac
 [submodule "src/content/resources"]
 	path = src/content/resources
-	url = https://github.com/UW-UPL/resources.git
+	url = https://github.com/UW-UPL/resources
