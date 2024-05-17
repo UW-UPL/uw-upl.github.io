@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const TypingOutput = () => {

@@ -6,7 +6,7 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import TypingAnimation from "../components/TypingAnimation.tsx";
 
 const DescriptionStyle = {
-	box: "bg-gray-100 flex flex-col px-2 sm:py-10 space-y-2 basis-0 shrink-0 grow",
+	box: "flex flex-col px-2 sm:py-10 space-y-2 basis-0 shrink-0 grow",
 	title: "font-bold text-red-500 lg:text-3xl text-xl",
 	description: "text-gray-700 lg:text-md text-sm",
 };
@@ -30,19 +30,19 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 			<div>
 				<a
 					href={DiscordLink}
-					class="inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
+					class="md:text-md text-sm inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
 				>
 					<div class="w-2/12 mr-2">
 						<FontAwesomeIcon icon={faDiscord} />
 					</div>
-					<p class="flex-nowrap w-40">Join the Discord</p>
+					<p class="flex-nowrap md:w-40 w-36">Join the Discord</p>
 				</a>
 			</div>
 		</div>
 	</div>
-	<div class="bg-gray-100">
+	<div class="lg:py-10">
 		<div
-			class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex flex-row flex-wrap"
+			class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex md:flex-row flex-col flex-wrap"
 		>
 			<div class={DescriptionStyle.box}>
 				<h1 class={DescriptionStyle.title}>Who we are...</h1>
@@ -55,6 +55,7 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 					We'd love to meet you.
 				</p>
 			</div>
+			<div class="divider lg:divider-horizontal"/>
 			<div class={DescriptionStyle.box}>
 				<h1 class={DescriptionStyle.title}>Who we are NOT...</h1>
 				<p class={DescriptionStyle.description}>
@@ -64,6 +65,7 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 					what UPL'ers are up to.
 				</p>
 			</div>
+			<div class="divider lg:divider-horizontal"/> 
 			<div class={DescriptionStyle.box}>
 				<h1 class={DescriptionStyle.title}>Where are we...</h1>
 				<p class={DescriptionStyle.description}>

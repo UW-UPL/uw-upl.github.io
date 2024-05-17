@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CoordHours from "../content/_coord-hours";
+import moment from "moment-timezone";
 
 var rows: string[][] = [];
 for (let i = 0; i < CoordHours.length; i++) {
@@ -9,7 +10,9 @@ for (let i = 0; i < CoordHours.length; i++) {
 	rows.push(tempArr);
 }
 
-let curDate = new Date();
+let currentMoment = moment().tz("America/Chicago");
+let curDay = currentMoment.weekday();
+let curHour = currentMoment.hour();
 
 let curCoordInfo = {
 	hasCoord: false,
@@ -17,17 +20,11 @@ let curCoordInfo = {
 	Time: "",
 };
 
-if (
-	curDate.getDay() != 0 &&
-	curDate.getDay() <= 5 &&
-	curDate.getHours() >= 10 &&
-	curDate.getHours() <= 17
-) {
+if (curDay != 0 && curDay <= 5 && curHour >= 10 && curHour <= 17) {
 	curCoordInfo = {
-		hasCoord:
-			CoordHours[curDate.getHours() - 10].Coords[curDate.getDay() - 1] !== "",
-		Coord: CoordHours[curDate.getHours() - 10].Coords[curDate.getDay() - 1],
-		Time: CoordHours[curDate.getHours() - 10].Time,
+		hasCoord: CoordHours[curHour - 10].Coords[curDay - 1] !== "",
+		Coord: CoordHours[curHour - 10].Coords[curDay - 1],
+		Time: CoordHours[curHour - 10].Time,
 	};
 }
 
@@ -35,13 +32,14 @@ const hasCoordColor = curCoordInfo.hasCoord ? "text-green-500" : "text-red-700";
 ---
 
 <Layout>
-	<div class="w-5/6 text-lg mx-auto font-sans text-gray-600">
+	<div class="w-5/6 md:text-lg mx-auto font-sans text-gray-600">
 		<p>
 			Anyone is welcome in the UPL when a Coord is present, and Coords
-			commit to be present at certain office hours. Come
-			in and say hi!
+			commit to be present at certain office hours. Come in and say hi!
 		</p>
-		<h5 class={`pt-2 ${hasCoordColor} font-medium text-center`}>
+		<h5
+			class={`pt-2 ${hasCoordColor} font-medium text-center md:text-md text-sm`}
+		>
 			{
 				curCoordInfo.hasCoord
 					? `Current Coord: ${curCoordInfo.Coord} (${curCoordInfo.Time})`
@@ -64,7 +62,7 @@ const hasCoordColor = curCoordInfo.hasCoord ? "text-green-500" : "text-red-700";
 							"Thursday",
 							"Friday",
 						].map((e: String) => (
-							<th class="text-white md:text-lg text-sm text-left md:px-4 md:py-3 py-2 px-1">
+							<th class="text-white md:text-lg text-xs text-left md:px-4 md:py-3 py-2 px-1">
 								{e.toUpperCase()}
 							</th>
 						))
@@ -76,7 +74,7 @@ const hasCoordColor = curCoordInfo.hasCoord ? "text-green-500" : "text-red-700";
 					rows.map((row) => (
 						<tr class="even:bg-gray-200 even:border-b even:border-neutral-300 odd:bg-neutral-100">
 							{row.map((d) => (
-								<td class="text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-sm">
+								<td class="text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-xs">
 									{d}
 								</td>
 							))}

@@ -236,6 +236,16 @@ declare module 'astro:content' {
 
 	type DataEntryMap = {
 		"coordinators": {
+"ahmet-ahunbay": {
+	id: "ahmet-ahunbay";
+  collection: "coordinators";
+  data: InferEntrySchema<"coordinators">
+};
+"anna-sun": {
+	id: "anna-sun";
+  collection: "coordinators";
+  data: InferEntrySchema<"coordinators">
+};
 "ben-lash": {
 	id: "ben-lash";
   collection: "coordinators";
@@ -303,6 +313,11 @@ declare module 'astro:content' {
 };
 "pranav-dronavalli": {
 	id: "pranav-dronavalli";
+  collection: "coordinators";
+  data: InferEntrySchema<"coordinators">
+};
+"rahul-rao": {
+	id: "rahul-rao";
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };

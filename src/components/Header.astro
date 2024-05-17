@@ -1,17 +1,5 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
-import { getImage } from "astro:assets"
-
-// import images
-const logo = import.meta.glob("../assets/uplLogo.svg");
-
-const loadedLogo = await logo["../assets/uplLogo.svg"]();
-
-const logoImage = await getImage({
-	src: loadedLogo.default,
-	format: "webp",
-});
 
 const ROUTES: {
 	path: string;
@@ -48,7 +36,7 @@ const ROUTES: {
 ];
 ---
 
-<div class="navbar bg-base-100">
+<div class="navbar bg-gray-50">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">

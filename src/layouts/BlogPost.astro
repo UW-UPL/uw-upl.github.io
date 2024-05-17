@@ -4,10 +4,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Layout from "./Layout.astro";
 import CoordCard from "../components/CoordCard.astro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faChevronLeft,
-	faCircleChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 type Props = CollectionEntry<"blog">["data"] & { minutesRead: string };
 
@@ -32,7 +29,7 @@ const matchedCoord = coordsBio.find((d) => d.data.name === author);
 		</a>
 
 		<div class="mx-auto w-3/4">
-			<h1 class="text-6xl font-black">{title}</h1>
+			<h1 class="text-4xl font-black">{title}</h1>
 			<div
 				class="flex flex-row my-5 font-sans font-semibold text-slate-500 text-xl space-x-1"
 			>
@@ -65,8 +62,9 @@ const matchedCoord = coordsBio.find((d) => d.data.name === author);
 			{
 				matchedCoord && (
 					<>
-						
-						<h1 class="text-4xl text-center font-bold m-8">Meet The Author</h1>
+						<h1 class="text-4xl text-center font-bold m-8">
+							Meet The Author
+						</h1>
 						<CoordCard coord={matchedCoord} isHorizontal />
 					</>
 				)
