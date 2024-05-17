@@ -1,6 +1,5 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
 
 const ROUTES: {
 	path: string;
@@ -37,23 +36,48 @@ const ROUTES: {
 ];
 ---
 
-<div class="md:w-9/12 mx-auto text-red-500">
-	<nav class="md:pt-11 md:pb-16 p-2 flex md:flex-row flex-wrap justify-left">
-		<h2 class="text-red-500 text-4xl font-semibold">
-			<a href="/">Undergraduate Projects Lab</a>
-		</h2>
-		<div class="md:flex-1" />
-		<div class="flex flex-row items-end md:space-x-10 space-x-4">
+<div class="navbar bg-gray-50">
+	<div class="navbar-start">
+		<div class="dropdown">
+			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-5 w-5"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					><path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M4 6h16M4 12h8m-8 6h16"></path></svg
+				>
+			</div>
+			<ul
+				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+			>
+				{
+					ROUTES.map((e) => (
+						<li class="text-red-500 font-bold">
+							<HeaderLink href={e.path}>{e.name}</HeaderLink>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+		<a class="btn btn-ghost text-red-500 lg:text-5xl text-xl font-semibold" href="/">UPL</a>
+	</div>
+
+	<div class="navbar-center hidden lg:flex">
+		<ul class="menu menu-horizontal px-1">
 			{
 				ROUTES.map((e) => (
-					<HeaderLink
-						class="text-red-500 font-bold"
-						href={e.path}
-					>
-						{e.name}
-					</HeaderLink>
+					<li class="text-red-500 font-bold">
+						<HeaderLink href={e.path}>{e.name}</HeaderLink>
+					</li>
 				))
 			}
-		</div>
-	</nav>
+		</ul>
+	</div>
+	<div class="navbar-end"></div>
 </div>

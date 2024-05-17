@@ -3,65 +3,76 @@ import Layout from "../layouts/Layout.astro";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import TypingAnimation from "../components/TypingAnimation.tsx";
 
 const DescriptionStyle = {
-	box: "bg-gray-100 flex flex-col md:px-16 px-2 sm:py-10 space-y-2 grow basis-0",
-	title: "font-bold text-red-500 text-4xl",
-	description: "text-gray-700",
+	box: "flex flex-col px-2 sm:py-10 space-y-2 basis-0 shrink-0 grow",
+	title: "font-bold text-red-500 lg:text-3xl text-xl",
+	description: "text-gray-700 lg:text-md text-sm",
 };
 
 const QAStyles = {
 	box: "border border-slate-100 shadow-xl rounded-2xl my-6 py-8 px-16",
-	header: "mb-2 text-left font-bold text-4xl",
+	header: "mb-2 text-left font-bold lg:text-3xl text-2xl",
 	answer: "font-sans",
 };
 
 const DiscordLink = "https://discord.gg/dmefFzm";
 ---
 
-<Layout useFull={true}>
+<Layout>
 	<div class="md:w-3/4 mx-auto space-x-96">
 		<div class="flex flex-col font-bold content-start space-y-6">
-			<div class="md:pt-24 text-7xl">
+			<div class="md:pt-24 md:text-6xl text-2xl">
 				<h1 class="text-gray-700">The UPL is the place to</h1>
-				<h1 class="text-red-500">have fun.</h1>
+				<TypingAnimation client:only="react" />
 			</div>
 			<div>
 				<a
 					href={DiscordLink}
-					class="inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
+					class="md:text-md text-sm inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
 				>
 					<div class="w-2/12 mr-2">
 						<FontAwesomeIcon icon={faDiscord} />
 					</div>
-					<p class="flex-nowrap w-40">Join the Discord</p>
+					<p class="flex-nowrap md:w-40 w-36">Join the Discord</p>
 				</a>
-				<div class="md:pt-5 text-2xl">
-					<h3>Visit us at CS 1341</h3>
-					<h6>The triangle-shaped room next to the CS Shelf</h6>
-				</div>
 			</div>
 		</div>
 	</div>
-	<div class="bg-gray-100">
-		<div class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex flex-row">
+	<div class="lg:py-10">
+		<div
+			class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex md:flex-row flex-col flex-wrap"
+		>
 			<div class={DescriptionStyle.box}>
 				<h1 class={DescriptionStyle.title}>Who we are...</h1>
 				<p class={DescriptionStyle.description}>
-					The UPL is a social club. Stop by any time the room is open! Feel free
-					to stop by between classes or as a place to eat your lunch. The UPL
-					Coordinators are happy to answer questions, help you with homework,
-					help you start a project, and more! Or, don't come in with any goal at
-					all! We'd love to meet you.
+					The UPL is a social club that goes back 40 years. Stop by
+					whenever the room is open! Feel free to stop by between
+					classes or as a place to eat your lunch. Coordinators are
+					happy to answer questions, help with homework, help start a
+					project, and more! Or, don't come in with any goal at all!
+					We'd love to meet you.
 				</p>
 			</div>
-			<div class="bg-gray-700 border-l my-8"></div>
+			<div class="divider lg:divider-horizontal"/>
 			<div class={DescriptionStyle.box}>
 				<h1 class={DescriptionStyle.title}>Who we are NOT...</h1>
 				<p class={DescriptionStyle.description}>
-					The UPL itself does not do any projects. Rather, people within the lab
-					do projects, and use the space as a way to connect with other UW
-					students. Check out our blog to see what UPL'ers are up to.
+					The UPL itself does not do any projects. Rather, people
+					within the lab do projects, and use the space as a way to
+					connect with other UW students. Check out our blog to see
+					what UPL'ers are up to.
+				</p>
+			</div>
+			<div class="divider lg:divider-horizontal"/> 
+			<div class={DescriptionStyle.box}>
+				<h1 class={DescriptionStyle.title}>Where are we...</h1>
+				<p class={DescriptionStyle.description}>
+					We are in <strong>room 1341</strong>, the triangle shaped
+					room on the <strong>first floor of the CS building</strong>.
+					We will also have a dedicated space in Morgridge Hall in
+					Fall 2025🎉.
 				</p>
 			</div>
 		</div>
@@ -74,8 +85,8 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 			<div class={QAStyles.box}>
 				<h1 class={QAStyles.header}>Do I need to be a CS major?</h1>
 				<p class={QAStyles.answer}>
-					No! While we're a CS focused organization, you don't need to be a CS
-					major!
+					No! While we're a CS focused organization, you don't need to
+					be a CS major!
 				</p>
 			</div>
 			<div class={QAStyles.box}>
@@ -87,7 +98,8 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 					<li>Server infrastructure for project use.</li>
 					<li>Books to check out.</li>
 					<li>
-						And of course, each other, to talk to about anything CS (and more!).
+						And of course, each other, to talk to about anything CS
+						(and more!).
 					</li>
 				</ul>
 			</div>
@@ -96,17 +108,19 @@ const DiscordLink = "https://discord.gg/dmefFzm";
 					Do I need to be an undergraduate student?
 				</h1>
 				<p class={QAStyles.answer}>
-					No, you do not. Anyone who is a registered student with the University
-					is welcome to use the machines and resources of the lab. We do have a
-					few graduate students that frequent the lab as well.
+					No! All UW students are welcome to use the machines and
+					resources of the lab. A few graduate students frequent the
+					lab as well.
 				</p>
 			</div>
 			<div class={QAStyles.box}>
-				<h1 class={QAStyles.header}>Can we still use the servers remotely?</h1>
+				<h1 class={QAStyles.header}>
+					Can we still use the servers remotely?
+				</h1>
 				<p class={QAStyles.answer}>
-					Yes! It is possible for us to remotely access our servers. If that
-					interests you, talk to us! Server infrastructure is an ongoing
-					project.
+					Yes! It is possible for us to remotely access our servers.
+					If that interests you, talk to us! Server infrastructure is
+					an ongoing project.
 				</p>
 			</div>
 		</div>
