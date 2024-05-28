@@ -4,6 +4,10 @@ import CoordCard from "../components/CoordCard.astro";
 import { getCollection } from "astro:content";
 
 const CoordsCollection = await getCollection("coordinators");
+
+const coc = await getCollection("code-of-conduct");
+const coc_rendered = await coc.filter(d => d.id == "code-of-conduct.md")[0].render();
+
 ---
 
 <Layout>
@@ -54,5 +58,13 @@ const CoordsCollection = await getCollection("coordinators");
 				}}
 			/>
 		</div>
-	</div>
+    </div>
+	<div class="inline w-full overflow-hidden text-slate-800">
+		<div class="mx-auto w-3/4">
+            <div class="text-base/6 font-sans prose prose-lg prose-zinc">
+                <coc_rendered.Content>
+            </div>
+        </div>
+    </div>
+        
 </Layout>
