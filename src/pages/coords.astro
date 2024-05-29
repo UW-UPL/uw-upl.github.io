@@ -4,55 +4,67 @@ import CoordCard from "../components/CoordCard.astro";
 import { getCollection } from "astro:content";
 
 const CoordsCollection = await getCollection("coordinators");
+
+const coc = await getCollection("docs");
+const coc_rendered = await coc.filter(d => d.id == "Code-of-Conduct")[0].render();
+
 ---
 
 <Layout>
-	<div class="text-gray-700 font-sans">
-		<h1 class="text-4xl font-semibold font-lato text-center pb-2">
-			Meet the Coords
-		</h1>
-		<p class="text-lg text-gray-600 font-light pb-14 text-center">
-			These are the people that run the UPL day-to-day. If you have any
-			questions, reach out to upl(at)cs.wisc.edu
-		</p>
-		<div
-			class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-8 gap-y-16"
-		>
-			{
-				CoordsCollection.filter((d) => d.data.isActive).map((coord) => (
-					<CoordCard {coord} />
-				))
-			}
-		</div>
-		<div class="font-sans mt-8">
-			<h1 class="text-4xl font-semibold font-lato text-center pb-2">
-				Faculty Advisor
-			</h1>
-			<p class="text-lg text-gray-600 font-light pb-14 text-center">
-				Our faculty advisor is Professor Bart Miller, who can be contacted at
-				bart (at) cs.wisc.edu
-			</p>
-		</div>
-		<div class="sm:mb-8 mx-auto sm:w-1/4 w-1/2">
-			<CoordCard
-				{...{
-					coord: {
-						data: {
-							name: "Bart Miller",
-							study: "Faculty Advisor",
-							image: "bart-miller.webp",
-							personalLink: "https://www.cs.wisc.edu/~bart/",
-							links: [
-								{
-									name: "Test",
-									url: "https://www.google.com",
-								},
-							],
-							bio: "Barton Miller is a Vilas Distinguished Achievement Professor and the Amar and Belinder Sohi Professor of Computer Sciences at the University of Wisconsin, Madison. He received his B.A. degree from the University of California, San Diego in 1977, and M.S. and Ph.D. degrees in Computer Science from the University of California, Berkeley in 1980 and 1984. Professor Miller is a Fellow of the ACM."
-						},
-					},
-				}}
-			/>
-		</div>
-	</div>
+    <div class="text-gray-700 font-sans">
+        <h1 class="text-4xl font-semibold font-lato text-center pb-2">
+            Meet the Coords
+        </h1>
+        <p class="text-lg text-gray-600 font-light pb-14 text-center">
+            These are the people that run the UPL day-to-day. If you have any
+            questions, reach out to upl(at)cs.wisc.edu
+        </p>
+        <div
+            class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-x-8 gap-y-16"
+            >
+            {
+            CoordsCollection.filter((d) => d.data.isActive).map((coord) => (
+                    <CoordCard {coord} />
+            ))
+            }
+        </div>
+        <div class="font-sans mt-8">
+            <h1 class="text-4xl font-semibold font-lato text-center pb-2">
+                Faculty Advisor
+            </h1>
+            <p class="text-lg text-gray-600 font-light pb-14 text-center">
+                Our faculty advisor is Professor Bart Miller, who can be contacted at
+                bart (at) cs.wisc.edu
+            </p>
+        </div>
+        <div class="sm:mb-8 mx-auto sm:w-1/4 w-1/2">
+            <CoordCard
+            {...{
+                coord: {
+                    data: {
+                        name: "Bart Miller",
+                        study: "Faculty Advisor",
+                        image: "bart-miller.webp",
+                        personalLink: "https://www.cs.wisc.edu/~bart/",
+                        links: [
+                            {
+                                name: "Test",
+                                url: "https://www.google.com",
+                            },
+                        ],
+                        bio: "Barton Miller is a Vilas Distinguished Achievement Professor and the Amar and Belinder Sohi Professor of Computer Sciences at the University of Wisconsin, Madison. He received his B.A. degree from the University of California, San Diego in 1977, and M.S. and Ph.D. degrees in Computer Science from the University of California, Berkeley in 1980 and 1984. Professor Miller is a Fellow of the ACM."
+                    },
+                },
+            }}
+            />
+        </div>
+    </div>
+    <div class="inline w-full overflow-hidden text-slate-800 mt-8">
+        <div class="mx-auto w-3/4">
+            <div class="text-base/6 font-sans prose prose-lg prose-zinc">
+                <coc_rendered.Content>
+            </div>
+        </div>
+    </div>
+
 </Layout>

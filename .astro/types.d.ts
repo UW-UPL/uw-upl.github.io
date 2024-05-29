@@ -190,12 +190,54 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
-"code-of-conduct": {
-"code-of-conduct.md": {
-	id: "code-of-conduct.md";
-  slug: "code-of-conduct";
+"docs": {
+"Coordinator-Responsibilities.md": {
+	id: "Coordinator-Responsibilities.md";
+  slug: "coordinator-responsibilities";
   body: string;
-  collection: "code-of-conduct";
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"New User Form/New_User_Signup_Form.md": {
+	id: "New User Form/New_User_Signup_Form.md";
+  slug: "new-user-form/new_user_signup_form";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"New User Form/README.md": {
+	id: "New User Form/README.md";
+  slug: "new-user-form/readme";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"README.md": {
+	id: "README.md";
+  slug: "readme";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"Start-Of-Semester-Checklist.md": {
+	id: "Start-Of-Semester-Checklist.md";
+  slug: "start-of-semester-checklist";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"building-tour-guide.md": {
+	id: "building-tour-guide.md";
+  slug: "building-tour-guide";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
+"coord-app.md": {
+	id: "coord-app.md";
+  slug: "coord-app";
+  body: string;
+  collection: "docs";
   data: any
 } & { render(): Render[".md"] };
 };
