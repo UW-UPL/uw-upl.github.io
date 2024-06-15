@@ -190,7 +190,23 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
+"code-of-conduct": {
+"code-of-conduct.md": {
+	id: "code-of-conduct.md";
+  slug: "code-of-conduct";
+  body: string;
+  collection: "code-of-conduct";
+  data: any
+} & { render(): Render[".md"] };
+};
 "docs": {
+"Code-of-Conduct.md": {
+	id: "Code-of-Conduct.md";
+  slug: "code-of-conduct";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
 "Coordinator-Responsibilities.md": {
 	id: "Coordinator-Responsibilities.md";
   slug: "coordinator-responsibilities";
