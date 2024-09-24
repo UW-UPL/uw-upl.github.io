@@ -1,6 +1,6 @@
 ---
 import Header from "../components/Header.astro";
-import BaseHead from "../components/BaseHead.astro"
+import BaseHead from "../components/BaseHead.astro";
 
 import "@fontsource/lato/100.css";
 import "@fontsource/lato/300.css";
@@ -23,16 +23,28 @@ const { useFull } = Astro.props;
 const width = useFull ? "md:w-full " : "lg:w-2/3 ";
 ---
 
-<!DOCTYPE html>
-<html lang="en" class="global-wrapper font-['Lato'] bg-off-white" data-theme="upltheme">
-	<head>
-		<BaseHead title="UPL" description="" />
-	</head>
-	<body>
-        <Header/>
-		<div class={width + "sm:mx-auto"}>
-        	<slot />
-		</div>
-		<footer class="p-3 text-black text-center font-sans">upl@cs.wisc.edu</footer>
-	</body>
+<!doctype html>
+<meta name="title" content="Undergraduate Projects Lab" />
+<meta name="theme-color" content="#ff0000" />
+<meta
+  name="description"
+  content="The UPL is a social club with a proud 40-year legacy. We invite you to visit us whenever the room is open, whether to relax between classes, enjoy lunch, or simply unwind. We'd love to welcome you!"
+/>
+<html
+  lang="en"
+  class="global-wrapper font-['Lato'] bg-off-white"
+  data-theme="upltheme"
+>
+  <head>
+    <BaseHead title="UPL" description="" />
+  </head>
+  <body>
+    <Header />
+    <div class={width + "sm:mx-auto"}>
+      <slot />
+    </div>
+    <footer class="p-3 text-black text-center font-sans">
+      upl@cs.wisc.edu
+    </footer>
+  </body>
 </html>
