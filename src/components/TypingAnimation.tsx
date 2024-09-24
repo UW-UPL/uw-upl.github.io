@@ -8,7 +8,7 @@ const TypingOutput = () => {
         1000,
         'work on homework.',
         1000,
-        'grind Leetcode.',
+        'build community.',
         1000,
         'meet people.',
         1000,
