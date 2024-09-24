@@ -6,117 +6,115 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import TypingAnimation from "../components/TypingAnimation.tsx";
 
 const DescriptionStyle = {
-	box: "flex flex-col px-2 sm:py-10 space-y-2 basis-0 shrink-0 grow",
-	title: "font-bold text-red-500 lg:text-3xl text-xl",
-	description: "text-gray-700 lg:text-md text-sm",
+  box: "flex flex-col px-2 sm:py-10 space-y-2 basis-0 shrink-0 grow",
+  title: "font-bold text-red-500 lg:text-3xl text-xl",
+  description: "text-gray-700 lg:text-md text-sm",
 };
 
 const QAStyles = {
-	box: "border border-slate-100 shadow-xl rounded-2xl my-6 py-8 px-16",
-	header: "mb-2 text-left font-bold lg:text-3xl text-2xl",
-	answer: "font-sans",
+  box: "border border-slate-100 shadow-xl rounded-2xl my-6 py-8 px-16",
+  header: "mb-2 text-left font-bold lg:text-3xl text-2xl",
+  answer: "font-sans",
 };
 
 const DiscordLink = "https://discord.gg/dmefFzm";
 ---
 
 <Layout>
-	<div class="md:w-3/4 mx-auto space-x-96">
-		<div class="flex flex-col font-bold content-start space-y-6">
-			<div class="md:pt-24 md:text-6xl text-2xl">
-				<h1 class="text-gray-700">The UPL is the place to</h1>
-				<TypingAnimation client:only="react" />
-			</div>
-			<div>
-				<a
-					href={DiscordLink}
-					class="md:text-md text-sm inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
-				>
-					<div class="w-2/12 mr-2">
-						<FontAwesomeIcon icon={faDiscord} />
-					</div>
-					<p class="flex-nowrap md:w-40 w-36">Join the Discord</p>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="lg:py-10">
-		<div
-			class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex md:flex-row flex-col flex-wrap"
-		>
-			<div class={DescriptionStyle.box}>
-				<h1 class={DescriptionStyle.title}>Who we are...</h1>
-				<p class={DescriptionStyle.description}>
-                    The UPL is a social club with a proud 40-year legacy. 
-                    We invite you to visit us whenever the room is open, whether to relax between classes, enjoy lunch, or simply unwind. 
-                    We’d love to welcome you!
-				</p>
-			</div>
-			<div class="divider lg:divider-horizontal"/>
-			<div class={DescriptionStyle.box}>
-				<h1 class={DescriptionStyle.title}>Who we are NOT...</h1>
-				<p class={DescriptionStyle.description}>
-                    The UPL itself doesn't run projects.
-                    Rather, it's a space where members work on their own initiatives and connect with fellow UW students.
-                    Check out our blog to see what UPL'ers are up to!
-				</p>
-			</div>
-			<div class="divider lg:divider-horizontal"/> 
-			<div class={DescriptionStyle.box}>
-				<h1 class={DescriptionStyle.title}>Where are we...</h1>
-				<p class={DescriptionStyle.description}>
-                    Visit us in <strong>Computer Sciences Room 1341</strong>, the triangle-shaped room on the <strong>first floor</strong>.
-                    We’re thrilled to announce that in Fall 2025, we’ll have a dedicated space in Morgridge Hall 🎉.
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="my-8 text-gray-700">
-		<h1 class="text-center text-4xl font-bold my-8">
-			Frequently Asked Questions
-		</h1>
-		<div class="md:w-11/12 mx-auto grid md:grid-cols-2 gap-8">
-			<div class={QAStyles.box}>
-				<h1 class={QAStyles.header}>Do I need to be a CS major?</h1>
-				<p class={QAStyles.answer}>
-					No! While we're a CS-focused organization, you don't need to
-					be a CS major!
-				</p>
-			</div>
-			<div class={QAStyles.box}>
-				<h1 class={QAStyles.header}>
-					What resources are available through the UPL?
-				</h1>
-				<ul class={"list-disc " + QAStyles.answer}>
-					<li>A lab room in the CS building.</li>
-					<li>Server infrastructure for project use.</li>
-					<li>Books to check out.</li>
-					<li>
-						And of course, each other, to talk to about anything CS
-						(and more!).
-					</li>
-				</ul>
-			</div>
-			<div class={QAStyles.box}>
-				<h1 class={QAStyles.header}>
-					Do I need to be an undergraduate student?
-				</h1>
-				<p class={QAStyles.answer}>
-					No! All UW students are welcome to use the machines and
-					resources of the lab. A few graduate students frequent the
-					lab as well.
-				</p>
-			</div>
-			<div class={QAStyles.box}>
-				<h1 class={QAStyles.header}>
-					Can we still use the servers remotely?
-				</h1>
-				<p class={QAStyles.answer}>
-					Yes! It is possible for us to remotely access our servers.
-					If that interests you, talk to us! Server infrastructure is
-					an ongoing project.
-				</p>
-			</div>
-		</div>
-	</div>
+  <div class="md:w-3/4 mx-auto space-x-96">
+    <div class="flex flex-col font-bold content-start space-y-6">
+      <div class="md:pt-24 md:text-6xl text-2xl">
+        <h1 class="text-gray-700">The UPL is the place to</h1>
+        <TypingAnimation client:only="react" />
+      </div>
+      <div>
+        <a
+          href={DiscordLink}
+          class="md:text-md text-sm inline-flex items-center w-fit bg-red-500 text-white font-sans font-semibold py-2 px-3 rounded-md hover:bg-red-700 focus:outline outline-offset outline-3 outline-sky-300"
+        >
+          <div class="w-2/12 mr-2">
+            <FontAwesomeIcon icon={faDiscord} />
+          </div>
+          <p class="flex-nowrap md:w-40 w-36">Join the Discord</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="lg:py-10">
+    <div
+      class="mx-auto md:w-11/12 font-sans mt-20 bg-gray-50 flex md:flex-row flex-col flex-wrap"
+    >
+      <div class={DescriptionStyle.box}>
+        <h1 class={DescriptionStyle.title}>Who we are...</h1>
+        <p class={DescriptionStyle.description}>
+          The UPL is a social club with a proud 40-year legacy. We invite you to
+          visit us whenever the room is open, whether to relax between classes,
+          enjoy lunch, or simply unwind. We’d love to welcome you!
+        </p>
+      </div>
+      <div class="divider lg:divider-horizontal"></div>
+      <div class={DescriptionStyle.box}>
+        <h1 class={DescriptionStyle.title}>Who we are NOT...</h1>
+        <p class={DescriptionStyle.description}>
+          The UPL itself doesn't run projects. Rather, it's a space where
+          members work on their own initiatives and connect with fellow UW
+          students. Check out our blog to see what UPL'ers are up to!
+        </p>
+      </div>
+      <div class="divider lg:divider-horizontal"></div>
+      <div class={DescriptionStyle.box}>
+        <h1 class={DescriptionStyle.title}>Where are we...</h1>
+        <p class={DescriptionStyle.description}>
+          Visit us in <strong>Computer Sciences Room 1341</strong>, the
+          triangle-shaped room on the <strong>first floor</strong>. We’re
+          thrilled to announce that in Fall 2025, we’ll have a dedicated space
+          in Morgridge Hall 🎉.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="my-8 text-gray-700">
+    <h1 class="text-center text-4xl font-bold my-8">
+      Frequently Asked Questions
+    </h1>
+    <div class="md:w-11/12 mx-auto grid md:grid-cols-2 gap-8">
+      <div class={QAStyles.box}>
+        <h1 class={QAStyles.header}>Do I need to be a CS major?</h1>
+        <p class={QAStyles.answer}>
+          No! While we're a CS-focused organization, you don't need to be a CS
+          major!
+        </p>
+      </div>
+      <div class={QAStyles.box}>
+        <h1 class={QAStyles.header}>
+          What resources are available through the UPL?
+        </h1>
+        <ul class={"list-disc " + QAStyles.answer}>
+          <li>A lab room in the CS building.</li>
+          <li>Server infrastructure for project use.</li>
+          <li>Books to check out.</li>
+          <li>
+            And of course, each other, to talk to about anything CS (and more!).
+          </li>
+        </ul>
+      </div>
+      <div class={QAStyles.box}>
+        <h1 class={QAStyles.header}>
+          Do I need to be an undergraduate student?
+        </h1>
+        <p class={QAStyles.answer}>
+          No! All UW students are welcome to use the machines and resources of
+          the lab. A few graduate students frequent the lab as well.
+        </p>
+      </div>
+      <div class={QAStyles.box}>
+        <h1 class={QAStyles.header}>Can we still use the servers remotely?</h1>
+        <p class={QAStyles.answer}>
+          Yes! It is possible for us to remotely access our servers. If that
+          interests you, talk to us! Server infrastructure is an ongoing
+          project.
+        </p>
+      </div>
+    </div>
+  </div>
 </Layout>
