@@ -9,23 +9,25 @@ const DoorStatus = () => {
     try {
       const response = await fetch("https://doors.amoses.dev/door-status");
       const data = await response.json();
-      const { door1, door2 } = data.status;
 
-      // Determine if the UPL is open
-      if (door1 === "open" && door2 === "open") {
+      // determine if the UPL is open
+      const backDoor = data.find((door) => door.door === "back");
+      const frontDoor = data.find((door) => door.door === "front");
+
+      if (backDoor?.status === "on" && frontDoor?.status === "on") {
         setIsOpen(true);
       } else {
         setIsOpen(false);
       }
     } catch (error) {
       console.error("Error fetching door status:", error);
-      setIsOpen(false); // Default to closed
+      setIsOpen(false);
     }
   };
 
   useEffect(() => {
     fetchDoorStatus();
-    const interval = setInterval(fetchDoorStatus, 10000); // Fetch every 10 seconds
+    const interval = setInterval(fetchDoorStatus, 10000);
     return () => clearInterval(interval);
   }, []);
 
