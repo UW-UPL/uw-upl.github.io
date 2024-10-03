@@ -1,6 +1,6 @@
 ---
 title: "UPL Lightning Talks ⚡"
-date: 2024-10-04 11:00 AM
+date: 2024-10-04 6:00PM
 location: Computer Sciences rm 1240 (CS Auditorium)
 ---
 
