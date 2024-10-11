@@ -191,26 +191,28 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "events": {
-"a-combinatorial-problem-reed-nelson.md": {
-	id: "a-combinatorial-problem-reed-nelson.md";
-  slug: "a-combinatorial-problem-reed-nelson";
+"lightning-talks-fall-2024.md": {
+	id: "lightning-talks-fall-2024.md";
+  slug: "lightning-talks-fall-2024";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
-"cache-and-memory-friendly-programming-matt-wildman.md": {
-	id: "cache-and-memory-friendly-programming-matt-wildman.md";
-  slug: "cache-and-memory-friendly-programming-matt-wildman";
+"madhacks-fall-2024.md": {
+	id: "madhacks-fall-2024.md";
+  slug: "madhacks-fall-2024";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
-"madhacks-fall-2023.md": {
-	id: "madhacks-fall-2023.md";
-  slug: "madhacks-fall-2023";
+};
+"resources": {
+"README.md": {
+	id: "README.md";
+  slug: "readme";
   body: string;
-  collection: "events";
-  data: InferEntrySchema<"events">
+  collection: "resources";
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -315,8 +317,6 @@ declare module 'astro:content' {
 };
 };
 "docs": {
-};
-"resources": {
 };
 
 	};
