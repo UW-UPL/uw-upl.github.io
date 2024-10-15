@@ -16,12 +16,14 @@ const DoorStatus = () => {
 
       if (backDoor?.status === "on" && frontDoor?.status === "on") {
         setIsOpen(true);
-      } else {
+      } else if (backDoor?.status === "off" && frontDoor?.status === "off") {
         setIsOpen(false);
+      } else {
+        setIsOpen(null);
       }
     } catch (error) {
       console.error("Error fetching door status:", error);
-      setIsOpen(false);
+      setIsOpen(undefined);
     }
   };
 
@@ -35,25 +37,39 @@ const DoorStatus = () => {
     <div className="md:text-md text-sm inline-flex flex-col items-center w-fit text-black font-sans font-semibold py-2 px-3 rounded-md focus:outline outline-offset outline-3 outline-sky-300 gap-1">
       <div className="inline-flex items-center">
         <div className="mr-2 flex-shrink-0">
-          <FontAwesomeIcon icon={isOpen ? faDoorOpen : faDoorClosed} />
+          <FontAwesomeIcon
+            icon={
+              isOpen === undefined
+                ? faDoorClosed
+                : isOpen
+                ? faDoorOpen
+                : faDoorClosed
+            }
+          />
         </div>
         <p className="flex-nowrap m-0">
-          The doors are{" "}
-          <span
-            className={
-              isOpen === null
-                ? "text-gray-500 font-bold"
-                : isOpen
-                ? "text-green-600 font-bold"
-                : "text-red-600 font-bold"
-            }
-          >
-            {isOpen === null ? "loading..." : isOpen ? "open" : "closed"}
-          </span>
-          !
+          {isOpen === undefined ? (
+            "Door tracker down."
+          ) : (
+            <>
+              The doors are{" "}
+              <span
+                className={
+                  isOpen === null
+                    ? "text-gray-500 font-bold"
+                    : isOpen
+                    ? "text-green-600 font-bold"
+                    : "text-red-600 font-bold"
+                }
+              >
+                {isOpen === null ? "loading..." : isOpen ? "open" : "closed"}
+              </span>
+              !
+            </>
+          )}
         </p>
       </div>
-      {!isOpen && isOpen !== null && (
+      {!isOpen && isOpen !== null && isOpen !== undefined && (
         <a href="/hours" className="text-blue-800 underline m-0">
           Check our hours here.
         </a>

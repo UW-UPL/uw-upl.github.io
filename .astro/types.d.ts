@@ -206,15 +206,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
 };
-"resources": {
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "resources";
-  data: any
-} & { render(): Render[".md"] };
-};
 
 	};
 
@@ -318,10 +309,12 @@ declare module 'astro:content' {
 };
 "docs": {
 };
+"resources": {
+};
 
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = typeof import("./../src/content/config.js");
 }
