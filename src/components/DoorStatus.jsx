@@ -14,12 +14,10 @@ const DoorStatus = () => {
       const backDoor = data.find((door) => door.door === "back");
       const frontDoor = data.find((door) => door.door === "front");
 
-      if (backDoor?.status === "on" && frontDoor?.status === "on") {
-        setIsOpen(true);
-      } else if (backDoor?.status === "off" && frontDoor?.status === "off") {
+      if (backDoor?.status === "off" || frontDoor?.status === "off") {
         setIsOpen(false);
-      } else {
-        setIsOpen(null);
+      } else if (backDoor?.status === "on" && frontDoor?.status === "on") {
+        setIsOpen(true);
       }
     } catch (error) {
       console.error("Error fetching door status:", error);
