@@ -1,22 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CoordCard from "../components/CoordCard.astro";
+import BartCard from "../components/BartCard.astro";
 import { getCollection } from "astro:content";
-
 const CoordsCollection = await getCollection("coordinators");
 
-const coc = await getCollection("docs");
-const coc_rendered = await coc
-  .filter((d: any) => d.id == "Code-of-Conduct.md")[0]
-  ?.render();
-
-console.log(coc.map((x) => x.id));
+const advisorData = {
+  data: {
+    name: "Bart Miller",
+    image: "bart-miller.webp",
+    personalLink: "https://www.cs.wisc.edu/~bart/",
+    department: "Computer Sciences",
+    office: "CS Building 6375",
+    bio: "Barton Miller is a Vilas Distinguished Achievement Professor and the Amar and Belinder Sohi Professor of Computer Sciences at the University of Wisconsin, Madison. He received his B.A. degree from the University of California, San Diego in 1977, and M.S. and Ph.D. degrees in Computer Science from the University of California, Berkeley in 1980 and 1984. Professor Miller is a Fellow of the ACM.",
+  },
+};
 ---
 
 <Layout>
   <div class="inline w-full overflow-hidden text-slate-800 mt-8">
     <div class="mx-auto w-3/4">
       <div class="text-gray-700 font-sans">
+        <!-- coords -->
         <h1 class="text-4xl font-semibold font-lato text-center pb-2">
           Meet the Coords
         </h1>
@@ -29,48 +34,25 @@ console.log(coc.map((x) => x.id));
         >
           {
             CoordsCollection.filter((d) => d.data.isActive).map((coord) => (
-              <CoordCard {coord} />
+              <CoordCard coord={coord} />
             ))
           }
         </div>
-        <div class="font-sans mt-8">
-          <h1 class="text-4xl font-semibold font-lato text-center pb-2">
+
+        <!-- faculty advisor -->
+        <div class="font-sans mt-24">
+          <h1 class="text-4xl font-semibold font-lato text-center">
             Faculty Advisor
           </h1>
-          <p class="text-lg text-gray-600 font-light pb-14 text-center">
+          <p class="text-lg text-gray-600 font-light pt-2 pb-16 text-center">
             Our faculty advisor is Professor Bart Miller, who can be contacted
             at bart (at) cs.wisc.edu
           </p>
-        </div>
-        <div class="sm:mb-8 mx-auto sm:w-1/4 w-1/2">
-          <CoordCard
-            {...{
-              coord: {
-                data: {
-                  name: "Bart Miller",
-                  study: "Faculty Advisor",
-                  image: "bart-miller.webp",
-                  personalLink: "https://www.cs.wisc.edu/~bart/",
-                  links: [
-                    {
-                      name: "Test",
-                      url: "https://www.google.com",
-                    },
-                  ],
-                  bio: "Barton Miller is a Vilas Distinguished Achievement Professor and the Amar and Belinder Sohi Professor of Computer Sciences at the University of Wisconsin, Madison. He received his B.A. degree from the University of California, San Diego in 1977, and M.S. and Ph.D. degrees in Computer Science from the University of California, Berkeley in 1980 and 1984. Professor Miller is a Fellow of the ACM.",
-                },
-              },
-            }}
-          />
-        </div>
-      </div>
-      <div class="inline w-full overflow-hidden text-slate-800">
-        <div class="mx-auto w-3/4">
-          <div class="text-base/6 font-sans prose prose-lg prose-zinc">
-            <coc_rendered.Content />
+          <div class="w-full max-w-5xl mx-auto mb-24">
+            <BartCard advisor={advisorData} />
           </div>
         </div>
       </div>
     </div>
-  </div></Layout
->
+  </div>
+</Layout>

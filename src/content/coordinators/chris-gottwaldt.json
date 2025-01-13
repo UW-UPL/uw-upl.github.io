@@ -1,7 +1,7 @@
 {
     "grade": "Senior",
     "name": "Chris Gottwaldt",
-    "isActive": true,
+    "isActive": false,
     "image": "chris-gottwaldt.webp",
     "study": "CS & DS",
     "github": "christophergottwaldt",

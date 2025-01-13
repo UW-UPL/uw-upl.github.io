@@ -191,9 +191,16 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "events": {
-"lightning-talks-fall-2024.md": {
-	id: "lightning-talks-fall-2024.md";
-  slug: "lightning-talks-fall-2024";
+"lightning-talks-fall-2024-1.md": {
+	id: "lightning-talks-fall-2024-1.md";
+  slug: "lightning-talks-fall-2024-1";
+  body: string;
+  collection: "events";
+  data: InferEntrySchema<"events">
+} & { render(): Render[".md"] };
+"lightning-talks-fall-2024-2.md": {
+	id: "lightning-talks-fall-2024-2.md";
+  slug: "lightning-talks-fall-2024-2";
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
@@ -204,15 +211,6 @@ declare module 'astro:content' {
   body: string;
   collection: "events";
   data: InferEntrySchema<"events">
-} & { render(): Render[".md"] };
-};
-"resources": {
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "resources";
-  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -317,6 +315,8 @@ declare module 'astro:content' {
 };
 };
 "docs": {
+};
+"resources": {
 };
 
 	};
