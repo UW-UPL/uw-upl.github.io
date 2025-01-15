@@ -268,11 +268,6 @@ declare module 'astro:content' {
   collection: "coordinators";
   data: InferEntrySchema<"coordinators">
 };
-"mari-garey": {
-	id: "mari-garey";
-  collection: "coordinators";
-  data: InferEntrySchema<"coordinators">
-};
 "michael-berkey": {
 	id: "michael-berkey";
   collection: "coordinators";
