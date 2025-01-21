@@ -8,7 +8,7 @@ interface CoordHour {
 let CoordHours: CoordHour[] = [
   {
     Time: "10 - 11 AM",
-    Coords: ["George", "", "Sam", "", "Rahul"],
+    Coords: ["George", "", "Sam", "", ""],
   },
   {
     Time: "11 AM - 12 PM",
@@ -20,7 +20,7 @@ let CoordHours: CoordHour[] = [
   },
   {
     Time: "1 - 2 PM",
-    Coords: ["Nico", "Emily", "Mari", "Emily", "Michael"],
+    Coords: ["Nico", "Emily", "Rahul", "Emily", "Michael"],
   },
   {
     Time: "2 - 3 PM",
@@ -36,7 +36,7 @@ let CoordHours: CoordHour[] = [
   },
   {
     Time: "5 - 6 PM",
-    Coords: ["George", "", "", "", ""],
+    Coords: ["George", "", "", "", "Mari"],
   },
 ];
 
