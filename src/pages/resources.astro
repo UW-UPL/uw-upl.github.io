@@ -3,15 +3,16 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
 const resources = await getCollection("resources");
-const readmeRendered = await resources.filter(d => d.id == "README.md")[0].render();
+const readme = resources.find(d => d.id === "README.md");
+const { Content } = await readme.render();
 ---
 
 <Layout>
-	<div class="inline w-full overflow-hidden text-slate-800">
-		<div class="mx-auto w-3/4">
-            <div class="text-base/6 font-sans prose prose-lg prose-zinc">
-                <readmeRendered.Content>
-            </div>
-        </div>
+  <div class="inline w-full overflow-hidden text-slate-800">
+    <div class="mx-auto w-3/4">
+      <div class="text-base/6 font-sans prose prose-lg prose-zinc">
+        <Content />
+      </div>
     </div>
+  </div>
 </Layout>

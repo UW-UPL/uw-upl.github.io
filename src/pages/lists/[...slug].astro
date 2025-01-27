@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const resources = await getCollection("resources");
+
+  return resources.map((x) => ({
+    params: {
+      slug: x.id.replace(/^lists\//, '').replace(/\.md$/, '')
+    },
+    props: { entry: x },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <div class="inline w-full overflow-hidden text-slate-800">
+    <div class="mx-auto w-3/4">
+      <div class="text-base/6 font-sans prose prose-lg prose-zinc">
+        <Content />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+document.addEventListener('click', (e) => {
+  const target = e.target as HTMLElement;
+  if (target.tagName === 'A') {
+    const href = target.getAttribute('href');
+    if (href?.includes('README.md')) {
+      e.preventDefault();
+      window.location.href = '/resources';
+    }
+  }
+});
+</script>
