@@ -3,65 +3,64 @@ import HeaderLink from "./HeaderLink.astro";
 import DoorStatus from "./DoorStatus.jsx";
 
 const ROUTES = [
-  { path: "/", name: "Home" },
-  { path: "/events", name: "Events" },
-  { path: "/blog", name: "Blog" },
-  { path: "/resources", name: "Resources" },
-  { path: "/about", name: "About Us" },
-  { path: "/hours", name: "Hours" },
+    { path: "/", name: "Home" },
+    { path: "/events", name: "Events" },
+    { path: "/blog", name: "Blog" },
+    { path: "/resources", name: "Resources" },
+    { path: "/about", name: "About Us" },
+    { path: "/hours", name: "Hours" },
 ];
 ---
 
-<div class="navbar bg-gray-50">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16"
-          ></path>
-        </svg>
-      </div>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-      >
-        {ROUTES.map((e) => (
-          <li class="text-red-500 font-bold">
-            <HeaderLink href={e.path}>{e.name}</HeaderLink>
-          </li>
-        ))}
-      </ul>
+<div class="navbar bg-gray-50 border-b border-gray-100 h-20">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h8m-8 6h16"
+                    ></path>
+                </svg>
+            </div>
+            <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+                {ROUTES.map((e) => (
+                <li class="text-red-500 font-bold">
+                    <HeaderLink href={e.path}>{e.name}</HeaderLink>
+                </li>
+                ))}
+            </ul>
+        </div>
+        <a
+            class="btn btn-ghost text-red-500 lg:text-5xl text-xl font-semibold"
+            href="/"
+        >UPL</a>
     </div>
-    <a
-      class="btn btn-ghost text-red-500 lg:text-5xl text-xl font-semibold"
-      href="/"
-      >UPL</a
-    >
-  </div>
 
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-lg">
-      {ROUTES.map((e) => (
-        <li class="text-red-500 font-bold">
-          <HeaderLink href={e.path}>{e.name}</HeaderLink>
-        </li>
-      ))}
-    </ul>
-  </div>
-  <!-- this is the door label -->
-  <div class="navbar-end flex">
-    <div class="navbar-end flex-none">
-      <DoorStatus client:load />
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg">
+            {ROUTES.map((e) => (
+            <li class="text-red-500 font-bold">
+                <HeaderLink href={e.path}>{e.name}</HeaderLink>
+            </li>
+            ))}
+        </ul>
     </div>
-  </div>
+
+    <div class="navbar-end flex">
+        <div class="navbar-end flex-none">
+            <DoorStatus client:load />
+        </div>
+    </div>
 </div>

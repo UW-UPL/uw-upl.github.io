@@ -16,19 +16,21 @@ type Props = {
 
 const d = Astro.props
 ---
-<div class="bg-red-100 p-6 rounded-lg drop-shadow-xl text-neutral-800 font-sans my-10">
-    <h1 class="lg:text-xl text-lg font-bold">{d.title}</h1>
-    <h2 class="font-medium text-xs my-2">
-        {d.date.toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "numeric",
-            minute: "2-digit",
-        })}{" "}
-        · {d.location}
-    </h2>
-    <div class="mt-6 prose prose-md w-auto">
-        <d.content.Content />
+<div class="bg-red-100 rounded-lg hover:shadow-lg transition-shadow duration-200 mb-8">
+    <div class="p-6">
+        <h1 class="text-xl font-bold text-gray-900 mb-2">{d.title}</h1>
+        <div class="text-sm text-gray-600 mb-4">
+            {d.date.toLocaleDateString("en-us", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+            })}{" "}
+            · {d.location}
+        </div>
+        <div class="prose prose-lg prose-zinc max-w-none">
+            <d.content.Content />
+        </div>
     </div>
 </div>

@@ -4,34 +4,46 @@ import Layout from "../layouts/Layout.astro";
 import EventCard from "../components/EventCard.astro";
 
 const events = await Promise.all(
-	(
-		await getCollection("events")
-	)
-		.sort(
-			(a, b) =>
-				b.data.date.getUTCMilliseconds() - a.data.date.getUTCMilliseconds()
-		)
-		.map(async (d) => {
-			return {
-				...d.data,
-				content: await d.render(),
-			};
-		})
+  (await getCollection("events"))
+    .sort(
+      (a, b) =>
+        b.data.date.getUTCMilliseconds() - a.data.date.getUTCMilliseconds()
+    )
+    .map(async (d) => {
+      return {
+        ...d.data,
+        content: await d.render(),
+      };
+    })
 );
 
 const curDate = new Date();
-
 const futureEvents = events.filter((d) => d.date > curDate);
-
 const pastEvents = events.filter((d) => d.date <= curDate);
 ---
 
 <Layout>
-	<h1 class="ml-2 mb-4 lg:text-4xl text-2xl font-bold">Upcoming Events</h1>
-	{futureEvents.map((d) => <EventCard {...d} />)}
-	{
-		futureEvents.length === 0 && <p class="ml-2 mb-4 lg:text-xl text-lg font-bold text-gray-600">No upcoming events</p>
-	}
-	<h1 class="ml-2 mb-4 lg:text-4xl text-2xl font-bold">Past Events</h1>
-	{pastEvents.reverse().map((d) => <EventCard {...d} />)}
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="text-4xl font-semibold font-lato text-center pb-2">Events</h1>
+    <p class="font-sans lg:text-lg text-md text-gray-600 font-light text-center mb-12">
+      Join us for tech talks, workshops, and social events.
+    </p>
+
+    <div class="space-y-8">
+      <section>
+        <h2 class="text-2xl font-bold text-gray-700 mb-6">Upcoming Events</h2>
+        {futureEvents.map((d) => <EventCard {...d} />)}
+        {
+          futureEvents.length === 0 && (
+            <p class="text-lg text-gray-600">No upcoming events scheduled.</p>
+          )
+        }
+      </section>
+
+      <section class="mt-12">
+        <h2 class="text-2xl font-bold text-gray-700 mb-6">Past Events</h2>
+        {pastEvents.reverse().map((d) => <EventCard {...d} />)}
+      </section>
+    </div>
+  </div>
 </Layout>

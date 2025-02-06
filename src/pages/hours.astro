@@ -5,83 +5,83 @@ import moment from "moment-timezone";
 
 var rows: string[][] = [];
 for (let i = 0; i < CoordHours.length; i++) {
-	let tempArr = CoordHours[i].Coords;
-	tempArr = [CoordHours[i].Time].concat(tempArr);
-	rows.push(tempArr);
+   let tempArr = CoordHours[i].Coords;
+   tempArr = [CoordHours[i].Time].concat(tempArr);
+   rows.push(tempArr);
 }
 
 let currentMoment = moment().tz("America/Chicago");
 let curDay = currentMoment.weekday();
 let curHour = currentMoment.hour();
 
-let curCoordInfo = {
-	hasCoord: false,
-	Coord: "",
-	Time: "",
-};
+// Determine if a coord has office hours now
+let currentCoord = "";
+let hasOfficeHours = false;
 
-if (curDay != 0 && curDay <= 5 && curHour >= 10 && curHour <= 17) {
-	curCoordInfo = {
-		hasCoord: CoordHours[curHour - 10].Coords[curDay - 1] !== "",
-		Coord: CoordHours[curHour - 10].Coords[curDay - 1],
-		Time: CoordHours[curHour - 10].Time,
-	};
+if (curDay >= 1 && curDay <= 5 && curHour >= 10 && curHour < 18) {
+   const hourIndex = curHour - 10;
+   const dayIndex = curDay - 1;
+   if (hourIndex >= 0 && hourIndex < CoordHours.length) {
+       currentCoord = CoordHours[hourIndex].Coords[dayIndex];
+       hasOfficeHours = currentCoord !== "";
+   }
 }
-
-const hasCoordColor = curCoordInfo.hasCoord ? "text-green-500" : "text-red-700";
 ---
 
 <Layout>
-	<div class="w-5/6 md:text-lg mx-auto font-sans text-gray-600">
-		<p>
-			Anyone is welcome in the UPL when a Coord is present, and Coords
-			commit to be present at certain office hours. Come in and say hi!
-		</p>
-		<!-- <h5
-			class={`pt-2 ${hasCoordColor} font-medium text-center md:text-md text-sm`}
-		>
-			{
-				curCoordInfo.hasCoord
-					? `Current Coord: ${curCoordInfo.Coord} (${curCoordInfo.Time})`
-					: "No Coord currently scheduled. The UPL is not guaranteed to be open at this time."
-			}
-		</h5> -->
-	</div>
-	<div class="mt-8">
-		<table
-			class="w-full border-t-8 border-red-500 rounded-t-md border-spacing-0 border-separate overflow-x-scroll"
-		>
-			<thead class="bg-red-500 font-lato">
-				<tr class="">
-					{
-						[
-							"Time",
-							"Monday",
-							"Tuesday",
-							"Wednesday",
-							"Thursday",
-							"Friday",
-						].map((e: String) => (
-							<th class="text-white md:text-lg text-xs text-left md:px-4 md:py-3 py-2 px-1">
-								{e.toUpperCase()}
-							</th>
-						))
-					}
-				</tr>
-			</thead>
-			<tbody class="font-sans">
-				{
-					rows.map((row) => (
-						<tr class="even:bg-gray-200 even:border-b even:border-neutral-300 odd:bg-neutral-100">
-							{row.map((d) => (
-								<td class="text-neutral-600 md:p-4 sm:p-1 text-start md:text-lg text-xs">
-									{d}
-								</td>
-							))}
-						</tr>
-					))
-				}
-			</tbody>
-		</table>
-	</div>
+   <div class="max-w-7xl mx-auto px-4">
+       <h1 class="text-4xl font-semibold font-lato text-center pb-2">
+           Lab Hours
+       </h1>
+
+       <div class="max-w-3xl mx-auto mb-12">
+           <p class="text-lg text-gray-600 text-center">
+               Anyone is welcome in the UPL when a Coord is present, and Coords
+               commit to be present at certain office hours. Come in and say hi!
+           </p>
+           <p class="mt-4 text-lg text-center">
+               A coord {hasOfficeHours ? (
+                   <span class="text-green-600 font-medium">has office hours right now ({currentCoord})</span>
+               ) : (
+                   <span class="text-red-600 font-medium">does not have office hours right now</span>
+               )}
+           </p>
+       </div>
+
+       <div class="overflow-x-auto shadow-md rounded-lg">
+           <table class="w-full border-t-8 border-red-500 bg-white">
+               <thead class="bg-red-500 font-lato">
+                   <tr>
+                       {
+                           [
+                               "Time",
+                               "Monday",
+                               "Tuesday",
+                               "Wednesday",
+                               "Thursday",
+                               "Friday",
+                           ].map((e: String) => (
+                               <th class="text-white text-left px-4 py-3 text-sm md:text-base">
+                                   {e.toUpperCase()}
+                               </th>
+                           ))
+                       }
+                   </tr>
+               </thead>
+               <tbody class="font-sans">
+                   {
+                       rows.map((row) => (
+                           <tr class="even:bg-gray-50 hover:bg-gray-100 border-b border-gray-200">
+                               {row.map((d) => (
+                                   <td class="text-gray-700 px-4 py-3 text-sm md:text-base whitespace-nowrap">
+                                       {d}
+                                   </td>
+                               ))}
+                           </tr>
+                       ))
+                   }
+               </tbody>
+           </table>
+       </div>
+   </div>
 </Layout>

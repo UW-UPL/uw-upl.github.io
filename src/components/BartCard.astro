@@ -40,10 +40,10 @@ if (advisor.data.image) {
 }
 ---
 
-<div class="hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-2xl
-            hover:shadow-red-800/50 shadow-xl font-lato bg-base-100
-            rounded-lg overflow-hidden flex flex-row w-full max-w-4xl mx-auto">
-  <figure class="w-1/4 flex-shrink-0">
+<div class="hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-md
+            shadow-md font-lato bg-base-100
+            rounded-lg overflow-hidden md:flex-row flex-col flex w-full max-w-4xl mx-auto">
+  <figure class="md:w-1/4 w-full flex-shrink-0">
     {advisorInfo.image && formattedHoverImageURL == null && (
       <img
         src={formattedOriginalImageURL}
@@ -58,7 +58,7 @@ if (advisor.data.image) {
         onmouseover="this.src=this.getAttribute('data-hover-src')"
         onmouseout="this.src=this.getAttribute('data-original-src')"
         alt={advisorInfo.name}
-        class="w-full h-full object-cover"
+        class="w-full md:h-full h-64 object-cover"
         data-hover-src={formattedHoverImageURL}
         data-original-src={formattedOriginalImageURL}
       />
