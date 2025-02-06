@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
+  # Using a different branch name? Replace `main` with your branch's name
   push:
     branches: [ master ]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
@@ -21,13 +21,23 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
         with:
-            submodules: 'recursive'
-      - name: Install, build, and upload your site
-        uses: withastro/action@v0
+          submodules: 'recursive'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-            # path: . # The root location of your Astro project inside the repository. (optional)
-            node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
-            # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build with Astro
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
   deploy:
     needs: build
@@ -38,4 +48,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
