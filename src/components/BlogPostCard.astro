@@ -1,9 +1,20 @@
 ---
 import type { CollectionEntry } from "astro:content";
 
-type Props = CollectionEntry<"blog">;
+type Props = {
+  collection: string;
+  data: {
+    title: string;
+    pubDate: Date;
+    author: string;
+    description?: string;
+    sourceUrl?: string;
+  };
+  slug?: string;
+  render?: () => Promise<any>;
+};
 
-const { data, render, slug } = Astro.props;
+const { data, collection, render, slug } = Astro.props;
 
 let formatter = new Intl.DateTimeFormat("en", {
     year: "numeric",
@@ -12,23 +23,26 @@ let formatter = new Intl.DateTimeFormat("en", {
 });
 
 const formattedPubDate = formatter.format(data.pubDate);
-
-const formattedUpdatedDate = formatter.format(data.updatedDate);
-
-const readingTime = (await render()).remarkPluginFrontmatter.minutesRead;
+const href = collection === "harvest" ? data.sourceUrl : `/blog/${slug}/`;
 ---
 
 <a
-href={`/blog/${slug}/`}
-    class="flex flex-col bg-red-100 p-6 rounded-lg drop-shadow-xl text-neutral-800 font-sans"
+    href={href}
+    class="block w-full bg-red-100 rounded-lg hover:shadow-lg transition-shadow duration-200"
+    target={collection === "harvest" ? "_blank" : "_self"}
+    rel={collection === "harvest" ? "noopener noreferrer" : null}
 >
-    <h1 class="lg:text-xl text-lg font-semibold">
-        {data.title}
-    </h1>
-    <h6 class="font-medium text-xs">
-        Published {formattedPubDate}{
-            data.updatedDate && ` · Edited ${formattedUpdatedDate}`
-        } · {readingTime} · By {data.author}
-    </h6>
-    <p class="text-md font-normal mt-2 text-sm">{data.description}</p>
+    <div class="p-6">
+        <h1 class="text-xl font-bold text-gray-900 mb-2">
+            {data.title}
+        </h1>
+        <div class="text-sm text-gray-600 mb-3">
+            Published {formattedPubDate} · By {data.author}
+        </div>
+        {data.description &&
+            <p class="text-gray-700 line-clamp-3">
+                {data.description}
+            </p>
+        }
+    </div>
 </a>

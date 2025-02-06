@@ -492,6 +492,13 @@ declare module 'astro:content' {
   data: InferEntrySchema<"coordinators">
 };
 };
+"harvest": {
+".github/workflows/update": {
+	id: ".github/workflows/update";
+  collection: "harvest";
+  data: any
+};
+};
 
 	};
 

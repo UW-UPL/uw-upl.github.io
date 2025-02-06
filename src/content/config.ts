@@ -22,6 +22,14 @@ const blog = defineCollection({
   }),
 });
 
+const harvest = defineCollection({
+  type: "content",
+  // Minimal schema since we're dealing with a single markdown file
+  schema: z.object({
+    title: z.string().optional(),
+  }),
+});
+
 const events = defineCollection({
   type: "content",
   schema: z.object({
@@ -61,4 +69,4 @@ const resources = defineCollection({
   }),
 });
 
-export const collections = { blog, events, resources, coordinators };
+export const collections = { blog, harvest, events, resources, coordinators };
