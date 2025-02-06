@@ -53,4 +53,12 @@ const coordinators = defineCollection({
 	)
 })
 
-export const collections = { blog, events, coordinators };
+const resources = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string().optional(),
+    description: z.string().optional(),
+  }),
+});
+
+export const collections = { blog, events, resources, coordinators };

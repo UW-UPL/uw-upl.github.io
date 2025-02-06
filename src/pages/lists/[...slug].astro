@@ -3,14 +3,16 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const resources = await getCollection("resources");
+    const resources = await getCollection("resources");
 
-  return resources.map((x) => ({
-    params: {
-      slug: x.id.replace(/^lists\//, '').replace(/\.md$/, '')
-    },
-    props: { entry: x },
-  }));
+    return resources
+        .filter(resource => resource.id.startsWith('lists/'))
+        .map((x) => ({
+            params: {
+                slug: x.id.replace(/^lists\//, '').replace(/\.md$/, '')
+            },
+            props: { entry: x },
+        }));
 }
 
 const { entry } = Astro.props;
@@ -18,24 +20,53 @@ const { Content } = await entry.render();
 ---
 
 <Layout>
-  <div class="inline w-full overflow-hidden text-slate-800">
-    <div class="mx-auto w-3/4">
-      <div class="text-base/6 font-sans prose prose-lg prose-zinc">
-        <Content />
-      </div>
+    <div class="flex justify-center w-full min-h-screen text-slate-800">
+        <div class="w-full max-w-3xl px-4 py-8">
+            <div class="prose prose-lg prose-zinc mx-auto">
+                <Content />
+            </div>
+        </div>
     </div>
-  </div>
 </Layout>
 
 <script>
 document.addEventListener('click', (e) => {
-  const target = e.target as HTMLElement;
-  if (target.tagName === 'A') {
-    const href = target.getAttribute('href');
-    if (href?.includes('README.md')) {
-      e.preventDefault();
-      window.location.href = '/resources';
+    const target = e.target as HTMLElement;
+    if (target.tagName === 'A') {
+        const href = target.getAttribute('href');
+        // Handle README.md case
+        if (href?.includes('README.md')) {
+            e.preventDefault();
+            history.pushState({}, '', '/resources');
+            window.location.href = '/resources';
+            return;
+        }
+        // Handle other .md files
+        if (href?.endsWith('.md') && !href.startsWith('http')) {
+            e.preventDefault();
+            const cleanPath = href.replace(/\.md$/, '');
+            history.pushState({}, '', cleanPath);
+            if (window.location.pathname !== cleanPath) {
+                window.location.href = cleanPath;
+            }
+        }
     }
-  }
+});
+
+// Handle browser back/forward buttons
+window.addEventListener('popstate', (e) => {
+    // Check if we're trying to go back to a README.md path
+    if (window.location.pathname.includes('README')) {
+        history.pushState({}, '', '/resources');
+        window.location.href = '/resources';
+        return;
+    }
+
+    // For other .md paths, clean them
+    if (window.location.pathname.endsWith('.md')) {
+        const cleanPath = window.location.pathname.replace(/\.md$/, '');
+        history.pushState({}, '', cleanPath);
+        window.location.reload();
+    }
 });
 </script>

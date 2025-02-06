@@ -277,91 +277,98 @@ declare module 'astro:content' {
   slug: "contributing";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "README.md": {
 	id: "README.md";
   slug: "readme";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/algorithms.md": {
 	id: "lists/algorithms.md";
   slug: "lists/algorithms";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/databases-and-filesystems.md": {
 	id: "lists/databases-and-filesystems.md";
   slug: "lists/databases-and-filesystems";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/essentials.md": {
 	id: "lists/essentials.md";
   slug: "lists/essentials";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/for-fun.md": {
 	id: "lists/for-fun.md";
   slug: "lists/for-fun";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/math.md": {
 	id: "lists/math.md";
   slug: "lists/math";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/need-sorting.md": {
 	id: "lists/need-sorting.md";
   slug: "lists/need-sorting";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/performance.md": {
 	id: "lists/performance.md";
   slug: "lists/performance";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/productivity.md": {
 	id: "lists/productivity.md";
   slug: "lists/productivity";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/programming-languages.md": {
 	id: "lists/programming-languages.md";
   slug: "lists/programming-languages";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
+} & { render(): Render[".md"] };
+"lists/stuff-to-do.md": {
+	id: "lists/stuff-to-do.md";
+  slug: "lists/stuff-to-do";
+  body: string;
+  collection: "resources";
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/unix.md": {
 	id: "lists/unix.md";
   slug: "lists/unix";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 "lists/web-development.md": {
 	id: "lists/web-development.md";
   slug: "lists/web-development";
   body: string;
   collection: "resources";
-  data: any
+  data: InferEntrySchema<"resources">
 } & { render(): Render[".md"] };
 };
 
