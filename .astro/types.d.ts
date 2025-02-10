@@ -190,64 +190,6 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
-"docs": {
-"Code-of-Conduct.md": {
-	id: "Code-of-Conduct.md";
-  slug: "code-of-conduct";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"Coordinator-Responsibilities.md": {
-	id: "Coordinator-Responsibilities.md";
-  slug: "coordinator-responsibilities";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"New User Form/New_User_Signup_Form.md": {
-	id: "New User Form/New_User_Signup_Form.md";
-  slug: "new-user-form/new_user_signup_form";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"New User Form/README.md": {
-	id: "New User Form/README.md";
-  slug: "new-user-form/readme";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"Start-Of-Semester-Checklist.md": {
-	id: "Start-Of-Semester-Checklist.md";
-  slug: "start-of-semester-checklist";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"building-tour-guide.md": {
-	id: "building-tour-guide.md";
-  slug: "building-tour-guide";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-"coord-app.md": {
-	id: "coord-app.md";
-  slug: "coord-app";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
-};
 "events": {
 "lightning-talks-fall-2024-1.md": {
 	id: "lightning-talks-fall-2024-1.md";
@@ -263,6 +205,13 @@ declare module 'astro:content' {
   collection: "events";
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
+"lightning-talks-spring-2025-1.md": {
+	id: "lightning-talks-spring-2025-1.md";
+  slug: "lightning-talks-spring-2025-1";
+  body: string;
+  collection: "events";
+  data: InferEntrySchema<"events">
+} & { render(): Render[".md"] };
 "madhacks-fall-2024.md": {
 	id: "madhacks-fall-2024.md";
   slug: "madhacks-fall-2024";
@@ -271,105 +220,9 @@ declare module 'astro:content' {
   data: InferEntrySchema<"events">
 } & { render(): Render[".md"] };
 };
+"harvest": {
+};
 "resources": {
-"CONTRIBUTING.md": {
-	id: "CONTRIBUTING.md";
-  slug: "contributing";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"README.md": {
-	id: "README.md";
-  slug: "readme";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/algorithms.md": {
-	id: "lists/algorithms.md";
-  slug: "lists/algorithms";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/databases-and-filesystems.md": {
-	id: "lists/databases-and-filesystems.md";
-  slug: "lists/databases-and-filesystems";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/essentials.md": {
-	id: "lists/essentials.md";
-  slug: "lists/essentials";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/for-fun.md": {
-	id: "lists/for-fun.md";
-  slug: "lists/for-fun";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/math.md": {
-	id: "lists/math.md";
-  slug: "lists/math";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/need-sorting.md": {
-	id: "lists/need-sorting.md";
-  slug: "lists/need-sorting";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/performance.md": {
-	id: "lists/performance.md";
-  slug: "lists/performance";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/productivity.md": {
-	id: "lists/productivity.md";
-  slug: "lists/productivity";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/programming-languages.md": {
-	id: "lists/programming-languages.md";
-  slug: "lists/programming-languages";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/stuff-to-do.md": {
-	id: "lists/stuff-to-do.md";
-  slug: "lists/stuff-to-do";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/unix.md": {
-	id: "lists/unix.md";
-  slug: "lists/unix";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
-"lists/web-development.md": {
-	id: "lists/web-development.md";
-  slug: "lists/web-development";
-  body: string;
-  collection: "resources";
-  data: InferEntrySchema<"resources">
-} & { render(): Render[".md"] };
 };
 
 	};
@@ -492,17 +345,12 @@ declare module 'astro:content' {
   data: InferEntrySchema<"coordinators">
 };
 };
-"harvest": {
-".github/workflows/update": {
-	id: ".github/workflows/update";
-  collection: "harvest";
-  data: any
-};
+"docs": {
 };
 
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../src/content/config.js");
+	export type ContentConfig = typeof import("./../src/content/config.js");
 }

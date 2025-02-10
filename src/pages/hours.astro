@@ -1,87 +1,118 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CoordHours from "../content/_coord-hours";
-import moment from "moment-timezone";
 
-var rows: string[][] = [];
-for (let i = 0; i < CoordHours.length; i++) {
-   let tempArr = CoordHours[i].Coords;
-   tempArr = [CoordHours[i].Time].concat(tempArr);
-   rows.push(tempArr);
-}
-
-let currentMoment = moment().tz("America/Chicago");
-let curDay = currentMoment.weekday();
-let curHour = currentMoment.hour();
-
-// Determine if a coord has office hours now
-let currentCoord = "";
-let hasOfficeHours = false;
-
-if (curDay >= 1 && curDay <= 5 && curHour >= 10 && curHour < 18) {
-   const hourIndex = curHour - 10;
-   const dayIndex = curDay - 1;
-   if (hourIndex >= 0 && hourIndex < CoordHours.length) {
-       currentCoord = CoordHours[hourIndex].Coords[dayIndex];
-       hasOfficeHours = currentCoord !== "";
-   }
-}
+const rows = CoordHours.map(({ Time, Coords }) => [Time, ...Coords]);
 ---
 
 <Layout>
-   <div class="max-w-7xl mx-auto px-4">
-       <h1 class="text-4xl font-semibold font-lato text-center pb-2">
-           Lab Hours
-       </h1>
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="text-4xl font-semibold font-lato text-center pb-2">Lab Hours</h1>
+    <div class="max-w-3xl mx-auto mb-12 text-center">
+      <p class="text-lg text-gray-600">
+        Anyone is welcome in the UPL when a Coord is present. Coords commit to
+        these hours. Come say hi!
+      </p>
+      <p id="office-hours-status" class="mt-4 text-lg">Loading...</p>
+    </div>
 
-       <div class="max-w-3xl mx-auto mb-12">
-           <p class="text-lg text-gray-600 text-center">
-               Anyone is welcome in the UPL when a Coord is present, and Coords
-               commit to be present at certain office hours. Come in and say hi!
-           </p>
-           <p class="mt-4 text-lg text-center">
-               A coord {hasOfficeHours ? (
-                   <span class="text-green-600 font-medium">has office hours right now ({currentCoord})</span>
-               ) : (
-                   <span class="text-red-600 font-medium">does not have office hours right now</span>
-               )}
-           </p>
-       </div>
+    <div class="overflow-x-auto shadow-md rounded-lg">
+      <table class="w-full border-t-8 border-red-500 bg-white">
+        <thead class="bg-red-500 font-lato">
+          <tr>
+            {
+              [
+                "Time",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+              ].map((e: String) => (
+                <th class="text-white text-left px-4 py-3 text-sm md:text-base">
+                  {e.toUpperCase()}
+                </th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody class="font-sans">
+          {
+            rows.map((row) => (
+              <tr class="even:bg-gray-50 hover:bg-gray-100 border-b border-gray-200">
+                {row.map((d) => (
+                  <td class="text-gray-700 px-4 py-3 text-sm md:text-base whitespace-nowrap">
+                    {d}
+                  </td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
 
-       <div class="overflow-x-auto shadow-md rounded-lg">
-           <table class="w-full border-t-8 border-red-500 bg-white">
-               <thead class="bg-red-500 font-lato">
-                   <tr>
-                       {
-                           [
-                               "Time",
-                               "Monday",
-                               "Tuesday",
-                               "Wednesday",
-                               "Thursday",
-                               "Friday",
-                           ].map((e: String) => (
-                               <th class="text-white text-left px-4 py-3 text-sm md:text-base">
-                                   {e.toUpperCase()}
-                               </th>
-                           ))
-                       }
-                   </tr>
-               </thead>
-               <tbody class="font-sans">
-                   {
-                       rows.map((row) => (
-                           <tr class="even:bg-gray-50 hover:bg-gray-100 border-b border-gray-200">
-                               {row.map((d) => (
-                                   <td class="text-gray-700 px-4 py-3 text-sm md:text-base whitespace-nowrap">
-                                       {d}
-                                   </td>
-                               ))}
-                           </tr>
-                       ))
-                   }
-               </tbody>
-           </table>
-       </div>
-   </div>
+  <script>
+    import moment from "moment-timezone";
+    import CoordHours from "../content/_coord-hours";
+
+    const status = document.getElementById("office-hours-status");
+
+    async function getDoorStatus() {
+      try {
+        const resp = await fetch("https://doors.amoses.dev/door-status");
+        const data = await resp.json();
+        const backDoor = data.find((Door) => Door.door === "back");
+        const frontDoor = data.find((Door) => Door.door === "front");
+        if (!backDoor || !frontDoor) return undefined;
+        return backDoor.status === "on" && frontDoor.status === "on";
+      } catch {
+        return undefined;
+      }
+    }
+
+    async function updateLabStatus() {
+      const isOpen = await getDoorStatus();
+      const now = moment().tz("America/Chicago");
+      const weekday = now.weekday();
+      const hour = now.hour();
+      let currentCoord = "";
+      let hasOfficeHours = false;
+
+      if (weekday >= 1 && weekday <= 5 && hour >= 10 && hour < 18) {
+        const hourIndex = hour - 10;
+        const dayIndex = weekday - 1;
+        if (hourIndex >= 0 && hourIndex < CoordHours.length) {
+          currentCoord = CoordHours[hourIndex].Coords[dayIndex] || "";
+          hasOfficeHours = currentCoord !== "";
+        }
+      }
+
+      if (!status) {
+        return;
+      }
+
+      if (isOpen === undefined) {
+        status.innerHTML =
+          '<span class="text-gray-600">Unable to fetch door status.</span>';
+        return;
+      }
+
+      if (isOpen && hasOfficeHours) {
+        status.innerHTML = `<span class="text-green-600 font-semibold">The doors are open, and a coord is scheduled to be here (${currentCoord}).</span>`;
+      } else if (!isOpen && hasOfficeHours) {
+        status.innerHTML = `<span class="text-yellow-600 font-semibold">A coord is scheduled (${currentCoord}), but the doors are closed.</span>`;
+      } else if (isOpen && !hasOfficeHours) {
+        status.innerHTML =
+          '<span class="text-green-600 font-semibold">No coord is scheduled, but the doors are open.</span>';
+      } else {
+        status.innerHTML =
+          '<span class="text-red-600 font-semibold">The doors are closed, and no coord is scheduled.</span>';
+      }
+    }
+
+    updateLabStatus();
+    setInterval(updateLabStatus, 10000);
+  </script>
 </Layout>
