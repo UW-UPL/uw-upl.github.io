@@ -7,4 +7,4 @@
 [submodule "src/content/harvest"]
 	path = src/content/harvest
 	url = https://github.com/UW-UPL/harvest.git
-
+	branch = main
