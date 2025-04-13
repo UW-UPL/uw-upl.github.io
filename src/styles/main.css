@@ -50,7 +50,8 @@ h4 {
 }
 
 a,
-p {
+p,
+li {
   font-family: "Alegreya Sans";
   font-weight: normal;
 }
@@ -112,6 +113,6 @@ a:hover {
 }
 
 p {
-    margin: 0;
-    padding: 1px;
+  margin: 0;
+  padding: 1px;
 }
