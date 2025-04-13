@@ -1,0 +1,22 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+console.log(currentPath);
+---
+
+<div class="header">
+  <img class="logo" src="/img/uplLogo.svg" alt="UPL Logo" />
+  <div class="nav">
+    <a class={currentPath === "" ? "nav-active" : ""} href="/">Home</a>
+    <a class={currentPath === "events" ? "nav-active" : ""} href="/events"
+      >Events</a
+    >
+    <a class={currentPath === "blog" ? "nav-active" : ""} href="/blog">Blog</a>
+    <a class={currentPath === "coords" ? "nav-active" : ""} href="/coords"
+      >Coords</a
+    >
+    <a class={currentPath === "hours" ? "nav-active" : ""} href="/hours"
+      >Hours</a
+    >
+  </div>
+</div>
