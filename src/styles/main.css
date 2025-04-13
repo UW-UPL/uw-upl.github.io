@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"),
+    url("/fonts/AlegreyaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("AlegreyaSans-Light.woff2") format("woff2"),
+    url("AlegreyaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #212121;
+  font-size: 14pt;
+}
+
+.top-bar {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(183, 1, 1);
+  height: 7px;
+}
+
+.content {
+  width: 100%;
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+}
+
+a,
+p {
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+}
+
+.upl-hero {
+  font-size: 37px;
+  text-align: center;
+}
+
+.header {
+  margin-top: 30px;
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 120px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: rgb(183, 1, 1);
+}
+
+a:hover {
+  color: rgb(102, 0, 0);
+}
+
+.nav a:link,
+.nav a:visited,
+.nav a:active {
+  color: black;
+  border-style: solid;
+  border-width: 2.5px;
+  text-decoration: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+}
+
+.nav a:hover,
+.nav-active {
+  border-color: rgb(183, 1, 1);
+}
+
+.nav a.nav-active {
+  border-color: rgb(183, 1, 1);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 1px;
+}
