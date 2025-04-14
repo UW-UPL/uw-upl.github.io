@@ -1,0 +1,12 @@
+{
+    "name": "Oliver Ohrt",
+    "image": "oliver-ohrt.png",
+    "isActive": true,
+    "emoji": "🌀",
+    "grade": "Sophomore",
+    "study": [
+        "Computer Science"
+    ],
+    "personalLink": "https://oliverohrt.com/",
+    "github": "Lavanic"
+}

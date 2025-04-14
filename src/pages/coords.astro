@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const coordinators = await getCollection("coordinators");
+---
+
+<Base title="Coords">
+  <h2>Coordinators</h2>
+  <p>
+    These are the people responsible for the daily operation and maintenance of
+    the UPL. To reach out, email us at <a href="mailto:upl@cs.wisc.edu"
+      >upl@cs.wisc.edu</a
+    > with any questions or feedback.
+  </p>
+  <div class="coords-list">
+    {
+      coordinators
+        .filter((coord) => coord.data.isActive)
+        .map((coord: any) => (
+          <div class="coord-profile">
+            <img
+              class="coord-image"
+              src={`/img/coords/${coord.data.image}`}
+              alt={coord.data.name}
+            />
+            <p>{coord.data.name}</p>
+            <p class="coord-detail">
+              {Array.isArray(coord.data.study)
+                ? coord.data.study.join(", ")
+                : coord.data.study}
+            </p>
+            <p class="coord-detail">{`Favorite emoji: ${coord.data.emoji}`}</p>
+            {coord.data.github && (
+              <a href={`https://github.com/${coord.data.github}`}>GitHub</a>
+            )}
+            {coord.data.personalLink && (
+              // clean up the link
+              <a style="display: block;" href={coord.data.personalLink}>
+                {(() => {
+                  let url = coord.data.personalLink.trim();
+
+                  if (!/^https?:\/\//i.test(url)) {
+                    url = "https://" + url;
+                  }
+
+                  try {
+                    const { hostname } = new URL(url);
+                    return hostname.replace(/^www\./i, "").toLowerCase();
+                  } catch {
+                    return coord.data.personalLink;
+                  }
+                })()}
+              </a>
+            )}
+          </div>
+        ))
+    }
+  </div>
+</Base>

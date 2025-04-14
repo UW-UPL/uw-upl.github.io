@@ -1,0 +1,277 @@
+$upl-red: rgb(183, 1, 1);
+$upl-darker: rgb(102, 0, 0);
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"),
+    url("/fonts/AlegreyaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("AlegreyaSans-Light.woff2") format("woff2"),
+    url("AlegreyaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.top-bar {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: $upl-red;
+  height: 7px;
+}
+
+.wrapper {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Alegreya Sans";
+  font-weight: bold;
+}
+
+a,
+p,
+li,
+th,
+td {
+  font-family: "Alegreya Sans";
+  font-weight: normal;
+}
+
+.upl-hero {
+  font-size: 37px;
+  text-align: center;
+}
+
+.header {
+  margin-top: 30px;
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 120px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: $upl-red;
+}
+
+a:hover {
+  color: $upl-darker;
+}
+
+.nav a:link,
+.nav a:visited,
+.nav a:active {
+  color: black;
+  border-style: solid;
+  border-width: 2.5px;
+  text-decoration: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+}
+
+.nav a:hover,
+.nav-active {
+  border-color: $upl-red;
+}
+
+.nav a.nav-active {
+  border-color: $upl-red;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 1px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+table.large-only {
+  display: none;
+}
+
+table.small-only {
+  display: table;
+}
+
+table.striped {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  empty-cells: show;
+  border: 1px solid #b6b6b6;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+table.striped tr.t-head {
+  background-color: #e0e0e0;
+  color: #000;
+  vertical-align: bottom;
+}
+
+table.striped th,
+table.striped td {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  margin: 0;
+  overflow: visible;
+  padding: 0.5em 1em;
+}
+
+table.striped th:first-child,
+table.striped td:first-child {
+  border-left-width: 0;
+}
+
+table.striped tbody tr:nth-child(2n-1) td {
+  background-color: #f2f2f2;
+}
+
+table.striped.large-only {
+  display: none;
+}
+
+table.striped.small-only {
+  display: table;
+}
+
+table.striped.small-only tbody tr:last-child td {
+  border-bottom: 1px solid #b6b6b6;
+}
+
+table.striped.small-only tbody:last-child tr:last-child td {
+  border-bottom: none;
+}
+
+@media (min-width: 760px) {
+  table.striped.large-only {
+    display: table;
+  }
+  table.striped.small-only {
+    display: none;
+  }
+}
+
+.stacktable {
+  width: 100%;
+}
+
+.st-head-row {
+  padding-top: 1em;
+}
+
+.st-head-row.st-head-row-main {
+  font-size: 1.5em;
+  padding-top: 0;
+}
+
+.st-key {
+  width: 49%;
+  text-align: right;
+  padding-right: 1%;
+}
+
+.st-val {
+  width: 49%;
+  padding-left: 1%;
+  text-align: center;
+}
+
+.lab-table-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+table.lab-status {
+  display: none;
+}
+
+table.lab-status .lab-table-machine-container td:first-child {
+  text-align: left;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 14pt;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  height: 150px;
+  background-color: $upl-red;
+  margin-top: 18px;
+}
+
+.coord-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 75px;
+}
+
+.coords-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.coord-profile {
+  width: 240px;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.coord-detail {
+  color: #727272;
+}

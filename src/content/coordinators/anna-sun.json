@@ -1,0 +1,11 @@
+{
+    "name": "Anna Sun",
+    "image": "anna-sun.png",
+    "isActive": true,
+    "emoji": "🥲",
+    "grade": "Sophomore",
+    "study": [
+        "Computer Science"
+    ],
+    "github": "annasun04"
+}

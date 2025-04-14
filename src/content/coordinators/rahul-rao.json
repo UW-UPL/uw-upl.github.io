@@ -1,0 +1,11 @@
+{
+    "name": "Rahul Rao",
+    "isActive": true,
+    "emoji": "😺",
+    "grade": "Junior",
+    "image": "rahul-rao.jpg",
+    "study": [
+        "Computer Science"
+    ],
+    "github": "rahulrao011"
+}

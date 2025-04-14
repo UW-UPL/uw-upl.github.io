@@ -1,0 +1,13 @@
+{
+    "name": "Pusti Jesrani",
+    "image": "pusti-jesrani.webp",
+    "isActive": true,
+    "emoji": "🍒",
+    "grade": "Junior",
+    "study": [
+        "CS",
+        "DS"
+    ],
+    "github": "voldemozzerella",
+    "personalLink": "https://voldemozzerella.github.io"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "George Chen",
+    "image": "george-chen.webp",
+    "isActive": true,
+    "emoji": "🤖",
+    "grade": "Sophomore",
+    "study": [
+        "Computer Engineering"
+    ],
+    "personalLink": "https://georgechen.me",
+    "github": "ABIbreak"
+}

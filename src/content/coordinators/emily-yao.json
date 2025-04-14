@@ -1,0 +1,14 @@
+{
+  "name": "Emily Yao",
+  "isActive": true,
+  "emoji": "🐀",
+  "grade": "Junior",
+  "image": "emily-yao.webp",
+  "study": [
+    "CS",
+    "Math",
+    "Econ"
+  ],
+  "personalLink": "https://emilyyao.me/",
+  "github": "sqqueak"
+}

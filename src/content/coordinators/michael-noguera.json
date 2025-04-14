@@ -1,0 +1,12 @@
+{
+  "name": "Michael Noguera",
+  "isActive": true,
+  "emoji": "🐢",
+  "grade": "Senior",
+  "study": [
+    "Computer Science"
+  ],
+  "personalLink": "https://noguera.dev/",
+  "github": "michaelnoguera",
+  "image": "michael-noguera.webp"
+}

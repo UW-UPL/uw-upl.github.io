@@ -1,0 +1,12 @@
+{
+    "name": "Jiamu Chai",
+    "isActive": true,
+    "emoji": "😺",
+    "grade": "Sophomore",
+    "image": "jiamu-chai.webp",
+    "study": [
+        "CS",
+        "Math"
+    ],
+    "github": "GoateSo"
+}
