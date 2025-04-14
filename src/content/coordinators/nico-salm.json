@@ -1,0 +1,12 @@
+{
+    "name": "Nico Salm",
+    "isActive": true,
+    "emoji": "🐉",
+    "grade": "Junior",
+    "image": "nico-salm.webp",
+    "study": [
+        "Computer Science"
+    ],
+    "personalLink": "https://salm.dev/blog",
+    "github": "https://github.com/nicosalm"
+}

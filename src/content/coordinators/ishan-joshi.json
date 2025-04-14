@@ -1,0 +1,13 @@
+{
+    "name": "Ishan Joshi",
+    "isActive": true,
+    "emoji": "🐜",
+    "grade": "Sophomore",
+    "image": "ishan-joshi.webp",
+    "study": [
+        "CS",
+        "Math"
+    ],
+    "github": "ishanjoshi1",
+    "personalLink": ""
+}

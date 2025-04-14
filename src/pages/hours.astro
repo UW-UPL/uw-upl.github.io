@@ -1,0 +1,110 @@
+---
+import Base from "../layouts/Base.astro";
+import CoordHours from "../content/coordinators/hours";
+
+const rows = CoordHours.map(({ Time, Coords }) => [Time, ...Coords]);
+---
+
+<Base title="Hours">
+  <p
+    style="margin-top: 15px; margin-bottom: 18px; padding-bottom: 15px; border-style: solid; border-top: none; border-left: none; border-right: none; border-width: 0.5px; border-color: gray;"
+  >
+    Anyone is welcome in the UPL room whenever a coord is present and coords
+    commit to be present at certain office hours. All you need to do is come in
+    and say hi!
+  </p>
+
+  <p id="office-hours-status" style="text-align: center; margin-bottom: 15px;">
+    Loading...
+  </p>
+  <table class="hours striped large-only">
+    <tbody>
+      <tr class="t-head">
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </tbody>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            {row.map((d) => (
+              <td>{d}</td>
+            ))}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+  <script>
+    import moment from "moment-timezone";
+    import CoordHours from "../content/coordinators/hours";
+
+    const status = document.getElementById("office-hours-status");
+
+    async function getDoorStatus() {
+      try {
+        const resp = await fetch("https://doors.amoses.dev/door-status");
+        const data = await resp.json();
+        const backDoor = data.find(
+          (Door: { door: string }) => Door.door === "back"
+        );
+        const frontDoor = data.find(
+          (Door: { door: string }) => Door.door === "front"
+        );
+        if (!backDoor || !frontDoor) return undefined;
+        return backDoor.status === "on" && frontDoor.status === "on";
+      } catch {
+        return undefined;
+      }
+    }
+
+    async function updateLabStatus() {
+      const isOpen = await getDoorStatus();
+      const now = moment().tz("America/Chicago");
+      const weekday = now.weekday();
+      const hour = now.hour();
+      let currentCoord = "";
+      let hasOfficeHours = false;
+
+      if (weekday >= 1 && weekday <= 5 && hour >= 10 && hour < 18) {
+        const hourIndex = hour - 10;
+        const dayIndex = weekday - 1;
+        if (hourIndex >= 0 && hourIndex < CoordHours.length) {
+          currentCoord = CoordHours[hourIndex].Coords[dayIndex] || "";
+          hasOfficeHours = currentCoord !== "";
+        }
+      }
+
+      if (!status) {
+        return;
+      }
+
+      if (isOpen === undefined) {
+        status.innerHTML =
+          '<span style="color: #737373">Unable to fetch door status.</span>';
+        return;
+      }
+
+      if (isOpen && hasOfficeHours) {
+        status.innerHTML = `<span style="color: #16a34a; font-weight: 600;">The doors are open, and a coord is scheduled to be here (${currentCoord}).</span>`;
+      } else if (!isOpen && hasOfficeHours) {
+        status.innerHTML = `<span style="color: #ca8a04; font-weight: 600;">A coord is scheduled (${currentCoord}), but the doors are closed.</span>`;
+      } else if (isOpen && !hasOfficeHours) {
+        status.innerHTML =
+          '<span style="color: #16a34a; font-weight: 600;">No coord is scheduled, but the doors are open.</span>';
+      } else {
+        status.innerHTML =
+          '<span style="color: #dc2626; font-weight: 600;">The doors are closed, and no coord is scheduled.</span>';
+      }
+    }
+
+    updateLabStatus();
+    setInterval(updateLabStatus, 10000);
+  </script>
+</Base>

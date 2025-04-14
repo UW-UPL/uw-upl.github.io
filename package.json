@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.6.1"
+    "astro": "^5.6.1",
+    "moment-timezone": "^0.5.48",
+    "sass": "^1.86.3"
   }
 }

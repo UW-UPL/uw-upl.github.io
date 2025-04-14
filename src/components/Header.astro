@@ -1,7 +1,6 @@
 ---
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
-console.log(currentPath);
 ---
 
 <div class="header">
@@ -12,6 +11,9 @@ console.log(currentPath);
     <a class={currentPath === "" ? "nav-active" : ""} href="/">Home</a>
     <a class={currentPath === "events" ? "nav-active" : ""} href="/events"
       >Events</a
+    >
+    <a class={currentPath === "projects" ? "nav-active" : ""} href="/projects"
+      >Projects</a
     >
     <a class={currentPath === "blog" ? "nav-active" : ""} href="/blog">Blog</a>
     <a class={currentPath === "coords" ? "nav-active" : ""} href="/coords"

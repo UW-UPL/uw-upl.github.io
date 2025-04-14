@@ -1,0 +1,13 @@
+{
+  "name": "Sam Baumohl",
+  "isActive": true,
+  "emoji": "📉",
+  "grade": "Junior",
+  "image": "sam-baumohl.webp",
+  "study": [
+    "CS",
+    "Math"
+  ],
+  "personalLink": "https://www.sambaumohl.com",
+  "github": "sbaumohl"
+}
