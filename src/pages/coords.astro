@@ -30,7 +30,46 @@ const coordinators = await getCollection("coordinators");
                 ? coord.data.study.join(", ")
                 : coord.data.study}
             </p>
-            <p class="coord-detail">{`Favorite emoji: ${coord.data.emoji}`}</p>
+            <p class="coord-detail">
+              Favorite emoji:
+              {(() => {
+                const emoji = coord.data.emoji;
+
+                // custom emoji
+                const isImageFile =
+                  // has a . and something after it (.svg, .png ...)
+                  emoji.includes(".") && emoji.split(".").pop()?.length > 0;
+
+                if (isImageFile) {
+                  return (
+                    <img
+                      src={`/img/emoji/${emoji}`}
+                      alt="custom emoji"
+                      height="20"
+                      style="vertical-align: middle;"
+                    />
+                  );
+                }
+
+                const toCodePoint = (unicode: string) =>
+                  Array.from(unicode)
+                    .map((char) => char.codePointAt(0)!.toString(16))
+                    .join("-");
+
+                const codepoint = toCodePoint(emoji);
+                // hit the jsdelivr api for the twemoji
+                const emojiUrl = `https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/${codepoint}.svg`;
+
+                return (
+                  <img
+                    src={emojiUrl}
+                    alt={emoji}
+                    height="20"
+                    style="vertical-align: middle;"
+                  />
+                );
+              })()}
+            </p>
             {coord.data.github && (
               <a href={`https://github.com/${coord.data.github}`}>GitHub</a>
             )}
