@@ -250,6 +250,8 @@ body {
   height: 150px;
   background-color: $upl-red;
   margin-top: 18px;
+  color: white;
+  font-size: 14px;
 }
 
 .coord-image {
@@ -274,4 +276,88 @@ body {
 
 .coord-detail {
   color: #727272;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 540px;
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    width: 740px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1060px) {
+  .wrapper {
+    width: 890px;
+  }
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer div {
+  padding-bottom: 6px;
+}
+
+.footer img#uw-logo {
+  max-width: 200px;
+}
+
+@media (min-width: 760px) {
+  .footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer {
+    padding: 13px 0;
+    height: 150px;
+  }
+
+  .footer div {
+    padding: 0;
+  }
+
+  .footer .uw-credit {
+    order: 1;
+    text-align: left;
+  }
+
+  .footer .location-info {
+    order: 2;
+    text-align: right;
+  }
+}
+
+.uw-logo img {
+  cursor: pointer;
+}
+
+.uw-logo {
+  display: inline-block;
+  cursor: pointer !important;
+  height: 100%;
+}
+
+.uw-logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+.uw-logo img {
+  display: block;
+  cursor: pointer;
 }
