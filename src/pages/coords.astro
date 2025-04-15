@@ -70,9 +70,6 @@ const coordinators = await getCollection("coordinators");
                 );
               })()}
             </p>
-            {coord.data.github && (
-              <a href={`https://github.com/${coord.data.github}`}>GitHub</a>
-            )}
             {coord.data.personalLink && (
               // clean up the link
               <a style="display: block;" href={coord.data.personalLink}>
@@ -91,6 +88,9 @@ const coordinators = await getCollection("coordinators");
                   }
                 })()}
               </a>
+            )}
+            {coord.data.github && (
+              <a href={`https://github.com/${coord.data.github}`}>GitHub</a>
             )}
           </div>
         ))
