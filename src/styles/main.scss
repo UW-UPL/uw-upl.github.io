@@ -103,7 +103,7 @@ a:hover {
 
 .nav {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 p {
@@ -307,7 +307,6 @@ body {
   text-decoration: underline;
 }
 
-
 .footer img#uw-logo {
   max-width: 200px;
 }
@@ -364,7 +363,6 @@ body {
 .upl-project {
   display: flex;
   gap: 0.5em;
-
 }
 
 .project-title {
@@ -385,4 +383,12 @@ body {
 
 .author-info {
   font-size: 12pt;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+.current-hour {
+  border: 2px solid $upl-red !important;
 }
