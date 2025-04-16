@@ -16,6 +16,7 @@ const coordinators = await getCollection("coordinators");
   <div class="coords-list">
     {
       coordinators
+        .sort((a, b) => a.data.name.localeCompare(b.data.name))
         .filter((coord) => coord.data.isActive)
         .map((coord: any) => (
           <div class="coord-profile">

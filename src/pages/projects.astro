@@ -1,14 +1,42 @@
 ---
 import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("projects");
 ---
 
 <Base title="Project(s)">
   <h2>Projects</h2>
-  <ul>
-    <li>
-      <a href="https://github.com/UW-UPL/door-counter-v2">People Counter</a>
-      <a href="https://www.amoses.dev/blog/upl-people-counter/">(Blog)</a>
-    </li>
-  </ul>
+  <div class="projects-list">
+    {
+      projects.map((project) => (
+        <div class="upl-project">
+          <img
+            class="project-image"
+            src={`/img/projects/${project.data.image}`}
+          />
+
+          <div class="content-wrapper">
+            <div class="project-info">
+              <h3 class="project-title">{project.data.title}</h3>
+              <p>{project.data.description}</p>
+            </div>
+            <div class="author-info">
+              <p>
+                by
+                {Array.isArray(project.data.authors)
+                  ? project.data.authors.join(", ")
+                  : project.data.authors}
+              </p>
+              <a href={project.data.projectLink}>People Counter</a>
+              <a href="https://www.amoses.dev/blog/upl-people-counter/">
+                (Blog)
+              </a>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
   <h1>END OF LIST.</h1>
 </Base>

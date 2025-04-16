@@ -307,9 +307,6 @@ body {
   text-decoration: underline;
 }
 
-.footer div {
-  padding-bottom: 6px;
-}
 
 .footer img#uw-logo {
   max-width: 200px;
@@ -325,10 +322,6 @@ body {
   .footer {
     padding: 13px 0;
     height: 150px;
-  }
-
-  .footer div {
-    padding: 0;
   }
 
   .footer .uw-credit {
@@ -360,4 +353,36 @@ body {
 .uw-logo img {
   display: block;
   cursor: pointer;
+}
+
+.project-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.upl-project {
+  display: flex;
+  gap: 0.5em;
+
+}
+
+.project-title {
+  margin: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.author-info {
+  font-size: 12pt;
 }

@@ -16,4 +16,15 @@ const coordinators = defineCollection({
   }),
 });
 
-export const collections = { coordinators };
+const projects = defineCollection({
+  type: "data",
+  schema: z.object({
+    title: z.string(),
+    projectLink: z.string(),
+    description: z.string(),
+    image: z.string(),
+    authors: z.array(z.string()),
+  }),
+});
+
+export const collections = { coordinators, projects };
