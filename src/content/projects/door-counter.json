@@ -1,0 +1,9 @@
+{
+    "title": "People Counter",
+    "projectLink": "https://github.com/UW-UPL/door-counter-v2",
+    "description": "A system to detect whether the doors to the UPL are open or closed.",
+    "image": "door-counter.png",
+    "authors": [
+        "Andrew"
+    ]
+}
