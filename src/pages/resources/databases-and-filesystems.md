@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Databases and Filesystems"
 ---
 
-[<<< All Lists](./)
-
 # Databases & File Systems
 
 Storing and working with data. 
@@ -17,3 +15,5 @@ Storing and working with data.
 - [Files are fraught with peril](https://danluu.com/deconstruct-files/): An article that goes into depth about how writing to files works at the system call level, and how the simple act of writing to a file can go wrong.
 - [TigerStyle](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md): A phenomenal document outlining the design principles and goals of [TigerBeetle](https://tigerbeetle.com), a high-performance transactions database.
 - [Systems Distributed](https://www.youtube.com/playlist?list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ): A conference by TigerBeetle about various programming and database/systems design techniques and considerations, by a variety of very smart and eloquent people doing cutting-edge work.
+
+[<<< All Lists](./)

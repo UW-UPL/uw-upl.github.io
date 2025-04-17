@@ -3,7 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Essentials"
 ---
 
-[<<< All Lists](./)
 
 # Essentials
 
@@ -18,3 +17,5 @@ This list contains things programmers should be aware of, but are unlikely to en
 - [Andrew Kelley - Practical DOD](https://vimeo.com/649009599): How to implement some of the insights from Mike Acton's talk.
 - [Files are fraught with peril](https://danluu.com/deconstruct-files/): Explains how even "basic" file I/O is nearly impossible to get correct. A good lesson in how seemingly simple things in CS often turn out to be very difficult.
 - [Reading citations is easier than most people think](https://danluu.com/dunning-kruger/): Popular "science-based" memes are often not actually backed by science: perceived skill correlates with actual skill and money buys happiness. 
+
+[<<< All Lists](./)

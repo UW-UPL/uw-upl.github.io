@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Performance"
 ---
 
-[<<< All Lists](./)
-
 # Software Performance
 
 [If you can program it slowly, you can program it quickly!](https://www.youtube.com/watch?v=BvsvaCU6i1M)
@@ -24,3 +22,5 @@ title: "Performance"
 - [David Gross - Trading at light speed: designing low latency systems in C++ (Meeting C++ 2022)](https://www.youtube.com/watch?v=8uAW5FQtcvE): More recent talk on c++ systems optimization
 - [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog](https://siboehm.com/articles/22/CUDA-MMM): A very in-depth article about optimizing a matrix multiplication operation in CUDA.
 - [The NumPy array: a structure for efficient numerical computation](https://arxiv.org/pdf/1102.1523.pdf): A paper detailing how the NumPy array works under the hood for efficient computation.
+  
+[<<< All Lists](./)
