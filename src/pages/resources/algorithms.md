@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Algorithms"
 ---
 
-[<<< All Lists](./)
-
 # Algorithms
 
 When brute force isn't enough.
@@ -19,3 +17,5 @@ When brute force isn't enough.
 - [Introduction to Theory of Computation](https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/20189FS%20ComputationTheory/Introduction%20to%20the%20theory%20of%20computation_third%20edition%20-%20Michael%20Sipser.pdf): Easy to digest text exploring formal languages, automata theory, computability, and complexity with rigorous proofs and clear explanations.
 - [Randomized Algorithms](https://rajsain.wordpress.com/wp-content/uploads/2013/11/randomized-algorithms-motwani-and-raghavan.pdf): Comprehensive guide to the design and analysis of randomized algorithms, covering probabilistic techniques, random sampling, and applications in computational complexity and optimization
 - [Approximation Algorithms](https://link.springer.com/book/10.1007/978-3-662-04565-7): Rigorous exploration of approximation algorithms, focusing on design techniques, performance guarantees, and applications to NP-hard optimization problems.
+
+[<<< All Lists](./)

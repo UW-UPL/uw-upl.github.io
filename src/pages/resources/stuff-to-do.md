@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Stuff To Do"
 ---
 
-[<<< All Lists](./)
-
 # Stuff To Do
 
 Bored? Need project ideas? Looking for something to do?
@@ -16,3 +14,5 @@ Bored? Need project ideas? Looking for something to do?
 - [Advent of Code](https://adventofcode.com/): Small programming puzzles released daily in December. Past years can be completed any time.
 - [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x): Meta-list of tutorials for recreating projects.
 - [CMU 15-445/645 - Intro to Database Systems (Fall 2024)](https://15445.courses.cs.cmu.edu/fall2024/): Create a buffer Pool Manager, database Index, and other projects in this databases course.
+
+[<<< All Lists](./)

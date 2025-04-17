@@ -97,7 +97,11 @@ const rows = CoordHours.map(({ Time, Coords }) => [Time, ...Coords]);
             }
           }
 
-          if ((hourIndex >= 0 && hourIndex < tableBody.rows.length) && currentCoord) {
+          if (
+            hourIndex >= 0 &&
+            hourIndex < tableBody.rows.length &&
+            currentCoord
+          ) {
             const highlightCell = tableBody.rows[hourIndex].cells[dayIndex + 1];
             if (highlightCell) {
               highlightCell.classList.add("current-hour");

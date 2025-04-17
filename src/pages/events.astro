@@ -1,7 +1,70 @@
 ---
 import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const events = await getCollection("events");
+
+const now = new Date();
+const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+const sorted = events.sort(
+  (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime()
+);
+
+const futureEvents = sorted.filter((e) => new Date(e.data.date) >= todayStart);
+const pastEvents = sorted.filter((e) => new Date(e.data.date) < todayStart);
 ---
 
 <Base title="Events">
-  <h2>Events</h2>
+  <h2>Upcoming Events</h2>
+  {
+    futureEvents.length > 0 ? (
+      <div class="event-list">
+        {futureEvents.map((event) => (
+          <div class="event">
+            <p>
+              <h3 style="margin: 0; text-decoration: underline;">
+                {event.data.title}
+              </h3>
+            </p>
+            <p>{event.data.description}</p>
+            <p>
+              {new Date(event.data.date).toLocaleString("en-US", {
+                dateStyle: "medium",
+                timeStyle: "short",
+              })}
+            </p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p>No upcoming events.</p>
+    )
+  }
+
+  <h2>Past Events</h2>
+  {
+    pastEvents.length > 0 ? (
+      <div class="event-list">
+        {pastEvents.map((event) => (
+          <div class="event">
+            <p>
+              <h3 style="margin: 0; text-decoration: underline;">
+                {event.data.title}
+              </h3>
+            </p>
+            <p>{event.data.description}</p>
+            <p>
+              {new Date(event.data.date).toLocaleString("en-US", {
+                dateStyle: "medium",
+                timeStyle: "short",
+              })}
+            </p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p>No past events.</p>
+    )
+  }
 </Base>

@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Unix"
 ---
 
-[<<< All Lists](./)
-
 # Unix
 
 Love it or hate it, Unix casts a long shadow over the modern programming world. Many contemporary operating systems like Linux, MacOS, and BSD
@@ -19,3 +17,5 @@ This list contains a variety of resources on the design, implementation, usage, 
 
 - [Advanced Programming in the UNIX Environment](https://www.youtube.com/watch?v=BsB9Cg6yJc4&list=PL0qfF8MrJ-jxMfirAdxDs9zIiBg2Wug0z): Design and implementation of Unix syscalls
 - [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/) - Way more than you'll ever need to know about Bash.
+
+[<<< All Lists](./)

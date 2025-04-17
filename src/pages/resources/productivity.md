@@ -3,8 +3,6 @@ layout: "../../layouts/Base.astro"
 title: "Productivity"
 ---
 
-[<<< All Lists](./)
-
 ## Productivity
 
 This list { }
@@ -14,3 +12,5 @@ This list { }
 - [Scott Hanselman - It's not what you read, it's what you ignore](https://youtube.com/watch?v=IWPgUn8tL8s): A talk about workflow-optimization as a full-time dev.
 
 ### Subcategory 1
+
+[<<< All Lists](./)
