@@ -1,4 +1,6 @@
 ---
+import DoorStatus from "./DoorStatus";
+
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1);
 ---
@@ -26,4 +28,5 @@ const currentPath = pathname.slice(1);
       >Hours</a
     >
   </div>
+  <DoorStatus client:load />
 </div>

@@ -113,6 +113,16 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.doorstatus {
+  align-self: start;
+  gap: 10px;
+  @media (max-width: 767px) {
+    align-self: end;
+    order: -1;
+    height: 0;
+  }
+}
+
 .logo {
   width: 120px;
 }
