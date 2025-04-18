@@ -10,9 +10,14 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/svelte": "^7.0.10",
     "astro": "^5.6.1",
     "moment-timezone": "^0.5.48",
     "sass": "^1.86.3",
+    "svelte": "^5.28.1",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@iconify/svelte": "^4.2.0"
   }
 }

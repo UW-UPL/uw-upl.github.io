@@ -1,6 +1,9 @@
 $upl-red: rgb(183, 1, 1);
 $upl-darker: rgb(102, 0, 0);
 
+$breakpoint-md: 760px;
+$breakpoint-lg: 1060px;
+
 *,
 *::before,
 *::after {
@@ -54,13 +57,13 @@ body {
   max-width: 540px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: $breakpoint-md) {
   .wrapper {
     width: 740px;
     max-width: none;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: $breakpoint-lg) {
   .wrapper {
     width: 890px;
   }
@@ -104,63 +107,71 @@ a:hover {
 
 .header {
   margin-top: 30px;
-  border-bottom: 0.5px solid gray;
   padding-bottom: 15px;
+  border-bottom: 0.5px solid gray;
 
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+  }
 }
 
 .logo {
   width: 120px;
+  margin-bottom: 10px;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 0;
+  }
+}
+
+.doorstatus {
+  position: static;
+  align-self: flex-end;
+  order: -1;
+  height: 0;
+
+  @media (min-width: $breakpoint-md) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    order: 0;
+    margin-bottom: 0;
+  }
 }
 
 .nav {
   display: flex;
   flex: 1 1 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;       // center by default (mobile)
+  align-self: center;
   gap: 10px;
-}
 
-.nav a:link,
-.nav a:visited,
-.nav a:active {
-  color: black;
-  border-style: solid;
-  border-width: 2.5px;
-  text-decoration: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-color: white;
-}
-
-.nav a:hover,
-.nav-active,
-.nav a.nav-active {
-  border-color: $upl-red;
-}
-
-@media (min-width: 768px) {
-  .header {
-    flex-wrap: nowrap;
-  }
-  .nav {
+  @media (min-width: $breakpoint-md) {
+    justify-content: flex-end;  // right-align on desktop
+    align-self: flex-end;
     flex: 0 0 auto;
     gap: 15px;
   }
 }
 
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .logo {
-    margin-bottom: 10px;
+.nav a {
+  color: black;
+  text-decoration: none;
+  border: 0;
+  border-bottom: 2.5px solid white;
+
+  &:hover,
+  &.nav-active {
+    border-color: $upl-red;
   }
 }
 
@@ -294,7 +305,7 @@ table.lab-status .lab-table-machine-container td:first-child {
   max-width: 200px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: $breakpoint-md) {
   .footer {
     padding: 13px 0;
     height: 150px;

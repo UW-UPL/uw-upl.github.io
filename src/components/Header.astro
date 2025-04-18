@@ -1,5 +1,9 @@
 ---
-const pathname = new URL(Astro.request.url).pathname;
+let pathname = new URL(Astro.request.url).pathname;
+
+if (pathname.endsWith("/")) {
+  pathname = pathname.slice(0, -1);
+}
 const currentPath = pathname.slice(1);
 ---
 
