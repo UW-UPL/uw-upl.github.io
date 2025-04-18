@@ -9,5 +9,12 @@ export default defineConfig({
       prefetchAll: true
   },
 
-  integrations: [svelte()]
+  integrations: [svelte()],
+
+  redirects: {
+        "/discord": {
+          status: 302,
+          destination: "https://discord.gg/dmefFzm"
+        },
+    }
 });
