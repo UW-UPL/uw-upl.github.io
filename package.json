@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/preact": "^4.0.9",
+    "@astrojs/svelte": "^7.0.10",
     "astro": "^5.6.1",
     "moment-timezone": "^0.5.48",
-    "preact": "^10.26.5",
     "sass": "^1.86.3",
+    "svelte": "^5.28.1",
     "typescript": "^5.8.3"
   }
 }
