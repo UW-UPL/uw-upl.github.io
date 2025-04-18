@@ -1,6 +1,26 @@
 $upl-red: rgb(183, 1, 1);
 $upl-darker: rgb(102, 0, 0);
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 14pt;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Alegreya Sans";
   src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"),
@@ -22,15 +42,28 @@ $upl-darker: rgb(102, 0, 0);
 .top-bar {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   background-color: $upl-red;
   height: 7px;
 }
 
 .wrapper {
-  max-width: 880px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
+  max-width: 540px;
+}
+
+@media (min-width: 760px) {
+  .wrapper {
+    width: 740px;
+    max-width: none;
+  }
+}
+@media (min-width: 1060px) {
+  .wrapper {
+    width: 890px;
+  }
 }
 
 h1,
@@ -50,6 +83,20 @@ td {
   font-weight: normal;
 }
 
+p {
+  margin: 0;
+  padding: 1px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: $upl-red;
+}
+a:hover {
+  color: $upl-darker;
+}
+
 .upl-hero {
   font-size: 37px;
   text-align: center;
@@ -63,20 +110,19 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .logo {
   width: 120px;
 }
 
-a:link,
-a:visited,
-a:active {
-  color: $upl-red;
-}
-
-a:hover {
-  color: $upl-darker;
+.nav {
+  display: flex;
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .nav a:link,
@@ -93,38 +139,43 @@ a:hover {
 }
 
 .nav a:hover,
-.nav-active {
-  border-color: $upl-red;
-}
-
+.nav-active,
 .nav a.nav-active {
   border-color: $upl-red;
 }
 
-.nav {
-  display: flex;
-  gap: 15px;
+@media (min-width: 768px) {
+  .header {
+    flex-wrap: nowrap;
+  }
+  .nav {
+    flex: 0 0 auto;
+    gap: 15px;
+  }
 }
 
-p {
-  margin: 0;
-  padding: 1px;
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
 }
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-td,
-th {
+th,
+td {
   padding: 0;
 }
 
 table.large-only {
   display: none;
 }
-
 table.small-only {
   display: table;
 }
@@ -167,7 +218,6 @@ table.striped tbody tr:nth-child(2n-1) td {
 table.striped.large-only {
   display: none;
 }
-
 table.striped.small-only {
   display: table;
 }
@@ -192,22 +242,18 @@ table.striped.small-only tbody:last-child tr:last-child td {
 .stacktable {
   width: 100%;
 }
-
 .st-head-row {
   padding-top: 1em;
 }
-
 .st-head-row.st-head-row-main {
   font-size: 1.5em;
   padding-top: 0;
 }
-
 .st-key {
   width: 49%;
   text-align: right;
   padding-right: 1%;
 }
-
 .st-val {
   width: 49%;
   padding-left: 1%;
@@ -219,32 +265,16 @@ table.striped.small-only tbody:last-child tr:last-child td {
   max-width: 300px;
   margin: 0 auto;
 }
-
 table.lab-status {
   display: none;
 }
-
 table.lab-status .lab-table-machine-container td:first-child {
   text-align: left;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-size: 14pt;
 }
 
 .content {
   flex: 1 0 auto;
 }
-
 .footer {
   flex-shrink: 0;
   height: 150px;
@@ -253,102 +283,43 @@ body {
   color: white;
   font-size: 14px;
 }
-
-.coord-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 75px;
-}
-
-.coords-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.coord-profile {
-  width: 240px;
-  text-align: center;
-  margin-bottom: 2.5em;
-}
-
-.coord-detail {
-  color: #727272;
-}
-
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-  max-width: 540px;
-}
-
-@media (min-width: 760px) {
-  .wrapper {
-    width: 740px;
-    max-width: none;
-  }
-}
-
-@media (min-width: 1060px) {
-  .wrapper {
-    width: 890px;
-  }
-}
-
 .footer a {
   color: #fff;
   text-decoration: none;
 }
-
 .footer a:hover {
   text-decoration: underline;
 }
-
 .footer img#uw-logo {
   max-width: 200px;
 }
 
 @media (min-width: 760px) {
+  .footer {
+    padding: 13px 0;
+    height: 150px;
+  }
   .footer .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
-  .footer {
-    padding: 13px 0;
-    height: 150px;
-  }
-
   .footer .uw-credit {
     order: 1;
     text-align: left;
   }
-
   .footer .location-info {
     order: 2;
     text-align: right;
   }
 }
 
-.uw-logo img {
-  cursor: pointer;
-}
-
 .uw-logo {
   display: inline-block;
   cursor: pointer !important;
   height: 100%;
-}
-
-.uw-logo {
-  display: inline-block;
   line-height: 0;
 }
-
 .uw-logo img {
   display: block;
   cursor: pointer;
@@ -359,36 +330,54 @@ body {
   height: 100px;
   object-fit: cover;
 }
-
 .upl-project {
   display: flex;
   gap: 0.5em;
 }
-
 .project-title {
   margin: 0;
 }
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .projects-list {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
-
 .author-info {
   font-size: 12pt;
 }
-
 li {
   margin-bottom: 4px;
 }
-
 .current-hour {
   border: 2px solid $upl-red !important;
+}
+
+.coords-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.coord-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 75px;
+}
+.coord-profile {
+  width: 240px;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.coord-detail {
+  color: #727272;
+}
+
+.event {
+  margin-bottom: 1em;
 }

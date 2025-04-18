@@ -23,7 +23,4 @@ This list contains things programmers should be aware of, but are unlikely to en
 
 ### Run out of things to read?
 - Discover trending articles on [Hacker News](https://news.ycombinator.com)!
-- Read [blog posts](https://github.com/UW-UPL/harvest/blob/main/output/blog_posts) from current and past UPL members.
-
-## Contributing
-Contributions are greatly appreciated!. Feel free to assist at [CONTRIBUTING](https://github.com/UW-UPL/resources/blob/main/CONTRIBUTING).
+- Read [blog posts](./blog) from current and past UPL members.

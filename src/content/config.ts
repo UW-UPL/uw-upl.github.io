@@ -20,7 +20,8 @@ const projects = defineCollection({
   type: "data",
   schema: z.object({
     title: z.string(),
-    projectLink: z.string(),
+    source: z.string(),
+    writeup: z.optional(z.string()),
     description: z.string(),
     image: z.string(),
     authors: z.array(z.string()),
@@ -31,9 +32,25 @@ const events = defineCollection({
   type: "data",
   schema: z.object({
     title: z.string(),
-    date: z.string(),
+    date: z.string(),   // ISO 8601 (https://dencode.com/en/date/iso8601)
+    link: z.optional(z.string()),
     description: z.string(),
   }),
 });
 
-export const collections = { coordinators, projects, events };
+const blogs = defineCollection({
+  type: "data",
+  schema: z.object({
+    posts: z.array(
+      z.object({
+        title: z.string(),
+        link: z.string(),
+        author: z.string(),
+        date: z.string(),
+        description: z.string(),
+      })
+    ),
+  }),
+});
+
+export const collections = { coordinators, projects, events, blogs };
