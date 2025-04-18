@@ -5,5 +5,11 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     prefetch: {
         prefetchAll: true
+    },
+    redirects: {
+        "/discord": {
+          status: 302,
+          destination: "https://discord.gg/dmefFzm"
+        },
     }
 });
