@@ -23,17 +23,17 @@ const pastEvents = sorted.filter((e) => new Date(e.data.date) < todayStart);
         {futureEvents.map((event) => (
           <div class="event">
             <p>
-              <h3 style="margin: 0; text-decoration: underline;">
+              <h3 style="margin: 0; text-decoration: underline; margin-bottom: 3px;">
                 {event.data.title}
               </h3>
+              <p style="margin-bottom: 10px;">
+                {new Date(event.data.date).toLocaleString("en-US", {
+                  dateStyle: "medium",
+                  timeStyle: "short",
+                })}
+              </p>
             </p>
-            <p>{event.data.description}</p>
-            <p>
-              {new Date(event.data.date).toLocaleString("en-US", {
-                dateStyle: "medium",
-                timeStyle: "short",
-              })}
-            </p>
+            <p style="margin-bottom: 5px;">{event.data.description}</p>
           </div>
         ))}
       </div>
@@ -49,9 +49,16 @@ const pastEvents = sorted.filter((e) => new Date(e.data.date) < todayStart);
         {pastEvents.map((event) => (
           <div class="event">
             <p>
-              <h3 style="margin: 0; text-decoration: underline;">
-                {event.data.title}
-              </h3>
+              {!event.data.link && (
+                <h3 style="margin: 0; text-decoration: underline;">
+                  {event.data.title}
+                </h3>
+              )}
+              {event.data.link && (
+                <h3 style="margin: 0; text-decoration: underline;">
+                  <a href={event.data.link}>{event.data.title}</a>
+                </h3>
+              )}
             </p>
             <p>{event.data.description}</p>
             <p>
