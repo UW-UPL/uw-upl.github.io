@@ -3,7 +3,7 @@ layout: "../../layouts/Base.astro"
 title: "Math"
 ---
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)
 
 ## Math
 

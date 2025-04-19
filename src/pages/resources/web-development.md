@@ -3,7 +3,7 @@ layout: "../../layouts/Base.astro"
 title: "Web Development"
 ---
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)
 
 # Web Development
 

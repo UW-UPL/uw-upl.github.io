@@ -13,4 +13,4 @@ This list { }
 
 ### Subcategory 1
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)

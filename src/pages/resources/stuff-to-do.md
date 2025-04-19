@@ -15,4 +15,4 @@ Bored? Need project ideas? Looking for something to do?
 - [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x): Meta-list of tutorials for recreating projects.
 - [CMU 15-445/645 - Intro to Database Systems (Fall 2024)](https://15445.courses.cs.cmu.edu/fall2024/): Create a buffer Pool Manager, database Index, and other projects in this databases course.
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)

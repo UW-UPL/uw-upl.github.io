@@ -13,4 +13,4 @@ Believe it or not, there is fun to be had in computer programming.
 - [romcc: compile C programs into binaries that don't use any RAM](https://github.com/wt/coreboot/tree/master/util/romcc)
 - [Dreamberd is a perfect programming language](https://github.com/TodePond/DreamBerd): There is no doubt.
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)

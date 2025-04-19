@@ -16,4 +16,4 @@ Storing and working with data.
 - [TigerStyle](https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md): A phenomenal document outlining the design principles and goals of [TigerBeetle](https://tigerbeetle.com), a high-performance transactions database.
 - [Systems Distributed](https://www.youtube.com/playlist?list=PL9eL-xg48OM09LwyjF_cXwoJHHngXMPxJ): A conference by TigerBeetle about various programming and database/systems design techniques and considerations, by a variety of very smart and eloquent people doing cutting-edge work.
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)

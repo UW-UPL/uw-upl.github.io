@@ -23,4 +23,4 @@ title: "Performance"
 - [How to Optimize a CUDA Matmul Kernel for cuBLAS-like Performance: a Worklog](https://siboehm.com/articles/22/CUDA-MMM): A very in-depth article about optimizing a matrix multiplication operation in CUDA.
 - [The NumPy array: a structure for efficient numerical computation](https://arxiv.org/pdf/1102.1523.pdf): A paper detailing how the NumPy array works under the hood for efficient computation.
   
-[<<< All Lists](./)
+[<<< All Lists](/resources/)

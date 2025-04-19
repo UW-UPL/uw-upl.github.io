@@ -37,4 +37,4 @@ Unsorted (for now) list of resources on the design, implementation, and theory o
 - [Ben Deane - Easy to Use, Hard to Misuse: Declarative Style in C++](https://youtube.com/watch?v=I52uPJSoAT4): A compelling argument for the practicality of "functional" style.
 - [Ólafur Waage - Learning Rust the wrong way](https://youtube.com/watch?v=DL9LANLg5EA): A non-technical talk about various ideas surrounding learning.
 
-[<<< All Lists](./)
+[<<< All Lists](/resources/)
