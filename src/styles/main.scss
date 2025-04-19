@@ -210,11 +210,13 @@ table.striped tr.t-head {
 
 table.striped th,
 table.striped td {
+  font-size: min(1em, 2.75vw);
   border-left: 1px solid #cbcbcb;
   border-width: 0 0 0 1px;
   margin: 0;
   overflow: visible;
-  padding: 0.5em 1em;
+  padding: 0.5em;
+  overflow: hidden;
 }
 
 table.striped th:first-child,
@@ -287,12 +289,13 @@ table.lab-status .lab-table-machine-container td:first-child {
   flex: 1 0 auto;
 }
 .footer {
+  padding: 13px 0;
   flex-shrink: 0;
-  height: 150px;
+  height: 150px; 
   background-color: $upl-red;
   margin-top: 18px;
   color: white;
-  font-size: 14px;
+  font-size: min(14px, 3vw); 
 }
 .footer a {
   color: #fff;
@@ -302,26 +305,29 @@ table.lab-status .lab-table-machine-container td:first-child {
   text-decoration: underline;
 }
 .footer img#uw-logo {
-  max-width: 200px;
+  max-width: min(200px, 40vw); 
+}
+
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .uw-credit {
+  order: 1;
+  text-align: left; 
+}
+.footer .location-info {
+  order: 2;
+  text-align: right; 
 }
 
 @media (min-width: $breakpoint-md) {
-  .footer {
-    padding: 13px 0;
-    height: 150px;
-  }
   .footer .wrapper {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .footer .uw-credit {
-    order: 1;
-    text-align: left;
-  }
-  .footer .location-info {
-    order: 2;
-    text-align: right;
   }
 }
 
