@@ -26,7 +26,8 @@ body {
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"),
+  src:
+    url("/fonts/AlegreyaSans-Regular.woff2") format("woff2"),
     url("/fonts/AlegreyaSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -35,7 +36,8 @@ body {
 
 @font-face {
   font-family: "Alegreya Sans";
-  src: url("AlegreyaSans-Light.woff2") format("woff2"),
+  src:
+    url("AlegreyaSans-Light.woff2") format("woff2"),
     url("AlegreyaSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -151,12 +153,12 @@ a:hover {
   display: flex;
   flex: 1 1 100%;
   flex-wrap: wrap;
-  justify-content: center;       // center by default (mobile)
+  justify-content: center; // center by default (mobile)
   align-self: center;
   gap: 10px;
 
   @media (min-width: $breakpoint-md) {
-    justify-content: flex-end;  // right-align on desktop
+    justify-content: flex-end; // right-align on desktop
     align-self: flex-end;
     flex: 0 0 auto;
     gap: 15px;
@@ -179,6 +181,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 th,
 td {
   padding: 0;
@@ -187,6 +190,7 @@ td {
 table.large-only {
   display: none;
 }
+
 table.small-only {
   display: table;
 }
@@ -247,6 +251,7 @@ table.striped.small-only tbody:last-child tr:last-child td {
   table.striped.large-only {
     display: table;
   }
+
   table.striped.small-only {
     display: none;
   }
@@ -281,6 +286,7 @@ table.striped.small-only tbody:last-child tr:last-child td {
 table.lab-status {
   display: none;
 }
+
 table.lab-status .lab-table-machine-container td:first-child {
   text-align: left;
 }
@@ -291,11 +297,11 @@ table.lab-status .lab-table-machine-container td:first-child {
 .footer {
   padding: 13px 0;
   flex-shrink: 0;
-  height: 150px; 
+  height: 150px;
   background-color: $upl-red;
   margin-top: 18px;
   color: white;
-  font-size: min(14px, 3vw); 
+  font-size: min(14px, 3vw);
 }
 .footer a {
   color: #fff;
@@ -305,7 +311,7 @@ table.lab-status .lab-table-machine-container td:first-child {
   text-decoration: underline;
 }
 .footer img#uw-logo {
-  max-width: min(200px, 40vw); 
+  max-width: min(200px, 40vw);
 }
 
 .footer .wrapper {
@@ -315,11 +321,11 @@ table.lab-status .lab-table-machine-container td:first-child {
 }
 .footer .uw-credit {
   order: 1;
-  text-align: left; 
+  text-align: left;
 }
 .footer .location-info {
   order: 2;
-  text-align: right; 
+  text-align: right;
 }
 
 @media (min-width: $breakpoint-md) {
@@ -347,29 +353,36 @@ table.lab-status .lab-table-machine-container td:first-child {
   height: 100px;
   object-fit: cover;
 }
+
 .upl-project {
   display: flex;
   gap: 0.5em;
 }
+
 .project-title {
   margin: 0;
 }
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .projects-list {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
+
 .author-info {
   font-size: 12pt;
 }
+
 li {
   margin-bottom: 4px;
 }
+
 .current-hour {
   border: 2px solid $upl-red !important;
 }
@@ -380,17 +393,20 @@ li {
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .coord-image {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 75px;
 }
+
 .coord-profile {
   width: 240px;
   text-align: center;
   margin-bottom: 2.5em;
 }
+
 .coord-detail {
   color: #727272;
 }

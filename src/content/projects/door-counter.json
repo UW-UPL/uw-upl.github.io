@@ -3,7 +3,7 @@
     "source": "https://github.com/UW-UPL/door-counter-v2",
     "writeup": "https://www.amoses.dev/blog/upl-people-counter/",
     "description": "A system to detect whether the doors to the UPL are open or closed.",
-    "image": "door-counter.png",
+    "image": "../../img/projects/door-counter.png",
     "authors": [
         "Andrew"
     ]

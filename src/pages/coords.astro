@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
@@ -20,9 +21,11 @@ const coordinators = await getCollection("coordinators");
         .filter((coord) => coord.data.isActive)
         .map((coord: any) => (
           <div class="coord-profile">
-            <img
+            <Image
+              height="600"
+              width="600"
               class="coord-image"
-              src={`/img/coords/${coord.data.image}`}
+              src={coord.data.image}
               alt={coord.data.name}
             />
             <p>{coord.data.name}</p>

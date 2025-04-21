@@ -3,7 +3,7 @@
   "isActive": true,
   "emoji": "🐀",
   "grade": "Junior",
-  "image": "emily-yao.webp",
+  "image": "../../img/coords/emily-yao.webp",
   "study": [
     "CS",
     "Math",

@@ -3,7 +3,7 @@
     "isActive": true,
     "emoji": "blobcat_scared.webp",
     "grade": "Junior",
-    "image": "nico-salm.webp",
+    "image": "../../img/coords/nico-salm.webp",
     "study": [
         "Computer Science"
     ],

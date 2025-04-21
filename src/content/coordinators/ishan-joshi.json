@@ -3,7 +3,7 @@
     "isActive": true,
     "emoji": "🐜",
     "grade": "Sophomore",
-    "image": "ishan-joshi.webp",
+    "image": "../../img/coords/ishan-joshi.webp",
     "study": [
         "CS",
         "Math"

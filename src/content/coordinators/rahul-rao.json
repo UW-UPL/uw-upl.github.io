@@ -3,7 +3,7 @@
     "isActive": true,
     "emoji": "🧐",
     "grade": "Junior",
-    "image": "rahul-rao.jpg",
+    "image": "../../img/coords/rahul-rao.jpg",
     "study": [
         "Computer Science"
     ],

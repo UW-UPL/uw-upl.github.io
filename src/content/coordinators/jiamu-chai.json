@@ -3,7 +3,7 @@
     "isActive": true,
     "emoji": "📎",
     "grade": "Sophomore",
-    "image": "jiamu-chai.webp",
+    "image": "../../img/coords/jiamu-chai.webp",
     "study": [
         "CS",
         "Math"

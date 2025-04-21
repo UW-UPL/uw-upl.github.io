@@ -3,7 +3,7 @@
   "isActive": true,
   "emoji": "😶‍🌫️",
   "grade": "Junior",
-  "image": "sam-baumohl.webp",
+  "image": "../../img/coords/sam-baumohl.webp",
   "study": [
     "CS",
     "Math"

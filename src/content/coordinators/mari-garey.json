@@ -3,7 +3,7 @@
     "isActive": true,
     "emoji": "😻",
     "grade": "Junior",
-    "image": "mari-garey.webp",
+    "image": "../../img/coords/mari-garey.webp",
     "hover_image": "mari-garey-snoopy.webp",
     "study": [
         "CS",

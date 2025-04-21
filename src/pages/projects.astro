@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
@@ -11,9 +12,12 @@ const projects = await getCollection("projects");
     {
       projects.map((project) => (
         <div class="upl-project">
-          <img
+          <Image
+            height="600"
+            width="600"
             class="project-image"
-            src={`/img/projects/${project.data.image}`}
+            src={project.data.image}
+            alt={`Image of ${project.data.title}`}
           />
 
           <div class="content-wrapper">
