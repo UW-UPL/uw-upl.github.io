@@ -1,0 +1,13 @@
+{
+    "name": "Ben Friedl",
+    "image": "../../img/coords/ben-friedl.png",
+    "isActive": true,
+    "emoji": "🚀",
+    "grade": "Sophomore",
+    "study": [
+        "Info Sci",
+        "CS"
+    ],
+    "personalLink": "https://ben.enterprises",
+    "github": "CoolMineman"
+}
