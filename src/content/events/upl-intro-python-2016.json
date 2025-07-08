@@ -1,0 +1,6 @@
+{
+  "title": "UPL Video Lecture Series: Intro to Python",
+  "date": "2016-04-19T17:00:00",
+  "description": "The UPL video lecture series (VLS) will be doing a talk targeted at students to introduce them to Python. The talk will assume completion of 302 and will focus on the syntactic elements of python and introduce some of the strengths and weaknesses of the language. No tools are needed, except for something to take notes with if you're interested. All materials will be posted on our public github repository.",
+  "location": "CS 1240"
+}

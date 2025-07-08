@@ -1,0 +1,6 @@
+{
+  "title": "Intro to Functional Programming with Haskell",
+  "date": "2015-10-29T19:00:00",
+  "description": "The UPL Video Lecture Series will be giving a talk on functional programming and Haskell. Functional programming, and its related concepts, are becoming more prevalent in computation as machines become more powerful, concurrent, and complex. In this talk, we'll briefly go over the paradigm and then dig in with some Haskell, one of the most (in)famous functional programming languages. Attendees should be at the intermediate level (i.e. have completed CS 367), and should come with laptops with the Haskell platform installed.",
+  "location": "CS 1240"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Lightning Talk: KiCad and Keyboards - a Keynote",
+  "date": "2021-10-18T18:00:00",
+  "description": "Learn the basics of creating simple circuit boards in KiCad through the creation of a UPL themed keyboard! We will be designing a simple keyboard schematic, laying it out in a physical space, and possibly ordering it if time permits. This builds off of the keyboard matrix lightning talk given this summer, but no prior knowledge is required. Speaker: Nick Winans",
+  "location": "CS 1240"
+}

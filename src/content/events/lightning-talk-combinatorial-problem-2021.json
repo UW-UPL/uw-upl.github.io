@@ -1,0 +1,6 @@
+{
+  "title": "Lightning Talk: A Combinatorial Problem",
+  "date": "2021-07-21T19:30:00",
+  "description": "What is the chromatic polynomial of the modified complete graph K2n, which lacks the edges (1, 2), (3, 4), ..., (2n-1, 2n)? To understand and solve this problem, we will discuss several topics from Graph Theory and Combinatorics, such as chromatic numbers, chromatic polynomials, and one important and useful counting principle which justifies this whole talk. Speaker: Reed Nelson",
+  "location": "Online (Discord Server)"
+}

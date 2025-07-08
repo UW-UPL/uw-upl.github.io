@@ -1,0 +1,6 @@
+{
+  "title": "Lightning Talk: Keyboard Matrices and Debouncing",
+  "date": "2021-07-07T19:30:00",
+  "description": "How do keyboards work on an electrical side? In this talk we'll learn about how keyboard matrices are designed, ghosting, n-key rollover, and how we deal with the imperfect world we live in through debouncing. Speaker: Nick Winans",
+  "location": "Online (Discord Server)"
+}

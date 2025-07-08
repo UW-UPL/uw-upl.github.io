@@ -1,0 +1,6 @@
+{
+  "title": "Lightning Talk: Cache and Memory Friendly Programming",
+  "date": "2021-11-01T18:00:00",
+  "description": "An introduction to improving performance by observing cache and memory locality, as well as techniques and best practices when doing common tasks in C++. No prior knowledge required although an understanding of pointers is recommended. Speaker: Matt Wildman",
+  "location": "CS 1240"
+}

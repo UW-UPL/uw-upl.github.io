@@ -105,6 +105,7 @@ a:hover {
 .upl-hero {
   font-size: 37px;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .header {
@@ -413,4 +414,11 @@ li {
 
 .event {
   margin-bottom: 1em;
+}
+
+// indent content under header in q&a section
+.q-and-a h3 + p,
+.q-and-a h3 + div,
+.answer {
+  margin-left: 1.5em;
 }
