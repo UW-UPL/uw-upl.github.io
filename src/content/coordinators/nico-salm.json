@@ -2,11 +2,11 @@
     "name": "Nico Salm",
     "isActive": true,
     "emoji": "blobcat_scared.webp",
-    "grade": "Junior",
+    "grade": "Senior",
     "image": "../../img/coords/nico-salm.webp",
     "study": [
-        "Computer Science"
+        "CDIS"
     ],
-    "personalLink": "https://salm.dev/blog",
+    "personalLink": "https://salm.dev/",
     "github": "https://github.com/nicosalm"
 }
