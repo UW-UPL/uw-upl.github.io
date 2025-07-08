@@ -1,12 +1,17 @@
 ---
 import { Image } from "astro:assets";
-import Base from "../layouts/Base.astro";
+import Base from "../layouts/base.astro";
 import { getCollection } from "astro:content";
-
 const projects = await getCollection("projects");
 ---
-
 <Base title="Projects">
+  <h2>Want to showcase your project on the UPL website?</h2>
+  <p>
+    Create a pull request on our
+    <a href="https://github.com/uw-upl/uw-upl.github.io/">GitHub repository</a> or ask a
+    coordinator for help! We'd love to feature your work.
+  </p>
+
   <h2>Projects</h2>
   <div class="projects-list">
     {
@@ -19,7 +24,6 @@ const projects = await getCollection("projects");
             src={project.data.image}
             alt={`Image of ${project.data.title}`}
           />
-
           <div class="content-wrapper">
             <div class="project-info">
               <h3 class="project-title">{project.data.title}</h3>
@@ -47,4 +51,4 @@ const projects = await getCollection("projects");
       ))
     }
   </div>
-</Base>
+  </Base>
