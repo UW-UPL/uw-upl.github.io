@@ -18,8 +18,8 @@ const projects = await getCollection("projects");
       projects.map((project) => (
         <div class="upl-project">
           <Image
-            height="600"
-            width="600"
+            height="500"
+            width="500"
             class="project-image"
             src={project.data.image}
             alt={`Image of ${project.data.title}`}
