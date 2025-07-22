@@ -1,6 +1,27 @@
 {
   "posts": [
     {
+      "title": "Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)",
+      "link": "https://dteather.com/blogs/why-99-percent-of-github-projects-fail/",
+      "author": "David Teather's Blog",
+      "date": "2025-07-14",
+      "description": "I used to think my GitHub projects failed because my code wasn't good enough. Turns out, I was completely wrong about what actually matters. My TikTokAPIhttps://github.com/davidteather/TikTok-Api..."
+    },
+    {
+      "title": "Parser combinators for postal addresses",
+      "link": "//jamesma100.github.io/2025/parser-combinators/",
+      "author": "James Ma",
+      "date": "2025-07-04",
+      "description": "A while ago, Tsoding did a stream on parsing JSON with parser combinators. I was curious how hard it would be to use the basic parsers he implemented to create a new parser for U.S. postal addresses...."
+    },
+    {
+      "title": "Create, Don't Consume",
+      "link": "https://salm.dev/writing/create-dont-consume/",
+      "author": "salm.dev",
+      "date": "2025-06-27",
+      "description": "We're trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist."
+    },
+    {
       "title": "Attention as a kernel smoothing problem",
       "link": "//jamesma100.github.io/2025/attention-and-kernel-smoothing/",
       "author": "James Ma",
@@ -8,11 +29,11 @@
       "description": "Reddit discussion This post is about a rarely discussed interpretation of “attention,” the underlying technique behind transformers, which has found its way into everything from natural language p..."
     },
     {
-      "title": "Winning Pokémon Showdown (w/ Game Theory!)",
-      "link": "https://salm.dev/writing/winning-pokemon-showdown-with-game-theory/",
+      "title": "Winning Pokemon Showdown",
+      "link": "https://salm.dev/writing/winning-pokemon-showdown/",
       "author": "salm.dev",
       "date": "2025-05-11",
-      "description": "We analyzed Pokémon Showdown battles using game theory and found the mathematically optimal strategies. Funny enough, they perfectly matched what our friend with 5000 hours in the game already knew..."
+      "description": "We analyzed Pokémon Showdown battles using game theory and found the mathematically optimal strategies."
     },
     {
       "title": "Dungeons, Dragons \u0026 Development",
@@ -41,13 +62,6 @@
       "author": "Nick Winans",
       "date": "2025-02-23",
       "description": "Sharing my Shopify store's automations after 3 years of optimization"
-    },
-    {
-      "title": "Beyond Language Wars",
-      "link": "https://salm.dev/writing/beyond-language-wars/",
-      "author": "salm.dev",
-      "date": "2025-02-15",
-      "description": "The debate between programming languages in data science is usually a red herring that masks fundamental architectural challenges. I look into when rewrites make sense, and when they actually mask de..."
     },
     {
       "title": "Configuring external storage devices for Jellyfin",
@@ -103,7 +117,7 @@
       "link": "//jamesma100.github.io/2024/currying-in-c/",
       "author": "James Ma",
       "date": "2024-11-27",
-      "description": "Suppose you are implementing some sort of system that dispatches jobs to workers. You have a function, and with it some arguments, that you would like to send off to a worker thread to be completed in..."
+      "description": "Suppose you have a function and an argument that you want to send off to a worker thread. The canonical way to do this in C is via pthreadcreate. $ man pthreadcreate SYNOPSIS include pthread.h..."
     },
     {
       "title": "Obligatory Meta First Post About Creating This Blog",
@@ -166,7 +180,7 @@
       "link": "https://salm.dev/writing/preserving-my-future-self/",
       "author": "salm.dev",
       "date": "2024-08-18",
-      "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I got a new, expensive keyboard that got sawed in half. Either way, it was an adventure worth sharing."
+      "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I got an expensive new split keyboard. Either way, an adventure worth sharing."
     },
     {
       "title": "Traversing dependency trees in Bazel",
@@ -188,13 +202,6 @@
       "author": "David Teather's Blog",
       "date": "2024-07-26",
       "description": "I recently upgraded my site to a newer version of Astro that supported image optimization and I wanted to use that feature. I'll walk you through it, and it's a fairly quick change to improve the loa..."
-    },
-    {
-      "title": "Overview of the x86 call stack",
-      "link": "//jamesma100.github.io/2024/x86-calling-convention/",
-      "author": "James Ma",
-      "date": "2024-07-11",
-      "description": "I had mostly forgotten how the x86 call stack works, and many things continue to confuse me, so join me and my scattered thoughts as I attempt to clarify my understanding. In this post, we will look a..."
     },
     {
       "title": "IMC Prosperity 2",
