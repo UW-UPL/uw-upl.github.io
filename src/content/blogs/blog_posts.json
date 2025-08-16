@@ -1,18 +1,39 @@
 {
   "posts": [
     {
+      "title": "CS + Data Science Done Right",
+      "link": "https://salm.dev/writing/cs-data-science-done-right/",
+      "author": "salm.dev",
+      "date": "2025-08-15",
+      "description": "Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials."
+    },
+    {
+      "title": "Attention Span August",
+      "link": "https://nick.winans.io/blog/attention-span-august/",
+      "author": "Nick Winans",
+      "date": "2025-07-31",
+      "description": "A month without social media or recommendation algorithms."
+    },
+    {
+      "title": "Building My Perfect Keyboard — The Plan",
+      "link": "https://nick.winans.io/blog/perfect-keyboard/",
+      "author": "Nick Winans",
+      "date": "2025-07-29",
+      "description": "Perfecting every part of my Lily58 keyboard."
+    },
+    {
+      "title": "Beyond If Statements and For Loops",
+      "link": "https://salm.dev/writing/beyond-if-statements-and-for-loops/",
+      "author": "salm.dev",
+      "date": "2025-07-27",
+      "description": "How pattern matching, type systems, and functional thinking transformed my approach to solving problems."
+    },
+    {
       "title": "Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)",
       "link": "https://dteather.com/blogs/why-99-percent-of-github-projects-fail/",
       "author": "David Teather's Blog",
       "date": "2025-07-14",
       "description": "I used to think my GitHub projects failed because my code wasn't good enough. Turns out, I was completely wrong about what actually matters. My TikTokAPIhttps://github.com/davidteather/TikTok-Api..."
-    },
-    {
-      "title": "Parser combinators for postal addresses",
-      "link": "//jamesma100.github.io/2025/parser-combinators/",
-      "author": "James Ma",
-      "date": "2025-07-04",
-      "description": "A while ago, Tsoding did a stream on parsing JSON with parser combinators. I was curious how hard it would be to use the basic parsers he implemented to create a new parser for U.S. postal addresses...."
     },
     {
       "title": "Create, Don't Consume",
@@ -22,25 +43,18 @@
       "description": "We're trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist."
     },
     {
-      "title": "Attention as a kernel smoothing problem",
-      "link": "//jamesma100.github.io/2025/attention-and-kernel-smoothing/",
-      "author": "James Ma",
-      "date": "2025-05-23",
-      "description": "Reddit discussion This post is about a rarely discussed interpretation of “attention,” the underlying technique behind transformers, which has found its way into everything from natural language p..."
-    },
-    {
       "title": "Winning Pokemon Showdown",
       "link": "https://salm.dev/writing/winning-pokemon-showdown/",
       "author": "salm.dev",
       "date": "2025-05-11",
-      "description": "We analyzed Pokémon Showdown battles using game theory and found the mathematically optimal strategies."
+      "description": "We examined Pokémon Showdown battles using game theory and identified the mathematically optimal strategies."
     },
     {
       "title": "Dungeons, Dragons \u0026 Development",
       "link": "https://salm.dev/writing/dungeons-dragons-and-development/",
       "author": "salm.dev",
       "date": "2025-04-21",
-      "description": "Creating custom \"homebrew\" D\u0026D worlds and developing software are surprisingly similar as creative disciplines. In both, you create vast interconnected \"worlds\" which must remain cohesive while evo..."
+      "description": "In both homebrew D\u0026D worlds and software development, you create vast interconnected systems that must remain cohesive while evolving over time."
     },
     {
       "title": "I Made a Million Dollar Product from My Dorm Room",
@@ -50,25 +64,11 @@
       "description": "The story of the nicenano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college."
     },
     {
-      "title": "Abstracting over Futures and Options",
-      "link": "//jamesma100.github.io/2025/future-options-scala/",
-      "author": "James Ma",
-      "date": "2025-03-19",
-      "description": "In Scala, two interesting concepts you’ll often work with are Futures and Options. A Future is an abstraction for some value that might not be available yet. An Option abstracts over the possibility..."
-    },
-    {
       "title": "eCommerce Automations",
       "link": "https://nick.winans.io/blog/ecommerce-automations/",
       "author": "Nick Winans",
       "date": "2025-02-23",
       "description": "Sharing my Shopify store's automations after 3 years of optimization"
-    },
-    {
-      "title": "Configuring external storage devices for Jellyfin",
-      "link": "//jamesma100.github.io/2025/jellyfin-guide/",
-      "author": "James Ma",
-      "date": "2025-02-15",
-      "description": "This post serves as a personal guide to running a Jellyfin server locally using an external hard drive. The following assumes: Debian GNU/Linux 12 I’m using a Raspberry Pi 4 External hard drive ..."
     },
     {
       "title": "Adding Giscus Discussions to Astro",
@@ -85,13 +85,6 @@
       "description": "Real-time Collaborative E-Paper Canvas"
     },
     {
-      "title": "A gallery of randomly generated art",
-      "link": "//jamesma100.github.io/2025/randomart-gallery/",
-      "author": "James Ma",
-      "date": "2025-01-18",
-      "description": "In a paper from CMU, security researchers describe a nifty algorithm used to generate random images known as RandomArt. In a nutshell, the algorithm takes as input a seed to a pseudo-random number gen..."
-    },
-    {
       "title": "Learning the NATO phonetic alphabet with the Web Speech API",
       "link": "https://www.amoses.dev/blog/nato-alphabet/",
       "author": "Andrew Moses",
@@ -104,20 +97,6 @@
       "author": "Blog on Michael Noguera",
       "date": "2024-12-09",
       "description": "I participated in Wisconsin Science and Computing Emerging Research Stars WISCERS as part of the 2022-23 cohort and really enjoyed the experience. Even if you’re uncertain, you should definetly ap..."
-    },
-    {
-      "title": "In defense of bad grammar",
-      "link": "//jamesma100.github.io/2024/bad-grammar/",
-      "author": "James Ma",
-      "date": "2024-11-30",
-      "description": "From the moment we begin formal education we are drilled with the idea of “proper grammar.” “My friend and I,” not “me and my friend.” “A large number of people,” not “lots of people..."
-    },
-    {
-      "title": "Currying C functions using a heap-based trampoline",
-      "link": "//jamesma100.github.io/2024/currying-in-c/",
-      "author": "James Ma",
-      "date": "2024-11-27",
-      "description": "Suppose you have a function and an argument that you want to send off to a worker thread. The canonical way to do this in C is via pthreadcreate. $ man pthreadcreate SYNOPSIS include pthread.h..."
     },
     {
       "title": "Obligatory Meta First Post About Creating This Blog",
@@ -145,7 +124,7 @@
       "link": "https://salm.dev/writing/command-line-productivity/",
       "author": "salm.dev",
       "date": "2024-10-10",
-      "description": "I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill vim."
+      "description": "I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
     },
     {
       "title": "Adding UML Diagrams to Rehype in Astro",
@@ -153,20 +132,6 @@
       "author": "David Teather's Blog",
       "date": "2024-10-07",
       "description": "I just recently added UML diagrams for my blogs, since in the future I want to create blog posts and youtube videos about system design and wanted to define UML diagrams in markdown and have them ren..."
-    },
-    {
-      "title": "Simple backpropogation in Python and numpy",
-      "link": "//jamesma100.github.io/2024/implementing-backpropogation/",
-      "author": "James Ma",
-      "date": "2024-09-28",
-      "description": "In our previous post, we introduced backpropogation as a means for efficiently training neural networks. Here we’ll attempt to implement a simple Python framework to train a fully-connected neural n..."
-    },
-    {
-      "title": "Deriving backpropogation from scratch",
-      "link": "//jamesma100.github.io/2024/deriving-backpropogation/",
-      "author": "James Ma",
-      "date": "2024-09-10",
-      "description": "Most sizable neural networks today rely on backpropogation to make the training process more efficient. While backpropogation is pretty ubiquitous in libraries such as torch.autograd, I was curious ho..."
     },
     {
       "title": "Is Web Scraping Ethical?",
@@ -180,14 +145,7 @@
       "link": "https://salm.dev/writing/preserving-my-future-self/",
       "author": "salm.dev",
       "date": "2024-08-18",
-      "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I got an expensive new split keyboard. Either way, an adventure worth sharing."
-    },
-    {
-      "title": "Traversing dependency trees in Bazel",
-      "link": "//jamesma100.github.io/2024/introducing-bazelvis/",
-      "author": "James Ma",
-      "date": "2024-08-01",
-      "description": "At my job we use Bazel as our primary build system. Bazel is great for managing large projects with millions of lines of code spanning thousands of dependencies, as it has an efficient caching system..."
+      "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing."
     },
     {
       "title": "Adding an Astro Search Bar",
