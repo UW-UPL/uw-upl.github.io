@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>UPL Member Blogs</title>
+    <link>https://upl.cs.wisc.edu</link>
+    <description>Aggregated blog posts from UPL members</description>
+    <language>en-us</language>
+    <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+    <lastBuildDate>Wed, 20 Aug 2025 11:50:28 -0500</lastBuildDate>
+    <item>
+      <title>CS + Data Science Done Right</title>
+      <link>https://salm.dev/writing/cs-data-science-done-right/</link>
+      <description>Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials.</description>
+      <author>salm.dev</author>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/cs-data-science-done-right/</guid>
+    </item>
+    <item>
+      <title>Attention Span August</title>
+      <link>https://nick.winans.io/blog/attention-span-august/</link>
+      <description>A month without social media or recommendation algorithms.</description>
+      <author>Nick Winans</author>
+      <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/attention-span-august/</guid>
+    </item>
+    <item>
+      <title>Building My Perfect Keyboard — The Plan</title>
+      <link>https://nick.winans.io/blog/perfect-keyboard/</link>
+      <description>Perfecting every part of my Lily58 keyboard.</description>
+      <author>Nick Winans</author>
+      <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/perfect-keyboard/</guid>
+    </item>
+    <item>
+      <title>Beyond If Statements and For Loops</title>
+      <link>https://salm.dev/writing/beyond-if-statements-and-for-loops/</link>
+      <description>How pattern matching, type systems, and functional thinking transformed my approach to solving problems.</description>
+      <author>salm.dev</author>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/beyond-if-statements-and-for-loops/</guid>
+    </item>
+    <item>
+      <title>Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)</title>
+      <link>https://dteather.com/blogs/why-99-percent-of-github-projects-fail/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Mon, 14 Jul 2025 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/why-99-percent-of-github-projects-fail/</guid>
+    </item>
+    <item>
+      <title>Create, Don&#39;t Consume</title>
+      <link>https://salm.dev/writing/create-dont-consume/</link>
+      <description>We&#39;re trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist.</description>
+      <author>salm.dev</author>
+      <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/create-dont-consume/</guid>
+    </item>
+    <item>
+      <title>Winning Pokemon Showdown</title>
+      <link>https://salm.dev/writing/winning-pokemon-showdown/</link>
+      <description>We examined Pokémon Showdown battles using game theory and identified the mathematically optimal strategies.</description>
+      <author>salm.dev</author>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/winning-pokemon-showdown/</guid>
+    </item>
+    <item>
+      <title>Automating keyword extraction and ranking to enhance a resume</title>
+      <link>https://mdberkey.github.io/blog/automating-keyword-extraction-and-ranking-to-enhance-a-resume/</link>
+      <description>TL;DR I extracted keywords from job descriptions with Gemini and created a Python script to rank them to enhance my friend&#39;s resume. I spent some time this past week helping a friend update their res...</description>
+      <author>Michael Berkey</author>
+      <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://mdberkey.github.io/blog/automating-keyword-extraction-and-ranking-to-enhance-a-resume/</guid>
+    </item>
+    <item>
+      <title>Dungeons, Dragons &amp; Development</title>
+      <link>https://salm.dev/writing/dungeons-dragons-and-development/</link>
+      <description>In both homebrew D&amp;D worlds and software development, you create vast interconnected systems that must remain cohesive while evolving over time.</description>
+      <author>salm.dev</author>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/dungeons-dragons-and-development/</guid>
+    </item>
+    <item>
+      <title>I Made a Million Dollar Product from My Dorm Room</title>
+      <link>https://nick.winans.io/blog/nice-nano/</link>
+      <description>The story of the nicenano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college.</description>
+      <author>Nick Winans</author>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/nice-nano/</guid>
+    </item>
+    <item>
+      <title>How and Why I made this website</title>
+      <link>https://mdberkey.github.io/blog/how-and-why-i-made-this-website/</link>
+      <description>TL;DR I made this website using Zola to discuss my work/interests. People kept asking, so I thought I&#39;d make my first post to answer their questions. Why make a personal website? I wanted a place to...</description>
+      <author>Michael Berkey</author>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://mdberkey.github.io/blog/how-and-why-i-made-this-website/</guid>
+    </item>
+    <item>
+      <title>eCommerce Automations</title>
+      <link>https://nick.winans.io/blog/ecommerce-automations/</link>
+      <description>Sharing my Shopify store&#39;s automations after 3 years of optimization</description>
+      <author>Nick Winans</author>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/ecommerce-automations/</guid>
+    </item>
+    <item>
+      <title>Adding Giscus Discussions to Astro</title>
+      <link>https://dteather.com/blogs/adding-giscus-discussions-to-astro/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Tue, 11 Feb 2025 03:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/adding-giscus-discussions-to-astro/</guid>
+    </item>
+    <item>
+      <title>InkLink</title>
+      <link>https://nick.winans.io/blog/ink-link/</link>
+      <description>Real-time Collaborative E-Paper Canvas</description>
+      <author>Nick Winans</author>
+      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/ink-link/</guid>
+    </item>
+    <item>
+      <title>Learning the NATO phonetic alphabet with the Web Speech API</title>
+      <link>https://www.amoses.dev/blog/nato-alphabet/</link>
+      <description>and they told me &#34;video games can&#39;t teach you anything&#34;</description>
+      <author>Andrew Moses</author>
+      <pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.amoses.dev/blog/nato-alphabet/</guid>
+    </item>
+    <item>
+      <title>List of WISCERS 2024 Faculty Mentors</title>
+      <link>https://www.noguera.dev/blog/2024/12/09/list-of-wiscers-2024-faculty-mentors/</link>
+      <description>I participated in Wisconsin Science and Computing Emerging Research Stars WISCERS as part of the 2022-23 cohort and really enjoyed the experience. Even if you’re uncertain, you should definetly ap...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2024/12/09/list-of-wiscers-2024-faculty-mentors/</guid>
+    </item>
+    <item>
+      <title>Obligatory Meta First Post About Creating This Blog</title>
+      <link>https://ben.enterprises/hello-blog</link>
+      <description>Visit post for details.</description>
+      <author>ben.enterprises Blog</author>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://ben.enterprises/hello-blog</guid>
+    </item>
+    <item>
+      <title>Adding Interactive Charts to Astro</title>
+      <link>https://dteather.com/blogs/astro-interactive-charts/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Wed, 30 Oct 2024 03:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/astro-interactive-charts/</guid>
+    </item>
+    <item>
+      <title>Revamping the UPL&#39;s people counter</title>
+      <link>https://www.amoses.dev/blog/upl-people-counter/</link>
+      <description>who knew figuring out the lab&#39;s occupancy would be so much work?</description>
+      <author>Andrew Moses</author>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.amoses.dev/blog/upl-people-counter/</guid>
+    </item>
+    <item>
+      <title>Command Line Productivity</title>
+      <link>https://salm.dev/writing/command-line-productivity/</link>
+      <description>I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
+      <author>salm.dev</author>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/command-line-productivity/</guid>
+    </item>
+    <item>
+      <title>Adding UML Diagrams to Rehype in Astro</title>
+      <link>https://dteather.com/blogs/astro-uml-diagrams/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Mon, 07 Oct 2024 03:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/astro-uml-diagrams/</guid>
+    </item>
+    <item>
+      <title>Is Web Scraping Ethical?</title>
+      <link>https://dteather.com/blogs/is-web-scraping-ethical/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Fri, 23 Aug 2024 03:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/is-web-scraping-ethical/</guid>
+    </item>
+    <item>
+      <title>Preserving My Future Self</title>
+      <link>https://salm.dev/writing/preserving-my-future-self/</link>
+      <description>I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing.</description>
+      <author>salm.dev</author>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/preserving-my-future-self/</guid>
+    </item>
+    <item>
+      <title>Adding an Astro Search Bar</title>
+      <link>https://dteather.com/blogs/astro-search-bar/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Fri, 26 Jul 2024 17:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/astro-search-bar/</guid>
+    </item>
+    <item>
+      <title>Astro Optimized Images With Markdown</title>
+      <link>https://dteather.com/blogs/astro-optimized-images/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Fri, 26 Jul 2024 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/astro-optimized-images/</guid>
+    </item>
+    <item>
+      <title>IMC Prosperity 2</title>
+      <link>https://dteather.com/blogs/imc-prosperity-2/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Fri, 03 May 2024 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/imc-prosperity-2/</guid>
+    </item>
+    <item>
+      <title>My UW Madison Course Tier List</title>
+      <link>https://dteather.com/blogs/madison-class-rankings/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Thu, 25 Apr 2024 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/madison-class-rankings/</guid>
+    </item>
+    <item>
+      <title>GitHub Field Day NYC 2024 Organizer</title>
+      <link>https://dteather.com/blogs/github-fieldday-nyc-2024/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Fri, 15 Mar 2024 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/github-fieldday-nyc-2024/</guid>
+    </item>
+    <item>
+      <title>Battlecode 2024 Finalist</title>
+      <link>https://dteather.com/blogs/battlecode24/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Sun, 28 Jan 2024 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/battlecode24/</guid>
+    </item>
+    <item>
+      <title>Organizing MadHacks Fall 2023 Reflections</title>
+      <link>https://dteather.com/blogs/madhacks-fall-23/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Sat, 11 Nov 2023 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/madhacks-fall-23/</guid>
+    </item>
+    <item>
+      <title>Making My Blog 3x Faster</title>
+      <link>https://nick.winans.io/blog/optimizing-blog-fonts/</link>
+      <description>Optimizing fonts to slash load times</description>
+      <author>Nick Winans</author>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/optimizing-blog-fonts/</guid>
+    </item>
+    <item>
+      <title>Exploring the Anshel-Anshel-Goldfeld Key Exchange System</title>
+      <link>https://www.noguera.dev/blog/2022/12/28/exploring-the-anshel-anshel-goldfeld-key-exchange-system/</link>
+      <description>Final project for CS 642 Information Security at UW-Madison, Fall 2022 sophomore year. Two UPL friends and I implemented the Anshel-Anshel-Goldfeld key exchange protocol and wrote our term paper a...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2022/12/28/exploring-the-anshel-anshel-goldfeld-key-exchange-system/</guid>
+    </item>
+    <item>
+      <title>LINK.social Exposed Users&#39; Sensitive Information &amp; Mass Account Hijacking</title>
+      <link>https://dteather.com/blogs/link-social-exposing-sensitive-personal-information/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Thu, 14 Jul 2022 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/link-social-exposing-sensitive-personal-information/</guid>
+    </item>
+    <item>
+      <title>A CS Course Map for Incoming UW-Madison Students</title>
+      <link>https://www.noguera.dev/course-map/</link>
+      <description>Visit post for details.</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/course-map/</guid>
+    </item>
+    <item>
+      <title>YikYak Is Exposing Millions of User Locations</title>
+      <link>https://dteather.com/blogs/yikyak-is-exposing-user-locations/</link>
+      <description>Visit post for details.</description>
+      <author>David Teather&#39;s Blog</author>
+      <pubDate>Mon, 09 May 2022 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/yikyak-is-exposing-user-locations/</guid>
+    </item>
+    <item>
+      <title>Exploiting GitHub Actions</title>
+      <link>https://nick.winans.io/blog/exploiting-github-actions/</link>
+      <description>Finding a way around GitHub&#39;s build matrix limits with GitHub Script</description>
+      <author>Nick Winans</author>
+      <pubDate>Thu, 17 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/exploiting-github-actions/</guid>
+    </item>
+    <item>
+      <title>Hugo Shortcode: License Badges on Code Blocks</title>
+      <link>https://www.noguera.dev/blog/2021/12/22/hugo-shortcode-license-badges-on-code-blocks/</link>
+      <description>One of my favorite features of the static site generator Hugo is “shortcodes”, which allow you to abstract away chunks of website content and invoke them from your markdown posts. The Hugo communi...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2021/12/22/hugo-shortcode-license-badges-on-code-blocks/</guid>
+    </item>
+    <item>
+      <title>Mysterious Broken Bootloader</title>
+      <link>https://nick.winans.io/blog/zmk-bootloader/</link>
+      <description>Investigating and fixing the bootloader woes of ZMK</description>
+      <author>Nick Winans</author>
+      <pubDate>Sat, 03 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://nick.winans.io/blog/zmk-bootloader/</guid>
+    </item>
+    <item>
+      <title>AP Chem: Spectrophotometric Mixture Analysis</title>
+      <link>https://www.noguera.dev/blog/2020/01/14/ap-chem-spectrophotometric-mixture-analysis/</link>
+      <description>To determine the composition of a mystery mixture consisting of various types of food coloring, I wrote this program that works with Vernier’s Spectral Analysis software.</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2020/01/14/ap-chem-spectrophotometric-mixture-analysis/</guid>
+    </item>
+    <item>
+      <title>Zybooks Autoplay</title>
+      <link>https://www.noguera.dev/blog/2019/10/04/zybooks-autoplay/</link>
+      <description>Zybooks online textbooks include animated activities that you must watch to completion. This script makes them auto-play at double speed when you load the page.</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Fri, 04 Oct 2019 12:00:44 -0500</pubDate>
+      <guid>https://www.noguera.dev/blog/2019/10/04/zybooks-autoplay/</guid>
+    </item>
+    <item>
+      <title>TJCTF 2019: All The Zips</title>
+      <link>https://www.noguera.dev/blog/2019/04/06/tjctf-2019-all-the-zips/</link>
+      <description>Forensics - 20 points 140 zips in the zip, all protected by a dictionary word. This was the first zip file challenge that I attempted. Afterwards, I have noticed that almost every CTF competition has...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2019/04/06/tjctf-2019-all-the-zips/</guid>
+    </item>
+    <item>
+      <title>Reverse Engineering the Wisconsin Driver Practice Test</title>
+      <link>https://www.noguera.dev/blog/2019/04/04/reverse-engineering-the-wisconsin-driver-practice-test/</link>
+      <description>Note from a future me, after I took the test: It’s pretty easy but it tries to trick you. Glance over these questions because they were good to know. The Problem I am currently taking Drivers’ Ed,...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2019/04/04/reverse-engineering-the-wisconsin-driver-practice-test/</guid>
+    </item>
+    <item>
+      <title>Hack This Site: Basic Challenges</title>
+      <link>https://www.noguera.dev/blog/2018/12/03/hack-this-site-basic-challenges/</link>
+      <description>Basic 1: HTML Comment This level is what we call “The Idiot Test”, if you can’t complete it, don’t give up on learning all you can, but, don’t go begging to someone else for the answer, that...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2018/12/03/hack-this-site-basic-challenges/</guid>
+    </item>
+    <item>
+      <title>How To: Blind SQL Injection, HSCTF 2018: Password</title>
+      <link>https://www.noguera.dev/blog/2018/07/19/how-to-blind-sql-injection-hsctf-2018-password/</link>
+      <description>Here are some rudimentary notes on how I solved the challenge ‘Password’ for HSCTF 2018. The puzzle gave a mock-up social media website with a login form, and asked that you retrieve Keith’s pas...</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2018/07/19/how-to-blind-sql-injection-hsctf-2018-password/</guid>
+    </item>
+    <item>
+      <title>Making backups of hard drives using the bash utility “dd”</title>
+      <link>https://www.noguera.dev/blog/2018/07/18/making-backups-of-hard-drives-using-the-bash-utility-dd/</link>
+      <description>I had an old corrupted hard drive that I needed to back up so that it could be reused.</description>
+      <author>Blog on Michael Noguera</author>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.noguera.dev/blog/2018/07/18/making-backups-of-hard-drives-using-the-bash-utility-dd/</guid>
+    </item>
+  </channel>
+</rss>
+
