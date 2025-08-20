@@ -5,14 +5,13 @@ import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
 ---
 <Base title="Projects">
-  <h2>Want to showcase your project on the UPL website?</h2>
-  <p>
+    <h2>Projects</h2>
+    <p>
+    Want to showcase your project on the UPL website?
     Create a pull request on our
     <a href="https://github.com/uw-upl/uw-upl.github.io/">GitHub repository</a> or ask a
     coordinator for help! We'd love to feature your work.
   </p>
-
-  <h2>Projects</h2>
   <div class="projects-list">
     {
       projects.map((project) => (
