@@ -33,7 +33,7 @@
       "link": "https://dteather.com/blogs/why-99-percent-of-github-projects-fail/",
       "author": "David Teather's Blog",
       "date": "2025-07-14",
-      "description": "I used to think my GitHub projects failed because my code wasn't good enough. Turns out, I was completely wrong about what actually matters. My TikTokAPIhttps://github.com/davidteather/TikTok-Api..."
+      "description": "Visit post for details."
     },
     {
       "title": "Create, Don't Consume",
@@ -50,6 +50,13 @@
       "description": "We examined Pokémon Showdown battles using game theory and identified the mathematically optimal strategies."
     },
     {
+      "title": "Automating keyword extraction and ranking to enhance a resume",
+      "link": "https://mdberkey.github.io/blog/automating-keyword-extraction-and-ranking-to-enhance-a-resume/",
+      "author": "Michael Berkey",
+      "date": "2025-04-29",
+      "description": "TL;DR I extracted keywords from job descriptions with Gemini and created a Python script to rank them to enhance my friend's resume. I spent some time this past week helping a friend update their res..."
+    },
+    {
       "title": "Dungeons, Dragons \u0026 Development",
       "link": "https://salm.dev/writing/dungeons-dragons-and-development/",
       "author": "salm.dev",
@@ -64,6 +71,13 @@
       "description": "The story of the nicenano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college."
     },
     {
+      "title": "How and Why I made this website",
+      "link": "https://mdberkey.github.io/blog/how-and-why-i-made-this-website/",
+      "author": "Michael Berkey",
+      "date": "2025-03-16",
+      "description": "TL;DR I made this website using Zola to discuss my work/interests. People kept asking, so I thought I'd make my first post to answer their questions. Why make a personal website? I wanted a place to..."
+    },
+    {
       "title": "eCommerce Automations",
       "link": "https://nick.winans.io/blog/ecommerce-automations/",
       "author": "Nick Winans",
@@ -75,7 +89,7 @@
       "link": "https://dteather.com/blogs/adding-giscus-discussions-to-astro/",
       "author": "David Teather's Blog",
       "date": "2025-02-11",
-      "description": "I've wanted to add discussions on my blog for awhile, and they're great for ya know getting people to talk about your post and interact with them. I was looking for something that I didn't have to ho..."
+      "description": "Visit post for details."
     },
     {
       "title": "InkLink",
@@ -110,7 +124,7 @@
       "link": "https://dteather.com/blogs/astro-interactive-charts/",
       "author": "David Teather's Blog",
       "date": "2024-10-30",
-      "description": "If there's one thing I consistently do, it's start writing a blog post, want a new feature for it and then spend the rest of the time adding that feature and then writing a blog post about it. This o..."
+      "description": "Visit post for details."
     },
     {
       "title": "Revamping the UPL's people counter",
@@ -131,14 +145,14 @@
       "link": "https://dteather.com/blogs/astro-uml-diagrams/",
       "author": "David Teather's Blog",
       "date": "2024-10-07",
-      "description": "I just recently added UML diagrams for my blogs, since in the future I want to create blog posts and youtube videos about system design and wanted to define UML diagrams in markdown and have them ren..."
+      "description": "Visit post for details."
     },
     {
       "title": "Is Web Scraping Ethical?",
       "link": "https://dteather.com/blogs/is-web-scraping-ethical/",
       "author": "David Teather's Blog",
       "date": "2024-08-23",
-      "description": "For better or worse, we live in a world where data is power. This has been our reality for years, but the recent emergence of mainstream AI has only made this more publicly apparent from companies ab..."
+      "description": "Visit post for details."
     },
     {
       "title": "Preserving My Future Self",
@@ -152,49 +166,49 @@
       "link": "https://dteather.com/blogs/astro-search-bar/",
       "author": "David Teather's Blog",
       "date": "2024-07-26",
-      "description": "I recently reworked my portfolio website to focus heavier on blogs, and this included adding a search bar to search across across my site. In this blog post I'll walk you through how you can add your..."
+      "description": "Visit post for details."
     },
     {
       "title": "Astro Optimized Images With Markdown",
       "link": "https://dteather.com/blogs/astro-optimized-images/",
       "author": "David Teather's Blog",
       "date": "2024-07-26",
-      "description": "I recently upgraded my site to a newer version of Astro that supported image optimization and I wanted to use that feature. I'll walk you through it, and it's a fairly quick change to improve the loa..."
+      "description": "Visit post for details."
     },
     {
       "title": "IMC Prosperity 2",
       "link": "https://dteather.com/blogs/imc-prosperity-2/",
       "author": "David Teather's Blog",
       "date": "2024-05-03",
-      "description": "I recently competed in the IMC Prosperity 2 competition and I wanted to write a blog post about my experience as a first time competitor in a trading competition in addition to writing about some of..."
+      "description": "Visit post for details."
     },
     {
       "title": "My UW Madison Course Tier List",
       "link": "https://dteather.com/blogs/madison-class-rankings/",
       "author": "David Teather's Blog",
       "date": "2024-04-25",
-      "description": "I'm about to graduate from UW Madison and I thought I'd share my thoughts on the classes that I've taken. I'm a Computer Science major with a certificate in Entrepreneurship, which I'll talk about in..."
+      "description": "Visit post for details."
     },
     {
       "title": "GitHub Field Day NYC 2024 Organizer",
       "link": "https://dteather.com/blogs/github-fieldday-nyc-2024/",
       "author": "David Teather's Blog",
       "date": "2024-03-15",
-      "description": "I had the pleasure of helping organize GitHub Field Day NYC 2024, and it took a lot of planning and coordination to make it happen. I had a lot of fun at the event and wanted to detail some of the th..."
+      "description": "Visit post for details."
     },
     {
       "title": "Battlecode 2024 Finalist",
       "link": "https://dteather.com/blogs/battlecode24/",
       "author": "David Teather's Blog",
       "date": "2024-01-28",
-      "description": "I was dragged into Battlecode 2024 by one of our teammates. I had never heard of Battlecode before, but I was excited to try it out. I had a lot of fun and I'm glad I did it, and we ended up qualifyi..."
+      "description": "Visit post for details."
     },
     {
       "title": "Organizing MadHacks Fall 2023 Reflections",
       "link": "https://dteather.com/blogs/madhacks-fall-23/",
       "author": "David Teather's Blog",
       "date": "2023-11-11",
-      "description": "I was one of the lead organizers for MadHacks Fall 2023, a 24-hour hackathon at the University of Wisconsin-Madison. The amount of effort and time that went into planning and executing this was absur..."
+      "description": "Visit post for details."
     },
     {
       "title": "Making My Blog 3x Faster",
@@ -215,7 +229,7 @@
       "link": "https://dteather.com/blogs/link-social-exposing-sensitive-personal-information/",
       "author": "David Teather's Blog",
       "date": "2022-07-14",
-      "description": "On July 9th I was able to access sensitive information from every account on link.social'shttps://www.link.social/ app. This information includes: phone number, last location accurate to..."
+      "description": "Visit post for details."
     },
     {
       "title": "A CS Course Map for Incoming UW-Madison Students",
@@ -229,7 +243,7 @@
       "link": "https://dteather.com/blogs/yikyak-is-exposing-user-locations/",
       "author": "David Teather's Blog",
       "date": "2022-05-09",
-      "description": "I was able to access the precise GPS coordinates accurate to within 10-15ft of all posts and comments on the YikYak platform, this leaves at least 2 million usershttps://twitter.com/YikYakApp/st..."
+      "description": "Visit post for details."
     },
     {
       "title": "Exploiting GitHub Actions",
