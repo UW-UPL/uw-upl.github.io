@@ -5,8 +5,24 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
-    <lastBuildDate>Wed, 20 Aug 2025 11:50:28 -0500</lastBuildDate>
+    <pubDate>Thu, 21 Aug 2025 15:00:00 +0000</pubDate>
+    <lastBuildDate>Fri, 22 Aug 2025 01:52:25 +0000</lastBuildDate>
+    <item>
+      <title>Reflections A Year Into My Career</title>
+      <link>https://dteather.com/blogs/reflections-a-year-into-my-career/</link>
+      <description>A brain dump of lessons, advice, and realizations from my first year as a new grad software engineer. Take what’s useful, ignore the rest.</description>
+      <author>David Teather</author>
+      <pubDate>Thu, 21 Aug 2025 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/reflections-a-year-into-my-career/</guid>
+    </item>
+    <item>
+      <title>Brief overview of CPU caching</title>
+      <link>https://jamesma.dev/2025/cpu-caching/</link>
+      <description>Why caches Over the years, the gap between the throughput of the processor and the throughput of main memory has widened. Programs cannot make use of higher processor speeds or a large number of cores...</description>
+      <author>James Ma</author>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/cpu-caching/</guid>
+    </item>
     <item>
       <title>CS + Data Science Done Right</title>
       <link>https://salm.dev/writing/cs-data-science-done-right/</link>
@@ -42,10 +58,18 @@
     <item>
       <title>Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)</title>
       <link>https://dteather.com/blogs/why-99-percent-of-github-projects-fail/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Learn the 3 critical rules that separate successful GitHub projects from the 99% that fail. Discover proven strategies that took my TikTokAPI from 0 to 5000 stars and 2M downloads, including search...</description>
+      <author>David Teather</author>
       <pubDate>Mon, 14 Jul 2025 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/why-99-percent-of-github-projects-fail/</guid>
+    </item>
+    <item>
+      <title>Parser combinators for postal addresses</title>
+      <link>https://jamesma.dev/2025/parser-combinators/</link>
+      <description>A while ago, Tsoding did a stream on parsing JSON with parser combinators. I was curious how hard it would be to use the basic parsers he implemented to create a new parser for U.S. postal addresses....</description>
+      <author>James Ma</author>
+      <pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/parser-combinators/</guid>
     </item>
     <item>
       <title>Create, Don&#39;t Consume</title>
@@ -54,6 +78,14 @@
       <author>salm.dev</author>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/create-dont-consume/</guid>
+    </item>
+    <item>
+      <title>Attention as a kernel smoothing problem</title>
+      <link>https://jamesma.dev/2025/attention-and-kernel-smoothing/</link>
+      <description>Reddit discussion This post is about a rarely discussed interpretation of “attention,” the underlying technique behind transformers, which has found its way into everything from natural language p...</description>
+      <author>James Ma</author>
+      <pubDate>Fri, 23 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/attention-and-kernel-smoothing/</guid>
     </item>
     <item>
       <title>Winning Pokemon Showdown</title>
@@ -88,6 +120,14 @@
       <guid>https://nick.winans.io/blog/nice-nano/</guid>
     </item>
     <item>
+      <title>Abstracting over Futures and Options</title>
+      <link>https://jamesma.dev/2025/future-options-scala/</link>
+      <description>In Scala, two interesting concepts you’ll often work with are Futures and Options. A Future is an abstraction for some value that might not be available yet. An Option abstracts over the possibility...</description>
+      <author>James Ma</author>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/future-options-scala/</guid>
+    </item>
+    <item>
       <title>How and Why I made this website</title>
       <link>https://mdberkey.github.io/blog/how-and-why-i-made-this-website/</link>
       <description>TL;DR I made this website using Zola to discuss my work/interests. People kept asking, so I thought I&#39;d make my first post to answer their questions. Why make a personal website? I wanted a place to...</description>
@@ -104,10 +144,18 @@
       <guid>https://nick.winans.io/blog/ecommerce-automations/</guid>
     </item>
     <item>
+      <title>Configuring external storage devices for Jellyfin</title>
+      <link>https://jamesma.dev/2025/jellyfin-guide/</link>
+      <description>This post serves as a personal guide to running a Jellyfin server locally using an external hard drive. The following assumes: Debian GNU/Linux 12 I’m using a Raspberry Pi 4 External hard drive ...</description>
+      <author>James Ma</author>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/jellyfin-guide/</guid>
+    </item>
+    <item>
       <title>Adding Giscus Discussions to Astro</title>
       <link>https://dteather.com/blogs/adding-giscus-discussions-to-astro/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Discover how to integrate Giscus discussions into your Astro blog. Learn to boost engagement with interactive comments, effortless moderation, and theme customization.</description>
+      <author>David Teather</author>
       <pubDate>Tue, 11 Feb 2025 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/adding-giscus-discussions-to-astro/</guid>
     </item>
@@ -118,6 +166,14 @@
       <author>Nick Winans</author>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://nick.winans.io/blog/ink-link/</guid>
+    </item>
+    <item>
+      <title>A gallery of randomly generated art</title>
+      <link>https://jamesma.dev/2025/randomart-gallery/</link>
+      <description>In a paper from CMU, security researchers describe a nifty algorithm used to generate random images known as RandomArt. In a nutshell, the algorithm takes as input a seed to a pseudo-random number gen...</description>
+      <author>James Ma</author>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/randomart-gallery/</guid>
     </item>
     <item>
       <title>Learning the NATO phonetic alphabet with the Web Speech API</title>
@@ -136,6 +192,22 @@
       <guid>https://www.noguera.dev/blog/2024/12/09/list-of-wiscers-2024-faculty-mentors/</guid>
     </item>
     <item>
+      <title>In defense of bad grammar</title>
+      <link>https://jamesma.dev/2024/bad-grammar/</link>
+      <description>From the moment we begin formal education we are drilled with the idea of “proper grammar.” “My friend and I,” not “me and my friend.” “A large number of people,” not “lots of people...</description>
+      <author>James Ma</author>
+      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2024/bad-grammar/</guid>
+    </item>
+    <item>
+      <title>Currying C functions using a heap-based trampoline</title>
+      <link>https://jamesma.dev/2024/currying-in-c/</link>
+      <description>Suppose you have a function and an argument that you want to send off to a worker thread. The canonical way to do this in C is via pthreadcreate. $ man pthreadcreate SYNOPSIS include pthread.h...</description>
+      <author>James Ma</author>
+      <pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2024/currying-in-c/</guid>
+    </item>
+    <item>
       <title>Obligatory Meta First Post About Creating This Blog</title>
       <link>https://ben.enterprises/hello-blog</link>
       <description>Visit post for details.</description>
@@ -146,8 +218,8 @@
     <item>
       <title>Adding Interactive Charts to Astro</title>
       <link>https://dteather.com/blogs/astro-interactive-charts/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Learn how to add interactive data visualizations to your Astro site using Apex Charts. This guide includes setup steps, customization tips, and code examples to help you bring your data to life with i...</description>
+      <author>David Teather</author>
       <pubDate>Wed, 30 Oct 2024 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/astro-interactive-charts/</guid>
     </item>
@@ -170,16 +242,32 @@
     <item>
       <title>Adding UML Diagrams to Rehype in Astro</title>
       <link>https://dteather.com/blogs/astro-uml-diagrams/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Learn how to add and style UML diagrams in your Astro project using Rehype and Mermaid.js. This step-by-step guide covers setup, customization for dark mode, and image support, making it perfect for s...</description>
+      <author>David Teather</author>
       <pubDate>Mon, 07 Oct 2024 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/astro-uml-diagrams/</guid>
     </item>
     <item>
+      <title>Simple backpropogation in Python and numpy</title>
+      <link>https://jamesma.dev/2024/implementing-backpropogation/</link>
+      <description>In our previous post, we introduced backpropogation as a means for efficiently training neural networks. Here we’ll attempt to implement a simple Python framework to train a fully-connected neural n...</description>
+      <author>James Ma</author>
+      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2024/implementing-backpropogation/</guid>
+    </item>
+    <item>
+      <title>Deriving backpropogation from scratch</title>
+      <link>https://jamesma.dev/2024/deriving-backpropogation/</link>
+      <description>Most sizable neural networks today rely on backpropogation to make the training process more efficient. While backpropogation is pretty ubiquitous in libraries such as torch.autograd, I was curious ho...</description>
+      <author>James Ma</author>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2024/deriving-backpropogation/</guid>
+    </item>
+    <item>
       <title>Is Web Scraping Ethical?</title>
       <link>https://dteather.com/blogs/is-web-scraping-ethical/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Web scraping: a tool for innovation or a threat to privacy? Dive into the ethical gray areas of data extraction and explore the real-world impacts on research, competition, and personal privacy.</description>
+      <author>David Teather</author>
       <pubDate>Fri, 23 Aug 2024 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/is-web-scraping-ethical/</guid>
     </item>
@@ -194,56 +282,56 @@
     <item>
       <title>Adding an Astro Search Bar</title>
       <link>https://dteather.com/blogs/astro-search-bar/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Enhance your Astro-built website with a powerful, locally-powered search bar Join David Teather as he guides you through adding a custom search feature using astro-pagefind. This blog includes easy-t...</description>
+      <author>David Teather</author>
       <pubDate>Fri, 26 Jul 2024 17:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/astro-search-bar/</guid>
     </item>
     <item>
       <title>Astro Optimized Images With Markdown</title>
       <link>https://dteather.com/blogs/astro-optimized-images/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Learn how to optimize images using Astro with Markdown in this detailed guide by David Teather. Discover step-by-step instructions on moving images for better web performance and reducing load times,...</description>
+      <author>David Teather</author>
       <pubDate>Fri, 26 Jul 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/astro-optimized-images/</guid>
     </item>
     <item>
       <title>IMC Prosperity 2</title>
       <link>https://dteather.com/blogs/imc-prosperity-2/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Join David Teather in his compelling account of competing in the IMC Prosperity 2 competition. This blog post covers his journey through the stages of virtual asset trading, from algorithmic to manual...</description>
+      <author>David Teather</author>
       <pubDate>Fri, 03 May 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/imc-prosperity-2/</guid>
     </item>
     <item>
       <title>My UW Madison Course Tier List</title>
       <link>https://dteather.com/blogs/madison-class-rankings/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>I&#39;m about to graduate from UW Madison and I thought I&#39;d share my thoughts on the classes that I&#39;ve taken. I&#39;m a Computer Science major with a certificate in Entrepreneurship. Hopefully this can help y...</description>
+      <author>David Teather</author>
       <pubDate>Thu, 25 Apr 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/madison-class-rankings/</guid>
     </item>
     <item>
       <title>GitHub Field Day NYC 2024 Organizer</title>
       <link>https://dteather.com/blogs/github-fieldday-nyc-2024/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>I had the pleasure of helping organize GitHub Field Day NYC 2024, and it took a lot of planning and coordination to make it happen. I had a lot of fun at the event and wanted to detail some of the thi...</description>
+      <author>David Teather</author>
       <pubDate>Fri, 15 Mar 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/github-fieldday-nyc-2024/</guid>
     </item>
     <item>
       <title>Battlecode 2024 Finalist</title>
       <link>https://dteather.com/blogs/battlecode24/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>I was dragged into Battlecode 2024 by one of our teammates. I had never heard of Battlecode before, but I was excited to try it out. I had a lot of fun and I&#39;m glad I did it, and we ended up qualifyin...</description>
+      <author>David Teather</author>
       <pubDate>Sun, 28 Jan 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/battlecode24/</guid>
     </item>
     <item>
       <title>Organizing MadHacks Fall 2023 Reflections</title>
       <link>https://dteather.com/blogs/madhacks-fall-23/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>David Teather&#39;s reflections on organizing MadHacks Fall 2023, a 24-hour hackathon at the University of Wisconsin-Madison, and the lessons learned from the experience.</description>
+      <author>David Teather</author>
       <pubDate>Sat, 11 Nov 2023 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/madhacks-fall-23/</guid>
     </item>
@@ -266,8 +354,8 @@
     <item>
       <title>LINK.social Exposed Users&#39; Sensitive Information &amp; Mass Account Hijacking</title>
       <link>https://dteather.com/blogs/link-social-exposing-sensitive-personal-information/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Learn how LINK.social exposed sensitive user information, including locations, phone numbers, and birthdays, along with vulnerabilities allowing mass account hijacking.</description>
+      <author>David Teather</author>
       <pubDate>Thu, 14 Jul 2022 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/link-social-exposing-sensitive-personal-information/</guid>
     </item>
@@ -282,8 +370,8 @@
     <item>
       <title>YikYak Is Exposing Millions of User Locations</title>
       <link>https://dteather.com/blogs/yikyak-is-exposing-user-locations/</link>
-      <description>Visit post for details.</description>
-      <author>David Teather&#39;s Blog</author>
+      <description>Discover how YikYak&#39;s exposed GPS coordinates and user IDs put millions at risk. Learn the implications, recommended fixes, and how to protect your privacy.</description>
+      <author>David Teather</author>
       <pubDate>Mon, 09 May 2022 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/yikyak-is-exposing-user-locations/</guid>
     </item>
@@ -369,4 +457,3 @@
     </item>
   </channel>
 </rss>
-
