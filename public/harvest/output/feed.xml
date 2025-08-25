@@ -5,8 +5,32 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Thu, 21 Aug 2025 15:00:00 +0000</pubDate>
-    <lastBuildDate>Fri, 22 Aug 2025 01:52:25 +0000</lastBuildDate>
+    <pubDate>Mon, 25 Aug 2025 03:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 25 Aug 2025 02:03:55 +0000</lastBuildDate>
+    <item>
+      <title>Adding Mermaid Diagrams to Rehype in Astro (With rehype-mermaid-cli)</title>
+      <link>https://dteather.com/blogs/astro-rehype-mermaid-cli/</link>
+      <description>Render UML and system design diagrams in Astro using rehype-mermaid-cli. Covers setup, light/dark mode, and comparisons with rehype-mermaid.</description>
+      <author>David Teather</author>
+      <pubDate>Mon, 25 Aug 2025 03:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/astro-rehype-mermaid-cli/</guid>
+    </item>
+    <item>
+      <title>An extremely unsophisticated Ponzi scheme</title>
+      <link>https://blackdiamand.github.io/misc/2025/08/24/a-ponzi.html</link>
+      <description></description>
+      <author>blackdiamand&#39;s site</author>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://blackdiamand.github.io/misc/2025/08/24/a-ponzi.html</guid>
+    </item>
+    <item>
+      <title>How to Add Live Stats To Your Site</title>
+      <link>https://dteather.com/blogs/how-to-add-live-stats-to-your-site/</link>
+      <description>Learn how to add live, constantly updating stats from GitHub, YouTube, LinkedIn, and more to your website using APIs, web scraping, and Cloudflare Functions.</description>
+      <author>David Teather</author>
+      <pubDate>Fri, 22 Aug 2025 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/how-to-add-live-stats-to-your-site/</guid>
+    </item>
     <item>
       <title>Reflections A Year Into My Career</title>
       <link>https://dteather.com/blogs/reflections-a-year-into-my-career/</link>
@@ -30,6 +54,14 @@
       <author>salm.dev</author>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/cs-data-science-done-right/</guid>
+    </item>
+    <item>
+      <title>Letting Go</title>
+      <link>https://scharenbroch.dev/blog/letting-go/</link>
+      <description>Most normal people find skydiving frightening, and for good reason1. When you jump out of the plane, you put complete trust in your parachute2. Letting go of the aircraft becomes an act of faith3. Whi...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 10 Aug 2025 20:19:42 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/letting-go/</guid>
     </item>
     <item>
       <title>Attention Span August</title>
@@ -224,12 +256,28 @@
       <guid>https://dteather.com/blogs/astro-interactive-charts/</guid>
     </item>
     <item>
+      <title>Types and Programming Languages</title>
+      <link>https://scharenbroch.dev/blog/types-and-programming-languages/</link>
+      <description>“Types and Programming Languages” T&amp;PLs is a relatively-esoteric1 textbook about type theory. The professor2 of my college PLs class3 has an old webpage that recommends this book: If you are ser...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sat, 19 Oct 2024 15:39:51 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/types-and-programming-languages/</guid>
+    </item>
+    <item>
       <title>Revamping the UPL&#39;s people counter</title>
       <link>https://www.amoses.dev/blog/upl-people-counter/</link>
       <description>who knew figuring out the lab&#39;s occupancy would be so much work?</description>
       <author>Andrew Moses</author>
       <pubDate>Mon, 14 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://www.amoses.dev/blog/upl-people-counter/</guid>
+    </item>
+    <item>
+      <title>Git Cheatsheet Prime</title>
+      <link>https://scharenbroch.dev/blog/git-cheatsheet-prime/</link>
+      <description>I’m an enthusiast and daily user of git’s command line interface 1. While GUIs offer advantages in visualization and intuition2, they greatly fall short in power3, concision, and extensibility. Li...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 13 Oct 2024 12:32:05 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/git-cheatsheet-prime/</guid>
     </item>
     <item>
       <title>Command Line Productivity</title>
@@ -240,7 +288,7 @@
       <guid>https://salm.dev/writing/command-line-productivity/</guid>
     </item>
     <item>
-      <title>Adding UML Diagrams to Rehype in Astro</title>
+      <title>Adding UML Diagrams to Rehype in Astro (With rehype-mermaid)</title>
       <link>https://dteather.com/blogs/astro-uml-diagrams/</link>
       <description>Learn how to add and style UML diagrams in your Astro project using Rehype and Mermaid.js. This step-by-step guide covers setup, customization for dark mode, and image support, making it perfect for s...</description>
       <author>David Teather</author>
@@ -264,6 +312,30 @@
       <guid>https://jamesma.dev/2024/deriving-backpropogation/</guid>
     </item>
     <item>
+      <title>Problems and Solutions to Long term Prediction Markets</title>
+      <link>https://blackdiamand.github.io/2024/09/02/longterm-markets.html</link>
+      <description>Long term forecasting and prediction markets If you were to visit Manifold about a year ago, you would have noticed a market that claimed AI had a 30% chance of wiping out humanity before 2030 or a 4%...</description>
+      <author>blackdiamand&#39;s site</author>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackdiamand.github.io/2024/09/02/longterm-markets.html</guid>
+    </item>
+    <item>
+      <title>On Competitive Programming</title>
+      <link>https://scharenbroch.dev/blog/on-competitive-programming/</link>
+      <description>What is Competitive Programming? “Competitive Programming” by its name encompasses all programming done in competitive nature. This post will specifically focus on and use the term “competiti...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sat, 31 Aug 2024 15:05:45 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/on-competitive-programming/</guid>
+    </item>
+    <item>
+      <title>Fueling the Fire</title>
+      <link>https://scharenbroch.dev/blog/fueling-the-fire/</link>
+      <description>Intro Motivation, though often overlooked, is arguably the strongest influence on a developer’s1 productivity. While skills, obstacles, and environments define the challenges we face, motivation def...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Fri, 30 Aug 2024 11:30:04 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/fueling-the-fire/</guid>
+    </item>
+    <item>
       <title>Is Web Scraping Ethical?</title>
       <link>https://dteather.com/blogs/is-web-scraping-ethical/</link>
       <description>Web scraping: a tool for innovation or a threat to privacy? Dive into the ethical gray areas of data extraction and explore the real-world impacts on research, competition, and personal privacy.</description>
@@ -278,6 +350,14 @@
       <author>salm.dev</author>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/preserving-my-future-self/</guid>
+    </item>
+    <item>
+      <title>Programming Paradigms</title>
+      <link>https://scharenbroch.dev/blog/programming-paradigms/</link>
+      <description>Ideas and Code Writing code is a never-ending battle to translate abstract ideas into formal instructions. This translation is lossy by nature: by making our ideas concrete, we are forced to face thei...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 11 Aug 2024 10:03:14 -0600</pubDate>
+      <guid>https://scharenbroch.dev/blog/programming-paradigms/</guid>
     </item>
     <item>
       <title>Adding an Astro Search Bar</title>
@@ -296,12 +376,68 @@
       <guid>https://dteather.com/blogs/astro-optimized-images/</guid>
     </item>
     <item>
+      <title>Hacking Is Necessary</title>
+      <link>https://scharenbroch.dev/blog/hacking-is-necessary/</link>
+      <description>Note: this isn’t a security post: “hacking” here means “unclean coding”, i.e. “I quickly hacked together a shell script as a temporary fix to the issue”. Sorry, cybersecurity enthusiasts...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Wed, 26 Jun 2024 10:06:46 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/hacking-is-necessary/</guid>
+    </item>
+    <item>
+      <title>Design Patterns</title>
+      <link>https://scharenbroch.dev/blog/design-patterns/</link>
+      <description>All Hail The Object Design Patterns is a classic book from the 90s that centers around low-level OOP idioms. While I’m sometimes quick to criticize OOP1, I still think there’s a lot of utility in...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Thu, 30 May 2024 11:33:05 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/design-patterns/</guid>
+    </item>
+    <item>
+      <title>Punching Through the Board</title>
+      <link>https://scharenbroch.dev/blog/punching-through-the-board/</link>
+      <description>In my youth, I practiced Tae-Kwon-Do1. I had very little talent, but I still learned many valuable lessons. Few of those lessons were directly related to computer programming, but I have a knack for d...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Fri, 24 May 2024 15:05:29 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/punching-through-the-board/</guid>
+    </item>
+    <item>
+      <title>The Power of the Commit</title>
+      <link>https://scharenbroch.dev/blog/the-power-of-the-commit/</link>
+      <description>I don’t know of a developer who doesn’t appreciate version control. The undo-on-steroids it provides is convenient and invaluable. But there’s a much more subtle aspect of version control perha...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Fri, 17 May 2024 07:47:11 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/the-power-of-the-commit/</guid>
+    </item>
+    <item>
+      <title>Rewriting a Toy Compiler</title>
+      <link>https://scharenbroch.dev/blog/rewriting-a-toy-compiler/</link>
+      <description>I’ve written a lot of posts glorifying functional programming lately, but they tend to be abstract and hypothetical. They roughly amount to “ADTs, higher-order-functions, and immutability are usua...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Wed, 15 May 2024 07:59:41 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/rewriting-a-toy-compiler/</guid>
+    </item>
+    <item>
+      <title>The Breadth-Depth Phase Shift</title>
+      <link>https://scharenbroch.dev/blog/the-breadth-depth-phase-shift/</link>
+      <description>Learning computer science is a lot like forming an n-dimensional1 snowball. Beginning is tough, because you must start from nothing; the snowball begins as a tiny clump, and is prone to crumbling. Eve...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 05 May 2024 08:20:04 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/the-breadth-depth-phase-shift/</guid>
+    </item>
+    <item>
       <title>IMC Prosperity 2</title>
       <link>https://dteather.com/blogs/imc-prosperity-2/</link>
       <description>Join David Teather in his compelling account of competing in the IMC Prosperity 2 competition. This blog post covers his journey through the stages of virtual asset trading, from algorithmic to manual...</description>
       <author>David Teather</author>
       <pubDate>Fri, 03 May 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/imc-prosperity-2/</guid>
+    </item>
+    <item>
+      <title>Computers Are Magic</title>
+      <link>https://scharenbroch.dev/blog/computers-are-magic/</link>
+      <description>Disclaimer: This post is unapologetically romantic. When people ask me why I’ve chosen CS over other majors/careers, I usually respond something along the lines of: “Computers have interested me s...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Tue, 30 Apr 2024 08:47:56 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/computers-are-magic/</guid>
     </item>
     <item>
       <title>My UW Madison Course Tier List</title>
@@ -312,12 +448,76 @@
       <guid>https://dteather.com/blogs/madison-class-rankings/</guid>
     </item>
     <item>
+      <title>Code Without Fear</title>
+      <link>https://scharenbroch.dev/blog/code-without-fear/</link>
+      <description>Programming is hard. It’s hard to work with tools, to formulate ideas into code, and to make that code work. As developers, we are inevitably forced to manage many responsibilities at once, more tha...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 21 Apr 2024 10:28:06 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/code-without-fear/</guid>
+    </item>
+    <item>
+      <title>Pushing Random Buttons</title>
+      <link>https://scharenbroch.dev/blog/pushing-random-buttons/</link>
+      <description>Before I discovered programming, a lot of my time around computers was spent becoming intimately familiar with the software I used on a daily basis. I became a master of Microsoft Power-Point transiti...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Mon, 01 Apr 2024 18:46:54 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/pushing-random-buttons/</guid>
+    </item>
+    <item>
+      <title>Why Haskell is a Great Language</title>
+      <link>https://scharenbroch.dev/blog/why-haskell-is-a-great-language/</link>
+      <description>No, this is not an April Fools’ Day joke. I’m currently taking a class on programming languages as a part of my CS degree at UW. The class briefly touches on Haskell, and somebody posted the follo...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Mon, 01 Apr 2024 15:35:59 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/why-haskell-is-a-great-language/</guid>
+    </item>
+    <item>
+      <title>Speedrunning College</title>
+      <link>https://scharenbroch.dev/blog/speedrunning-college/</link>
+      <description>A few decades ago, universities were the only place where it was possible for students to use and learn about computers; now it’s possible to teach yourself the entire curriculum without leaving you...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Fri, 29 Mar 2024 09:10:05 -0600</pubDate>
+      <guid>https://scharenbroch.dev/blog/speedrunning-college/</guid>
+    </item>
+    <item>
+      <title>Create The World&#39;s Simplest Trading Bot, For Free!</title>
+      <link>https://blackdiamand.github.io/trading/2024/03/26/bot-guide-simple.html</link>
+      <description>Create your own trading bot This is an unofficial guide and not created by Manifold If you notice something doesn’t work, report it on Discord, in the api-and-bots channel. You are responsible fo...</description>
+      <author>blackdiamand&#39;s site</author>
+      <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackdiamand.github.io/trading/2024/03/26/bot-guide-simple.html</guid>
+    </item>
+    <item>
+      <title>Functional Refactoring: Wordle</title>
+      <link>https://scharenbroch.dev/blog/functional-refactoring-wordle/</link>
+      <description>Functional programming FP has an odd status among developers. It is1 simultaneously loved and feared. I suspect most programmers would agree that maps and folds are useful, but concepts like immutab...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 17 Mar 2024 09:17:24 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/functional-refactoring-wordle/</guid>
+    </item>
+    <item>
       <title>GitHub Field Day NYC 2024 Organizer</title>
       <link>https://dteather.com/blogs/github-fieldday-nyc-2024/</link>
       <description>I had the pleasure of helping organize GitHub Field Day NYC 2024, and it took a lot of planning and coordination to make it happen. I had a lot of fun at the event and wanted to detail some of the thi...</description>
       <author>David Teather</author>
       <pubDate>Fri, 15 Mar 2024 15:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/github-fieldday-nyc-2024/</guid>
+    </item>
+    <item>
+      <title>Lazy vs Eager Learning</title>
+      <link>https://scharenbroch.dev/blog/lazy-vs-eager-learning/</link>
+      <description>There are a lot of opinions about the “best ways” to learn programming on the internet, but they’re usually some combination of the following: “Just write code” “learn by doing” Learn...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Wed, 13 Mar 2024 09:53:10 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/lazy-vs-eager-learning/</guid>
+    </item>
+    <item>
+      <title>Monads</title>
+      <link>https://scharenbroch.dev/blog/monads/</link>
+      <description>Monads are data types1 that expose methods for chaining, typically for the sake of abstracting state. More concretely, a monad is a type m where there exist the two2 functions: class Monad m where ...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Wed, 06 Mar 2024 07:34:10 -0600</pubDate>
+      <guid>https://scharenbroch.dev/blog/monads/</guid>
     </item>
     <item>
       <title>Battlecode 2024 Finalist</title>
@@ -328,6 +528,14 @@
       <guid>https://dteather.com/blogs/battlecode24/</guid>
     </item>
     <item>
+      <title>APL Tutorial</title>
+      <link>https://scharenbroch.dev/blog/apl-tutorial/</link>
+      <description>I’ve been working on writing an APL Interpreter recently. Understanding the language is a prerequisite to writing an interpreter, and I’m pretty sure I’ve got it figured out, but I figure it’s...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Mon, 27 Nov 2023 09:07:11 -0600</pubDate>
+      <guid>https://scharenbroch.dev/blog/apl-tutorial/</guid>
+    </item>
+    <item>
       <title>Organizing MadHacks Fall 2023 Reflections</title>
       <link>https://dteather.com/blogs/madhacks-fall-23/</link>
       <description>David Teather&#39;s reflections on organizing MadHacks Fall 2023, a 24-hour hackathon at the University of Wisconsin-Madison, and the lessons learned from the experience.</description>
@@ -336,12 +544,76 @@
       <guid>https://dteather.com/blogs/madhacks-fall-23/</guid>
     </item>
     <item>
+      <title>Every Vim Binding I Know</title>
+      <link>https://scharenbroch.dev/blog/vim-bindings/</link>
+      <description>I love vim. It makes editing text fast and fun. The learning-curve is admittedly steep, however, and the return-on-investment for seeking new bindings looks too much like the reciprocal function. I ha...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 01 Oct 2023 08:58:26 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/vim-bindings/</guid>
+    </item>
+    <item>
+      <title>Implicit Recursion</title>
+      <link>https://scharenbroch.dev/blog/implicit-recursion/</link>
+      <description>I recently started learning Haskell, and I came across a structure in the language that really made me think: Currying. Consider a function called “add” that takes two integers and returns an inte...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Tue, 05 Sep 2023 14:21:16 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/implicit-recursion/</guid>
+    </item>
+    <item>
+      <title>Why I Use Vim</title>
+      <link>https://scharenbroch.dev/blog/vim/</link>
+      <description>The Vim Lecture I was initially hesitant to write a post about Vim, because most of what I have to say about it has already been said somewhere on the internet1. My mind was recently changed when, in...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://scharenbroch.dev/blog/vim/</guid>
+    </item>
+    <item>
+      <title>Effective Anki Cards</title>
+      <link>https://scharenbroch.dev/blog/effective-anki-cards/</link>
+      <description>TL;DR: long cards are bad; short cards are good. The TL;DR says it all, but I want to elaborate on how I fell into the trap of making bad cards. I have no excuse for not knowing what good cards look l...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sat, 08 Jul 2023 19:35:55 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/effective-anki-cards/</guid>
+    </item>
+    <item>
+      <title>Leetcode: 4 Types of Problems</title>
+      <link>https://scharenbroch.dev/blog/leetcode-4-types-of-problems/</link>
+      <description>What and Why Leetcode is a popular platform for studying DSA Data Structures and Algorithms, especially for coding/technical interviews, competitive programming, and education in general. It offers...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Tue, 04 Jul 2023 15:03:41 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/leetcode-4-types-of-problems/</guid>
+    </item>
+    <item>
+      <title>UW Madison Computer Science</title>
+      <link>https://scharenbroch.dev/blog/uw-madison-computer-science/</link>
+      <description>I like to plan things out, especially things of high importance. Since college happens to fall into that category, I’ve spent a significant amount of time planning out courses, and I’ve made a hab...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Sat, 01 Jul 2023 17:41:21 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/uw-madison-computer-science/</guid>
+    </item>
+    <item>
       <title>Making My Blog 3x Faster</title>
       <link>https://nick.winans.io/blog/optimizing-blog-fonts/</link>
       <description>Optimizing fonts to slash load times</description>
       <author>Nick Winans</author>
       <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://nick.winans.io/blog/optimizing-blog-fonts/</guid>
+    </item>
+    <item>
+      <title>Using a Chromebook as a CS Student</title>
+      <link>https://scharenbroch.dev/blog/using-a-chromebook-as-a-cs-student/</link>
+      <description>There seems to be a notion that owning an expensive computer is necessary to study computer science. While I do think that buying the most expensive notebook at Best-Buy would probably be the most con...</description>
+      <author>Blog on Lucas&#39;s Webpage</author>
+      <pubDate>Mon, 26 Jun 2023 18:26:55 -0500</pubDate>
+      <guid>https://scharenbroch.dev/blog/using-a-chromebook-as-a-cs-student/</guid>
+    </item>
+    <item>
+      <title>Alaska&#39;s Top Four Primary, Game Theory, and How to Not Campaign in a Ranked Choice Election</title>
+      <link>https://blackdiamand.github.io/alaska/2023/01/06/alaska-game-theory.html</link>
+      <description>How to Not Campaign in a Ranked Choice Election Don’t attack your allies Background Alaska’s new electoral system, adopted by voters in a 2020 referendum, has created some interesting results. In...</description>
+      <author>blackdiamand&#39;s site</author>
+      <pubDate>Fri, 06 Jan 2023 00:19:00 +0000</pubDate>
+      <guid>https://blackdiamand.github.io/alaska/2023/01/06/alaska-game-theory.html</guid>
     </item>
     <item>
       <title>Exploring the Anshel-Anshel-Goldfeld Key Exchange System</title>

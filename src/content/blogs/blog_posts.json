@@ -1,6 +1,27 @@
 {
   "posts": [
     {
+      "title": "Adding Mermaid Diagrams to Rehype in Astro (With rehype-mermaid-cli)",
+      "link": "https://dteather.com/blogs/astro-rehype-mermaid-cli/",
+      "author": "David Teather",
+      "date": "2025-08-25",
+      "description": "Render UML and system design diagrams in Astro using rehype-mermaid-cli. Covers setup, light/dark mode, and comparisons with rehype-mermaid."
+    },
+    {
+      "title": "An extremely unsophisticated Ponzi scheme",
+      "link": "https://blackdiamand.github.io/misc/2025/08/24/a-ponzi.html",
+      "author": "blackdiamand's site",
+      "date": "2025-08-24",
+      "description": ""
+    },
+    {
+      "title": "How to Add Live Stats To Your Site",
+      "link": "https://dteather.com/blogs/how-to-add-live-stats-to-your-site/",
+      "author": "David Teather",
+      "date": "2025-08-22",
+      "description": "Learn how to add live, constantly updating stats from GitHub, YouTube, LinkedIn, and more to your website using APIs, web scraping, and Cloudflare Functions."
+    },
+    {
       "title": "Reflections A Year Into My Career",
       "link": "https://dteather.com/blogs/reflections-a-year-into-my-career/",
       "author": "David Teather",
@@ -20,6 +41,13 @@
       "author": "salm.dev",
       "date": "2025-08-15",
       "description": "Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials."
+    },
+    {
+      "title": "Letting Go",
+      "link": "https://scharenbroch.dev/blog/letting-go/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2025-08-10",
+      "description": "Most normal people find skydiving frightening, and for good reason1. When you jump out of the plane, you put complete trust in your parachute2. Letting go of the aircraft becomes an act of faith3. Whi..."
     },
     {
       "title": "Attention Span August",
@@ -190,11 +218,25 @@
       "description": "Learn how to add interactive data visualizations to your Astro site using Apex Charts. This guide includes setup steps, customization tips, and code examples to help you bring your data to life with i..."
     },
     {
+      "title": "Types and Programming Languages",
+      "link": "https://scharenbroch.dev/blog/types-and-programming-languages/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-10-19",
+      "description": "“Types and Programming Languages” T\u0026PLs is a relatively-esoteric1 textbook about type theory. The professor2 of my college PLs class3 has an old webpage that recommends this book: If you are ser..."
+    },
+    {
       "title": "Revamping the UPL's people counter",
       "link": "https://www.amoses.dev/blog/upl-people-counter/",
       "author": "Andrew Moses",
       "date": "2024-10-14",
       "description": "who knew figuring out the lab's occupancy would be so much work?"
+    },
+    {
+      "title": "Git Cheatsheet Prime",
+      "link": "https://scharenbroch.dev/blog/git-cheatsheet-prime/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-10-13",
+      "description": "I’m an enthusiast and daily user of git’s command line interface 1. While GUIs offer advantages in visualization and intuition2, they greatly fall short in power3, concision, and extensibility. Li..."
     },
     {
       "title": "Command Line Productivity",
@@ -204,7 +246,7 @@
       "description": "I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
     },
     {
-      "title": "Adding UML Diagrams to Rehype in Astro",
+      "title": "Adding UML Diagrams to Rehype in Astro (With rehype-mermaid)",
       "link": "https://dteather.com/blogs/astro-uml-diagrams/",
       "author": "David Teather",
       "date": "2024-10-07",
@@ -225,6 +267,27 @@
       "description": "Most sizable neural networks today rely on backpropogation to make the training process more efficient. While backpropogation is pretty ubiquitous in libraries such as torch.autograd, I was curious ho..."
     },
     {
+      "title": "Problems and Solutions to Long term Prediction Markets",
+      "link": "https://blackdiamand.github.io/2024/09/02/longterm-markets.html",
+      "author": "blackdiamand's site",
+      "date": "2024-09-02",
+      "description": "Long term forecasting and prediction markets If you were to visit Manifold about a year ago, you would have noticed a market that claimed AI had a 30% chance of wiping out humanity before 2030 or a 4%..."
+    },
+    {
+      "title": "On Competitive Programming",
+      "link": "https://scharenbroch.dev/blog/on-competitive-programming/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-08-31",
+      "description": "What is Competitive Programming? “Competitive Programming” by its name encompasses all programming done in competitive nature. This post will specifically focus on and use the term “competiti..."
+    },
+    {
+      "title": "Fueling the Fire",
+      "link": "https://scharenbroch.dev/blog/fueling-the-fire/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-08-30",
+      "description": "Intro Motivation, though often overlooked, is arguably the strongest influence on a developer’s1 productivity. While skills, obstacles, and environments define the challenges we face, motivation def..."
+    },
+    {
       "title": "Is Web Scraping Ethical?",
       "link": "https://dteather.com/blogs/is-web-scraping-ethical/",
       "author": "David Teather",
@@ -237,6 +300,13 @@
       "author": "salm.dev",
       "date": "2024-08-18",
       "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing."
+    },
+    {
+      "title": "Programming Paradigms",
+      "link": "https://scharenbroch.dev/blog/programming-paradigms/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-08-11",
+      "description": "Ideas and Code Writing code is a never-ending battle to translate abstract ideas into formal instructions. This translation is lossy by nature: by making our ideas concrete, we are forced to face thei..."
     },
     {
       "title": "Adding an Astro Search Bar",
@@ -253,11 +323,60 @@
       "description": "Learn how to optimize images using Astro with Markdown in this detailed guide by David Teather. Discover step-by-step instructions on moving images for better web performance and reducing load times,..."
     },
     {
+      "title": "Hacking Is Necessary",
+      "link": "https://scharenbroch.dev/blog/hacking-is-necessary/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-06-26",
+      "description": "Note: this isn’t a security post: “hacking” here means “unclean coding”, i.e. “I quickly hacked together a shell script as a temporary fix to the issue”. Sorry, cybersecurity enthusiasts..."
+    },
+    {
+      "title": "Design Patterns",
+      "link": "https://scharenbroch.dev/blog/design-patterns/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-05-30",
+      "description": "All Hail The Object Design Patterns is a classic book from the 90s that centers around low-level OOP idioms. While I’m sometimes quick to criticize OOP1, I still think there’s a lot of utility in..."
+    },
+    {
+      "title": "Punching Through the Board",
+      "link": "https://scharenbroch.dev/blog/punching-through-the-board/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-05-24",
+      "description": "In my youth, I practiced Tae-Kwon-Do1. I had very little talent, but I still learned many valuable lessons. Few of those lessons were directly related to computer programming, but I have a knack for d..."
+    },
+    {
+      "title": "The Power of the Commit",
+      "link": "https://scharenbroch.dev/blog/the-power-of-the-commit/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-05-17",
+      "description": "I don’t know of a developer who doesn’t appreciate version control. The undo-on-steroids it provides is convenient and invaluable. But there’s a much more subtle aspect of version control perha..."
+    },
+    {
+      "title": "Rewriting a Toy Compiler",
+      "link": "https://scharenbroch.dev/blog/rewriting-a-toy-compiler/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-05-15",
+      "description": "I’ve written a lot of posts glorifying functional programming lately, but they tend to be abstract and hypothetical. They roughly amount to “ADTs, higher-order-functions, and immutability are usua..."
+    },
+    {
+      "title": "The Breadth-Depth Phase Shift",
+      "link": "https://scharenbroch.dev/blog/the-breadth-depth-phase-shift/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-05-05",
+      "description": "Learning computer science is a lot like forming an n-dimensional1 snowball. Beginning is tough, because you must start from nothing; the snowball begins as a tiny clump, and is prone to crumbling. Eve..."
+    },
+    {
       "title": "IMC Prosperity 2",
       "link": "https://dteather.com/blogs/imc-prosperity-2/",
       "author": "David Teather",
       "date": "2024-05-03",
       "description": "Join David Teather in his compelling account of competing in the IMC Prosperity 2 competition. This blog post covers his journey through the stages of virtual asset trading, from algorithmic to manual..."
+    },
+    {
+      "title": "Computers Are Magic",
+      "link": "https://scharenbroch.dev/blog/computers-are-magic/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-04-30",
+      "description": "Disclaimer: This post is unapologetically romantic. When people ask me why I’ve chosen CS over other majors/careers, I usually respond something along the lines of: “Computers have interested me s..."
     },
     {
       "title": "My UW Madison Course Tier List",
@@ -267,11 +386,67 @@
       "description": "I'm about to graduate from UW Madison and I thought I'd share my thoughts on the classes that I've taken. I'm a Computer Science major with a certificate in Entrepreneurship. Hopefully this can help y..."
     },
     {
+      "title": "Code Without Fear",
+      "link": "https://scharenbroch.dev/blog/code-without-fear/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-04-21",
+      "description": "Programming is hard. It’s hard to work with tools, to formulate ideas into code, and to make that code work. As developers, we are inevitably forced to manage many responsibilities at once, more tha..."
+    },
+    {
+      "title": "Pushing Random Buttons",
+      "link": "https://scharenbroch.dev/blog/pushing-random-buttons/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-04-01",
+      "description": "Before I discovered programming, a lot of my time around computers was spent becoming intimately familiar with the software I used on a daily basis. I became a master of Microsoft Power-Point transiti..."
+    },
+    {
+      "title": "Why Haskell is a Great Language",
+      "link": "https://scharenbroch.dev/blog/why-haskell-is-a-great-language/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-04-01",
+      "description": "No, this is not an April Fools’ Day joke. I’m currently taking a class on programming languages as a part of my CS degree at UW. The class briefly touches on Haskell, and somebody posted the follo..."
+    },
+    {
+      "title": "Speedrunning College",
+      "link": "https://scharenbroch.dev/blog/speedrunning-college/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-03-29",
+      "description": "A few decades ago, universities were the only place where it was possible for students to use and learn about computers; now it’s possible to teach yourself the entire curriculum without leaving you..."
+    },
+    {
+      "title": "Create The World's Simplest Trading Bot, For Free!",
+      "link": "https://blackdiamand.github.io/trading/2024/03/26/bot-guide-simple.html",
+      "author": "blackdiamand's site",
+      "date": "2024-03-26",
+      "description": "Create your own trading bot This is an unofficial guide and not created by Manifold If you notice something doesn’t work, report it on Discord, in the api-and-bots channel. You are responsible fo..."
+    },
+    {
+      "title": "Functional Refactoring: Wordle",
+      "link": "https://scharenbroch.dev/blog/functional-refactoring-wordle/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-03-17",
+      "description": "Functional programming FP has an odd status among developers. It is1 simultaneously loved and feared. I suspect most programmers would agree that maps and folds are useful, but concepts like immutab..."
+    },
+    {
       "title": "GitHub Field Day NYC 2024 Organizer",
       "link": "https://dteather.com/blogs/github-fieldday-nyc-2024/",
       "author": "David Teather",
       "date": "2024-03-15",
       "description": "I had the pleasure of helping organize GitHub Field Day NYC 2024, and it took a lot of planning and coordination to make it happen. I had a lot of fun at the event and wanted to detail some of the thi..."
+    },
+    {
+      "title": "Lazy vs Eager Learning",
+      "link": "https://scharenbroch.dev/blog/lazy-vs-eager-learning/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-03-13",
+      "description": "There are a lot of opinions about the “best ways” to learn programming on the internet, but they’re usually some combination of the following: “Just write code” “learn by doing” Learn..."
+    },
+    {
+      "title": "Monads",
+      "link": "https://scharenbroch.dev/blog/monads/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2024-03-06",
+      "description": "Monads are data types1 that expose methods for chaining, typically for the sake of abstracting state. More concretely, a monad is a type m where there exist the two2 functions: class Monad m where ..."
     },
     {
       "title": "Battlecode 2024 Finalist",
@@ -281,6 +456,13 @@
       "description": "I was dragged into Battlecode 2024 by one of our teammates. I had never heard of Battlecode before, but I was excited to try it out. I had a lot of fun and I'm glad I did it, and we ended up qualifyin..."
     },
     {
+      "title": "APL Tutorial",
+      "link": "https://scharenbroch.dev/blog/apl-tutorial/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-11-27",
+      "description": "I’ve been working on writing an APL Interpreter recently. Understanding the language is a prerequisite to writing an interpreter, and I’m pretty sure I’ve got it figured out, but I figure it’s..."
+    },
+    {
       "title": "Organizing MadHacks Fall 2023 Reflections",
       "link": "https://dteather.com/blogs/madhacks-fall-23/",
       "author": "David Teather",
@@ -288,11 +470,67 @@
       "description": "David Teather's reflections on organizing MadHacks Fall 2023, a 24-hour hackathon at the University of Wisconsin-Madison, and the lessons learned from the experience."
     },
     {
+      "title": "Every Vim Binding I Know",
+      "link": "https://scharenbroch.dev/blog/vim-bindings/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-10-01",
+      "description": "I love vim. It makes editing text fast and fun. The learning-curve is admittedly steep, however, and the return-on-investment for seeking new bindings looks too much like the reciprocal function. I ha..."
+    },
+    {
+      "title": "Implicit Recursion",
+      "link": "https://scharenbroch.dev/blog/implicit-recursion/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-09-05",
+      "description": "I recently started learning Haskell, and I came across a structure in the language that really made me think: Currying. Consider a function called “add” that takes two integers and returns an inte..."
+    },
+    {
+      "title": "Why I Use Vim",
+      "link": "https://scharenbroch.dev/blog/vim/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-08-13",
+      "description": "The Vim Lecture I was initially hesitant to write a post about Vim, because most of what I have to say about it has already been said somewhere on the internet1. My mind was recently changed when, in..."
+    },
+    {
+      "title": "Effective Anki Cards",
+      "link": "https://scharenbroch.dev/blog/effective-anki-cards/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-07-08",
+      "description": "TL;DR: long cards are bad; short cards are good. The TL;DR says it all, but I want to elaborate on how I fell into the trap of making bad cards. I have no excuse for not knowing what good cards look l..."
+    },
+    {
+      "title": "Leetcode: 4 Types of Problems",
+      "link": "https://scharenbroch.dev/blog/leetcode-4-types-of-problems/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-07-04",
+      "description": "What and Why Leetcode is a popular platform for studying DSA Data Structures and Algorithms, especially for coding/technical interviews, competitive programming, and education in general. It offers..."
+    },
+    {
+      "title": "UW Madison Computer Science",
+      "link": "https://scharenbroch.dev/blog/uw-madison-computer-science/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-07-01",
+      "description": "I like to plan things out, especially things of high importance. Since college happens to fall into that category, I’ve spent a significant amount of time planning out courses, and I’ve made a hab..."
+    },
+    {
       "title": "Making My Blog 3x Faster",
       "link": "https://nick.winans.io/blog/optimizing-blog-fonts/",
       "author": "Nick Winans",
       "date": "2023-06-27",
       "description": "Optimizing fonts to slash load times"
+    },
+    {
+      "title": "Using a Chromebook as a CS Student",
+      "link": "https://scharenbroch.dev/blog/using-a-chromebook-as-a-cs-student/",
+      "author": "Blog on Lucas's Webpage",
+      "date": "2023-06-26",
+      "description": "There seems to be a notion that owning an expensive computer is necessary to study computer science. While I do think that buying the most expensive notebook at Best-Buy would probably be the most con..."
+    },
+    {
+      "title": "Alaska's Top Four Primary, Game Theory, and How to Not Campaign in a Ranked Choice Election",
+      "link": "https://blackdiamand.github.io/alaska/2023/01/06/alaska-game-theory.html",
+      "author": "blackdiamand's site",
+      "date": "2023-01-06",
+      "description": "How to Not Campaign in a Ranked Choice Election Don’t attack your allies Background Alaska’s new electoral system, adopted by voters in a 2020 referendum, has created some interesting results. In..."
     },
     {
       "title": "Exploring the Anshel-Anshel-Goldfeld Key Exchange System",
