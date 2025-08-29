@@ -1,43 +1,43 @@
 interface CoordHour {
     Time: string;
-  
+
     // in order: Monday, Tuesday, Wednesday, Thursday, Friday
     Coords: string[];
   }
-  
+
   let CoordHours: CoordHour[] = [
     {
       Time: "10 - 11 AM",
-      Coords: ["George", "", "Sam", "", ""],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "11 AM - 12 PM",
-      Coords: ["Pusti", "Nico", "Sam", "Nico", "Anna"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "12 - 1 PM",
-      Coords: ["Pusti", "Jiamu", "Mari", "Jiamu", "Anna"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "1 - 2 PM",
-      Coords: ["", "Emily", "Rahul", "Emily", "Michael"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "2 - 3 PM",
-      Coords: ["", "", "", "", "Michael"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "3 - 4 PM",
-      Coords: ["Oliver", "", "", "", "Rahul"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "4 - 5 PM",
-      Coords: ["Oliver", "", "Ishan", "", "Ishan"],
+      Coords: ["", "", "", "", ""],
     },
     {
       Time: "5 - 6 PM",
-      Coords: ["George", "", "", "", "Mari"],
+      Coords: ["", "", "", "", ""],
     },
   ];
-  
+
   export default CoordHours;
