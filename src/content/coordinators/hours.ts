@@ -32,7 +32,7 @@ interface CoordHour {
     },
     {
       Time: "4 - 5 PM",
-      Coords: ["", "", "", "Nico", ""],
+      Coords: ["", "", "Nico", "", ""],
     },
     {
       Time: "5 - 6 PM",
