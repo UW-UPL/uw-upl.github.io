@@ -8,7 +8,7 @@ Thanks for helping improve the UPL website! This guide covers adding events, pro
 2. Clone your fork locally
 3. Create a new branch for your changes
 4. Install dependencies: `npm i`
-5. Start the dev server: `npx astro dev`
+5. Start the dev server: `npx run astro dev`
 6. Make your changes following the guidelines below
 7. Submit a pull request
 
