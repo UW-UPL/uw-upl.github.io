@@ -6,10 +6,8 @@ const rows = CoordHours.map(({ Time, Coords }) => [Time, ...Coords]);
 ---
 
 <Base title="Hours">
-    <h2>Hours</h2>
-  <p
-    style="padding-bottom: 15px;"
-  >
+  <h2>Hours</h2>
+  <p style="padding-bottom: 15px;">
     Anyone is welcome in the UPL room whenever a coord is present and coords
     commit to be present at certain office hours. All you need to do is come in
     and say hi!
@@ -51,14 +49,7 @@ const rows = CoordHours.map(({ Time, Coords }) => [Time, ...Coords]);
       try {
         const resp = await fetch("https://doors.amoses.dev/door-status");
         const data = await resp.json();
-        const backDoor = data.find(
-          (Door: { door: string }) => Door.door === "back"
-        );
-        const frontDoor = data.find(
-          (Door: { door: string }) => Door.door === "front"
-        );
-        if (!backDoor || !frontDoor) return undefined;
-        return backDoor.status === "on" && frontDoor.status === "on";
+        return data.status === "open";
       } catch {
         return undefined;
       }
