@@ -5,8 +5,24 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Mon, 25 Aug 2025 03:00:00 +0000</pubDate>
-    <lastBuildDate>Mon, 25 Aug 2025 02:03:55 +0000</lastBuildDate>
+    <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+    <lastBuildDate>Sun, 07 Sep 2025 01:04:43 +0000</lastBuildDate>
+    <item>
+      <title>Learning C++ part 1: lvalues, rvalues, and move semantics</title>
+      <link>https://jamesma.dev/2025/rvalues/</link>
+      <description>I’ve written a decent amount of C, but never really took the time to understand its internals. In the first of what will hopefully become a series of articles, we will look at lvalues, rvalues, an...</description>
+      <author>James Ma</author>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/rvalues/</guid>
+    </item>
+    <item>
+      <title>How to fight the attention economy</title>
+      <link>https://jamesma.dev/2025/attention-economy/</link>
+      <description>If you’ve ever been to a casino, you’ll notice that there are no clocks, no windows, and no straight angles. Ugly carpet patterns keep your eyes forward as you wander through curved hallways, your...</description>
+      <author>James Ma</author>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/attention-economy/</guid>
+    </item>
     <item>
       <title>Adding Mermaid Diagrams to Rehype in Astro (With rehype-mermaid-cli)</title>
       <link>https://dteather.com/blogs/astro-rehype-mermaid-cli/</link>
@@ -16,9 +32,9 @@
       <guid>https://dteather.com/blogs/astro-rehype-mermaid-cli/</guid>
     </item>
     <item>
-      <title>An extremely unsophisticated Ponzi scheme</title>
+      <title>Aspects of an unsophisticated Ponzi scheme</title>
       <link>https://blackdiamand.github.io/misc/2025/08/24/a-ponzi.html</link>
-      <description></description>
+      <description>Intro Silicon Valley is home to some of the largest boom and bust cycles. Housing prices are among the highest in the world. Due to laws preventing more dense housing being built though more dense ho...</description>
       <author>blackdiamand&#39;s site</author>
       <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://blackdiamand.github.io/misc/2025/08/24/a-ponzi.html</guid>
@@ -51,7 +67,7 @@
       <title>CS + Data Science Done Right</title>
       <link>https://salm.dev/writing/cs-data-science-done-right/</link>
       <description>Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/cs-data-science-done-right/</guid>
     </item>
@@ -83,7 +99,7 @@
       <title>Beyond If Statements and For Loops</title>
       <link>https://salm.dev/writing/beyond-if-statements-and-for-loops/</link>
       <description>How pattern matching, type systems, and functional thinking transformed my approach to solving problems.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/beyond-if-statements-and-for-loops/</guid>
     </item>
@@ -107,7 +123,7 @@
       <title>Create, Don&#39;t Consume</title>
       <link>https://salm.dev/writing/create-dont-consume/</link>
       <description>We&#39;re trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/create-dont-consume/</guid>
     </item>
@@ -123,7 +139,7 @@
       <title>Winning Pokemon Showdown</title>
       <link>https://salm.dev/writing/winning-pokemon-showdown/</link>
       <description>We examined Pokémon Showdown battles using game theory and identified the mathematically optimal strategies.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/winning-pokemon-showdown/</guid>
     </item>
@@ -139,7 +155,7 @@
       <title>Dungeons, Dragons &amp; Development</title>
       <link>https://salm.dev/writing/dungeons-dragons-and-development/</link>
       <description>In both homebrew D&amp;D worlds and software development, you create vast interconnected systems that must remain cohesive while evolving over time.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/dungeons-dragons-and-development/</guid>
     </item>
@@ -283,7 +299,7 @@
       <title>Command Line Productivity</title>
       <link>https://salm.dev/writing/command-line-productivity/</link>
       <description>I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/command-line-productivity/</guid>
     </item>
@@ -294,22 +310,6 @@
       <author>David Teather</author>
       <pubDate>Mon, 07 Oct 2024 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/astro-uml-diagrams/</guid>
-    </item>
-    <item>
-      <title>Simple backpropogation in Python and numpy</title>
-      <link>https://jamesma.dev/2024/implementing-backpropogation/</link>
-      <description>In our previous post, we introduced backpropogation as a means for efficiently training neural networks. Here we’ll attempt to implement a simple Python framework to train a fully-connected neural n...</description>
-      <author>James Ma</author>
-      <pubDate>Sat, 28 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://jamesma.dev/2024/implementing-backpropogation/</guid>
-    </item>
-    <item>
-      <title>Deriving backpropogation from scratch</title>
-      <link>https://jamesma.dev/2024/deriving-backpropogation/</link>
-      <description>Most sizable neural networks today rely on backpropogation to make the training process more efficient. While backpropogation is pretty ubiquitous in libraries such as torch.autograd, I was curious ho...</description>
-      <author>James Ma</author>
-      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://jamesma.dev/2024/deriving-backpropogation/</guid>
     </item>
     <item>
       <title>Problems and Solutions to Long term Prediction Markets</title>
@@ -347,7 +347,7 @@
       <title>Preserving My Future Self</title>
       <link>https://salm.dev/writing/preserving-my-future-self/</link>
       <description>I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/preserving-my-future-self/</guid>
     </item>
