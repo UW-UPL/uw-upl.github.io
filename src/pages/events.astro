@@ -17,16 +17,15 @@ const pastEvents = sorted.filter((e) => new Date(e.data.date) < todayStart).reve
       <div class="event-list">
         {futureEvents.map((event) => (
           <div class="event">
-            <p>
-              <h3 style="margin: 0; text-decoration: underline; margin-bottom: 3px;">
-                {event.data.title}
-              </h3>
-              <p style="margin-bottom: 10px;">
-                {new Date(event.data.date).toLocaleString("en-US", {
-                  dateStyle: "medium",
-                  timeStyle: "short",
-                })}
-              </p>
+            <h3 style="margin: 0; text-decoration: underline; margin-bottom: 3px;">
+              {event.data.title}
+            </h3>
+            <p style="margin-bottom: 10px;">
+              {new Date(event.data.date).toLocaleString("en-US", {
+                dateStyle: "medium",
+                timeStyle: "short",
+              })}
+              {event.data.location && ` · ${event.data.location}`}
             </p>
             <p style="margin-bottom: 5px;">{event.data.description}</p>
           </div>
@@ -42,25 +41,24 @@ const pastEvents = sorted.filter((e) => new Date(e.data.date) < todayStart).reve
       <div class="event-list">
         {pastEvents.map((event) => (
           <div class="event">
-            <p>
-              {!event.data.link && (
-                <h3 style="margin: 0; text-decoration: underline;">
-                  {event.data.title}
-                </h3>
-              )}
-              {event.data.link && (
-                <h3 style="margin: 0; text-decoration: underline;">
-                  <a href={event.data.link}>{event.data.title}</a>
-                </h3>
-              )}
-            </p>
-            <p>
+            {!event.data.link && (
+              <h3 style="margin: 0; text-decoration: underline; margin-bottom: 3px;">
+                {event.data.title}
+              </h3>
+            )}
+            {event.data.link && (
+              <h3 style="margin: 0; text-decoration: underline; margin-bottom: 3px;">
+                <a href={event.data.link}>{event.data.title}</a>
+              </h3>
+            )}
+            <p style="margin-bottom: 10px;">
               {new Date(event.data.date).toLocaleString("en-US", {
                 dateStyle: "medium",
                 timeStyle: "short",
               })}
+              {event.data.location && ` · ${event.data.location}`}
             </p>
-            <p>{event.data.description}</p>
+            <p style="margin-bottom: 5px;">{event.data.description}</p>
           </div>
         ))}
       </div>

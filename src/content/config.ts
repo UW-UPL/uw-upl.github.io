@@ -37,6 +37,7 @@ const events = defineCollection({
     date: z.string(), // ISO 8601 (https://dencode.com/en/date/iso8601)
     link: z.optional(z.string()),
     description: z.string(),
+    location: z.optional(z.string()),
   }),
 });
 
