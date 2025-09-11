@@ -24,11 +24,11 @@ interface CoordHour {
     },
     {
       Time: "2 - 3 PM",
-      Coords: ["", "", "Ben", "Sam", ""],
+      Coords: ["", "Sam", "Ben", "", ""],
     },
     {
       Time: "3 - 4 PM",
-      Coords: ["Mari", "", "Nico", "Sam", ""],
+      Coords: ["Mari", "Sam", "Nico", "", ""],
     },
     {
       Time: "4 - 5 PM",
