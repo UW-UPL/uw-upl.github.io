@@ -2,12 +2,12 @@
   "name": "Sam Baumohl",
   "isActive": true,
   "emoji": "😶‍🌫️",
-  "grade": "Junior",
+  "grade": "Senior",
   "image": "../../img/coords/sam-baumohl.webp",
   "study": [
     "CS",
     "Math"
   ],
-  "personalLink": "https://www.sambaumohl.com",
+  "personalLink": "https://baumohl.dev",
   "github": "sbaumohl"
 }
