@@ -11,11 +11,22 @@
       const data = await res.json();
 
       const open = data.status === "open";
+      const timestamp = new Date(data.last_updated);
+
+      const cstDate = timestamp.toLocaleString("en-US", {
+        timeZone: "America/Chicago",
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+      });
       openSave = open;
 
       status = open
-        ? '...is <span style="color: green; font-weight: 600;">open</span> right now!'
-        : '...is <span style="color: rgb(183, 1, 1); font-weight: 600;">closed</span> right now.';
+        ? `...is <span style="color: green; font-weight: 600;">open</span> right now (since ${cstDate})!`
+        : `...is <span style="color: rgb(183, 1, 1); font-weight: 600;">closed</span> (since ${cstDate})`;
     } catch {
       status = "Error loading door status.";
     }
