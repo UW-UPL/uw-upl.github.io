@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "title": "Learning C++ part 2: smart pointers speedrun",
+      "link": "https://jamesma.dev/2025/smart-pointers/",
+      "author": "James Ma",
+      "date": "2025-10-04",
+      "description": "Raw pointers can be useful when you want to manipulate memory directly, but using them comes with consequences if improperly managed, e.g. if you forget to free a pointer, free a pointer more than onc..."
+    },
+    {
+      "title": "Nash Equilibria Hide from Algorithms",
+      "link": "https://salm.dev/writing/nash-equilibria-hide-from-algorithms/",
+      "author": "Nico Salm",
+      "date": "2025-09-30",
+      "description": "Mathematics proves Nash equilibria must exist in every game, but computer science proves we can't find them efficiently."
+    },
+    {
       "title": "Learning C++ part 1: lvalues, rvalues, and move semantics",
       "link": "https://jamesma.dev/2025/rvalues/",
       "author": "James Ma",
@@ -43,18 +57,18 @@
       "description": "A brain dump of lessons, advice, and realizations from my first year as a new grad software engineer. Take what’s useful, ignore the rest."
     },
     {
-      "title": "Brief overview of CPU caching",
-      "link": "https://jamesma.dev/2025/cpu-caching/",
-      "author": "James Ma",
-      "date": "2025-08-15",
-      "description": "Why caches Over the years, the gap between the throughput of the processor and the throughput of main memory has widened. Programs cannot make use of higher processor speeds or a large number of cores..."
-    },
-    {
       "title": "CS + Data Science Done Right",
       "link": "https://salm.dev/writing/cs-data-science-done-right/",
       "author": "Nico Salm",
       "date": "2025-08-15",
       "description": "Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials."
+    },
+    {
+      "title": "Brief overview of CPU caching",
+      "link": "https://jamesma.dev/2025/cpu-caching/",
+      "author": "James Ma",
+      "date": "2025-08-15",
+      "description": "Why caches Over the years, the gap between the throughput of the processor and the throughput of main memory has widened. Programs cannot make use of higher processor speeds or a large number of cores..."
     },
     {
       "title": "Letting Go",
@@ -117,7 +131,7 @@
       "link": "https://salm.dev/writing/winning-pokemon-showdown/",
       "author": "Nico Salm",
       "date": "2025-05-11",
-      "description": "We examined Pokémon Showdown battles using game theory and identified the mathematically optimal strategies."
+      "description": "We used game theory to find the mathematically optimal strategies in Pokémon Showdown battles."
     },
     {
       "title": "Automating keyword extraction and ranking to enhance a resume",
@@ -209,13 +223,6 @@
       "author": "James Ma",
       "date": "2024-11-30",
       "description": "From the moment we begin formal education we are drilled with the idea of “proper grammar.” “My friend and I,” not “me and my friend.” “A large number of people,” not “lots of people..."
-    },
-    {
-      "title": "Currying C functions using a heap-based trampoline",
-      "link": "https://jamesma.dev/2024/currying-in-c/",
-      "author": "James Ma",
-      "date": "2024-11-27",
-      "description": "Suppose you have a function and an argument that you want to send off to a worker thread. The canonical way to do this in C is via pthreadcreate. $ man pthreadcreate SYNOPSIS include pthread.h..."
     },
     {
       "title": "Obligatory Meta First Post About Creating This Blog",
