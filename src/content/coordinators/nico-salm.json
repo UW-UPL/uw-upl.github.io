@@ -1,12 +1,10 @@
 {
-    "name": "Nico Salm",
-    "isActive": true,
-    "emoji": "blobcat_scared.webp",
-    "grade": "Senior",
-    "image": "../../img/coords/nico-salm.webp",
-    "study": [
-        "CS & DS"
-    ],
-    "personalLink": "https://salm.dev/",
-    "github": "nicosalm"
+  "name": "Nico Salm",
+  "isActive": true,
+  "emoji": "blobcat_scared.webp",
+  "grade": "Senior",
+  "image": "../../img/coords/nico-salm.webp",
+  "study": ["CS, DS"],
+  "personalLink": "https://salm.dev/",
+  "github": "nicosalm"
 }
