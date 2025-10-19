@@ -69,4 +69,4 @@ Add photos to `public/img/coords/` as square images.
 
 - Ask in the UPL Discord
 - Email upl@cs.wisc.edu
-- Stop by the UPL lab (CS 2618)
+- Stop by the UPL lab (MH 2618)
