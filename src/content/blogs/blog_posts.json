@@ -1,7 +1,14 @@
 {
   "posts": [
     {
-      "title": "Learning C++ part 2: smart pointers speedrun",
+      "title": "Matrix multiplication tricks on CPU",
+      "link": "https://jamesma.dev/2025/matmul/",
+      "author": "James Ma",
+      "date": "2025-10-27",
+      "description": "In this post we’ll iteratively improve on multiplying two random 1024 x 1024 float matrices, resulting in a 20x speedup on CPU. We’ll mostly focus on how different mathematical interpretations of..."
+    },
+    {
+      "title": "C++ smart pointers speedrun",
       "link": "https://jamesma.dev/2025/smart-pointers/",
       "author": "James Ma",
       "date": "2025-10-04",
@@ -15,7 +22,7 @@
       "description": "Mathematics proves Nash equilibria must exist in every game, but computer science proves we can't find them efficiently."
     },
     {
-      "title": "Learning C++ part 1: lvalues, rvalues, and move semantics",
+      "title": "Lvalues, rvalues, and move semantics in C++",
       "link": "https://jamesma.dev/2025/rvalues/",
       "author": "James Ma",
       "date": "2025-08-31",
@@ -216,13 +223,6 @@
       "author": "Blog on Michael Noguera",
       "date": "2024-12-09",
       "description": "I participated in Wisconsin Science and Computing Emerging Research Stars WISCERS as part of the 2022-23 cohort and really enjoyed the experience. Even if you’re uncertain, you should definetly ap..."
-    },
-    {
-      "title": "In defense of bad grammar",
-      "link": "https://jamesma.dev/2024/bad-grammar/",
-      "author": "James Ma",
-      "date": "2024-11-30",
-      "description": "From the moment we begin formal education we are drilled with the idea of “proper grammar.” “My friend and I,” not “me and my friend.” “A large number of people,” not “lots of people..."
     },
     {
       "title": "Obligatory Meta First Post About Creating This Blog",

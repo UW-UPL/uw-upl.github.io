@@ -5,10 +5,18 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
-    <lastBuildDate>Fri, 10 Oct 2025 01:00:10 +0000</lastBuildDate>
+    <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+    <lastBuildDate>Wed, 19 Nov 2025 01:04:49 +0000</lastBuildDate>
     <item>
-      <title>Learning C++ part 2: smart pointers speedrun</title>
+      <title>Matrix multiplication tricks on CPU</title>
+      <link>https://jamesma.dev/2025/matmul/</link>
+      <description>In this post we’ll iteratively improve on multiplying two random 1024 x 1024 float matrices, resulting in a 20x speedup on CPU. We’ll mostly focus on how different mathematical interpretations of...</description>
+      <author>James Ma</author>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/matmul/</guid>
+    </item>
+    <item>
+      <title>C++ smart pointers speedrun</title>
       <link>https://jamesma.dev/2025/smart-pointers/</link>
       <description>Raw pointers can be useful when you want to manipulate memory directly, but using them comes with consequences if improperly managed, e.g. if you forget to free a pointer, free a pointer more than onc...</description>
       <author>James Ma</author>
@@ -24,7 +32,7 @@
       <guid>https://salm.dev/writing/nash-equilibria-hide-from-algorithms/</guid>
     </item>
     <item>
-      <title>Learning C++ part 1: lvalues, rvalues, and move semantics</title>
+      <title>Lvalues, rvalues, and move semantics in C++</title>
       <link>https://jamesma.dev/2025/rvalues/</link>
       <description>I’ve written a decent amount of C, but never really took the time to understand its internals. In the first of what will hopefully become a series of articles, we will look at lvalues, rvalues, an...</description>
       <author>James Ma</author>
@@ -254,14 +262,6 @@
       <author>Blog on Michael Noguera</author>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://www.noguera.dev/blog/2024/12/09/list-of-wiscers-2024-faculty-mentors/</guid>
-    </item>
-    <item>
-      <title>In defense of bad grammar</title>
-      <link>https://jamesma.dev/2024/bad-grammar/</link>
-      <description>From the moment we begin formal education we are drilled with the idea of “proper grammar.” “My friend and I,” not “me and my friend.” “A large number of people,” not “lots of people...</description>
-      <author>James Ma</author>
-      <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://jamesma.dev/2024/bad-grammar/</guid>
     </item>
     <item>
       <title>Obligatory Meta First Post About Creating This Blog</title>
