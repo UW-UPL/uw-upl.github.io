@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "title": "It's your fault my laptop knows where I am",
+      "link": "https://www.amoses.dev/blog/wifi-location/",
+      "author": "Andrew Moses",
+      "date": "2025-11-19",
+      "description": "How dare you"
+    },
+    {
       "title": "Matrix multiplication tricks on CPU",
       "link": "https://jamesma.dev/2025/matmul/",
       "author": "James Ma",
