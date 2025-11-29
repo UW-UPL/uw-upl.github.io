@@ -12,7 +12,7 @@ interface CoordHour {
     },
     {
       Time: "11 AM - 12 PM",
-      Coords: ["Emily", "Nico", "Rahul", "Nico", ""],
+      Coords: ["Emily", "", "Rahul", "", ""],
     },
     {
       Time: "12 - 1 PM",
@@ -32,11 +32,11 @@ interface CoordHour {
     },
     {
       Time: "4 - 5 PM",
-      Coords: ["Emily", "", "", "", ""],
+      Coords: ["Emily", "", "", "", "Nico"],
     },
     {
       Time: "5 - 6 PM",
-      Coords: ["", "Pusti", "Ben", "", ""],
+      Coords: ["", "Pusti", "Ben", "", "Nico"],
     },
   ];
 
