@@ -5,8 +5,24 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-    <lastBuildDate>Thu, 20 Nov 2025 05:33:57 +0000</lastBuildDate>
+    <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 15 Dec 2025 07:39:39 +0000</lastBuildDate>
+    <item>
+      <title>A Better Judging Algorithm for the Largest Hackathon in Wisconsin</title>
+      <link>https://ben.enterprises/hackathon-judging</link>
+      <description>Visit post for details.</description>
+      <author>ben.enterprises Blog</author>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://ben.enterprises/hackathon-judging</guid>
+    </item>
+    <item>
+      <title>Regular expression matching</title>
+      <link>https://jamesma.dev/2025/regex-matching/</link>
+      <description>This is a writeup of Leetcode 10. Regular Expression Matching. My motivation for writing this is twofold. The first is that most of the submitted solutions on Leetcode try to be too clever and succinc...</description>
+      <author>James Ma</author>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2025/regex-matching/</guid>
+    </item>
     <item>
       <title>It&#39;s your fault my laptop knows where I am</title>
       <link>https://www.amoses.dev/blog/wifi-location/</link>
@@ -30,14 +46,6 @@
       <author>James Ma</author>
       <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://jamesma.dev/2025/smart-pointers/</guid>
-    </item>
-    <item>
-      <title>Nash Equilibria Hide from Algorithms</title>
-      <link>https://salm.dev/writing/nash-equilibria-hide-from-algorithms/</link>
-      <description>Mathematics proves Nash equilibria must exist in every game, but computer science proves we can&#39;t find them efficiently.</description>
-      <author>Nico Salm</author>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>https://salm.dev/writing/nash-equilibria-hide-from-algorithms/</guid>
     </item>
     <item>
       <title>Lvalues, rvalues, and move semantics in C++</title>
@@ -88,14 +96,6 @@
       <guid>https://dteather.com/blogs/reflections-a-year-into-my-career/</guid>
     </item>
     <item>
-      <title>CS + Data Science Done Right</title>
-      <link>https://salm.dev/writing/cs-data-science-done-right/</link>
-      <description>Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials.</description>
-      <author>Nico Salm</author>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://salm.dev/writing/cs-data-science-done-right/</guid>
-    </item>
-    <item>
       <title>Brief overview of CPU caching</title>
       <link>https://jamesma.dev/2025/cpu-caching/</link>
       <description>Why caches Over the years, the gap between the throughput of the processor and the throughput of main memory has widened. Programs cannot make use of higher processor speeds or a large number of cores...</description>
@@ -126,14 +126,6 @@
       <author>Nick Winans</author>
       <pubDate>Tue, 29 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://nick.winans.io/blog/perfect-keyboard/</guid>
-    </item>
-    <item>
-      <title>Beyond If Statements and For Loops</title>
-      <link>https://salm.dev/writing/beyond-if-statements-and-for-loops/</link>
-      <description>How pattern matching, type systems, and functional thinking transformed my approach to solving problems.</description>
-      <author>Nico Salm</author>
-      <pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://salm.dev/writing/beyond-if-statements-and-for-loops/</guid>
     </item>
     <item>
       <title>Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)</title>
@@ -182,14 +174,6 @@
       <author>Michael Berkey</author>
       <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://mdberkey.github.io/blog/automating-keyword-extraction-and-ranking-to-enhance-a-resume/</guid>
-    </item>
-    <item>
-      <title>Dungeons, Dragons &amp; Development</title>
-      <link>https://salm.dev/writing/dungeons-dragons-and-development/</link>
-      <description>In both homebrew D&amp;D worlds and software development, you create vast interconnected systems that must remain cohesive while evolving over time.</description>
-      <author>Nico Salm</author>
-      <pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://salm.dev/writing/dungeons-dragons-and-development/</guid>
     </item>
     <item>
       <title>I Made a Million Dollar Product from My Dorm Room</title>
@@ -246,14 +230,6 @@
       <author>Nick Winans</author>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://nick.winans.io/blog/ink-link/</guid>
-    </item>
-    <item>
-      <title>A gallery of randomly generated art</title>
-      <link>https://jamesma.dev/2025/randomart-gallery/</link>
-      <description>In a paper from CMU, security researchers describe a nifty algorithm used to generate random images known as RandomArt. In a nutshell, the algorithm takes as input a seed to a pseudo-random number gen...</description>
-      <author>James Ma</author>
-      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://jamesma.dev/2025/randomart-gallery/</guid>
     </item>
     <item>
       <title>Learning the NATO phonetic alphabet with the Web Speech API</title>
@@ -314,7 +290,7 @@
     <item>
       <title>Command Line Productivity</title>
       <link>https://salm.dev/writing/command-line-productivity/</link>
-      <description>I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
+      <description>I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
       <author>Nico Salm</author>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/command-line-productivity/</guid>
@@ -358,14 +334,6 @@
       <author>David Teather</author>
       <pubDate>Fri, 23 Aug 2024 03:00:00 +0000</pubDate>
       <guid>https://dteather.com/blogs/is-web-scraping-ethical/</guid>
-    </item>
-    <item>
-      <title>Preserving My Future Self</title>
-      <link>https://salm.dev/writing/preserving-my-future-self/</link>
-      <description>I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing.</description>
-      <author>Nico Salm</author>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://salm.dev/writing/preserving-my-future-self/</guid>
     </item>
     <item>
       <title>Programming Paradigms</title>

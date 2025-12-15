@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "title": "A Better Judging Algorithm for the Largest Hackathon in Wisconsin",
+      "link": "https://ben.enterprises/hackathon-judging",
+      "author": "ben.enterprises Blog",
+      "date": "2025-12-15",
+      "description": "Visit post for details."
+    },
+    {
+      "title": "Regular expression matching",
+      "link": "https://jamesma.dev/2025/regex-matching/",
+      "author": "James Ma",
+      "date": "2025-12-10",
+      "description": "This is a writeup of Leetcode 10. Regular Expression Matching. My motivation for writing this is twofold. The first is that most of the submitted solutions on Leetcode try to be too clever and succinc..."
+    },
+    {
       "title": "It's your fault my laptop knows where I am",
       "link": "https://www.amoses.dev/blog/wifi-location/",
       "author": "Andrew Moses",
@@ -20,13 +34,6 @@
       "author": "James Ma",
       "date": "2025-10-04",
       "description": "Raw pointers can be useful when you want to manipulate memory directly, but using them comes with consequences if improperly managed, e.g. if you forget to free a pointer, free a pointer more than onc..."
-    },
-    {
-      "title": "Nash Equilibria Hide from Algorithms",
-      "link": "https://salm.dev/writing/nash-equilibria-hide-from-algorithms/",
-      "author": "Nico Salm",
-      "date": "2025-09-30",
-      "description": "Mathematics proves Nash equilibria must exist in every game, but computer science proves we can't find them efficiently."
     },
     {
       "title": "Lvalues, rvalues, and move semantics in C++",
@@ -71,13 +78,6 @@
       "description": "A brain dump of lessons, advice, and realizations from my first year as a new grad software engineer. Take what’s useful, ignore the rest."
     },
     {
-      "title": "CS + Data Science Done Right",
-      "link": "https://salm.dev/writing/cs-data-science-done-right/",
-      "author": "Nico Salm",
-      "date": "2025-08-15",
-      "description": "Why most students waste this easy double major combination and how to actually build valuable skills instead of just collecting credentials."
-    },
-    {
       "title": "Brief overview of CPU caching",
       "link": "https://jamesma.dev/2025/cpu-caching/",
       "author": "James Ma",
@@ -104,13 +104,6 @@
       "author": "Nick Winans",
       "date": "2025-07-29",
       "description": "Perfecting every part of my Lily58 keyboard."
-    },
-    {
-      "title": "Beyond If Statements and For Loops",
-      "link": "https://salm.dev/writing/beyond-if-statements-and-for-loops/",
-      "author": "Nico Salm",
-      "date": "2025-07-27",
-      "description": "How pattern matching, type systems, and functional thinking transformed my approach to solving problems."
     },
     {
       "title": "Why 99% of GitHub Projects Die (And the 3 Rules That Got Me 2M+ Downloads)",
@@ -153,13 +146,6 @@
       "author": "Michael Berkey",
       "date": "2025-04-29",
       "description": "TL;DR I extracted keywords from job descriptions with Gemini and created a Python script to rank them to enhance my friend's resume. I spent some time this past week helping a friend update their res..."
-    },
-    {
-      "title": "Dungeons, Dragons \u0026 Development",
-      "link": "https://salm.dev/writing/dungeons-dragons-and-development/",
-      "author": "Nico Salm",
-      "date": "2025-04-21",
-      "description": "In both homebrew D\u0026D worlds and software development, you create vast interconnected systems that must remain cohesive while evolving over time."
     },
     {
       "title": "I Made a Million Dollar Product from My Dorm Room",
@@ -209,13 +195,6 @@
       "author": "Nick Winans",
       "date": "2025-01-26",
       "description": "Real-time Collaborative E-Paper Canvas"
-    },
-    {
-      "title": "A gallery of randomly generated art",
-      "link": "https://jamesma.dev/2025/randomart-gallery/",
-      "author": "James Ma",
-      "date": "2025-01-18",
-      "description": "In a paper from CMU, security researchers describe a nifty algorithm used to generate random images known as RandomArt. In a nutshell, the algorithm takes as input a seed to a pseudo-random number gen..."
     },
     {
       "title": "Learning the NATO phonetic alphabet with the Web Speech API",
@@ -271,7 +250,7 @@
       "link": "https://salm.dev/writing/command-line-productivity/",
       "author": "Nico Salm",
       "date": "2024-10-10",
-      "description": "I am not a fan of bloated workflows or feature overload. In this article, I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
+      "description": "I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
     },
     {
       "title": "Adding UML Diagrams to Rehype in Astro (With rehype-mermaid)",
@@ -307,13 +286,6 @@
       "author": "David Teather",
       "date": "2024-08-23",
       "description": "Web scraping: a tool for innovation or a threat to privacy? Dive into the ethical gray areas of data extraction and explore the real-world impacts on research, competition, and personal privacy."
-    },
-    {
-      "title": "Preserving My Future Self",
-      "link": "https://salm.dev/writing/preserving-my-future-self/",
-      "author": "Nico Salm",
-      "date": "2024-08-18",
-      "description": "I underwent an ergonomic overhaul to improve health and reduce strain. Or: I bought an expensive new split-keyboard. Either way, an adventure worth sharing."
     },
     {
       "title": "Programming Paradigms",
