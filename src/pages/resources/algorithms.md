@@ -3,7 +3,7 @@ layout: "../../layouts/Base.astro"
 title: "Algorithms"
 ---
 
-# Algorithms
+## Algorithms
 
 When brute force isn't enough.
 
@@ -13,7 +13,7 @@ When brute force isn't enough.
 - [Competitive Programmer's Handbook](https://cses.fi/book/book.pdf): Book covering essential topics like dynamic programming, graph algorithms, number theory, and efficient data structures from the perspective of competitive programming.
 - [Grokking Algorithms](https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf): Beginner-friendly guide to core algorithms including search, sort, recursion, and graph traversal through visual explanations and practical examples.
 
-## Theoretical Algorithms
+### Theoretical Algorithms
 - [Introduction to Theory of Computation](https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/20189FS%20ComputationTheory/Introduction%20to%20the%20theory%20of%20computation_third%20edition%20-%20Michael%20Sipser.pdf): Easy to digest text exploring formal languages, automata theory, computability, and complexity with rigorous proofs and clear explanations.
 - [Randomized Algorithms](https://rajsain.wordpress.com/wp-content/uploads/2013/11/randomized-algorithms-motwani-and-raghavan.pdf): Comprehensive guide to the design and analysis of randomized algorithms, covering probabilistic techniques, random sampling, and applications in computational complexity and optimization
 - [Approximation Algorithms](https://link.springer.com/book/10.1007/978-3-662-04565-7): Rigorous exploration of approximation algorithms, focusing on design techniques, performance guarantees, and applications to NP-hard optimization problems.

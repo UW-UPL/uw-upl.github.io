@@ -3,7 +3,7 @@ layout: "../../layouts/Base.astro"
 title: "For Fun"
 ---
 
-# For Fun
+## For Fun
 
 Believe it or not, there is fun to be had in computer programming.
 

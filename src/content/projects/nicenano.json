@@ -2,7 +2,7 @@
     "title": "Nice!Nano",
     "source": "https://nicekeyboards.com/docs/nice-nano/",
     "writeup": "https://nick.winans.io/blog/nice-nano/",
-    "description": "The nice!nano is a BLE Pro Micro replacement with battery charging and LED power controls.",
+    "description": "BLE Pro Micro replacement with battery charging and LED controls.",
     "image": "../../img/projects/nicenano.jpg",
     "authors": [
         "Nick"

@@ -350,14 +350,15 @@ table.lab-status .lab-table-machine-container td:first-child {
 }
 
 .project-image {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
 }
 
 .upl-project {
   display: flex;
   gap: 0.5em;
+  max-width: 600px;
 }
 
 .project-title {

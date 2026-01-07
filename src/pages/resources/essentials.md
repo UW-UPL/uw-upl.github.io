@@ -4,7 +4,7 @@ title: "Essentials"
 ---
 
 
-# Essentials
+## Essentials
 
 There are many lists filled with largely interchangeable guides to language syntax, OOP-style code organization, and using existing libraries.
 These lists are sufficient to write software, but they are not sufficient to write *good* software.

@@ -122,7 +122,7 @@
     {
       "title": "Create, Don't Consume",
       "link": "https://salm.dev/writing/create-dont-consume/",
-      "author": "Nico Salm",
+      "author": "salm.dev",
       "date": "2025-06-27",
       "description": "We're trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist."
     },
@@ -136,7 +136,7 @@
     {
       "title": "Winning Pokemon Showdown",
       "link": "https://salm.dev/writing/winning-pokemon-showdown/",
-      "author": "Nico Salm",
+      "author": "salm.dev",
       "date": "2025-05-11",
       "description": "We used game theory to find the mathematically optimal strategies in Pokémon Showdown battles."
     },
@@ -155,7 +155,7 @@
       "description": "The story of the nicenano; a wireless Pro Micro-compatible microcontroller board I made in my freshman year of college."
     },
     {
-      "title": "Abstracting over Futures and Options",
+      "title": "Combining Futures and Options in Scala",
       "link": "https://jamesma.dev/2025/future-options-scala/",
       "author": "James Ma",
       "date": "2025-03-19",
@@ -248,7 +248,7 @@
     {
       "title": "Command Line Productivity",
       "link": "https://salm.dev/writing/command-line-productivity/",
-      "author": "Nico Salm",
+      "author": "salm.dev",
       "date": "2024-10-10",
       "description": "I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
     },

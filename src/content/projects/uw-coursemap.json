@@ -2,7 +2,7 @@
     "title": "UW Course Map",
     "source": "https://uwcourses.com",
     "writeup": "https://docs.uwcourses.com",
-    "description": "Explore the courses offered by UW-Madison in a visual and interactive way.",
+    "description": "Interactively explore the courses offered by UW-Madison.",
     "image": "../../img/projects/uw-coursemap-logo.svg",
     "authors": [
         "James"

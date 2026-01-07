@@ -17,8 +17,8 @@ const projects = await getCollection("projects");
       projects.map((project) => (
         <div class="upl-project">
           <Image
-            height="500"
-            width="500"
+            height="300"
+            width="300"
             class="project-image"
             src={project.data.image}
             alt={`Image of ${project.data.title}`}
@@ -33,16 +33,10 @@ const projects = await getCollection("projects");
                 by
                 {Array.isArray(project.data.authors)
                   ? project.data.authors.join(", ")
-                  : project.data.authors}
-              </p>
-              <p>
-                <a href={project.data.source}>Source</a>
-                {project.data.writeup && (
-                  <>
-                    {" | "}
-                    <a href={project.data.writeup}>Writeup</a>
-                  </>
-                )}
+                  : project.data.authors}{" "}
+                (<a href={project.data.source}>Source</a>{project.data.writeup && (
+                  <> | <a href={project.data.writeup}>Writeup</a></>
+                )})
               </p>
             </div>
           </div>

@@ -3,9 +3,9 @@ layout: "../../layouts/Base.astro"
 title: "Stuff To Do"
 ---
 
-# Stuff To Do
+## Stuff To Do
 
-Bored? Need project ideas? Looking for something to do?
+Bored? Need project ideas? Looking for something to do? You can just do things!
 
 - [Coding Challenges](https://codingchallenges.fyi/challenges/intro): List of project ideas where you implement a real world tool.
 - [Crafting Interpreters](https://craftinginterpreters.com/): Write a programming language.

@@ -6,7 +6,7 @@
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
     <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-    <lastBuildDate>Mon, 15 Dec 2025 07:39:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 01:17:58 +0000</lastBuildDate>
     <item>
       <title>A Better Judging Algorithm for the Largest Hackathon in Wisconsin</title>
       <link>https://ben.enterprises/hackathon-judging</link>
@@ -147,7 +147,7 @@
       <title>Create, Don&#39;t Consume</title>
       <link>https://salm.dev/writing/create-dont-consume/</link>
       <description>We&#39;re trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist.</description>
-      <author>Nico Salm</author>
+      <author>salm.dev</author>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/create-dont-consume/</guid>
     </item>
@@ -163,7 +163,7 @@
       <title>Winning Pokemon Showdown</title>
       <link>https://salm.dev/writing/winning-pokemon-showdown/</link>
       <description>We used game theory to find the mathematically optimal strategies in Pokémon Showdown battles.</description>
-      <author>Nico Salm</author>
+      <author>salm.dev</author>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/winning-pokemon-showdown/</guid>
     </item>
@@ -184,7 +184,7 @@
       <guid>https://nick.winans.io/blog/nice-nano/</guid>
     </item>
     <item>
-      <title>Abstracting over Futures and Options</title>
+      <title>Combining Futures and Options in Scala</title>
       <link>https://jamesma.dev/2025/future-options-scala/</link>
       <description>In Scala, two interesting concepts you’ll often work with are Futures and Options. A Future is an abstraction for some value that might not be available yet. An Option abstracts over the possibility...</description>
       <author>James Ma</author>
@@ -291,7 +291,7 @@
       <title>Command Line Productivity</title>
       <link>https://salm.dev/writing/command-line-productivity/</link>
       <description>I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
-      <author>Nico Salm</author>
+      <author>salm.dev</author>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/command-line-productivity/</guid>
     </item>
