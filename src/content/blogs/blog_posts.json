@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "title": "From Rivers Rose Empires",
+      "link": "https://salm.dev/writing/from-rivers-rose-empires/",
+      "author": "salm.dev",
+      "date": "2026-01-04",
+      "description": "No really, where would we be without them?"
+    },
+    {
       "title": "A Better Judging Algorithm for the Largest Hackathon in Wisconsin",
       "link": "https://ben.enterprises/hackathon-judging",
       "author": "ben.enterprises Blog",
