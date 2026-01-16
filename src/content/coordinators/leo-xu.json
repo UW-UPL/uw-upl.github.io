@@ -1,0 +1,13 @@
+{
+    "name": "Leo Xu",
+    "image": "../../img/coords/leo-xu.jpg",
+    "isActive": true,
+    "emoji": "😭",
+    "grade": "Junior",
+    "study": [
+        "Math",
+        "CS"
+    ],
+    "personalLink": "https://lexu27.github.io/website/",
+    "github": "lexu27"
+}
