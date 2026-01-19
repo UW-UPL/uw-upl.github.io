@@ -1,0 +1,10 @@
+{
+  "name": "James Ding",
+  "image": "../../img/coords/james-ding.webp",
+  "isActive": true,
+  "emoji": "🗿",
+  "grade": "Sophomore",
+  "study": ["CS"],
+  "personalLink": "https://twango.dev",
+  "github": "twangodev"
+}
