@@ -1,0 +1,12 @@
+{
+    "name": "Gil Friedman",
+    "image": "../../img/coords/gil-friedman.png",
+    "isActive": true,
+    "emoji": "🥚",
+    "grade": "Sophomore",
+    "study": [
+        "CS"
+    ],
+    "personalLink": "https://friedgil.com/",
+    "github": "friedgil"
+}
