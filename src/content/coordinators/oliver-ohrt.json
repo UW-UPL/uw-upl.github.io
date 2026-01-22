@@ -1,12 +1,12 @@
 {
     "name": "Oliver Ohrt",
-    "image": "../../img/coords/oliver-ohrt.png",
+    "image": "../../img/coords/oliver-ohrt.webp",
     "isActive": true,
-    "emoji": "🌀",
-    "grade": "Sophomore",
+    "emoji": "calico_jack.webp",
+    "grade": "Junior",
     "study": [
         "Computer Science"
     ],
     "personalLink": "https://oliverohrt.com/",
     "github": "Lavanic"
-}
+}   
