@@ -1,0 +1,12 @@
+{
+    "title": "goatpenguin",
+    "source": "https://github.com/AndrewDTR/goatpenguin",
+    "writeup": "https://goatpenguin.com/",
+    "description": "Can you guess the Wikipedia article given five of its categories?",
+    "image": "../../img/projects/goatpenguin.png",
+    "authors": [
+        "Andrew"
+    ]
+}
+
+
