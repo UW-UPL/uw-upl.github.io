@@ -1,9 +1,16 @@
 {
   "posts": [
     {
+      "title": "Dynamic linking with lazy binding",
+      "link": "https://jamesma.dev/2026/dynamic-linking/",
+      "author": "James Ma",
+      "date": "2026-02-05",
+      "description": "I recently had to debug a dynamic linking issue. This took me down a rabbit hole exploring how dynamic linkers work - in particular, how a dynamic linker resolves an external function at runtime. How..."
+    },
+    {
       "title": "From Rivers Rose Empires",
       "link": "https://salm.dev/writing/from-rivers-rose-empires/",
-      "author": "salm.dev",
+      "author": "Nico Salm",
       "date": "2026-01-04",
       "description": "No really, where would we be without them?"
     },
@@ -129,7 +136,7 @@
     {
       "title": "Create, Don't Consume",
       "link": "https://salm.dev/writing/create-dont-consume/",
-      "author": "salm.dev",
+      "author": "Nico Salm",
       "date": "2025-06-27",
       "description": "We're trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist."
     },
@@ -143,7 +150,7 @@
     {
       "title": "Winning Pokemon Showdown",
       "link": "https://salm.dev/writing/winning-pokemon-showdown/",
-      "author": "salm.dev",
+      "author": "Nico Salm",
       "date": "2025-05-11",
       "description": "We used game theory to find the mathematically optimal strategies in Pokémon Showdown battles."
     },
@@ -181,13 +188,6 @@
       "author": "Nick Winans",
       "date": "2025-02-23",
       "description": "Sharing my Shopify store's automations after 3 years of optimization"
-    },
-    {
-      "title": "Configuring external storage devices for Jellyfin",
-      "link": "https://jamesma.dev/2025/jellyfin-guide/",
-      "author": "James Ma",
-      "date": "2025-02-15",
-      "description": "This post serves as a personal guide to running a Jellyfin server locally using an external hard drive. The following assumes: Debian GNU/Linux 12 I’m using a Raspberry Pi 4 External hard drive ..."
     },
     {
       "title": "Adding Giscus Discussions to Astro",
@@ -255,7 +255,7 @@
     {
       "title": "Command Line Productivity",
       "link": "https://salm.dev/writing/command-line-productivity/",
-      "author": "salm.dev",
+      "author": "Nico Salm",
       "date": "2024-10-10",
       "description": "I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim."
     },

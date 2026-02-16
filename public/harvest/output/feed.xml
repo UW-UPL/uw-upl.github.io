@@ -5,13 +5,21 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-    <lastBuildDate>Wed, 07 Jan 2026 00:12:31 +0000</lastBuildDate>
+    <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Feb 2026 01:26:44 +0000</lastBuildDate>
+    <item>
+      <title>Dynamic linking with lazy binding</title>
+      <link>https://jamesma.dev/2026/dynamic-linking/</link>
+      <description>I recently had to debug a dynamic linking issue. This took me down a rabbit hole exploring how dynamic linkers work - in particular, how a dynamic linker resolves an external function at runtime. How...</description>
+      <author>James Ma</author>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://jamesma.dev/2026/dynamic-linking/</guid>
+    </item>
     <item>
       <title>From Rivers Rose Empires</title>
       <link>https://salm.dev/writing/from-rivers-rose-empires/</link>
       <description>No really, where would we be without them?</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/from-rivers-rose-empires/</guid>
     </item>
@@ -155,7 +163,7 @@
       <title>Create, Don&#39;t Consume</title>
       <link>https://salm.dev/writing/create-dont-consume/</link>
       <description>We&#39;re trading long-term fulfillment for short-term dopamine hits, and each trade makes the next one harder to resist.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/create-dont-consume/</guid>
     </item>
@@ -171,7 +179,7 @@
       <title>Winning Pokemon Showdown</title>
       <link>https://salm.dev/writing/winning-pokemon-showdown/</link>
       <description>We used game theory to find the mathematically optimal strategies in Pokémon Showdown battles.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/winning-pokemon-showdown/</guid>
     </item>
@@ -214,14 +222,6 @@
       <author>Nick Winans</author>
       <pubDate>Sun, 23 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://nick.winans.io/blog/ecommerce-automations/</guid>
-    </item>
-    <item>
-      <title>Configuring external storage devices for Jellyfin</title>
-      <link>https://jamesma.dev/2025/jellyfin-guide/</link>
-      <description>This post serves as a personal guide to running a Jellyfin server locally using an external hard drive. The following assumes: Debian GNU/Linux 12 I’m using a Raspberry Pi 4 External hard drive ...</description>
-      <author>James Ma</author>
-      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://jamesma.dev/2025/jellyfin-guide/</guid>
     </item>
     <item>
       <title>Adding Giscus Discussions to Astro</title>
@@ -299,7 +299,7 @@
       <title>Command Line Productivity</title>
       <link>https://salm.dev/writing/command-line-productivity/</link>
       <description>I describe my minimal, focused, keyboard-centric workflow where I do my best work. In other words: I shill Vim.</description>
-      <author>salm.dev</author>
+      <author>Nico Salm</author>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://salm.dev/writing/command-line-productivity/</guid>
     </item>
