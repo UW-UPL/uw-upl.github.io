@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "title": "MadHacks Potpourri",
+      "link": "https://www.amoses.dev/blog/madhacks-potpourri/",
+      "author": "Andrew Moses",
+      "date": "2026-03-07",
+      "description": "Some hacks for hacking a hackathon"
+    },
+    {
+      "title": "As Bad atime as Any: Every Read a Write",
+      "link": "https://ben.enterprises/as-bad-atime-as-any",
+      "author": "ben.enterprises Blog",
+      "date": "2026-03-03",
+      "description": "Visit post for details."
+    },
+    {
       "title": "Dynamic linking with lazy binding",
       "link": "https://jamesma.dev/2026/dynamic-linking/",
       "author": "James Ma",
@@ -90,13 +104,6 @@
       "author": "David Teather",
       "date": "2025-08-21",
       "description": "A brain dump of lessons, advice, and realizations from my first year as a new grad software engineer. Take what’s useful, ignore the rest."
-    },
-    {
-      "title": "Brief overview of CPU caching",
-      "link": "https://jamesma.dev/2025/cpu-caching/",
-      "author": "James Ma",
-      "date": "2025-08-15",
-      "description": "Why caches Over the years, the gap between the throughput of the processor and the throughput of main memory has widened. Programs cannot make use of higher processor speeds or a large number of cores..."
     },
     {
       "title": "Letting Go",
@@ -190,6 +197,13 @@
       "description": "Sharing my Shopify store's automations after 3 years of optimization"
     },
     {
+      "title": "Configuring external storage devices for Jellyfin",
+      "link": "https://jamesma.dev/2025/jellyfin-guide/",
+      "author": "James Ma",
+      "date": "2025-02-15",
+      "description": "This post serves as a personal guide to running a Jellyfin server locally using an external hard drive. The following assumes: Debian GNU/Linux 12 I’m using a Raspberry Pi 4 External hard drive ..."
+    },
+    {
       "title": "Adding Giscus Discussions to Astro",
       "link": "https://dteather.com/blogs/adding-giscus-discussions-to-astro/",
       "author": "David Teather",
@@ -208,7 +222,7 @@
       "link": "https://www.amoses.dev/blog/nato-alphabet/",
       "author": "Andrew Moses",
       "date": "2024-12-29",
-      "description": "and they told me \"video games can't teach you anything\""
+      "description": "...and they told me \"video games can't teach you anything\""
     },
     {
       "title": "List of WISCERS 2024 Faculty Mentors",
@@ -243,7 +257,7 @@
       "link": "https://www.amoses.dev/blog/upl-people-counter/",
       "author": "Andrew Moses",
       "date": "2024-10-14",
-      "description": "who knew figuring out the lab's occupancy would be so much work?"
+      "description": "Who knew figuring out the lab's occupancy would be so much work?"
     },
     {
       "title": "Git Cheatsheet Prime",
