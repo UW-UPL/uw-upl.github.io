@@ -5,8 +5,24 @@
     <link>https://upl.cs.wisc.edu</link>
     <description>Aggregated blog posts from UPL members</description>
     <language>en-us</language>
-    <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-    <lastBuildDate>Sun, 08 Mar 2026 09:34:55 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Mar 2026 15:00:00 +0000</pubDate>
+    <lastBuildDate>Thu, 19 Mar 2026 01:29:35 +0000</lastBuildDate>
+    <item>
+      <title>SimpleStreet: A Chrome Extension for StreetEasy</title>
+      <link>https://dteather.com/blogs/simplestreet/</link>
+      <description>I built a Chrome extension to make NYC apartment hunting on StreetEasy less painful by showing move-in dates, hiding noise, and adding notes/tags/ratings.</description>
+      <author>David Teather</author>
+      <pubDate>Mon, 16 Mar 2026 15:00:00 +0000</pubDate>
+      <guid>https://dteather.com/blogs/simplestreet/</guid>
+    </item>
+    <item>
+      <title>Remote SSH with Zed</title>
+      <link>https://salm.dev/writing/remote-ssh-with-zed/</link>
+      <description>How to get Zed&#39;s remote SSH working on UW-Madison’s CS lab machines with AFS, load balancers, and all.</description>
+      <author>Nico Salm</author>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://salm.dev/writing/remote-ssh-with-zed/</guid>
+    </item>
     <item>
       <title>MadHacks Potpourri</title>
       <link>https://www.amoses.dev/blog/madhacks-potpourri/</link>
