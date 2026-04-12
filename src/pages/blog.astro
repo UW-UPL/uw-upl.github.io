@@ -1,17 +1,34 @@
 ---
 import Base from "../layouts/Base.astro";
-import { getCollection } from "astro:content";
 
-const blogCollection = await getCollection("blogs");
-const blogs = blogCollection[0].data.posts;
+interface BlogPost {
+  title: string;
+  link: string;
+  author: string;
+  date: string;
+  description: string;
+}
+
+const BLOG_POSTS_URL = "https://raw.githubusercontent.com/UW-UPL/harvest/main/output/blog_posts.json";
+const FEED_URL = "https://raw.githubusercontent.com/UW-UPL/harvest/main/output/feed.xml";
+
+let blogs: BlogPost[] = [];
+try {
+  const response = await fetch(BLOG_POSTS_URL);
+  if (!response.ok) throw new Error(`${response.status}`);
+  const data = await response.json();
+  blogs = data.posts ?? [];
+} catch (e) {
+  console.warn("failed to fetch blog posts:", e);
+}
 ---
 
 <Base title="Blog">
-    <h2>Blog (<a href="/harvest/output/feed.xml">RSS</a>)</h2>
+    <h2>Blog (<a href={FEED_URL}>RSS</a>)</h2>
     <p>Articles written by <a href="https://github.com/UW-UPL/harvest/tree/main">friends and alumni of the UPL</a>. Learn something new about technology, and maybe even yourself.
   </p>
   {
-    blogs.map((blog: any) => (
+    blogs.map((blog: BlogPost) => (
       <h3 style="margin-bottom: 0;"><a href={blog.link}>{blog.title}</a></h3>
       <p>{blog.description}</p>
 
