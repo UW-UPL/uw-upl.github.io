@@ -2,6 +2,23 @@ import { defineCollection, z } from "astro:content";
 
 // https://docs.astro.build/en/guides/content-collections/
 
+const blog = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string().optional(),
+    pubDate: z
+      .string()
+      .or(z.date())
+      .transform((val) => new Date(val)),
+    updatedDate: z
+      .string()
+      .optional()
+      .transform((str) => (str ? new Date(str) : undefined)),
+    author: z.string(),
+  }),
+});
+
 const coordinators = defineCollection({
   type: "data",
   schema: ({ image }) =>
@@ -41,4 +58,4 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { coordinators, projects, events };
+export const collections = { blog, coordinators, projects, events };

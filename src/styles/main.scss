@@ -384,6 +384,46 @@ li {
   margin-bottom: 1em;
 }
 
+// blog post prose styles
+article {
+  p {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  pre {
+    padding: 0.75em;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 10px 0;
+    font-size: 0.85em;
+  }
+
+  :not(pre) > code {
+    background-color: #f0f0f0;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  ol,
+  ul {
+    padding-left: 1.5em;
+  }
+
+  blockquote {
+    border-left: 3px solid $upl-red;
+    margin: 10px 0;
+    padding: 0.25em 0.75em;
+    color: #555;
+  }
+}
+
 // indent content under header in q&a section
 .q-and-a h3 + p,
 .q-and-a h3 + div,

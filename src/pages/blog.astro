@@ -1,7 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
 
-interface BlogPost {
+interface AggregatedPost {
   title: string;
   link: string;
   author: string;
@@ -12,27 +13,75 @@ interface BlogPost {
 const BLOG_POSTS_URL = "https://raw.githubusercontent.com/UW-UPL/harvest/main/output/blog_posts.json";
 const FEED_URL = "https://raw.githubusercontent.com/UW-UPL/harvest/main/output/feed.xml";
 
-let blogs: BlogPost[] = [];
+// fetch aggregated posts from harvest
+let aggregated: AggregatedPost[] = [];
 try {
   const response = await fetch(BLOG_POSTS_URL);
   if (!response.ok) throw new Error(`${response.status}`);
   const data = await response.json();
-  blogs = data.posts ?? [];
+  aggregated = data.posts ?? [];
 } catch (e) {
   console.warn("failed to fetch blog posts:", e);
 }
+
+// get local blog posts from content collection
+const localPosts = await getCollection("blog");
+
+// normalize both into a common shape for rendering
+type BlogEntry = {
+  title: string;
+  author: string;
+  date: Date;
+  description?: string;
+  link?: string;       // external link (aggregated)
+  slug?: string;       // local post slug
+};
+
+const allPosts: BlogEntry[] = [
+  ...localPosts.map((post) => ({
+    title: post.data.title,
+    author: post.data.author,
+    date: post.data.pubDate,
+    description: post.data.description,
+    slug: post.id.replace(/\.md$/, ""),
+  })),
+  ...aggregated.map((post) => ({
+    title: post.title,
+    author: post.author,
+    date: new Date(post.date),
+    description: post.description,
+    link: post.link,
+  })),
+];
+
+// deduplicate by title (local posts take priority)
+const seen = new Set<string>();
+const deduped = allPosts.filter((post) => {
+  const key = post.title.toLowerCase();
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
+
+// sort newest first
+deduped.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 ---
 
 <Base title="Blog">
     <h2>Blog (<a href={FEED_URL}>RSS</a>)</h2>
-    <p>Articles written by <a href="https://github.com/UW-UPL/harvest/tree/main">friends and alumni of the UPL</a>. Learn something new about technology, and maybe even yourself.
+    <p>Articles written by friends and alumni of the UPL. Learn something new about technology, and maybe even yourself.
   </p>
+  <p style="margin-top: 0.5em;">Want to add yours? <a href="https://github.com/UW-UPL/harvest/blob/main/docs/CONTRIBUTING.md">Add your RSS feed</a> or <a href="https://github.com/UW-UPL/uw-upl.github.io">submit a post directly</a>.</p>
   {
-    blogs.map((blog: BlogPost) => (
-      <h3 style="margin-bottom: 0;"><a href={blog.link}>{blog.title}</a></h3>
-      <p>{blog.description}</p>
-
-      <p style="color: #5b5b5b;">{blog.author} | {blog.date}</p>
+    deduped.map((post) => (
+      <h3 style="margin-bottom: 0;">
+        {post.slug
+          ? <a href={`/blog/${post.slug}`}>{post.title}</a>
+          : <a href={post.link}>{post.title}</a>
+        }
+      </h3>
+      <p>{post.description}</p>
+      <p style="color: #5b5b5b;">{post.author} | {post.date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
     ))
   }
 </Base>
