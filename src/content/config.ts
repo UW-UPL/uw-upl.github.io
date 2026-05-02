@@ -34,19 +34,6 @@ const coordinators = defineCollection({
     }),
 });
 
-const projects = defineCollection({
-  type: "data",
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      source: z.string(),
-      writeup: z.optional(z.string()),
-      description: z.string(),
-      image: image(),
-      authors: z.array(z.string()),
-    }),
-});
-
 const events = defineCollection({
   type: "data",
   schema: z.object({
@@ -58,4 +45,4 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { blog, coordinators, projects, events };
+export const collections = { blog, coordinators, events };
