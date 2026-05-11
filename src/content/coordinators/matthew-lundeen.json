@@ -1,0 +1,13 @@
+{
+    "name": "Matthew Lundeen",
+    "isActive": true,
+    "emoji": "⚡️",
+    "grade": "Sophomore",
+    "image": "../../img/coords/matthew-lundeen.webp",
+    "study": [
+        "CS",
+        "DS"
+    ],
+    "personalLink": "https://matthewlundeen.com/",
+    "github": "decentishDev"
+}
