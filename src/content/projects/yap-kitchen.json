@@ -1,0 +1,11 @@
+{
+    "title": "yap.kitchen",
+    "source": "https://github.com/AndrewDTR/yap-kitchen",
+    "writeup": "https://yap.kitchen/about",
+    "description": "Yap about whatever you feel like!",
+    "image": "../../img/projects/yap-kitchen.jpeg",
+    "authors": [
+        "Andrew"
+    ]
+}
+

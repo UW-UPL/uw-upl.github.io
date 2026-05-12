@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/base.astro";
+import { getCollection } from "astro:content";
+const projects = await getCollection("projects");
+---
+<Base title="Projects">
+    <h2>Projects</h2>
+    <p>
+    Want to showcase your project on the UPL website?
+    Create a pull request on our
+    <a href="https://github.com/uw-upl/uw-upl.github.io/">GitHub repository</a> or ask a
+    coordinator for help! We'd love to feature your work.
+  </p>
+  <div class="projects-list">
+    {
+      projects.map((project) => (
+        <div class="upl-project">
+          <Image
+            height="300"
+            width="300"
+            class="project-image"
+            src={project.data.image}
+            alt={`Image of ${project.data.title}`}
+          />
+          <div class="content-wrapper">
+            <div class="project-info">
+              <h3 class="project-title">{project.data.title}</h3>
+              <p>{project.data.description}</p>
+            </div>
+            <div class="author-info">
+              <p>
+                by
+                {Array.isArray(project.data.authors)
+                  ? project.data.authors.join(", ")
+                  : project.data.authors}{" "}
+                (<a href={project.data.source}>Source</a>{project.data.writeup && (
+                  <> | <a href={project.data.writeup}>Writeup</a></>
+                )})
+              </p>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+  </Base>

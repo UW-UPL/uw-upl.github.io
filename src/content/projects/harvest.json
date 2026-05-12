@@ -1,0 +1,9 @@
+{
+    "title": "Harvest",
+    "source": "https://github.com/UW-UPL/harvest",
+    "description": "UPL blog post aggregator.",
+    "image": "../../img/projects/harvest.jpeg",
+    "authors": [
+        "Nico"
+    ]
+}
