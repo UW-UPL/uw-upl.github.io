@@ -23,6 +23,29 @@
         minute: "2-digit",
         hour12: true,
       });
+
+      const chicagoAbbr =
+        new Intl.DateTimeFormat("en-US", {
+          timeZone: "America/Chicago",
+          timeZoneName: "short",
+        })
+          .formatToParts(timestamp)
+          .find((p) => p.type === "timeZoneName")?.value ?? "CT";
+
+      const getOffset = (date, tz) => {
+        const utc = date.toLocaleString("en-US", { timeZone: "UTC" });
+        const local = date.toLocaleString("en-US", { timeZone: tz });
+        return new Date(utc) - new Date(local);
+      };
+
+      const userTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const isSameOffset =
+        getOffset(timestamp, "America/Chicago") ===
+        getOffset(timestamp, userTz);
+
+      if (!isSameOffset) {
+        cstDate += ` ${chicagoAbbr}`;
+      }
     } catch {
       error = true;
     }
@@ -38,9 +61,12 @@
     {:else if isOpen === null}
       Loading door status...
     {:else if isOpen}
-      ...is <span style="color: green; font-weight: 600;">open</span> right now (since {cstDate})!
+      ...is <span style="color: green; font-weight: 600;">open</span> right now
+      (since
+      {cstDate})!
     {:else}
-      ...is <span style="color: rgb(183, 1, 1); font-weight: 600;">closed</span> (since {cstDate})
+      ...is <span style="color: rgb(183, 1, 1); font-weight: 600;">closed</span>
+      (since {cstDate})
     {/if}
   </p>
   {#if isOpen}
