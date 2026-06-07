@@ -1,0 +1,10 @@
+{
+  "name": "Dhruv Aron",
+  "isActive": true,
+  "emoji": "🤔",
+  "grade": "Senior",
+  "image": "../../img/coords/dhruv-aron.jpeg",
+  "study": ["Computer Science"],
+  "personalLink": "https://dhruv-aron.github.io",
+  "github": "dhruv-aron"
+}
