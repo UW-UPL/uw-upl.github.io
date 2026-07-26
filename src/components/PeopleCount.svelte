@@ -8,7 +8,7 @@
   let count = null;
   let failed = false;
 
-  onMount(async () => {
+  async function load() {
     try {
       const res = await fetch(COUNT_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -16,10 +16,17 @@
       const parsed = Number(data.count);
       if (!Number.isFinite(parsed)) throw new Error("bad count");
       count = Math.max(0, Math.round(parsed));
+      failed = false;
     } catch {
-      // If the count can't be fetched, render nothing rather than an error line
-      failed = true;
+      // If the count has never loaded, render nothing rather than an error line
+      if (count === null) failed = true;
     }
+  }
+
+  onMount(() => {
+    load();
+    const timer = setInterval(load, 60000);
+    return () => clearInterval(timer);
   });
 </script>
 
