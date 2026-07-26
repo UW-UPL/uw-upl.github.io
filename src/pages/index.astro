@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import DoorStatus from "../components/DoorStatus.svelte";
+import PeopleCount from "../components/PeopleCount.svelte";
 ---
 
 <Base title="Undergraduate Projects Lab">
@@ -9,6 +10,7 @@ import DoorStatus from "../components/DoorStatus.svelte";
   </h1>
   <div style="text-align: center; margin-bottom: 1em;">
     <DoorStatus client:load />
+    <PeopleCount client:load />
   </div>
   <p>
     The UPL is a space for students with an interest in computer science to meet
