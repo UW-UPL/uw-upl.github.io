@@ -1,9 +1,11 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
+import { glob } from "astro/loaders";
 
 // https://docs.astro.build/en/guides/content-collections/
 
 const blog = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
@@ -20,7 +22,10 @@ const blog = defineCollection({
 });
 
 const coordinators = defineCollection({
-  type: "data",
+  loader: glob({
+    pattern: ["**/*.json", "!_archive/**"],
+    base: "./src/content/coordinators",
+  }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -35,7 +40,7 @@ const coordinators = defineCollection({
 });
 
 const projects = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/projects" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -48,7 +53,7 @@ const projects = defineCollection({
 });
 
 const events = defineCollection({
-  type: "data",
+  loader: glob({ pattern: "**/*.json", base: "./src/content/events" }),
   schema: z.object({
     title: z.string(),
     date: z.string(), // ISO 8601 (https://dencode.com/en/date/iso8601)

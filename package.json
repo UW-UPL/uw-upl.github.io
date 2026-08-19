@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/svelte": "^7.2.0",
-    "astro": "^5.14.5",
-"sass": "^1.86.3",
+    "@astrojs/svelte": "^9.0.1",
+    "astro": "^7.2.3",
+    "sass": "^1.86.3",
     "svelte": "^5.28.1",
     "typescript": "^5.8.3"
   },
