@@ -4,13 +4,13 @@ import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 const projects = await getCollection("projects");
 ---
+
 <Base title="Projects">
-    <h2>Projects</h2>
-    <p>
-    Want to showcase your project on the UPL website?
-    Create a pull request on our
-    <a href="https://github.com/uw-upl/uw-upl.github.io/">GitHub repository</a> or ask a
-    coordinator for help! We'd love to feature your work.
+  <h2>Projects</h2>
+  <p>
+    Want to showcase your project on the UPL website? Create a pull request on
+    our <a href="https://github.com/uw-upl/uw-upl.github.io/">GitHub repository</a>
+    or ask a coordinator for help! We'd love to feature your work.
   </p>
   <div class="projects-list">
     {
@@ -30,11 +30,12 @@ const projects = await getCollection("projects");
             </div>
             <div class="author-info">
               <p>
-                by
+                by{" "}
                 {Array.isArray(project.data.authors)
                   ? project.data.authors.join(", ")
                   : project.data.authors}{" "}
-                (<a href={project.data.source}>Source</a>{project.data.writeup && (
+                (<a href={project.data.source}>Source</a>
+                {project.data.writeup && (
                   <> | <a href={project.data.writeup}>Writeup</a></>
                 )})
               </p>
@@ -44,4 +45,4 @@ const projects = await getCollection("projects");
       ))
     }
   </div>
-  </Base>
+</Base>
