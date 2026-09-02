@@ -12,31 +12,31 @@ interface CoordHour {
     },
     {
       Time: "11 AM - 12 PM",
-      Coords: ["Mari", "Pusti", "Mari", "Leo", "Leo"],
+      Coords: ["Matthew", "Mari", "Matthew", "Mari", ""],
     },
     {
       Time: "12 - 1 PM",
-      Coords: ["", "Pusti", "Oliver", "Gil", ""],
+      Coords: ["Lucas", "", "", "", ""],
     },
     {
       Time: "1 - 2 PM",
-      Coords: ["Jiamu", "Jiamu", "Oliver", "Gil", ""],
+      Coords: ["Lucas", "Leo", "Marko", "Leo", "Marko"],
     },
     {
       Time: "2 - 3 PM",
-      Coords: ["Ishan", "Ishan", "", "", ""],
+      Coords: ["", "", "George", "Dhruv", "Jiamu"],
     },
     {
       Time: "3 - 4 PM",
-      Coords: ["", "", "", "", ""],
+      Coords: ["", "", "George", "Dhruv", "Jiamu"],
     },
     {
       Time: "4 - 5 PM",
-      Coords: ["George", "Nico", "James", "Nico", "Ben"],
+      Coords: ["Ben", "Gil", "Gil", "Ishan", ""],
     },
     {
       Time: "5 - 6 PM",
-      Coords: ["George", "James", "James", "James", "Ben"],
+      Coords: ["Ben", "", "", "Ishan", ""],
     },
   ];
 
