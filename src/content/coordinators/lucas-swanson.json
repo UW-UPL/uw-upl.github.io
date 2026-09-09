@@ -2,11 +2,11 @@
     "name": "Lucas Swanson",
     "image": "../../img/coords/lucas-swanson.png",
     "isActive": true,
-    "emoji": "🖨️",
+    "emoji": "✌️",
     "grade": "Senior",
     "study": [
-        "Mathematics",
-        "Computer Science"
+        "Math",
+        "CS"
     ],
     "personalLink": "https://www.linkedin.com/in/lucas-swanson/",
     "github": "lucasg52"
