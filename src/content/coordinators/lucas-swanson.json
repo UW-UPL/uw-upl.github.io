@@ -1,0 +1,13 @@
+{
+    "name": "Lucas Swanson",
+    "image": "../../img/coords/lucas-swanson.png",
+    "isActive": true,
+    "emoji": "🖨️",
+    "grade": "Senior",
+    "study": [
+        "Mathematics",
+        "Computer Science"
+    ],
+    "personalLink": "https://www.linkedin.com/in/lucas-swanson/",
+    "github": "lucasg52"
+}
