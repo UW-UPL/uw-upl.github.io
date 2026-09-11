@@ -32,11 +32,11 @@ interface CoordHour {
     },
     {
       Time: "4 - 5 PM",
-      Coords: ["Ben", "Gil", "Gil", "Ishan", ""],
+      Coords: ["Ben", "Gil", "Gil", "", ""],
     },
     {
       Time: "5 - 6 PM",
-      Coords: ["Ben", "", "", "Ishan", ""],
+      Coords: ["Ben", "Ishan", "Ishan", "", ""],
     },
   ];
 
