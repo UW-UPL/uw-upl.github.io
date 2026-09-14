@@ -12,6 +12,10 @@ export default defineConfig({
   integrations: [svelte()],
 
   redirects: {
+        "/madhacks": {
+          status: 302,
+          destination: "https://madhacks.io"
+        },
         "/discord": {
           status: 302,
           destination: "https://discord.gg/B35gNYVsyP"
